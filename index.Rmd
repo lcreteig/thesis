@@ -1,0 +1,20 @@
+--- 
+title: "PhD thesis of Leon Reteig"
+author: "Leon Reteig"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [thesis.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "This is the PhD thesis of Leon Reteig"
+---
+
+This will come before everything else
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
