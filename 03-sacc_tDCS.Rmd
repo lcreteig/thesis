@@ -1,3 +1,4 @@
 # No evidence that frontal eye field tDCS affects latency or accuracy of prosaccades
+\chaptermark{FEF-tDCS does not affect saccades}
 
 This will be the Frontiers paper.

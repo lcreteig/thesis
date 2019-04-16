@@ -1,3 +1,4 @@
 # Sustaining attention for a prolonged period of time increases temporal variability in cortical responses
+\chaptermark{EEG markers of sustained attention}
 
 This will be the Cortex paper.

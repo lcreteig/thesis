@@ -1,3 +1,4 @@
 # No evidence that spontaneous eye blink rate can predict baseline attentional blink size, or the effects of tDCS on attentional blink size
+\chaptermark{sEBR \& tDCS do not influence attentional blink size}
 
 This will be the AB-tDCS_sEBR study.
