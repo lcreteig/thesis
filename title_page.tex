@@ -1,0 +1,62 @@
+% Based on template from the "IILC Dissertation Style"
+% https://www.illc.uva.nl/PhDProgramme/current-candidates/other/illcdiss.html#latex
+
+% change page style for pages before actual content
+{\pagestyle{empty} 
+
+% Page 2: Empty page after the initial title page
+\mbox{}\newpage
+\setcounter{page}{1}
+
+%% Page 3: `titelblad' mandated by University
+\clearpage
+\par\vskip 2cm
+\begin{center}
+\Huge\textbf{PhD thesis} % CHANGE THIS TO MATCH THESIS TITLE
+\par\vspace {6cm}
+{\large \sc Academisch Proefschrift}
+\par\vspace {1cm}
+{\large ter verkrijging van de graad van doctor\\
+aan de Universiteit van Amsterdam\\
+op gezag van de Rector Magnificus\\
+prof. dr. ir. K.I.J. Maex\\ % CHECK IF THIS MATCHES CURRENT RECTOR MAGNIFICUS
+ten overstaan van een door het College voor Promoties ingestelde commissie,\\
+\mbox{in het openbaar te verdedigen in de Agnietenkapel}\\  %CHANGE
+% The part after "de" should either read "Agnietenkapel" or "Aula der Universiteit"
+op [……]dag […datum…] […maand…] 20[….], te [……] uur \\ } %CHANGE
+% e.g. maandag 1 januari 2001, te 12.00 uur
+\par\vspace {1cm} {\large door}
+\par \vspace {1cm} 
+{\Large Leon Cyro Reteig} % CHANGE TO YOUR FULL NAME 
+\par\vspace {1cm} % and your birthplace
+{\large geboren te Amsterdam} %CHANGE
+% If your country of birth is the Netherlands, this should be only your place of birth,
+% e.g.: geboren te Amsterdam
+% If you were born outside the Netherlands, you should add your country of birth,
+% e.g.: geboren te San Francisco, Verenigde Staten van Amerika
+\end{center}
+
+%% Page 4: info on thesis committee
+\clearpage
+\noindent%
+{\bf Promotiecommisie:}\\
+\\
+\begin{tabular}[t]{@{}lll}
+Promotores:    & prof. dr. K.R. Ridderinkhof    & Universiteit van Amsterdam \\  %CHANGE
+               & prof. dr. H.A. Slagter         & Universiteit van Amsterdam \\  %CHANGE
+\\
+% Uncomment the two lines below if there are copromotor(es)
+%Copromotor(es): & prof. dr. something something  & Universiteit van Amsterdam \\  %CHANGE
+%\\
+Overige leden: & prof. dr. M.M. Lorist          & Rijksuniversiteit Groningen \\ %CHANGE
+               & prof. dr. B.U. Forstmann       & Universiteit van Amsterdam \\  %CHANGE
+               & prof. dr. H.M. Huizenga        & Universiteit van Amsterdam \\  %CHANGE
+               & prof. dr. V.A.F. Lamme         & Universiteit van Amsterdam \\  %CHANGE
+               & dr. I.G. Sligte                & Universiteit van Amsterdam \\  %CHANGE
+               & dr. W.P.M. van den Wildenberg  & Universiteit van Amsterdam \\  %CHANGE
+\\
+Faculteit:     & Faculteit der Maatschappij- en Gedragswetenschappen \\ %CHANGE
+\end{tabular}\\
+
+\clearpage
+} % End \pagestyle{empty}
