@@ -1,6 +1,6 @@
 --- 
-title: "PhD thesis of Leon Reteig"
-author: "Leon Reteig"
+title: "PhD thesis"
+author: "Leon Cyro Reteig"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -10,7 +10,10 @@ link-citations: yes
 description: "This is the PhD thesis of Leon Reteig"
 ---
 
-This will come before everything else
+# Introduction {#intro}
+
+This will be the introduction
+
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
