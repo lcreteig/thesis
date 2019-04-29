@@ -2,22 +2,92 @@
 title: "PhD thesis"
 author: "Leon Cyro Reteig"
 date: "`r Sys.Date()`"
-site: bookdown::bookdown_site
+bibliography: thesis.bib
 documentclass: book
-bibliography: [thesis.bib, packages.bib]
-biblio-style: apalike
+site: bookdown::bookdown_site
 link-citations: yes
 description: "This is the PhD thesis of Leon Reteig"
+biblio-style: apalike
+links-as-notes: true
 ---
 
-# Introduction {#intro}
+# Introduction {#intro-general}
 
-This will be the introduction
+<!-- In first paragraph; immediately state goal of thesis? -->
 
+__Cognitive enhancement__
+
+- Has existed from the dawn of man [@Sloterdijk2009]; part of human nature. [Humans are a product of evolution, but unfinished: we complete (_tame_) as well as transcend ourselves through self-enhancement].
+- Humans have always used _anthropotechnics_ (definition: @Sloterdijk2001). But the availability of techniques (anthropotechnics) has changed: expanded possibilities.
+
+1. Training, cultural practices, (food, tool use). 
+2. Physical objects: printing press, slide rules, calculators, the internet. These have become part of our extended mind [@Clark1998].
+3. Neuro-enhancement [@Clark2014; @CohenKadosh2014]. Using external tools to change ourselves: genetics, pharmacology, brain stimulation---main technique in this thesis.
+
+__Attention__
+
+Attention as a prime target for enhancement [@Reteig2017].
+
+- Definition: focus on what is relevant; ignore what is irrelevant. Necessary in every waking moment.
+- Disorders: ADHD [@AmericanPsychiatricAssociation2013], schizophrenia [@Luck2008], (also aging: @McNab2015). 
+    
+Also for otherwise healthy individuals, attention is limited. Common experience: Sustained attention. Cannot be done indefinitely > mental fatigue [@Ackerman2011].
+
+[Chapter 3](#MFBrain):
+  
+  - Vigilance decrement [@Warm2008].
+  - Little known about mechanisms; debate on ultimate cause. 
+  - Track changes in the brain when attention is sustained for a prolonged period of time.
+
+__transcranial Direct Current Stimulation__
+
+Rest of thesis: trying to overcome limitations in attention, using tDCS. In [Chapter 2](#tDCS_att_review) we provide an overview of previous work (until mid-2016).
+
+  - Modern reintroduction around 2000s[^tDCS-hist] [@Priori1998, @Nitsche2001; @Nitsche2001].
+  - What is tDCS: electrodes, one on scalp, current in between [@Gebodh2019a].
+  
+Physiology:
+
+  - Electric field -> modulation of membrane potential -> cortical excitability [@Reato2019]
+  - Typically applied 10--20 min from at 1--2 mA [@Bikson2016] Not enough to induce firing, in contrast to TMS [@Parkin2015]
+  - Anodal / cathodal. At the cortical surface: In vitro: @Terzuolo1956; In vivo: [@Bindman1962; @Creutzfeld1962; @Purpura1965; @Landau1964]  increase / decrease of spontaneous firing rates and amplitude of evoked potentials. This matches first reports in humans [@Nitsche2000; @Nitsche2001]. 
+  - But: more complex, because the effect depends on magnitude and direction of E-field (and many other factors). 
+
+Offline effects [@Bindman1962], when stimulation lasts for more than a few minutes [@Nitsche2001].
+
+  - Synaptic plasticity [@Bikson2019]. After-effects of tDCS depend on NMDA receptor signalling: increases in excitability are blocked under NMDA antagonists [@Liebetanz2002; @Nitsche2003]. Glutamate levels affect by both anodal and cathodal tDCS [@Clark2011; @Stagg2009].
+  - When stimulation sessions are repeated, the behavioral effects can last for months [@Snowball2013; @Filmer2016; @Looi2016a] (but see @Nilsson2017) which is what makes tDCS such an attractive technique for enhancement and therapy.
+
+[^tDCS-hist]: But also: early trials mid-20th century, and dates back to the invention of voltaic cells, and even before, when people used electric fish [@Guleyupoglu2013; @Priori1998; @Sarmiento2016].
+
+<!-- Figure with electrodes and device, waveform, and head model? -->
+
+__Attention & tDCS chapters__
+
+Original aim: also examine training. But given the inconsistent results described in Chapter 2, we decided to first consolidate previous single session results in different domains of attention.
+
+Spatial attention: [Chapter 4](#sacc-tDCS): orienting to / heightening representation of a certain part of the visual field.
+  
+  - Biasing of brain activity in fMRI [@Serences2007] and EEG [@Marshall2015]
+  - _Covert_ or _overt_ orienting: eye movements. Both involve similar brain regions [@Grosbras2005; @Nobre2000].
+  - FEFs are important [@Corbetta2002]. 
+  - Effects in literature [@Reteig2017] mixed. Two reasons we chose this:
+      1. Clear mechanism: Ramping of activity to a threshold [@Hanes1996] > anodal tDCS enhances latency. Indeed. Earlier study showed this [@Kanai2012].
+      2. Similarity to motor cortex protocol (gold standard in tDCS), both in modality and montage.
+
+Attention can also be deployed across time: Temporal attention: [Chapter 5](#AB_tDCS-EEG); [Chapter 6](#AB_tDCS-sEBR)
+
+  - Attentional blink: method to study temporal attention (available for T2, after T1).
+  - Involvement of lDLPFC [@Slagter2010; @Hommel2006]. Also frequently-targeted brain area with tDCS [@Santarnecchi2015].
+  - @London2015: no group effect, but pattern of individual differences.
+  
+  In Chapter 5: replicate this result. In Chapter 6: examine influence of dopamine.
+
+---
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
+#knitr::write_bib(c(
+#  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+#), 'packages.bib')
 ```

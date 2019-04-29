@@ -1,4 +1,4 @@
-# Effects of tDCS on the attentional blink revisited: A statistical evaluation of a replication attempt
+# Effects of tDCS on the attentional blink revisited: A statistical evaluation of a replication attempt {#AB_tDCS-EEG}
 \chaptermark{Replicating tDCS effects on the attentional blink}
 
 This will be the AB-tDCS study.

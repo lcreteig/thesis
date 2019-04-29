@@ -1,4 +1,4 @@
-# Transcranial electrical stimulation as a tool to enhance attention
+# Transcranial electrical stimulation as a tool to enhance attention {#tDCS_att_review}
 \chaptermark{tES as a tool to enhance attention}
 
 The JCGE review

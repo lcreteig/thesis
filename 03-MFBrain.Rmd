@@ -1,4 +1,4 @@
-# Sustaining attention for a prolonged period of time increases temporal variability in cortical responses
+# Sustaining attention for a prolonged period of time increases temporal variability in cortical responses {#MFBrain}
 \chaptermark{EEG markers of sustained attention}
 
 __Abstract__
