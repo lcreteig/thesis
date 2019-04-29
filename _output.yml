@@ -16,4 +16,8 @@ bookdown::pdf_book:
   latex_engine: xelatex
   citation_package: natbib
   keep_tex: yes
+  pandoc_args: [
+   "--variable", "papersize=a4",
+   "--variable", "citecolor=Gray"
+   ]
 bookdown::epub_book: default
