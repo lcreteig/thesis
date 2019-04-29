@@ -1,12 +1,13 @@
 --- 
-title: "PhD thesis"
+title: "The neuroplasticity of attention"
+subtitle: "Manipulating attentional performance with brain stimulation and mental fatigue"
 author: "Leon Cyro Reteig"
 date: "`r Sys.Date()`"
 bibliography: thesis.bib
+description: This is the PhD thesis of Leon Reteig
 documentclass: book
 site: bookdown::bookdown_site
 link-citations: yes
-description: "This is the PhD thesis of Leon Reteig"
 biblio-style: apalike
 links-as-notes: true
 ---
