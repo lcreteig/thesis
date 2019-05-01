@@ -1,12 +1,18 @@
 % Based on template from the "IILC Dissertation Style"
 % https://www.illc.uva.nl/PhDProgramme/current-candidates/other/illcdiss.html#latex
 
+\thispagestyle{empty}
 % change page style for pages before actual content
 {\pagestyle{empty} 
 
 % Page 2: Empty page after the initial title page
-\mbox{}\newpage
-\setcounter{page}{1}
+%\mbox{}\newpage
+%\setcounter{page}{1}
+
+% with memoir:
+\clearpage % end title page
+\null
+\newpage
 
 %% Page 3: `titelblad' mandated by University
 \clearpage

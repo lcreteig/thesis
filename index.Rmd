@@ -5,7 +5,8 @@ author: "Leon Cyro Reteig"
 date: "`r Sys.Date()`"
 bibliography: thesis.bib
 description: This is the PhD thesis of Leon Reteig
-documentclass: book
+documentclass: memoir
+classoption: oldfontcommands # when using memoir with title_page.tex
 site: bookdown::bookdown_site
 link-citations: yes
 biblio-style: apalike
