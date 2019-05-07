@@ -7,6 +7,7 @@ bibliography: thesis.bib
 description: This is the PhD thesis of Leon Reteig
 documentclass: memoir
 classoption: oldfontcommands # when using memoir with title_page.tex
+#geometry: false # when memoir should handle page layout
 site: bookdown::bookdown_site
 link-citations: yes
 biblio-style: apalike
@@ -15,77 +16,77 @@ links-as-notes: true
 
 # Introduction {#intro-general}
 
-<!-- In first paragraph; immediately state goal of thesis? -->
+## Cognitive enhancement
 
-__Cognitive enhancement__
+As long as they have been in existence, humans have strived to better themselves. This "will to improve" is a fundamental part of human nature. Even more so than other animals, humans can be seen as an unfinished product of evolution---we only complete ourselves through self-enhancement [@Sloterdijk2009]. Peter Sloterdijk coined the term _anthropotechnics_ for the collection of tools at our disposal through which we make ourselves human [-@Sloterdijk2001]. At first, our primary anthropotechnics were psychosocial in nature, consisting mostly of cultural practices, training, and other forms of self-discipline. 
 
-- Has existed from the dawn of man [@Sloterdijk2009]; part of human nature. [Humans are a product of evolution, but unfinished: we complete (_tame_) as well as transcend ourselves through self-enhancement].
-- Humans have always used _anthropotechnics_ (definition: @Sloterdijk2001). But the availability of techniques (anthropotechnics) has changed: expanded possibilities.
+In more recent history, technology has started to play an ever-increasing role, and has offered more direct means for cognitive enhancement. Our first penchant was to enhance our cognitive capacities by _externalizing_ them: we expanded our memory through writing systems, improved our numerical cognition through calculators, and used maps to augment our navigational skills. These and other technologies are now so commonplace that some consider them to have become part of our extended mind [@Clark1998]. 
 
-1. Training, cultural practices, (food, tool use). 
-2. Physical objects: printing press, slide rules, calculators, the internet. These have become part of our extended mind [@Clark1998].
-3. Neuro-enhancement [@Clark2014; @CohenKadosh2014]. Using external tools to change ourselves: genetics, pharmacology, brain stimulation---main technique in this thesis.
+Now, we are entering a new age of _neuroenhancement_ [@Clark2014], which is characterized by the _internalization_ of technology. With the advent of genetics, pharmacology, and other biotechnologies, humans have become both the subject and the substrate of technology [@Stiegler1998]. Specifically, this family of techniques could allow for cognitive enhancement by directly acting on the organ that gives rise to our cognitive abilities---the brain. This thesis explores to what extent non-invasive electrical stimulation of the brain [@CohenKadosh2014; @Dayan2013] can be used to enhance cognitive functioning.
 
-__Attention__
+## Attention
 
-Attention as a prime target for enhancement [@Reteig2017].
+Out of the myriad of domains that together make up human cognition, _attention_ is a prime target for enhancement [@Reteig2017]. Attention is itself comprised of many subdomains [@Chun2011], multiple of which are investigated in this thesis. But attention can be broadly characterized as the ability to focus on what is relevant, and to ignore what is not. Attention is so crucial that we call upon it in every waking moment, as the sheer amount of information available to us---from our senses, memories, or possible actions---far exceeds our capacity to process it. 
 
-- Definition: focus on what is relevant; ignore what is irrelevant. Necessary in every waking moment.
-- Disorders: ADHD [@AmericanPsychiatricAssociation2013], schizophrenia [@Luck2008], (also aging: @McNab2015). 
-    
-Also for otherwise healthy individuals, attention is limited. Common experience: Sustained attention. Cannot be done indefinitely > mental fatigue [@Ackerman2011].
+Most of the time, attention successfully keeps us on track towards our behavioral goals, by selecting information in accord with those goals, in the face of distraction. But this is no small feat, and attentional processes can go awry in many different ways. Disturbances in attention are a core component of ADHD [@AmericanPsychiatricAssociation2013], schizophrenia patients suffer from impairments in the control of attention [@Luck2008], and some aspects of attentional function also decline with age [@McNab2015]. 
 
-[Chapter 3](#MFBrain):
+### Sustained attention
+
+Even for otherwise healthy individuals, attention is not without its limits, which is most commonly experienced when attention has to be sustained for a prolonged period of time. As anyone will attest after a long day of work, sustaining attention is mentally fatiguing [@Ackerman2011; @Hockey2013] and cannot be done indefinitely.
+
+<!-- Switch chapters 2 and 3? -->
+
+In [Chapter 3](#MFBrain), I studied _sustained attention_ through an experimental formalization of this observation: the _vigilance decrement_ (also known as the time-on-task effect). The vigilance decrement is observed when people are tasked to monitor incoming information and detect rare, but critical signals. This is surprisingly effortful, and performance on this task already starts to decrease after only a few minutes [@Warm2008]. The vigilance decrement is robust and has been studied for decades, starting from interests in the performance of military radar operators [@Mackworth1948]. Nonetheless, still little is known about the underlying neural mechanisms. Also, there remains considerable debate on the ultimate cause of the vigilance decrement: does performance decrease due to true exhaustion, or do people instead succumb to the likes of boredom, mind wandering, or increasing aversion towards the task? I attempted to address these issues by tracking changes in attention-related brain activity during performance of a vigilance task, using electro-encephalography (EEG).
+
+## Electrical brain stimulation
+
+In the rest of this thesis, I endeavored to overcome limitations of attention such as the vigilance decrement. I studied whether non-invasive brain stimulation can be used for this purpose, in the form of transcranial Direct Current Stimulation (tDCS). [Chapter 2](#tDCS_att_review) provides an overview of previous studies that have attempted to use tDCS or similar techniques to enhance attention (until mid-2016).
+
+In its modern form, tDCS has been in use since around the turn of the century[^tDCS-hist] [@Priori1998; @Nitsche2000]. tDCS is applied by placing two electrodes (Figure \@ref(fig:figure-1-tDCS)A) on the body (at least one of which on the scalp), and passing a small current in between, which flows from the _anode_ (the electrode where current enters the body) to the _cathode_ (the electrode where current exits the body) [@Gebodh2019a] (Figure \@ref(fig:figure-1-tDCS)B). Some of this current will flow across the brain, creating a small electric field which can ultimately increase or decrease neuronal excitability and plasticity [@Reato2019]. 
+
+Direct current is applied with tDCS, but the stimulation waveform can also consist of alternating current at a single frequency (transcranial Alternating Current Stimulation; tACS) or multiple frequencies (transcranial Random Noise Stimulation; tRNS) [@Fertonani2017]. This family of techniques is sometimes collectively referred to as transcranial Electrical Stimulation (tES) [@Gebodh2019a]. The current in tES is typically at an intensity of 1--2 milliampere (mA), for 10--20 minutes [@Bikson2016], flanked by two short (< 1 minute) periods where the current is gradually ramped up from or down to zero mA (Figure \@ref(fig:figure-1-tDCS)C). Stimulation with these parameters does not produce a large enough electric field (Figure \@ref(fig:figure-1-tDCS)D) to directly induce action potentials, in contrast to other brain stimulation techniques such as transcranial magnetic stimulation (TMS) [@Parkin2015].
+
+The physiological effects of tDCS are complex and not yet fully understood [@Jackson2016; @Liu2018; @Pelletier2015; @Stagg2018]. tDCS can have both _online_ effects (during the stimulation) as well as _offline_ effects that outlast the duration of the stimulation. Early in vitro [@Terzuolo1956] and in vivo [@Bindman1964; @Creutzfeldt1962; @Landau1964; @Purpura1965] animal studies observed that tDCS can either increase or decrease spontaneous firing rates and evoked potentials. The direction of these online effects strongly depends on the orientation of the electric field (among many other factors) [@Bikson2019]. An anode over the cortical surface (producing an inward current flow) will depolarize the soma of neurons, bringing their membrane potentials closer to the firing threshold. Reversely, a cortical cathode (producing an outward current flow) will hyperpolarize the soma of neurons, bringing their membrane potentials further from the firing threshold.
+
+These findings were reproduced in the first human studies, which applied anodal and cathodal tDCS to the motor cortex[^tDCS-polarity] [@Nitsche2000; @Nitsche2001]. The motor cortex allows for a direct read-out of the physiological effects of tDCS, using motor evoked potentials that can be elicited by TMS. When TMS was applied during anodal tDCS, the evoked potentials were larger, meaning tDCS increased cortical excitability; when TMS was applied during cathodal tDCS, the evoked potentials were smaller, suggesting that tDCS decreased cortical excitability.
+
+Ever since, anodal tDCS is generally regarded as excitatory, while cathodal tDCS is inhibitory. However, this distinction need not necessarily hold for other brain areas than the motor cortex [@Parkin2015; @Bestmann2017]. Nevertheless, many studies have since applied tDCS to other brain areas with the aim to improve brain function [@Grossman2018]. Generally, anodal tDCS has indeed been reported to improve behavioral performance on a range of cognitive tasks [@Coffman2014; @Santarnecchi2015]: from learning and memory, to language, and visual perception. The effects of cathodal tDCS are more diffuse [@Jacobson2012].
+
+When the stimulation lasts for more than a few minutes, tDCS may also have offline effects [@Bindman1964; @Nitsche2001], up to at least a few hours. There are multiple candidate mechanisms that could underpin these offline effects, but they in part resemble long-term potentiation/depression-like synaptic plasticity [@Bikson2019]. For instance, tDCS after-effects depend on NMDA receptor signaling: changes in excitability are blocked when administering NMDA antagonists [@Liebetanz2002; @Nitsche2003]. Also, both anodal and cathodal tDCS can affect glutamate levels [@Clark2011; @Stagg2009].
+
+When stimulation sessions are repeated, the offline effects can last much longer than after a single ssession of tDCS [Monte-Silva2013]. Several studies that repeatedly paired tDCS with cognitive tasks have reported behavioral effects several weeks or even months after the last stimulation session [e.g. @Snowball2013; @Filmer2016; @Looi2016a; but see @Nilsson2017]. The prospect of long-term effects is what makes tDCS such an attractive technique for enhancement---and for therapeutic purposes. Indeed, the efficacy of (mostly anodal) tDCS has been investigated for a wide range of neurological and psychiatric disorders [@Lefaucheur2016]: from Parkinson's disease, to depression, and autism [@Lefaucheur2016a]. However, while many of these initial results are exciting, there is also a growing sense that---as the literature currently seems to suggest---tDCS cannot be a panacea to enhance or treat every imaginable cognitive skill or mental disorder [@Heroux2017]. 
+
+[^tDCS-hist]: However, note that this was preceded by some clinical trials in the mid-20th century [e.g. @Redfearn1964]. In general, the use of direct current to stimulate the body dates back to the invention of voltaic cells in the 18th century, and even before, when electrogenic species of fish were used for this purpose [@Guleyupoglu2013; @Priori2003; @Sarmiento2016].
+
+[^tDCS-polarity]: The term "anodal tDCS" is used when the anode is placed over the brain area of interest, and the cathode is placed elsewhere (and vice versa for "cathodal tDCS"). The electrode over the brain area of interest is also sometimes referred to as the "active electrode"; the second electrode is then the "reference electrode". However, all of these terms can be misleading. The "reference electrode" is not inactive; there are always two "active electrodes": one anode and one cathode. Also, because a circuit has to be closed for current to flow, current will always enter the brain at one location and exit at another. So "anodal tDCS" or "cathodal tDCS" cannot be applied in isolation---the opposite polarity is always concurrently applied somewhere else.
+
+```{r figure-1-tDCS, fig.cap='(ref:caption-figure-tDCS)', echo=FALSE}
+knitr::include_graphics("introduction_files/figures/figure_1_tDCS.png", auto_pdf = TRUE)
+```
+
+(ref:caption-figure-tDCS) __transcranial Direct Current Stimulation__. (__A__) The tDCS device (neuroConn DC-STIMULATOR-PLUS) used for the studies in this thesis, connected to a pair of rubber electrodes (in black). Shown are two electrode sizes: 3x3 cm and 7x5 cm, as was used in [Chapter 4](#sacc-tDCS). To make contact with the skin, the electrodes can either be inserted in sponges with saline solution (as shown in the image), or can be covered in conductive paste (as in the studies in this thesis). (__B__) tDCS montage that was used in [Chapter 5](#AB_tDCS-EEG) and [Chapter 6](#AB_tDCS-sEBR). One electrode was placed over the left dorsolateral prefrontal cortex (F3 in the international 10-20 system); the other was placed on the right forehead (approximately corresponding to 10-20 position Fp2). Shown here is the "anodal tDCS" montage with the anode (in red) over F3 and the cathode (in blue) on the forehead. For "cathodal tDCS", the electrodes were swapped. (__C__) The tDCS waveform for the anodal (red) and cathodal (blue) electrodes. The dotted lines mark the end of the ramp-up (ramp-down) periods, in which the current intensity is gradually increased (decreased). In between, the current is held at a constant intensity, typically for 10--30 minutes. (__D__) Simulated electric field for the montage in (C), for the gray matter in the MNI152 template, calculated using SimNibs software [Version 2.2.1;  @Saturnino2018; @Thielscher2015]. As is typical with tDCS, peaks in the electric field are localized near the electrodes, but they do not necessarily occur exactly underneath, and the distribution of the field is diffuse.
+
+## Brain stimulation to enhance attention
+
+The original aim of this PhD project was also to apply tDCS over the course of several sessions, to allow for more long-term effects on attention. However, the literature is mired in inconsistent results (see [Chapter 2](#tDCS_att_review)), which did not provide a clear foundation for such large-scale studies. Therefore, I instead decided to first try to consolidate previous single-session tDCS results, in different domains of attention.
+
+### Spatial attention
+
+_Spatial attention_ allows us to orient to a certain location in our environment, such as a part of the visual field [@Wright2008]. Because visual acuity is best at the fovea, shifting visuospatial attention usually involves eye movements (_overt orienting_) as well. But attention can also be shifted in the absence of eye movements (_covert orienting_), which still leads to enhanced sensitivity to the part of the visual field that is now in the focus of attention [@Carrasco2004].
+
+Shifts in spatial attention to a certain location heighten neural activity in corresponding retinotopic regions [@Desimone1995; @Tootell1998; @Ungerleider1999; @Worden2000], such that stimuli in this location can be more easily detected or discriminated. This process is coordinated by a network of frontoparietal brain regions, including the frontal eye fields (FEF) [@Corbetta2002], which are activated during both covert and over attentional orienting [@Grosbras2005; @Nobre2000]. Non-human primate studies have shown that sub-threshold microstimulation of the FEF causes a shift in visuospatial attention; supra-threshold microstimulation also causes the monkey to make an eye movement [@Moore2001].
+
+Several studies have attempted to affect spatial orienting with tDCS, but the results are mixed (see [Chapter 2](#tDCS_att_review)). While some found they could enhance spatial attention for the visual hemifield contralateral to the stimulated hemisphere, others reported no effects or even decreases in attention. In [Chapter 4](#sacc-tDCS), I examined whether tDCS over the FEF could improve performance on a prosaccade task, where participants had to make eye movements to a target as fast as possible. I reasoned this would constitute a fairly direct test of whether spatial attention can be readily affected with tDCS, because there is a clear physiological mechanism that tDCS can act on. Activity in the frontal eye fields ramps up to a threshold, after which a saccadic eye movement is initiated [@Hanes1996]. If anodal tDCS can increase excitability of the FEF, this threshold should be reached sooner, thereby decreasing saccadic latency. Such changes can be directly read-out by measuring eye movements with an eye tracker. One earlier study showed that anodal tDCS of the FEF might indeed speed saccade latency [@Kanai2012; but see @Chen2017].
+
+### Temporal attention
+
+Independent of the spatial domain, attention can also be deployed across time. _Temporal attention_ can be isolated using rapid serial visual presentation (RSVP) tasks---where multiple stimuli are presented quickly after each other in the same location. When tasked to search for two or more targets in such an RSVP stream, the first target is usually seen, but the second target is often missed when it follows the first within about 500 ms. This phenomenon is known as the _attentional blink_ [@Raymond1992]. 
+
+In [Chapter 5](#AB_tDCS-EEG) and [Chapter 6](#AB_tDCS-sEBR), I examined whether tDCS of the left dorsolateral prefrontal cortex (lDPLFC) can decrease the size of the attentional blink. The lDLPFC is one of the brain areas that has been most frequently targeted with tDCS [@Santarnecchi2015], and is also strongly implicated in the attentional blink [@Slagter2010; @Hommel2006].
+
+@London2015 were the first to study the effects of anodal or cathodal lDLPFC-tDCS on the attentional blink. They found no group effect, but an interesting pattern of individual differences in the response to anodal and cathodal tDCS. Specifically, those that tended to improve their performance following anodal tDCS (i.e., their attentional blink size decreased), tended to worsen during cathodal tDCS (and vice versa).
   
-  - Vigilance decrement [@Warm2008].
-  - Little known about mechanisms; debate on ultimate cause. 
-  - Track changes in the brain when attention is sustained for a prolonged period of time.
-
-__transcranial Direct Current Stimulation__
-
-Rest of thesis: trying to overcome limitations in attention, using tDCS. In [Chapter 2](#tDCS_att_review) we provide an overview of previous work (until mid-2016).
-
-  - Modern reintroduction around 2000s[^tDCS-hist] [@Priori1998, @Nitsche2001; @Nitsche2001].
-  - What is tDCS: electrodes, one on scalp, current in between [@Gebodh2019a].
-  
-Physiology:
-
-  - Electric field -> modulation of membrane potential -> cortical excitability [@Reato2019]
-  - Typically applied 10--20 min from at 1--2 mA [@Bikson2016] Not enough to induce firing, in contrast to TMS [@Parkin2015]
-  - Anodal / cathodal. At the cortical surface: In vitro: @Terzuolo1956; In vivo: [@Bindman1962; @Creutzfeld1962; @Purpura1965; @Landau1964]  increase / decrease of spontaneous firing rates and amplitude of evoked potentials. This matches first reports in humans [@Nitsche2000; @Nitsche2001]. 
-  - But: more complex, because the effect depends on magnitude and direction of E-field (and many other factors). 
-
-Offline effects [@Bindman1962], when stimulation lasts for more than a few minutes [@Nitsche2001].
-
-  - Synaptic plasticity [@Bikson2019]. After-effects of tDCS depend on NMDA receptor signalling: increases in excitability are blocked under NMDA antagonists [@Liebetanz2002; @Nitsche2003]. Glutamate levels affect by both anodal and cathodal tDCS [@Clark2011; @Stagg2009].
-  - When stimulation sessions are repeated, the behavioral effects can last for months [@Snowball2013; @Filmer2016; @Looi2016a] (but see @Nilsson2017) which is what makes tDCS such an attractive technique for enhancement and therapy.
-
-[^tDCS-hist]: But also: early trials mid-20th century, and dates back to the invention of voltaic cells, and even before, when people used electric fish [@Guleyupoglu2013; @Priori1998; @Sarmiento2016].
-
-<!-- Figure with electrodes and device, waveform, and head model? -->
-
-__Attention & tDCS chapters__
-
-Original aim: also examine training. But given the inconsistent results described in Chapter 2, we decided to first consolidate previous single session results in different domains of attention.
-
-Spatial attention: [Chapter 4](#sacc-tDCS): orienting to / heightening representation of a certain part of the visual field.
-  
-  - Biasing of brain activity in fMRI [@Serences2007] and EEG [@Marshall2015]
-  - _Covert_ or _overt_ orienting: eye movements. Both involve similar brain regions [@Grosbras2005; @Nobre2000].
-  - FEFs are important [@Corbetta2002]. 
-  - Effects in literature [@Reteig2017] mixed. Two reasons we chose this:
-      1. Clear mechanism: Ramping of activity to a threshold [@Hanes1996] > anodal tDCS enhances latency. Indeed. Earlier study showed this [@Kanai2012].
-      2. Similarity to motor cortex protocol (gold standard in tDCS), both in modality and montage.
-
-Attention can also be deployed across time: Temporal attention: [Chapter 5](#AB_tDCS-EEG); [Chapter 6](#AB_tDCS-sEBR)
-
-  - Attentional blink: method to study temporal attention (available for T2, after T1).
-  - Involvement of lDLPFC [@Slagter2010; @Hommel2006]. Also frequently-targeted brain area with tDCS [@Santarnecchi2015].
-  - @London2015: no group effect, but pattern of individual differences.
-  
-  In Chapter 5: replicate this result. In Chapter 6: examine influence of dopamine.
-
----
+Since this finding was both unprecedented and based on an exploratory analysis, in [Chapter 5](#AB_tDCS-EEG) I determined to what extent I was able to replicate this result. In [Chapter 6](#AB_tDCS-sEBR), I aimed to identify potential drivers of these individual differences. Specifically, I examined spontaneous eye blink rate as a proxy for striatal dopamine levels, as dopamine may mediate both the attentional blink [@Jongkees2016] as well as the physiological effects of tDCS [@Stagg2018].
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
