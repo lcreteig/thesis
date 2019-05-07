@@ -1,5 +1,5 @@
 --- 
-title: "The neuroplasticity of attention"
+title: "The Neuroplasticity of Attention"
 subtitle: "Manipulating attentional performance with brain stimulation and mental fatigue"
 author: "Leon Cyro Reteig"
 date: "`r Sys.Date()`"
