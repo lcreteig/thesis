@@ -1,0 +1,18 @@
+Reference;n;Design;Stimulation;Size;Dosage;Timing;Task;Findings
+__Stimulus-driven (no cues)__;;;;;;;;
+    _Cited in text_;;;;;;;;
+@Bolognini2010a;48;between group;P4 (A), O2 (A), left shoulder (ref);35 cm^2^;2 mA, 15 min;offline;audiovisual target detection;only right parietal tDCS decreased reaction time for contralateral targets
+@Sparing2009;20;within subject;P3 (A,C) or P4 (A,C), Cz (ref);25, 35 cm^2^;1 mA, 10 min;offline;uni/bilateral target detection;anodal tDCS facilitates contralateral target detection, cathodal diminishes contralateral/bilateral and increases ipsilateral performance
+@Filmer2015;28;within subject;P3 (A,C) or P4 (A,C), Cz (ref);25 cm^2^;0.7 mA, 9 min;offline;uni/bilateral target detection;"right anodal tDCS decreased contralateral performance; anodal and cathodal decreased bilateral performance"
+@Learmonth2015;20;within subject;P3 (A), P4 (A), contralateral forehead (ref);25, 35 cm^2^;1 mA, 15 min;online;target detection;left anodal tDCS worsened accuracy and reaction time in both hemifields, but only for poor performers
+_Other studies_;;;;;;;;
+@Brignani2013;96;between group;PO7 or PO8, Cz (6, 10, 25 Hz);16, 35 cm^2^;0.5 mA, 15 min;online;detection and discrimination;improvements in detection performance occurring in sham condition were not present for 6 or 10 Hz tACS
+@Medina2013;18;within subject;CP3 (A,C), CP4 (C,A);25 cm^2^;1.5 mA, 20 min;online;allocentric / egocentric detection;concurrent right anodal / left cathodal tDCS speeded reaction times to stimuli with left-gaps compared to right (allocentric effect)
+__Exo-/endogenous orienting (with cues)__;;;;;;;;
+    _Cited in text_;;;;;;;;
+@Bolognini2010;20;between group;P3 (A) or P4 (A), contralateral shoulder (ref);35 cm^2^;2 mA, 30 min;online (different task);target detection, endogenous Posner;right anodal tDCS decreased reaction times for valid, invalid and no-cue conditions
+@Li2015a;18;within subject;P3 (A,C), P4 (C,A);25 cm^2^;2 mA, 30 min;online;endogenous Posner;no effect on reaction time
+@Roy2015;24;within subject;"F3 (A), left forehead (ref); P3 (A) or P4(A), Cz (ref)";25, 35 cm^2^;1.5 mA, 20 min;offline;attention network test;right PPC stimulation increased reaction time after invalid trials (enhanced spatial orienting)
+@Coffman2012;19;between group;near F10 (A), left upper arm (ref);11 cm^2^;2 mA, 30 min;online (different task);attention network test;frontal anodal tDCS only improved alerting compared to sham, not orienting
+@Hopfinger2016;23;within subject;P6, Cz (10, 40 Hz);25, 35 cm^2^;1 mA;online;endogenous and exogenous Posner;gamma tACS decreased reaction time to invalidly cued targets (endogenous)
+@Laczo2012;20;within subject;O1, Cz (40, 60, 80 Hz);16, 28 cm^2^;1.5 mA, 45 min;online;peripheral spatial cueing;60 Hz tACS lowered contrast thresholds, but no interaction with spatial cues

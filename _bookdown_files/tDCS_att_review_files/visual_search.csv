@@ -1,0 +1,16 @@
+Reference;n;Design;Stimulation;Size;Dosage;Timing;Task;Findings
+_Cited in-text_;;;;;;;;
+@Ball2013;35;between group;rFEF (A,C), rPPC (A,C), left forehead (ref);35 cm^2^;1 mA, 15 min;online;visual search;cathodal tDCS of rPPC increased reaction time
+@Ellison2014;20;within subject;right PPC (C), left forehead (ref);35 cm^2^;1.5 mA, 15 min;offline;visual search ;cathodal tDCS of rPPC increased reaction time
+@Bolognini2010;20, 12;between group;P3 (A) or P4 (A), contralateral shoulder (ref);35 cm^2^;2 mA, 30 min;online, offline;visual search;left and particularly right anodal tDCS decreased reaction time
+@Reinhart2015;18, 18, 18;within subject;FCz (A), P2 (A), right cheek (ref);19, 52 cm^2^;2 mA, 20 min;offline;cued visual search;parietal stimulation decreased (increased) reaction time to contralateral (ipsilateral) targets
+@Cosman2015;18;within subject;F3 and F4 (A,C), contralateral cheeks (ref);20, 50 cm^2^;1 mA, 20 min;offline;visual search with distractor;"no overall effect; anodal tDCS decreased negative effect of distractors on reaction time"
+@Weiss2012;30, 20;between group;P4 (A,C), left forehead (ref);16, 35 cm^2^;1.5 mA, 15 min;online;visual search with flankers;"no overall effect; cathodal tDCS increased flanker effect under high attentional load"
+@Kajimura2015;73;between group;P4 (A,C), AF7 (ref);35 cm^2^;1.5 mA, 20 min;offline;visual search with flankers;"no overall effect; anodal tDCS decreased flanker effect under low attentional load"
+@Clark2012;63, 12;between group;near F10 (A), P4 (A), upper left arm (ref);11 cm^2^;2 mA, 30 min;online;concealed object detection;"anodal tDCS to frontal cortex increased accuracy after training more than sham; factor of 2 difference after 1-hour retest"
+@Coffman2012;55;between group;near F10 (A), upper left arm (ref);11 cm^2^;2 mA, 30 min;online;concealed object detection;extension of Clark et al. (2012): effect replicated and stronger for repeated images with objects present
+@Falcone2012;37;between group;near F10 (A), upper left arm (ref);11 cm^2^;2 mA, 30 min;online;concealed object detection;extension of Clark et al. (2012): effect replicated and retained for 24 hours
+_Other studies_;;;;;;;;
+@Callan2016;28;between group;P4 (A), left shoulder (ref);38 cm^2^;1 mA, 30 min;online;visual search;no difference in accuracy between anodal and sham conditions
+@Kajimura2016;52;between group;P4 (A,C), AF7 (ref);35 cm^2^;1.5 mA, 20 min;offline;visual search with flankers;no effects on accuracy (flanker effect not present in behavioral data)
+@Muller2015;24;between group;Oz, Cz (alpha);35 cm^2^;avg 0.76 mA, 20 min;offline;visual search;5 sessions of tACS improved accuracy for conjunction searches only
