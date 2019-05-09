@@ -3,7 +3,7 @@ title: "The Neuroplasticity of Attention"
 subtitle: "Manipulating attentional performance with brain stimulation and mental fatigue"
 author: "Leon Cyro Reteig"
 date: "`r Sys.Date()`"
-bibliography: thesis.bib
+bibliography: [thesis.bib, r-packages.bib]
 description: This is the PhD thesis of Leon Reteig
 documentclass: memoir
 classoption: oldfontcommands # when using memoir with title_page.tex
@@ -13,6 +13,14 @@ link-citations: yes
 biblio-style: apalike
 links-as-notes: true
 ---
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+papaja::create_bib(c('base', 'bookdown', 'knitr', 'rmarkdown', # general
+                     'tidyverse', 'cowplot', 'broom', 'rogme', 'ez', 'BayesFactor' # chapter 2
+                     ), file = '/Volumes/psychology$/Researchers/reteig/thesis/r-packages.bib', append = FALSE)
+```
+
 
 # Introduction {#intro-general}
 
@@ -87,10 +95,3 @@ In [Chapter 5](#AB_tDCS-EEG) and [Chapter 6](#AB_tDCS-sEBR), I examined whether 
 @London2015 were the first to study the effects of anodal or cathodal lDLPFC-tDCS on the attentional blink. They found no group effect, but an interesting pattern of individual differences in the response to anodal and cathodal tDCS. Specifically, those that tended to improve their performance following anodal tDCS (i.e., their attentional blink size decreased), tended to worsen during cathodal tDCS (and vice versa).
   
 Since this finding was both unprecedented and based on an exploratory analysis, in [Chapter 5](#AB_tDCS-EEG) I determined to what extent I was able to replicate this result. In [Chapter 6](#AB_tDCS-sEBR), I aimed to identify potential drivers of these individual differences. Specifically, I examined spontaneous eye blink rate as a proxy for striatal dopamine levels, as dopamine may mediate both the attentional blink [@Jongkees2016] as well as the physiological effects of tDCS [@Stagg2018].
-
-```{r include=FALSE}
-# automatically create a bib database for R packages
-#knitr::write_bib(c(
-#  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-#), 'packages.bib')
-```
