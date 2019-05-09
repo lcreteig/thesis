@@ -1,0 +1,50 @@
+```{r setup, include=FALSE}
+library(knitr)
+knitr::opts_chunk$set(results = 'hide', echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+# (APPENDIX) Appendix {-} 
+
+# Supplement to Chapter 4 {#sacc_tDCS_supplement}
+
+## MNI coordinates
+
+| participant | X    | Y     | Z    |
+|-------------|------|-------|------|
+| 1           | 29.4 | 1.1   | 54.9 |
+| 2           | 33.0 | -2.2  | 50.4 |
+| 3           | 30.6 | -1.5  | 50.6 |
+| 4           | 25.7 | -3.8  | 56.4 |
+| 5           | 29.8 | -5.2  | 55.8 |
+| 6           | 29.8 | -1.1  | 58.3 |
+| 7           | 38.1 | 3.0   | 46.0 |
+| 8           | 31.5 | 0.5   | 45.6 |
+| 9           | 28.5 | 3.6   | 51.3 |
+| 10          | 28.1 | -1.9  | 50.7 |
+| 11          | 30.6 | -3.8  | 52.0 |
+| 12          | 36.5 | -0.4  | 46.8 |
+| 13          | 26.2 | -1.1  | 54.7 |
+| 14          | 37.5 | -1.6  | 52.6 |
+| 15          | 31.8 | -8.4  | 59.0 |
+| 16          | 31.0 | -5.1  | 54.3 |
+| 17          | 35.0 | 8.4   | 49.8 |
+| 18          | 28.1 | -3.8  | 52.8 |
+| 19          | 41.2 | -1.7  | 47.6 |
+| 20          | 37.3 | -0.9  | 43.4 |
+| 21          | 34.3 | -2.9  | 49.2 |
+| 22          | 27.7 | -10.1 | 51.0 |
+| 23          | 30.3 | -5.3  | 55.3 |
+| 24          | 26.8 | -3.9  | 54.6 |
+| 25          | 29.0 | 4.9   | 49.1 |
+| 26          | 30.3 | -3.9  | 50.9 |
+
+Table: (\#tab:MNI) __Individual MNI coordinates of the right frontal eye field.__
+
+## tDCS adverse effects
+
+```{r sacc-tDCS-AE, fig.cap='(ref:caption-figure-sacc-tDCS-AE)', results='show'}
+knitr::include_graphics("sacc_tDCS_files/figures/figure_S1_sensations.png", auto_pdf = TRUE)
+```
+
+(ref:caption-figure-sacc-tDCS-AE) __Frequency of adverse effects following anodal and cathodal tDCS.__ Y-axes show the number of sessions in which the adverse effect received a given rating, out of 30 anodal sessions and 32 cathodal sessions, or 62 sessions in total. The exact counts per stimulation type are superimposed on the bars. __(A)__ Intensity ratings for eight adverse effects on a 0-4 scale: 0 = "none" (data not shown), 1 = "a little", 2 = "moderate", 3 = "strong" and 4 = "very strong". __(B)__ Confidence ratings that the adverse effects were related to tDCS: 0 = "n/a" (meaning the adverse effect intensity was rated as "none", data not shown), 1 = "unlikely", 2 = "possibly", 3 = "likely", 4 = "very likely".]
+
