@@ -1,0 +1,40 @@
+```{r setup, results='hide', message=FALSE, warning=FALSE}
+#Setup
+library(knitr) # rmarkdown output
+library(here) # (relative) file paths
+library(kableExtra) # complex tables
+library(tidyverse) # importing, transforming, and visualizing data frames
+
+knitr::opts_chunk$set(results = 'hide', echo = FALSE, message = FALSE, warning = FALSE)
+
+# load data objects
+load("AB_tDCS_files/AB_tDCS_supplement.RData")
+```
+
+# Supplement to Chapters 5 and 6 {#AB_tDCS_supplement}
+
+## tDCS adverse effects
+
+```{r tab-AB-tDCS-AE, results='asis'}
+ae_colnames <- c(" ",
+                 "none", "a little", "moderate", "strong", "very strong",
+                 "n/a", "unlikely", "possibly", "likely", "very likely")
+                 
+bind_rows(full_join(tbl_int_anodal, tbl_conf_anodal, by  = "sensation"),
+          full_join(tbl_int_cathodal, tbl_conf_cathodal, by  = "sensation")) %>%
+  kable(col.names = ae_colnames, booktabs = TRUE,
+        caption = "Number of reports of tDCS side effects") %>%
+  kable_styling(bootstrap_options = "striped",
+                latex_options =  "scale_down") %>%
+  add_header_above(c(" " = 1, "Intensity rating" = 5, "Confidence rating" = 5)) %>%
+  pack_rows(index = c("anodal session" = 8, "cathodal session" = 8)) %>%
+  footnote(number = c(
+    "Intensity rating: To which degree were the following sensations present during stimulation?", 
+    "Confidence rating: To which degree do you believe this was caused by the stimulation?"))
+```
+
+```{r fig-AB-tDCS-AE, fig.cap='(ref:caption-fig-AB-tDCS-AE)', results='show'}
+knitr::include_graphics("AB_tDCS_files/figures/figure_S1_AE.png", auto_pdf = TRUE)
+```
+
+(ref:caption-fig-AB-tDCS-AE) __tDCS adverse events__. Number of reports out of 89 sessions (either anodal or cathodal tDCS). Top row shows intensity ratings [_little, moderate, strong, very strong_]; bottom row shows participant's confidence that event was related to tDCS [_unlikely, possibly, likely, very likely_]. Adverse events are sorted in descending order of number of reports (for very rare events (five reports or fewer for a given polarity), some text counts have been removed to prevent overlap).
