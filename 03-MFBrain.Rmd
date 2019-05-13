@@ -10,7 +10,7 @@ Our ability to stay focused is limited: prolonged performance of a task typicall
 
 \vspace*{\fill}
 \noindent
-_This chapter has been published as_: Reteig LC, van den Brink LR, Prinssen S, Cohen MX, Slagter HA (2019). Sustaining attention for a prolonged period of time increases temporal variability in cortical responses. *Cortex, 117*, 16--32. doi: [10.1016/j.cortex.2019.02.016](https://doi.org/10.1016/j.cortex.2019.02.016)
+_This chapter has been published as_: [Reteig LC, van den Brink LR, Prinssen S, Cohen MX, Slagter HA (2019). Sustaining attention for a prolonged period of time increases temporal variability in cortical responses. *Cortex, 117*, 16--32.](https://doi.org/10.1016/j.cortex.2019.02.016)
 \newpage
 
 ## Introduction {#MFBrain-introduction}
@@ -51,11 +51,11 @@ Data of 21 participants (11 female, mean age = 21.6, _SD_ = 3.4, range = 18--26)
 
 ### Task
 
-Participants performed a modified version of the sustained attention task from @MacLean2009 (exp. 1, stable version), run using Presentation (Neurobehavioral systems, Inc.). This task required participants to respond when they detected a rare target signal (short lines), but to withhold a response for standard non-targets (long lines) (Figure \@ref(fig:figure-1-task)).
+Participants performed a modified version of the sustained attention task from @MacLean2009 (exp. 1, stable version), run using Presentation (Neurobehavioral systems, Inc.). This task required participants to respond when they detected a rare target signal (short lines), but to withhold a response for standard non-targets (long lines) (Figure \@ref(fig:MFBrain-figure-1-task)).
 
-(ref:caption-figure-1) __Sustained attention task__. All stimuli were presented 3° to the left and 1.5° below the yellow fixation square. The inset (dotted square) depicts a zoomed view of the stimuli. Each trial started with the presentation of the mask stimulus for 1850 ms. Then either a non-target (long line; 80% of trials) or a target (short line; 20% of trials) was presented for 150 ms. Participants were instructed to only respond to targets.
+(ref:caption-MFBrain-figure-1-task) __Sustained attention task__. All stimuli were presented 3° to the left and 1.5° below the yellow fixation square. The inset (dotted square) depicts a zoomed view of the stimuli. Each trial started with the presentation of the mask stimulus for 1850 ms. Then either a non-target (long line; 80% of trials) or a target (short line; 20% of trials) was presented for 150 ms. Participants were instructed to only respond to targets.
 
-```{r figure-1-task, fig.cap='(ref:caption-figure-1)', echo=FALSE}
+```{r MFBrain-figure-1-task, fig.cap='(ref:caption-MFBrain-figure-1-task)', echo=FALSE}
 knitr::include_graphics("MFBrain_files/figures/figure_1_task.png", auto_pdf = TRUE)
 ```
 

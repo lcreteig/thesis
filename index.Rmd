@@ -19,8 +19,9 @@ links-as-notes: true
 papaja::create_bib(c('base', 'bookdown', 'knitr', 'rmarkdown', # general
                      'tidyverse', 'cowplot', 'broom', 'rogme', 'ez', 'BayesFactor', # chapter 3
                      'emmeans', 'here', 'papaja', 'kableExtra', 'psychometric', 'pwr', #chapter 5
-                     'afex', 'ggm', 'TOSTER', 'predictionInterval', 'metafor'# chapter 5
-                     ), file = 'r-packages.bib', append = FALSE)
+                     'afex', 'ggm', 'TOSTER', 'predictionInterval', 'metafor', # chapter 5
+                     'lubridate', 'psych', 'cocor'), # chapter 6
+                     , file = 'r-packages.bib', append = FALSE)
 ```
 
 

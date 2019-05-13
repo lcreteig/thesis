@@ -58,15 +58,15 @@ We therefore performed a conceptual replication of @Kanai2012 (see the [Discussi
 
 ### Procedure
 
-The study followed a randomized, double-blind, crossover design, in which subjects received anodal and cathodal tDCS in separate sessions (Figure \@ref(fig:procedure)). The two sessions were separated by a washout period of at least 48 hours to minimize the risk of carry-over effects.
+The study followed a randomized, double-blind, crossover design, in which subjects received anodal and cathodal tDCS in separate sessions (Figure \@ref(fig:sacc-tDCS-procedure)). The two sessions were separated by a washout period of at least 48 hours to minimize the risk of carry-over effects.
 
-Neuronavigation was always performed at the start of the first session (see [Frontal eye field localization]), and was usually not repeated on the second session. Otherwise, the procedure for each session was identical. First, a brief trial stimulation allowed participants to experience the sensations induced by tDCS and to decide whether they wanted to continue with the experiment (see [tDCS]). After setting up the eye tracker (see [Eye tracking]), participants practiced the prosaccade task (see [Task]) for one block (120 trials). Subsequently, participants performed 12 blocks of the task in three phases (Figure \@ref(fig:procedure)): 3 blocks prior to stimulation (_baseline_), 3 blocks during stimulation (anodal or cathodal tDCS), and 6 blocks after stimulation (_post-1_ and _post-2_). Each block lasted approximately 5 minutes.
+Neuronavigation was always performed at the start of the first session (see [Frontal eye field localization]), and was usually not repeated on the second session. Otherwise, the procedure for each session was identical. First, a brief trial stimulation allowed participants to experience the sensations induced by tDCS and to decide whether they wanted to continue with the experiment (see [tDCS]). After setting up the eye tracker (see [Eye tracking]), participants practiced the prosaccade task (see [Task]) for one block (120 trials). Subsequently, participants performed 12 blocks of the task in three phases (Figure \@ref(fig:sacc-tDCS-procedure)): 3 blocks prior to stimulation (_baseline_), 3 blocks during stimulation (anodal or cathodal tDCS), and 6 blocks after stimulation (_post-1_ and _post-2_). Each block lasted approximately 5 minutes.
 
-```{r procedure, fig.cap='(ref:caption-figure-procedure)', results='show'}
+```{r sacc-tDCS-procedure, fig.cap='(ref:caption-figure-sacc-tDCS-procedure)', results='show'}
 knitr::include_graphics("sacc_tDCS_files/figures/figure_1_procedure.png", auto_pdf = TRUE)
 ```
 
-(ref:caption-figure-procedure) __Experimental design.__ After a baseline measurement, participants received either anodal or cathodal tDCS while continuing to perform the prosaccade task, followed by two more post-tDCS assessments. After a washout period of at least 48 hours, the second session followed the same protocol, except that the tDCS polarity was opposite (e.g. if participants received anodal tDCS in the first session, cathodal tDCS was applied in the second session, and vice versa).
+(ref:caption-figure-sacc-tDCS-procedure) __Experimental design.__ After a baseline measurement, participants received either anodal or cathodal tDCS while continuing to perform the prosaccade task, followed by two more post-tDCS assessments. After a washout period of at least 48 hours, the second session followed the same protocol, except that the tDCS polarity was opposite (e.g. if participants received anodal tDCS in the first session, cathodal tDCS was applied in the second session, and vice versa).
 
 During the stimulation phase, the first block started after ramp-up of the current (1 minute). If the participant finished the required 3 blocks of the task within the next 16 minutes (15 minutes of constant stimulation and 1 minute of ramp-down), they were asked to sit quietly, until the stimulation had completed.
 
@@ -74,15 +74,15 @@ After task performance was complete, participants filled in a questionnaire on t
 
 ### Task
 
-Participants performed a no-gap, no-overlap prosaccade task (Figure \@ref(fig:task)) similar to the task in @Kanai2012, in which they had to make eye movements to a target stimulus. Stimuli were displayed using MATLAB (The MathWorks Inc.) and Psychtoolbox-3 [@Brainard1997; @Pelli1997; @Kleiner2007].
+Participants performed a no-gap, no-overlap prosaccade task (Figure \@ref(fig:sacc-tDCS-task)) similar to the task in @Kanai2012, in which they had to make eye movements to a target stimulus. Stimuli were displayed using MATLAB (The MathWorks Inc.) and Psychtoolbox-3 [@Brainard1997; @Pelli1997; @Kleiner2007].
 
 Each trial started with the participant fixating the target (black dot, diameter: 0.5 degrees of visual angle, henceforth: °) in the center of the screen. The target would then disappear and instantly reappear to either the left or right side of the screen (8° from center), prompting the participant to make an eye movement to the new location of the target (_lateral saccade_). The target would then jump back to the center, and again the participant made an eye movement to it (_center saccade_). Each trial thus required two prosaccades: one to an unpredictable location (lateral saccades, either to the left or right) and one to a predictable location (center saccades, always back to center, so in the opposite direction as the preceding lateral saccade).
 
-```{r task, fig.cap='(ref:caption-figure-task)', results='show'}
+```{r sacc-tDCS-task, fig.cap='(ref:caption-figure-sacc-tDCS-task)', results='show'}
 knitr::include_graphics("sacc_tDCS_files/figures/figure_2_task.png", auto_pdf = TRUE)
 ```
 
-(ref:caption-figure-task) __Prosaccade task.__ Each trial started with a _lateral saccade_, where the participant made an eye movement in response to the target stimulus (black dot) jumping from the center of the screen to either the _right_ (dotted lines, +8°) or _left_ (solid lines, -8°). After a delay period (mean: 500 ms) following saccade offset, the target jumped to the _center_ again and participants made a *left*ward or *right*ward saccade back to it. After this saccade there was again a delay period, before the next trial started and the target appeared to the left or right again.
+(ref:caption-figure-sacc-tDCS-task) __Prosaccade task.__ Each trial started with a _lateral saccade_, where the participant made an eye movement in response to the target stimulus (black dot) jumping from the center of the screen to either the _right_ (dotted lines, +8°) or _left_ (solid lines, -8°). After a delay period (mean: 500 ms) following saccade offset, the target jumped to the _center_ again and participants made a *left*ward or *right*ward saccade back to it. After this saccade there was again a delay period, before the next trial started and the target appeared to the left or right again.
 
 After the target appeared at a new location, saccades were monitored online for 400 ms. The target remained at that location for a variable delay period, starting from the time of the saccade endpoint. If no saccade was detected (with an accuracy within 2° from the target location), the delay period started after the saccade monitoring period ended (i.e., after 400 ms). The delay duration was drawn randomly from an exponentially decaying distribution with a mean of 0.5 seconds, truncated between 0.3 and 3 seconds.
 

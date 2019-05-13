@@ -1,4 +1,4 @@
-```{r setup, results='hide', message=FALSE, warning=FALSE}
+```{r setup, echo = FALSE, results='hide', message=FALSE, warning=FALSE}
 #Setup
 library(knitr) # rmarkdown output
 library(here) # (relative) file paths
