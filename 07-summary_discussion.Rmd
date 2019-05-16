@@ -1,3 +1,96 @@
 # Summary & general discussion {#discussion}
 
-This will be the final chapter.
+[Summary of aim and results from tDCS Chapters ([4](#sacc-tDCS), [5](#AB_tDCS-EEG), [6](#AB_tDCS-sEBR))]
+
+\noindent[Overview of discussion]
+
+## tDCS and attention
+
+Null results. Our review already hinted at this outcome, as results were mixed. Why?
+
+* Attention effects _itself_ are rather small. RT benefit of around 10--50 ms in Ponsner tasks [@Chica2014] (often without changes in accuracy), and 2--8 percentage points decrease of contrast thresholds [@Carrasco2004]. tDCS effects on attention are likely to be a fraction of that.
+* Potentially close to optimal in a healthy brain. In [Chapter 4](#sacc-tDCS), saccades were already very fast (though could argue that then cathodal should still lead to impairments), For instance in spatial attention: hard to disrupt balance between hemispheres; might be compensated. Seems to be more effective in neglect patients [Chapter 2](#tDCS_att_review). Effects could thus potentially be bigger in clinical samples, or with repeated sessions. 
+
+Effects could also be bigger when the system is brought out of balance / when there's really something to gain --> __tDCS & vigilance:__.
+
+[Summary of [Chapter 3](#MFBrain)]
+
+@VanSchouwenburg20 did a series of experiments. First, tDCS: did not affect vigilance. Second, tACS: in part based on the theta findings in [Chapter 3](#MFBrain). However, relative to control condition with alpha tACS, vigilance decrement with theta tACS was accelerated. 
+
+## tDCS challenges
+
+Mixed results probably stem from fundamental uncertainties about the technique. Have been long known, but also underestimated.
+
+__The neural mechanisms of tDCS are complex.__. The "anodal-excitation/cathodal-inhibition" dichotomy is too simple.
+
+1. Highly dependent on orientation of electric field. No/opposite effect on cells that are oriented radially/inversely [@Reato2019].
+
+2. This refers only to the soma (The "somatic doctrine") [@Jackson2016], but electric fields will polarize dendrites in the opposite direction [@Bikson2019], which will have an opposite effect on plasticity [@Kronberg2016].
+
+3. These direct effects of the electric field are very subtle. @Huang2017: max .5 [@Opitz2016] -- 0.8 V/m in brain, at 2 mA (though many studies use 1 mA).  max polarization of .1 [@Bikson2004] -- .3 mV per V/m [@Radman2009]. So in the best case scenario, .05 -- .25 mV polarization [@Bikson2019]. To put this in context: 15 mV would be needed to go from -70 mV (resting threshold) to -55 mV (firing threshold). Some argue this is too weak for reliable effects, which in rats would only be achieved at a field strength of 1 V/m, which in humans would translate to 4--6 mA tDCS [@Voroslakos2018]. Others consider it to be at the lower bound of effectiveness [@Huang2017].
+
+__Current flow induced by tDCS is not spatially specific.__ Usually a particular brain area is targeted with tDCS. 
+
+1. But the reference electrode also has to be placed somewhere. We typically place it on the forehead, as this is what many studies did, and increasing the inter-electrode distance can decrease effects [@Moliadze2010; @Opitz2015]. But this will lead to opposite polarity stimulation of the brain tissue underneath this electrode.
+2. The current flow is not restricted to the area under the electrodes [@Karabanov2019] (Figure \@ref(fig:figure-1-tDCS)D), but more diffuse [@Opitz2015], and may even peak inbetween [@Saturnino2017]. 
+3. May have even more distal effects by spreading through the network [@Knotkova2019; @Wokke2015].
+
+__tDCS has a large parameter space.__ When designing a study, need to decide on duration (10 min vs. 30 min), intensity (1 mA, 2 mA, or higher). In addition to size and shape of the electrodes [@Saturnino2015], as well as where to place them, and many other parameters, which determine the actual dose that is delivered [@Peterchev2012]. Combinatorial explosion. For a long time, 1 mA for 20 min was standard, based on the motor cortex tDCS studies. The problem is that these parameters do not necessarily extrapolate to other brain ares [@Bestmann2017]. Now, longer and more intense stimulation is becoming more common (e.g. at 2 mA, or for 30 min). Then even in the motor cortex the effects are not consistent anymore, as effects may flip from excitation to inhibition or vice versa at longer durations [@Monte-Silva2013; @Samani2019] and intensities [@Batsikadze2013; @Parkin2018; @Samani2019]
+
+__There is no reason to believe tDCS will affect everyone equally.__  In [Chapters 5 and 6](#AB_tDCS-EEG), we examined individual differences in tDCS effects on the attentional blink, and tried to account for these in terms of baseline task performance and dopamine levels. Baseline brain state [@Antal2007] and levels of neuromodulation [@Filmer2019] are likely important determinants of tDCS effects. Still we were not succesful; probably because they are not the only determinants: there are many more factors that can shape individual differences, of which these may be only a small proportion [@Krause2014; @Li2015b] . Even low-level differences in cortical folding and head anatomy may determine outcome by shaping the patterns of current flow in the brain [@Kim2014; @Laakso2018].
+
+## A 'crisis of confidence'
+
+Given how difficult all this is, it is remarkable that so many positive tDCS studies exist. Some have expressed concerns that some of the effects may be overstated / not replicable [@Heroux2017]. @Medina2017 provide evidence that the literature is currently inconclusive, as they find no evidence of evidential value in two representative samples of tDCS studies using a p-curve analysis.
+
+This problem is not specific to tDCS, as low rates of replication have been revealed in many fields, due to following factors [@Munafo2017; @Bishop2019]:
+
+1. __Publication bias__ [Explain what it is]. A recent special issue collected over 60 null results in non-invasive brain stimulation[^frontiers]. This includes the study we report in [Chapter 4](#sacc-tDCS), and many others relating to tDCS and attention.
+2. __P-hacking & HARKing__ [Explain what it is]. These can be combated by preregistration, particularly registered reports [@Chambers2014]. The to my knowledge first registered report in the field [@Boayue2019] is a null-replication of a finding that tDCS can increase mind wandering [@Axelrod2015], which we included in our review in [Chapter 2](#tDCS_att_review). 
+3. __Low power__ [Explain what it is]. Many tDCS studies might chase small effects that require larger samples to reliably detect [@Minarik2016]. Results from the analysis by @Medina2017 suggests that currently power might be as low as 5--20%. This will not only lead to more negative findings, but also inflated effect sizes for positive findings [@Button2013].
+
+Sometimes the effects of these factors can take extreme forms. For example, there are more than 600 studies on ego depletion; yet a recent meta analyis [@Carter2015] and multi-lab replication study [@Hagger2016] suggest the effect might not exist. Could it be that the field of tDCS got it this wrong? I don't think so (nor can we say so on the basis of this thesis). TMS went through similar troubles [@Parkin2015], but has matured and now used as a treatment for depression. Also, basic physiological and motor cortex effects are sound.  But it is clear there is a problem, so is important to keep asking ourselves this question! Overconfidence will actually slow progress.
+
+## Future directions
+
+- __Need for more replication studies__. Remarkable how little exist (the review in [Chapter 2](#tDCS_att_review) had none). Probably many studies' results are robust; but without replication we're not able to weed out the noise from the signal. Have tried to do so with studies in this thesis, but need to do even better: more high-powered and more direct replications.
+
+- __Addition of control tasks and stimulation sites__ [@Polania2018; @DeGraaf2018; @Parkin2015] to make results more informative. All studies in this thesis lacked a sham condition, which makes it hard to discern effect of anodal/cathodal tDCS from random variability. But: recent papers suggest that sham blinding may not be effective [@Turi2019; @Greinacher2018].
+
+- __Combination of tDCS and neuroimaging__ [@Bergmann2016]. 1) To localize stimulation site, as we did in [Chapter 4](#sacc-tDCS). 2) to inform parameter choices, For example, in @VanSchouwenburg20: tACS waveform based on EEG study we presented in [Chapter 3](#MFBrain); target area based on fMRI-meta analysis.
+
+- __Individual tailoring of stimulation dose__ Some of the individual variability can perhaps be undercut by tailoring the montage and dose based on computational modelling of current flow. More evidence that these models are valid [@Huang2017; @Opitz2016], and the pipelines are getting more accessible [@Saturnino2018; @Huang2018]. 
+
+- __Design studies with strong prior on mechanism__ [@Bestmann2015]. In [Chapter 4](#sacc-tDCS), we had a fairly good idea of how tDCS should affect FEF function, and how this is linked to behavior. But given the many levels inbetween cellular mechanisms and behavioral outcome, it is nigh impossible to make a grounded prediction about say, the effects of dlPFC-tDCS on moral reasoning (and perhaps the attentional blink, for that matter).
+
+- __New protocols that may deliver more powerful stimulation__? Ultrasound [@Verhagen2019; @Folloni2019] temporal intereference [@Grossman2017] Intersectional short pulse [@Voroslakos2018].
+
+## Conclusions
+
+The future of tDCS to study attention is a bit uncertain. In terms of scientific value, one would want to use it as a causal evidence method to decide between different theories. But in many cases we don't know enough about mechanism, and most studies lack the rigor (control tasks and such), to really do so. As long as the basic science is inconclusive, the potential for use in cognitive enhancement and clinical applications is affected as well. These concerns have been expressed for years, but still hold true to this day:
+
+> When we look at what we have really learned about cognition from  tDCS, it is small potatoes. [...] Based on the best available studies, from reputable laboratories, we don’t really know where to put the electrodes, we don’t know how robust is the idea that the effects are excitatory or inhibitory, we don’t know what other behaviors are affected, we haven’t tested the methods with real-world tasks and therefore don’t know how they perform outside the lab, and we have no idea in healthy people if they continue to work after more than 2--3 repeated applications.
+>
+> --- @Walsh2013
+
+This thesis started out with a rather grand introduction to cognitive enhancement. Some see potential ethical problems [@Santarnecchi2013b]. tDCS is also getting a lot of attention in the media [@Dubljevic2014], and is used at home for cognitive enhancement [@Jwa2015]. However, researchers themselves are skeptical [@Riggall2015]. These are important discussions, but based on the literature and this thesis, there is no immediate need to either get excited, or to worry. 
+
+<!--
+
+Good example of promising studies: tACS and memory.
+
+Sham blinding: also phosphenes in tACS.
+
+"learned alot during the thesis; what we can and must do differently"
+
+tDCS and current flow: @Rawji2018
+
+Pubmed search for `("transcranial direct current stimulation"[MeSH Terms] OR ("transcranial"[All Fields] AND "direct"[All Fields] AND "current"[All Fields] AND "stimulation"[All Fields]) OR "transcranial direct current stimulation"[All Fields] OR "tdcs"[All Fields]) AND ("2000/01/01"[PDAT] : "2019/05/13"[PDAT])` reveals 4765 articles. The <tdcsdatabase.com> (updated montly based on this pubmed search) currently holds 4,737 studies.
+
+__Links with chapters__
+
+* MFBrain: tES to counter vigilance decrement
+* AB_tDCS: replications
+* AB_tDCS-sEBR: individual differences
+
+Null results: immaturity of NIBS, together with credibility revolution. It is hard to do tDCS right. But also hard to do research right: open science revealed shortcomings in research. These two ingredients form a deadly cocktail for irreproducibility. -->
