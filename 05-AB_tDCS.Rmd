@@ -1,4 +1,4 @@
-```{r setup, results='hide', message=FALSE, warning=FALSE}
+```{r setup, include=FALSE}
 #Setup
 library(knitr) # rmarkdown output
 library(papaja) # APA formatted manuscripts
