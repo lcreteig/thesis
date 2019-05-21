@@ -7,7 +7,7 @@ library(kableExtra)
 knitr::opts_chunk$set(results = 'hide', echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
-# Transcranial electrical stimulation as a tool to enhance attention {#tDCS_att_review}
+# Transcranial electrical stimulation as a tool to enhance attention {#tDCS-att-review}
 \chaptermark{tES as a tool to enhance attention}
 
 `<p><strong>Abstract</strong></p>`{=html}

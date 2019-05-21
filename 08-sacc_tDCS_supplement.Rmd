@@ -5,7 +5,7 @@ knitr::opts_chunk$set(results = 'hide', echo = FALSE, message = FALSE, warning =
 
 # (APPENDIX) Appendix {-} 
 
-# Supplement to Chapter 4 {#sacc_tDCS_supplement}
+# Supplement to Chapter \@ref(sacc-tDCS) {#sacc-tDCS-supplement}
 
 ## MNI coordinates
 

@@ -11,7 +11,7 @@ knitr::opts_chunk$set(results = 'hide', echo = FALSE, message = FALSE, warning =
 load("AB_sEBR_files/AB_sEBR.RData")
 ```
 
-# Spontaneous eye blink rate does not predict attentional blink size, nor the effects of tDCS on attentional blink size {#AB_tDCS-sEBR}
+# Spontaneous eye blink rate does not predict attentional blink size, nor the effects of tDCS on attentional blink size {#AB-tDCS-sEBR}
 \chaptermark{sEBR \& tDCS do not influence attentional blink size}
 
 `<p><strong>Abstract</strong></p>`{=html}
@@ -54,9 +54,9 @@ knitr::include_graphics("AB_sEBR_files/figures/figure_1_model.png", auto_pdf = T
 
 ## Materials and methods {#AB_sEBR-methods}
 
-A different set of results based on this dataset were reported in [Chapter 5](#AB_tDCS-EEG). We include the full materials and methods here for convenience.[^methods_overlap]
+A different set of results based on this dataset were reported in Chapter \@ref(AB-tDCS-EEG). We include the full materials and methods here for convenience.[^methods_overlap]
 
-[^methods_overlap]: Compared to [Chapter 5](#AB_tDCS-EEG), the [Participants](#AB_sEBR-participants), [Task](#AB_sEBR-task), and [tDCS](#AB_sEBR-tDCS) sections are virtually identical; the [Procedure](#AB_sEBR-procedure) section has been adapted to include the sEBR measurement, the [Statistical analysis](#AB_sEBR-stats) and [sEBR](#AB_sEBR-sEBR) sections are entirely novel.
+[^methods_overlap]: Compared to Chapter \@ref(AB-tDCS-EEG), the [Participants](#AB_sEBR-participants), [Task](#AB_sEBR-task), and [tDCS](#AB_sEBR-tDCS) sections are virtually identical; the [Procedure](#AB_sEBR-procedure) section has been adapted to include the sEBR measurement, the [Statistical analysis](#AB_sEBR-stats) and [sEBR](#AB_sEBR-sEBR) sections are entirely novel.
 
 ### Participants {#AB_sEBR-participants}
 
