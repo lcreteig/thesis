@@ -1,8 +1,8 @@
 --- 
-title: "The Neuroplasticity of Attention"
-subtitle: "Manipulating attentional performance with brain stimulation and mental fatigue"
-author: "Leon Cyro Reteig"
-date: "`r Sys.Date()`"
+title: "Neuroplasticity of Attention"
+subtitle: "Influencing attentional performance with brain stimulation and mental fatigue"
+author: "Leon C. Reteig"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 bibliography: [thesis.bib, r-packages.bib]
 description: This is the PhD thesis of Leon Reteig
 documentclass: memoir
