@@ -10,7 +10,7 @@ classoption: oldfontcommands # when using memoir with title_page.tex
 #geometry: false # when memoir should handle page layout
 site: bookdown::bookdown_site
 link-citations: yes
-biblio-style: apalike
+biblio-style: myapalike
 links-as-notes: true
 ---
 
