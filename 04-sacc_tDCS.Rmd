@@ -24,7 +24,7 @@ _This chapter has been published as_: [Reteig LC, Knapen T, Roelofs FJFW, Ridder
 
 ## Introduction {#sacc_tDCS-introduction}
 
-Transcranial direct current stimulation (tDCS) harbors an exciting promise: it may influence cortical excitability and plasticity [@Yavari2017], yet it is relatively noninvasive and easy to apply. These properties have attracted much attention to the technique, leading to many studies that have used tDCS to better understand the relationship between brain function and behavior [@Filmer2014], to facilitate learning and to enhance cognition [@CohenKadosh2014; @Coffman2014] and even in clinical treatment [@Lefaucheur2016].
+Transcranial direct current stimulation (tDCS) harbors an exciting promise: it may influence cortical excitability and plasticity [@Yavari2018], yet it is relatively noninvasive and easy to apply. These properties have attracted much attention to the technique, leading to many studies that have used tDCS to better understand the relationship between brain function and behavior [@Filmer2014], to facilitate learning and to enhance cognition [@CohenKadosh2014; @Coffman2014] and even in clinical treatment [@Lefaucheur2016].
 
 Several studies have tried to enhance attention using tDCS, with mixed results [@Reteig2017]. In this study, we applied tDCS to the frontal eye field (FEF), a central node in the spatial attention network in the brain. Since a primary function of the FEF is the control of eye movements, we used eye tracking as our measure of tDCS efficacy.
 
