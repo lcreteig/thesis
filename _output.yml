@@ -1,5 +1,6 @@
 bookdown::gitbook:
   css: style.css
+  pandoc_args: [ "--csl", "apa.csl" ]
   split_by: section
   split_bib: FALSE
   config:
@@ -20,4 +21,5 @@ bookdown::pdf_book:
    "--variable", "papersize=a4",
    "--variable", "citecolor=Gray"
    ]
-bookdown::epub_book: default
+bookdown::epub_book:
+  pandoc_args: [ "--csl", "apa.csl" ]
