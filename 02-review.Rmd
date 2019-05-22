@@ -82,8 +82,7 @@ pander(tbl_other, split.tables = Inf, justify = 'left',  missing = '',
 if (knitr::is_html_output()) {
 tbl_other %>%
     kable(caption = cap_other) %>%
-    kable_styling() %>%
-    scroll_box(width = "100%")
+    kable_styling(font_size = 12)
 }
 ```
 
@@ -149,8 +148,7 @@ options(knitr.kable.NA = '')
 if (knitr::is_html_output()) {
 tbl_visual_search %>%
     kable(caption = cap_visual_search) %>%
-    kable_styling() %>%
-    scroll_box(width = "100%")
+    kable_styling(font_size = 12)
 }
 ```
 
@@ -224,8 +222,8 @@ pander(tbl_spatial_orienting, split.tables = Inf, justify = 'left',  missing = '
 if (knitr::is_html_output()) {
 tbl_spatial_orienting %>%
     kable(caption = cap_spatial_orienting) %>%
-    kable_styling() %>%
-    scroll_box(width = "100%")
+    kable_styling(font_size = 12) %>%
+    column_spec(9, width = "10em")
 }
 ```
 
@@ -295,8 +293,7 @@ pander(tbl_spatial_bias, split.tables = Inf, justify = 'left',  missing = '',
 if (knitr::is_html_output()) {
 tbl_spatial_bias %>%
     kable(caption = cap_spatial_bias) %>%
-    kable_styling() %>%
-    scroll_box(width = "100%")
+    kable_styling(font_size = 12)
 }
 ```
 
@@ -352,12 +349,11 @@ pander(tbl_sustained_attention, split.tables = Inf, justify = 'left',  missing =
 if (knitr::is_html_output()) {
 tbl_sustained_attention %>%
     kable(caption = cap_sustained_attention) %>%
-    kable_styling() %>%
-    scroll_box(width = "100%")
+    kable_styling(font_size = 12)
 }
 ```
 
-## Discussion  {#tDCS_att_review-discussion}
+## Discussion {#tDCS_att_review-discussion}
 
 Each of the four aspects of attention reviewed here harbors both promising results and many inconsistencies, such that compelling conclusions cannot be drawn at this point. Anodal stimulation to the right parietal and frontal cortex might speed up learning and reaction time in visual search, but robust results were only reported by one group for one particular visual search task [@Clark2012; @Coffman2012; @Falcone2012]. For spatial attention, parietal tDCS may enhance visuospatial processing, but many studies also reported null results or even performance decrements. Prefrontal tDCS may improve sustained attention by countering the performance decrements normally observed after prolonged time-on-task [@Nelson2014; @McIntire2014], but this effect remains to be replicated independently, and tDCS did not produce consistent effects in other sustained attention tasks. The most exciting and consistent results may be those showing that tDCS can shift spatial biases and thereby ameliorate symptoms in hemispatial neglect patients. However, even this field is not without its contradictory results, and it remains to be seen whether this effect stands up to well-controlled and larger clinical trials.
 
