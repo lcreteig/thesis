@@ -1,4 +1,4 @@
-```{r setup, echo = FALSE, results='hide', message=FALSE, warning=FALSE}
+```{r setup, include=FALSE}
 #Setup
 library(knitr) # rmarkdown output
 library(here) # (relative) file paths
@@ -15,6 +15,12 @@ load("AB_tDCS_files/AB_tDCS_supplement.RData")
 
 ## tDCS adverse effects
 
+```{r fig-AB-tDCS-AE, fig.cap='(ref:caption-fig-AB-tDCS-AE)', results='show'}
+knitr::include_graphics("AB_tDCS_files/figures/figure_S1_AE.png", auto_pdf = TRUE)
+```
+
+(ref:caption-fig-AB-tDCS-AE) __tDCS adverse events__. Number of reports out of 89 sessions (either anodal or cathodal tDCS). Top row shows intensity ratings [_little, moderate, strong, very strong_]; bottom row shows participant's confidence that event was related to tDCS [_unlikely, possibly, likely, very likely_]. Adverse events are sorted in descending order of number of reports (for very rare events (five reports or fewer for a given polarity), some text counts have been removed to prevent overlap).
+
 ```{r tab-AB-tDCS-AE, results='asis'}
 ae_colnames <- c(" ",
                  "none", "a little", "moderate", "strong", "very strong",
@@ -25,16 +31,14 @@ bind_rows(full_join(tbl_int_anodal, tbl_conf_anodal, by  = "sensation"),
   kable(col.names = ae_colnames, booktabs = TRUE,
         caption = "Number of reports of tDCS side effects") %>%
   kable_styling(bootstrap_options = "striped",
-                latex_options =  "scale_down") %>%
-  add_header_above(c(" " = 1, "Intensity rating" = 5, "Confidence rating" = 5)) %>%
+                latex_options =  c("scale_down", "hold_position")) %>%
+  add_header_above(setNames(c(1,5,5), c(" ",
+              paste0("Intensity rating", footnote_marker_alphabet(1, double_escape = TRUE)),
+              paste0("Confidence rating", footnote_marker_alphabet(2, double_escape = TRUE)))),
+              escape = FALSE) %>%
   pack_rows(index = c("anodal session" = 8, "cathodal session" = 8)) %>%
-  footnote(number = c(
-    "Intensity rating: To which degree were the following sensations present during stimulation?", 
-    "Confidence rating: To which degree do you believe this was caused by the stimulation?"))
+  footnote(alphabet = c(
+  '"To which degree were the following sensations present during stimulation?"', 
+  '"To which degree do you believe this was caused by the stimulation?"'))
 ```
 
-```{r fig-AB-tDCS-AE, fig.cap='(ref:caption-fig-AB-tDCS-AE)', results='show'}
-knitr::include_graphics("AB_tDCS_files/figures/figure_S1_AE.png", auto_pdf = TRUE)
-```
-
-(ref:caption-fig-AB-tDCS-AE) __tDCS adverse events__. Number of reports out of 89 sessions (either anodal or cathodal tDCS). Top row shows intensity ratings [_little, moderate, strong, very strong_]; bottom row shows participant's confidence that event was related to tDCS [_unlikely, possibly, likely, very likely_]. Adverse events are sorted in descending order of number of reports (for very rare events (five reports or fewer for a given polarity), some text counts have been removed to prevent overlap).

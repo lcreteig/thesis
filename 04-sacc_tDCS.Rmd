@@ -70,7 +70,7 @@ knitr::include_graphics("sacc_tDCS_files/figures/figure_1_procedure.png", auto_p
 
 During the stimulation phase, the first block started after ramp-up of the current (1 minute). If the participant finished the required 3 blocks of the task within the next 16 minutes (15 minutes of constant stimulation and 1 minute of ramp-down), they were asked to sit quietly, until the stimulation had completed.
 
-After task performance was complete, participants filled in a questionnaire on the occurrence of adverse effects related to tDCS (see Figure \@ref(fig:sacc-tDCS-AE) in the [Supplement to this chapter](#sacc-tDCS-supplement)).
+After task performance was complete, participants filled in a questionnaire on the occurrence of adverse effects related to tDCS (see Table \@ref(tab:tab-sacc-tDCS-AE) and Figure \@ref(fig:fig-sacc-tDCS-AE) in the [Supplement to this chapter](#sacc-tDCS-supplement)).
 
 ### Task
 
