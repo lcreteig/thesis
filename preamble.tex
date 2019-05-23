@@ -6,6 +6,9 @@
 \newcommand{\elandscape}{\end{landscape}}
 \pagestyle{companion}
 \OnehalfSpacing % for memoir; otherwise specify "linestretch: 1.5" in YAML of index.Rmd`. REMOVE FOR FINAL VERSION
+\setlength{\cftpartnumwidth}{2.5em} % more space for part numbering in ToC
+\setlength\cftchapternumwidth{2.5em} % also adjust others to match
+\setlength\cftsectionindent{2.5em} % also adjust others to match
 \setlength{\bibsep}{0.0pt} % compress bibliography entries
 \setlength{\droptitle}{6em} % center the title
 %\frontmatter $ add \mainmatter to top of index.Rmd, \backmatter to end of last chapter. But: messes up figure numbering in old versions of memoir

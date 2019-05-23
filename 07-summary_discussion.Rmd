@@ -1,4 +1,6 @@
-# Summary & general discussion {#discussion-general}
+# (PART) Conclusion {- #part-conclusion} 
+
+# Summary and general discussion
 
 Attention is the solution to our limited capacity to process all the information that is available to us. Without attention, we would inevitably lose ourselves in the infinitude of present moment sensory input, past memories, and future plans. As such, attention is by definition a limited capacity process---otherwise it would fall prey to the very problem it was meant to solve. But what if there was a way to enhance attention beyond its limited capacity? To be a little bit faster to find what we are looking for, a little more resistant to distraction, a little more vigilant? 
 

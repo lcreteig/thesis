@@ -7,6 +7,8 @@ library(kableExtra)
 knitr::opts_chunk$set(results = 'hide', echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
+# (PART) Enhancing attentional performance with tDCS {- #part-tDCS} 
+
 # No evidence that frontal eye field tDCS affects latency or accuracy of prosaccades {#sacc-tDCS}
 \chaptermark{FEF-tDCS does not affect saccades}
 

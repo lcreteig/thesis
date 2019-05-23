@@ -1,3 +1,5 @@
+# (PART) Decreasing sustained attention with mental fatigue {- #part-MF} 
+
 # Sustaining attention for a prolonged period of time increases temporal variability in cortical responses {#MFBrain}
 \chaptermark{EEG markers of sustained attention}
 

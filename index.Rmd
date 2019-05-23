@@ -24,6 +24,7 @@ papaja::create_bib(c('base', 'bookdown', 'knitr', 'rmarkdown', # general
                      , file = 'r-packages.bib', append = FALSE)
 ```
 
+# (PART) General introduction and literature review {- #part-intro} 
 
 # Introduction {#intro-general}
 
