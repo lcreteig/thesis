@@ -22,6 +22,7 @@ knitr::include_graphics("AB_tDCS_files/figures/figure_S1_AE.png", auto_pdf = TRU
 (ref:caption-fig-AB-tDCS-AE) __tDCS adverse events__. Number of reports out of 89 sessions (either anodal or cathodal tDCS). Top row shows intensity ratings [_little, moderate, strong, very strong_]; bottom row shows participant's confidence that event was related to tDCS [_unlikely, possibly, likely, very likely_]. Adverse events are sorted in descending order of number of reports (for very rare events (five reports or fewer for a given polarity), some text counts have been removed to prevent overlap).
 
 ```{r tab-AB-tDCS-AE, results='asis'}
+if (knitr::is_latex_output() | knitr::is_html_output()) {
 ae_colnames <- c(" ",
                  "none", "a little", "moderate", "strong", "very strong",
                  "n/a", "unlikely", "possibly", "likely", "very likely")
@@ -40,5 +41,6 @@ bind_rows(full_join(tbl_int_anodal, tbl_conf_anodal, by  = "sensation"),
   footnote(alphabet = c(
   '"To which degree were the following sensations present during stimulation?"', 
   '"To which degree do you believe this was caused by the stimulation?"'))
+}
 ```
 

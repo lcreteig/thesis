@@ -219,9 +219,11 @@ ABmag_tbl %>%
   footnote(escape = FALSE, threeparttable = TRUE, alphabet = c(
     "Pearson's correlation between AB magnitude and spontaneous eye blink rate",
     "Standard deviation of AB magnitude"))
+}
 ```
 
 ```{r corrco, results='show'}
+if (knitr::is_latex_output() | knitr::is_html_output()) {
 corr_co_tbl %>%
   kable(col.names = c("contrast","$r$","$p$","$BF_{01}$","$Z$","$p$","$r$"),
         digits = 3,
@@ -239,6 +241,7 @@ corr_co_tbl %>%
     "Linear correlation (Pearson and Bayesian) between sEBR and AB magnitude change scores",
     "Test for significant differences between the sEBR vs. AB magnitude correlations (reported in Table \\@ref(tab:ABmag)) in the baseline vs. tDCS or post blocks",
     "Pearson correlation between AB magnitude scores in the baseline vs. tDCS or post blocks"))
+}
 ```
 
 ## Discussion {#AB_sEBR-discussion}
