@@ -94,7 +94,7 @@ At the start of the experiment, participants received a brief trial stimulation,
 
 ### EEG {#AB_tDCS-EEGdata}
 
-We also recorded EEG during all three task blocks. Originally, we aimed to analyze the EEG data to obtain a neurophysiological correlate of the individual differences in response to tDCS [@Krause2014; @Li2015b; @Harty2017]. However, since we did not replicate the behavioral effect in @London2015, we refrained from further analysis of the EEG data. Instead, we are making the EEG data publicly available [on the OpenNeuro platform](https://openneuro.org/datasets/ds001810). The dataset is formatted according to the new Brain Imaging Data Structure (BIDS) standard [@Gorgolewski2016] for EEG [@Pernet2018], to facilitate re-use. We include the raw data, as well as the fully preprocessed data and the MATLAB code that generated it.
+We also recorded EEG during all three task blocks. Originally, we aimed to analyze the EEG data to obtain a neurophysiological correlate of the individual differences in response to tDCS [@Krause2014; @Li2015b; @Harty2017]. However, since we did not replicate the behavioral effect in @London2015, we refrained from further analysis of the EEG data. Instead, we are making the EEG data publicly available [on the OpenNeuro platform](https://doi.org/10.18112/openneuro.ds001810.v1.1.0) [@Reteig2019_data]. The dataset is formatted according to the new Brain Imaging Data Structure (BIDS) standard [@Gorgolewski2016] for EEG [@Pernet2018], to facilitate re-use. We include the raw data, as well as the fully preprocessed data and the MATLAB code that generated it.
 
 ### Data analysis
 
@@ -163,7 +163,7 @@ Note that this analysis is tailored to this series of studies, and not generally
 
 ### Data, materials, and code availability
 
-All of the data and materials from this study and the data from @London2015 are available on the [Open Science Framework](https://osf.io/y6hsf/). The analysis code is available on [GitHub](https://lcreteig.github.io/AB-tDCS) (and also from our OSF page), in the form of an R notebook detailing all the analyses that we ran for this project, along with the results. We also include an Rmarkdown [@Xie2018] source file for this paper that can be run to reproduce the pdf version of the text, along with all the figures and statistics.
+All of the data and materials from this study and the data from @London2015 are available on the [Open Science Framework](https://doi.org/10.17605/OSF.IO/Y6HSF). The analysis code is available on [GitHub](https://doi.org/10.5281/zenodo.3233872) (and also from our OSF page), in the form of an R notebook detailing all the analyses that we ran for this project, along with the results. We also include an Rmarkdown [@Xie2018] source file for this paper that can be run to reproduce the pdf version of the text, along with all the figures and statistics.
 
 ## Results {#AB_tDCS-results}
 

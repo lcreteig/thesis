@@ -142,9 +142,7 @@ All statistical analyses were conducted using several R [@R2017] packages [@R-ez
 
 ### Data, materials, and code availability
 
-The data, materials, and analysis code can be obtained from this study’s page on the Open Science Framework[^osf], including: The raw behavioral data, as well as the raw and preprocessed EEG data [@Reteig2018a]; An R notebook [@Xie2015; @R-knitr] that reproduces all of the statistical results in this publication; MATLAB scripts that reproduce all the figures in this publication; MATLAB code to compute the EEG measures from the preprocessed EEG data and extract the data for statistics.
-
-[^osf]: <https://doi.org/10.17605/OSF.IO/EMF9H>
+The data, materials, and analysis code can be obtained from this study’s page on the [Open Science Framework](https://doi.org/10.17605/OSF.IO/EMF9H), including: The raw behavioral data, as well as the raw and preprocessed EEG data [@Reteig2018a]; An R notebook [@Xie2015; @R-knitr] that reproduces all of the statistical results in this publication; MATLAB scripts that reproduce all the figures in this publication; MATLAB code to compute the EEG measures from the preprocessed EEG data and extract the data for statistics.
 
 ## Results {#MFBrain-results}
 
