@@ -184,6 +184,8 @@ knitr::include_graphics("sacc_tDCS_files/figures/figure_4_latency.png", auto_pdf
 
 (ref:caption-figure-latency) __Effects of frontal eye field tDCS on saccade latency.__ Data are shown for left vs. rightward saccades, in the anodal vs. cathodal session, for four 15-minute time periods: baseline, during tDCS, and after tDCS (post-1 and post-2). __Top row__: Colored lines show data from individual participants; black lines show the group median. __Bottom row__: Change in saccade latency after baseline subtraction. Numbers inside the plot axes are the baseline saccade latencies per condition. Error bars show 95% confidence intervals of the pairwise difference between baseline and each subsequent time period.
 
+\footnotesize
+
 | Effect                                | df    | F    | $\eta_{G}^{2}$ | _p_  | inclusion BF~10~ | inclusion BF~01~ |
 |---------------------------------------|-------|------|----------------|------|------------------|------------------|
 | **lateral saccades**                  |       |      |                |      |                  |                  |
@@ -198,6 +200,8 @@ knitr::include_graphics("sacc_tDCS_files/figures/figure_4_latency.png", auto_pdf
 | Stimulation x Direction x Time Period | 2, 50 | 1.96 | .001           | .15  | 0.19             | 5.40             |
 
 Table: (\#tab:tab-latency) __Classical and Bayesian repeated measures ANOVA results for saccade latency__. Factors: _Stimulation_ (anodal vs. cathodal), _Time Period_ (during tDCS, post-tDCS [0-15 min], post-tDCS [0-30 min]), _Direction_ (saccade to the left vs. saccade to the right). 
+
+\normalsize
 
 ```{r latency table}
 # tbl_latency <- read_csv("sacc_tDCS_files/tables/latency.csv")
@@ -249,6 +253,8 @@ knitr::include_graphics("sacc_tDCS_files/figures/figure_6_deviation.png", auto_p
 
 (ref:caption-figure-deviation) __Effects of frontal eye field tDCS on saccade endpoint deviation.__ Data are shown for left vs. rightward saccades, in the anodal vs. cathodal session, averaged over four 15-minute time periods: baseline, during tDCS, and after tDCS (post-1 and post-2). __Top row__: Colored lines show data from individual participants; black lines show the group median. __Bottom row__:  Change in saccade endpoint deviation after baseline subtraction. Numbers inside the plot axes are the baseline saccade endpoint deviations. Error bars show 95% confidence intervals of the pairwise difference between baseline and each subsequent time period.
 
+\footnotesize
+
 | Effect                                | df    | F     | $\eta_{G}^{2}$ | _p_  | inclusion BF~10~ | inclusion BF~01~ |
 |---------------------------------------|-------|-------|----------------|------|------------------|------------------|
 | **lateral saccades**                  |       |       |                |      |                  |                  |
@@ -264,6 +270,8 @@ knitr::include_graphics("sacc_tDCS_files/figures/figure_6_deviation.png", auto_p
 
 Table: (\#tab:tab-deviation) __Classical and Bayesian repeated measures ANOVA results for saccade endpoint deviation__. Factors: _Stimulation_ (anodal vs. cathodal), _Time Period_ (during tDCS, post-tDCS [0-15 min], post-tDCS [0-30 min]), _Direction_ (saccade to the left vs. saccade to the right).
 
+\normalsize
+
 ### Saccade endpoint variability
 
 Like for saccade endpoint deviation, we had no specific hypotheses on endpoint variability, as @Kanai2012 obtained no effects. However, like the decrease in endpoint deviation, cathodal tDCS also appeared to decrease saccade endpoint variability (Figure \@ref(fig:fig-variability)). For center saccades, there was extreme evidence for inclusion of the main effect of Stimulation in the Bayesian ANOVA, yet the effect only approached significance in the classical ANOVA (Table \@ref(tab:tab-variability)). However, while the variability changes in the anodal and cathodal sessions may have differed from each other, follow-up one sample tests showed that neither anodal (_p_ = .11, BF~01~ = 1.40) nor cathodal (_p_ = .23, BF~01~ = 2.44) changed significantly from baseline. Thus, saccade endpoint variability also does not seem to be affected by tDCS, conform the findings of @Kanai2012.
@@ -273,6 +281,8 @@ knitr::include_graphics("sacc_tDCS_files/figures/figure_7_variability.png", auto
 ```
 
 (ref:caption-figure-variability) __Effects of frontal eye field tDCS on saccade endpoint variability.__ Data are shown for left vs. rightward saccades, in the anodal vs. cathodal session, averaged over four 15-minute time periods: baseline, during tDCS, and after tDCS (post-1 and post-2). __Top row__: Colored lines show data from individual participants; black lines show the group median. __Bottom row__:  Change in saccade endpoint variability after baseline subtraction. Numbers inside the plot axes are the baseline saccade endpoint variability values. Error bars show 95% confidence intervals of the pairwise difference between baseline and each subsequent time period
+
+\footnotesize
 
 | Effect                                | df    | F    | $\eta_{G}^{2}$ | _p_  | inclusion BF~10~ | inclusion BF~01~ |
 |---------------------------------------|-------|------|----------------|------|------------------|------------------|
@@ -289,6 +299,8 @@ knitr::include_graphics("sacc_tDCS_files/figures/figure_7_variability.png", auto
 
 Table: (\#tab:tab-variability) __Classical and Bayesian repeated measures ANOVA results for saccade endpoint variability__. Factors: _Stimulation_ (anodal vs. cathodal), _Time Period_ (during tDCS, post-tDCS [0-15 min], post-tDCS [0-30 min]), _Direction_ (saccade to the left vs. saccade to the right).
 
+\normalsize
+
 ## Discussion {#sacc_tDCS-discussion}
 
 Given the central role the frontal eye field plays in spatial attention, we wanted to examine whether FEF activity could be reliably influenced through tDCS. As the FEF is involved in initiation of eye movements, we measured latency and accuracy of prosaccades to evaluate the effects of tDCS. Our study was based on earlier work [@Kanai2012], which reported that anodal tDCS could speed saccades to targets contralateral to the stimulated FEF. To summarize our results, we were unable to replicate the main effect of @Kanai2012: anodal tDCS did not decrease the latency of contralateral prosaccades. We also found no effects on saccade accuracy, though neither did @Kanai2012.
@@ -299,16 +311,10 @@ Out of all these results, our null finding for saccade latency is the most surpr
 
 We increased the stimulation duration from 10 to 15 minutes, in order to have more trials during tDCS and possibly a larger neural effect. But longer stimulation durations do not necessarily scale linearly with the effect of tDCS. For example, changing the stimulation duration from 20 to 26 minutes changed the effect of anodal tDCS on motor-evoked potentials from excitatory to inhibitory [@Monte-Silva2013]. In addition, we changed the location of the second electrode from the shoulder to the forehead, to more closely resemble the canonical montage used in motor cortex tDCS, and because decreasing the inter-electrode distance can enhance the effect of tDCS [@Moliadze2010]. However, next to applying tDCS over the right frontal eye field, it is possible that we now also delivered opposite polarity stimulation to left anterior frontal brain structures. In addition, the exact montage determines to a large extent which brain structures will be in the path of the current—not just those directly under the electrodes, but also those in between [@Opitz2015], as well as distant structures that are anatomically connected [@Wokke2015].
 
-We stress that @Kanai2012 also did an experiment with a different electrode montage, in which they delivered bilateral tDCS by placing the anode over the left or right FEF and the cathode over the other FEF (counterbalanced across participants). This montage produced a similar effect, but actually was more effective: tDCS now also speeded saccades contralateral to the anode, but the effect was bigger (7.8 vs. 6.4 ms), and follow-up tests revealed that it was significant at more time points (from 0--30 min after tDCS vs. only 10--20 minutes after tDCS). Nevertheless, we chose to go with a unilateral montage, to be sensitive to possible lateralization of effects. With a bilateral montage, it is impossible to tell whether the effect stems from anodal tDCS to one FEF, cathodal tDCS to the other FEF, or from both at the same time.
-
-Our study was not the first that found no effect of tDCS on saccade latency. @Chen2017 also set out to replicate this effect, and were also unsuccessful. Like ours, their study was not a direct replication and differed from the protocol used by @Kanai2012 in multiple ways. Specifically, they did not perform MRI-based neuronavigation, and postulated that this might have been the prime reason for why they did not find any effects of tDCS. Although they did place the second electrode on the shoulder, like @Kanai2012, @Chen2017 also suggest that future studies place it on the left forehead (following the conventional stimulation setup for the motor cortex). Strikingly, our study followed both suggestions (even though our data were collected before their study was published), so it appears these two factors were not responsible for the discrepant results after all.
-
 ```{=latex}
 \newpage
 \blandscape
-\begin{SingleSpace}
-\renewcommand{\arraystretch}{1.5}
-\small
+\footnotesize
 ```
 
 | Difference                                 | Here                                                                | @Kanai2012                                         | Reason                                                                                                                   |
@@ -333,10 +339,14 @@ Table: (\#tab:differences) __Methodological differences between @Kanai2012 and t
 
 ```{=latex}
 \normalsize
-\end{SingleSpace}
 \elandscape
 \newpage
 ```
+
+We stress that @Kanai2012 also did an experiment with a different electrode montage, in which they delivered bilateral tDCS by placing the anode over the left or right FEF and the cathode over the other FEF (counterbalanced across participants). This montage produced a similar effect, but actually was more effective: tDCS now also speeded saccades contralateral to the anode, but the effect was bigger (7.8 vs. 6.4 ms), and follow-up tests revealed that it was significant at more time points (from 0--30 min after tDCS vs. only 10--20 minutes after tDCS). Nevertheless, we chose to go with a unilateral montage, to be sensitive to possible lateralization of effects. With a bilateral montage, it is impossible to tell whether the effect stems from anodal tDCS to one FEF, cathodal tDCS to the other FEF, or from both at the same time.
+
+
+Our study was not the first that found no effect of tDCS on saccade latency. @Chen2017 also set out to replicate this effect, and were also unsuccessful. Like ours, their study was not a direct replication and differed from the protocol used by @Kanai2012 in multiple ways. Specifically, they did not perform MRI-based neuronavigation, and postulated that this might have been the prime reason for why they did not find any effects of tDCS. Although they did place the second electrode on the shoulder, like @Kanai2012, @Chen2017 also suggest that future studies place it on the left forehead (following the conventional stimulation setup for the motor cortex). Strikingly, our study followed both suggestions (even though our data were collected before their study was published), so it appears these two factors were not responsible for the discrepant results after all.
 
 In addition to the methods, there was also a difference between these studies in average saccade latency. In our study, participants were on average faster (~150 ms for lateral saccades) than in @Kanai2012 (~180 ms). The average center saccade latency was faster still (~135 ms), presumably because the target location was known beforehand in this case. This could be because of changes to the task we made (see Table \@ref(tab:differences)), specifically to have no overlap between target and fixation, and to have no placeholders at the target locations. Both of these are known to reduce saccade latency [@Sumner2011]. Curiously, @Chen2017 made similar task modifications, but yet obtained not faster but slower saccade latencies (~200 ms).
 

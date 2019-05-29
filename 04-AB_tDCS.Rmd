@@ -177,31 +177,39 @@ knitr::include_graphics("AB_tDCS_files/figures/figure_3_group.png", auto_pdf = T
 
 Figure \@ref(fig:fig-group) shows the attentional blink (T2|T1 accuracy per lag) for each of the three blocks (pre, tDCS, post) and stimulation conditions separately. The summary statistics and ANOVA results for T2|T1 accuracy can be found in Tables \@ref(tab:tab-descriptives-T2) and \@ref(tab:tab-anova-T2).  There was a clear attentional blink effect on average (main effect of Lag, `r apa_aov_T2.given.T1$statistic$lag`), as T2|T1 accuracy for lag 8 was higher than lag 3. 
 
+\small
+
 ```{r tab-descriptives-T2, results = 'asis'}
 if (knitr::is_latex_output() | knitr::is_html_output()) {
 T2_df %>%
   kable(col.names = c("", colnames(T2_df)[2:5]), # drop first column name
         caption = "Descriptive statistics for T2|T1 accuracy",
         booktabs = TRUE) %>%
-  kable_styling() %>%
+  kable_styling(font_size = 11) %>%
   add_header_above(c(" " = 1, "First session: anodal (n = 18)" = 2, "First session: cathodal (n = 22)" = 2)) %>%
   pack_rows(index = c("baseline" = 2, "tDCS" = 2, "post" = 2)) %>%
   footnote(general = 'Values are "Mean (SD)"')
 }
 ```
 
+\normalsize
+
 Effects of tDCS at the group-level should manifest as a three-way interaction between Block, Stimulation, and Lag. As in @London2015, this interaction was not significant (`r apa_aov_T2.given.T1$statistic$block_stimulation_lag`). However, the higher-order interaction with Session order did reach significance (`r apa_aov_T2.given.T1$statistic$session_order_block_stimulation_lag`). This interaction appears to be mostly driven by a learning effect across sessions and blocks (the Session order by Stimulation by Lag interaction). From the first to the 2nd session, lag 3 performance improved, while lag 8 performance declined somewhat (leading to a smaller attentional blink). This change was stronger in participants that received anodal tDCS in the first session, and less pronounced in the cathodal-first group. We do not consider this a genuine effect of tDCS on the attentional blink, because there is no clear reason why these randomized groups should differ, and because the largest difference between the anodal and cathodal session occurred in the baseline block already (see Table \@ref(tab:tab-descriptives-T2)).
 
+\small
+
 ```{r tab-anova-T2, results='asis'}
-apa_table(apa_aov_T2.given.T1$table, caption = "Repeated measures ANOVA on T2|T1 accuracy")
+apa_table(apa_aov_T2.given.T1$table, caption = "Repeated measures ANOVA on T2|T1 accuracy", font_size = "small")
 ```
+
+\normalsize
 
 We ran the same repeated measures ANOVA for T1 accuracy (Table \@ref(tab:tab-anova-T1)). On average, participants correctly identified T1 in `r round(mean_T1 * 100, 0)`% of trials (Figure \@ref(fig:fig-group)), which is comparable to previous studies using this task [86% in @London2015; in 82% in @Slagter2013]. T1 accuracy was also slightly lower for lag 3 than lag 8 (main effect of Lag, `r apa_aov_T1$statistic$lag`). There was a main effect of Block, reflecting that T1 accuracy decreased _within_ a session (`r apa_aov_T1$statistic$block`). Finally, T1 performance also decreased _across_ the sessions (interaction between Session order and Stimulation: `r apa_aov_T1$statistic$session_order_stimulation`).
 
 In sum, we conclude that there is no significant effect of tDCS on the attentional blink or T1 accuracy at the group level, in agreement with @London2015.
 
 ```{r tab-anova-T1, results='asis'}
-apa_table(apa_aov_T1$table, caption = "Repeated measures ANOVA on T1 accuracy")
+apa_table(apa_aov_T1$table, caption = "Repeated measures ANOVA on T1 accuracy", font_size = "small")
 ```
 
 ### Individual differences

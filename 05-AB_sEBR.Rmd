@@ -213,7 +213,7 @@ ABmag_tbl %>%
         booktabs = TRUE,
         digits = 3,
         escape = FALSE) %>%
-  kable_styling() %>%  
+  kable_styling(font_size = 11) %>%  
   pack_rows(index = c("anodal session" = 3, "cathodal session" = 3)) %>%
   column_spec(1, width = "10em") %>%
   footnote(escape = FALSE, threeparttable = TRUE, alphabet = c(
@@ -230,7 +230,7 @@ corr_co_tbl %>%
         caption = "Attentional blink magnitude and spontaneous eye blink rate correlations.",
         booktabs = TRUE,
         escape = FALSE) %>%
-  kable_styling() %>%
+  kable_styling(font_size = 11) %>%
   pack_rows(index = c("anodal session" = 2, "cathodal session" = 2)) %>%
   add_header_above(setNames(c(1,3,2,1), c(" ",
               paste0("Correlation", footnote_marker_alphabet(1, double_escape = TRUE)),

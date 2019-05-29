@@ -1,10 +1,7 @@
 # Data, code and materials {#resources-supplement}
 
-```{=latex}
-\begin{SingleSpace}
-\small
-```
-
+\scriptsize
+\renewcommand{\arraystretch}{1}
 
 |                                    | Resource        | Platform                                                   | DOI                                  |
 |------------------------------------|-----------------|------------------------------------------------------------|--------------------------------------|
@@ -32,7 +29,5 @@
 |                                    | code            | [Open Science Framework](https://osf.io/bnwap/)            | `10.17605/OSF.IO/BNWAP`              |
 |                                    | materials       | [Open Science Framework](https://osf.io/rzj2v/)            | `10.17605/OSF.IO/RZJ2V`              |
 
-```{=latex}
+\renewcommand{\arraystretch}{1.5}
 \normalsize
-\end{SingleSpace}
-```
