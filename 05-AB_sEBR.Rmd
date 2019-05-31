@@ -23,7 +23,7 @@ The attentional blink (AB) phenomenon illustrates our limited capacity to proces
 
 \vspace*{\fill}
 \noindent
-_This chapter is in preparation as_: Reteig LC, Newman LA, Ridderinkhof KR, Slagter HA. Spontaneous eye blink rate does not predict attentional blink size, nor the effects of tDCS on attentional blink size.
+_This chapter is in preparation as_: Reteig, L. C., Newman, L. A., Ridderinkhof, K. R., & Slagter, H. A. (n.d.). Spontaneous eye blink rate does not predict attentional blink size, nor the effects of tDCS on attentional blink size.
 \newpage
 
 ## Introduction {#AB_sEBR-introduction}

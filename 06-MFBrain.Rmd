@@ -12,7 +12,7 @@ Our ability to stay focused is limited: prolonged performance of a task typicall
 
 \vspace*{\fill}
 \noindent
-_This chapter has been published as_: [Reteig LC, van den Brink LR, Prinssen S, Cohen MX, Slagter HA (2019). Sustaining attention for a prolonged period of time increases temporal variability in cortical responses. *Cortex, 117*, 16--32.](https://doi.org/10.1016/j.cortex.2019.02.016)
+_This chapter has been published as_: Reteig, L. C., van den Brink, R. L., Prinssen, S., Cohen, M. X., & Slagter, H. A. (2019). Sustaining attention for a prolonged period of time increases temporal variability in cortical responses. *Cortex, 117*, 16--32. <https://doi.org/10.1016/j.cortex.2019.02.016>
 \newpage
 
 ## Introduction {#MFBrain-introduction}

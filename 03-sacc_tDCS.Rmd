@@ -21,7 +21,7 @@ Transcranial direct current stimulation (tDCS) may be used to directly affect ne
 
 \vspace*{\fill}
 \noindent
-_This chapter has been published as_: [Reteig LC, Knapen T, Roelofs FJFW, Ridderinkhof KR, Slagter, HA (2018). No evidence that frontal eye field tDCS affects latency or accuracy of prosaccades. _Frontiers in Neuroscience_ 12:617.](https://doi.org/10.3389/fnins.2018.00617)
+_This chapter has been published as_: Reteig, L. C., Knapen, T., Roelofs, F. J. F. W., Ridderinkhof, K. R., & Slagter, H. A. (2018). No evidence that frontal eye field tDCS affects latency or accuracy of prosaccades. _Frontiers in Neuroscience_ 12:617. <https://doi.org/10.3389/fnins.2018.00617>
 \newpage
 
 ## Introduction {#sacc_tDCS-introduction}

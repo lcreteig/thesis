@@ -23,7 +23,7 @@ The attentional blink (AB) phenomenon reveals a bottleneck of human information 
 
 \vspace*{\fill}
 \noindent
-_This chapter is in preparation as_: Reteig LC, Newman LA, Ridderinkhof KR, Slagter HA. Effects of tDCS on the attentional blink revisited: A statistical evaluation of a replication attempt.
+_This chapter is in preparation as_: Reteig, L. C., Newman, L. A., Ridderinkhof, K. R., & Slagter, H. A. (n.d.). Effects of tDCS on the attentional blink revisited: A statistical evaluation of a replication attempt.
 \newpage
 
 ## Introduction {#AB_tDCS-introduction}
