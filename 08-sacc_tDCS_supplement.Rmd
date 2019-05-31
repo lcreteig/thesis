@@ -10,8 +10,11 @@ knitr::opts_chunk$set(results = 'hide', echo = FALSE, message = FALSE, warning =
 
 ```
 
-# (APPENDIX) Appendix {-} 
-\appendixpage
+# (APPENDIX) Appendix {-}
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{part}{Appendices}
+\appendixpage*
 
 # Supplement to Chapter \@ref(sacc-tDCS) {#sacc-tDCS-supplement}
 

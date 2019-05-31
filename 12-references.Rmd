@@ -1,1 +1,6 @@
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{part}{Bibliography}
+
 # References {-}
+\chaptermark{References}
