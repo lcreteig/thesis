@@ -5,7 +5,7 @@
 % change page style for pages before actual content
 {\pagestyle{empty} 
 
-% Page 2: Empty page after the initial title page
+% Empty page after the initial title page
 %\mbox{}\newpage
 %\setcounter{page}{1}
 
@@ -14,9 +14,23 @@
 \null
 \newpage
 
+% Page 1: the half-title / `franse pagina'
+\vspace*{2cm}
+\begin{center}
+\Huge\textbf{Neuroplasticity of Attention} % CHANGE THIS TO MATCH THESIS TITLE
+\end{center}
+
+% Page 2: back of half-title
+\clearpage
+\vspace*{0.66\textheight}
+\noindent The investigations in this thesis were supported by 
+a Research Talent Grant (452-10-018)  % CHANGE THIS TO MATCH FUNDING      
+from 
+the Netherlands Organization for Scientific Research (NWO). % CHANGE THIS TO MATCH FUNDING
+
 %% Page 3: `titelblad' mandated by University
 \clearpage
-\par\vskip 2cm
+\vspace*{2cm}
 \begin{center}
 \Huge\textbf{Neuroplasticity of Attention} % CHANGE THIS TO MATCH THESIS TITLE
 \par\vspace {1cm}
