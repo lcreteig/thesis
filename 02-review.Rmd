@@ -41,6 +41,11 @@ Instead of applying direct current, the polarity of the electrodes (anode or cat
 We aim to provide a comprehensive overview of studies conducted to date that used tES to modulate attention. After a systematic search and screening of the results, we included 52 studies. Details on our search query, inclusion criteria, and excluded studies are available on the [Open Science Framework](https://doi.org/10.17605/OSF.IO/KQVAP). A summary of the methods and results of the included studies is presented in the next sections and in Tables \@ref(tab:visual-search), \@ref(tab:spatial-orienting), \@ref(tab:spatial-bias), and \@ref(tab:sustained-attention), clustered by the most frequently used types of tasks: visual search, spatial orienting, spatial bias, and sustained attention. Each of these tasks taps into distinct attentional processes that are relevant in different real-life situations. Our selection also included six studies that did not fit into one of these four categories (Table \@ref(tab:other)).
 
 As our overview reveals, there is tremendous variability in design and stimulation parameters between studies, and in study outcome, hampering integration and interpretation of different results. The scope of this review did not allow an extensive discussion of each study or differences between them. To remain as comprehensive as possible, we chose to catalogue the details of each study in the tables and to summarize the main conclusions in the body text. We hope that this way our review will prove useful to a broad audience---those looking for the gist as well as those interested in fine details, perhaps while preparing to set up a new experiment of their own. To this end, we also provide more general recommendations for future research in the [Discussion](#tDCS_att_review-discussion) section.
+## Visual search
+
+Whether you are looking for a particular pair of socks or crossing a busy intersection, the process of scanning the visual field is ubiquitous in daily life and therefore an interesting target for cognitive enhancement. We included 13 studies that examined the effects of tES on visual search (Table \@ref(tab:visual-search)).
+
+In visual search tasks, participants look for a target item among an array of distractors [@Wolfe1998]. This involves keeping a template of the target online and shifting spatial attention across the visual field, while constantly filtering out distracting information. Faster reaction times on these tasks indicate more efficient visual search. Visual search performance is supported by an extensive network of brain areas, centered on the right posterior parietal cortex and frontal eye field [@Reynolds2004].
 
 ```{r other table}
 tbl_other <- read_csv2("tDCS_att_review_files/other.csv")
@@ -51,9 +56,11 @@ cap_other <- paste("__Studies using other attention paradigms (not discussed in 
 ```
 
 ```{=latex}
-\newpage
+\cleartoverso
+\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
+\LTcapwidth=\textwidth
 \blandscape
-\footnotesize
+\small
 ```
 
 ```{r other table pdf, results='show'}
@@ -61,7 +68,7 @@ cap_other <- paste("__Studies using other attention paradigms (not discussed in 
 if (knitr::is_latex_output()) {
 #panderOptions('table.alignment.default', function(df) ifelse(sapply(df, is.numeric), 'right', 'left'))
 pander(tbl_other, split.tables = Inf, justify = 'left',  missing = '',
-       split.cells = c(40,1,1,25,5,10,7,25,50),
+       split.cells = c(20,1,1,25,4,10,7,15,70),
        caption = paste('(\\#tab:other)', cap_other))
 }
 ```
@@ -71,6 +78,7 @@ pander(tbl_other, split.tables = Inf, justify = 'left',  missing = '',
 ```{=latex}
 \normalsize
 \elandscape
+\restoregeometry
 \newpage
 ```
 
@@ -83,11 +91,6 @@ tbl_other %>%
 }
 ```
 
-## Visual search
-
-Whether you are looking for a particular pair of socks or crossing a busy intersection, the process of scanning the visual field is ubiquitous in daily life and therefore an interesting target for cognitive enhancement. We included 13 studies that examined the effects of tES on visual search (Table \@ref(tab:visual-search)).
-
-In visual search tasks, participants look for a target item among an array of distractors [@Wolfe1998]. This involves keeping a template of the target online and shifting spatial attention across the visual field, while constantly filtering out distracting information. Faster reaction times on these tasks indicate more efficient visual search. Visual search performance is supported by an extensive network of brain areas, centered on the right posterior parietal cortex and frontal eye field [@Reynolds2004].
 
 @Ball2013 investigated the effect of anodal and cathodal tDCS on both of these areas. They observed no effects of anodal tDCS, but cathodal stimulation to the right posterior parietal cortex increased reaction times, a finding later replicated by the same group [@Ellison2014]. Interestingly, an earlier study did find that anodal stimulation over the parietal cortex decreased search time [@Bolognini2010]. As the studies differ in many design choices, it is hard to tell what may account for these inconsistent results.
 
@@ -112,9 +115,10 @@ cap_visual_search <- paste("__Studies using visual search tasks__.",
 ```
 
 ```{=latex}
-\newpage
+\cleartoverso
+\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
 \blandscape
-\footnotesize
+\small
 ```
 
 ```{r visual search table pdf, results='show'}
@@ -122,7 +126,7 @@ cap_visual_search <- paste("__Studies using visual search tasks__.",
 if (knitr::is_latex_output()) {
 #panderOptions('table.alignment.default', function(df) ifelse(sapply(df, is.numeric), 'right', 'left'))
 pander(tbl_visual_search, split.tables = Inf, justify = 'left',  missing = '',
-       split.cells = c(40,1,1,40,5,10,7,8,50),
+       split.cells = c(40,1,1,30,5,10,10,8,50),
        caption = paste('(\\#tab:visual-search)', cap_visual_search))
 }
 # best so far: split.cells = c(40,1,1,25,5,10,7,25,50),
@@ -133,6 +137,7 @@ pander(tbl_visual_search, split.tables = Inf, justify = 'left',  missing = '',
 ```{=latex}
 \normalsize
 \elandscape
+\restoregeometry
 \newpage
 ```
 
@@ -185,9 +190,10 @@ cap_spatial_orienting <- paste("__Studies using spatial orienting tasks, with an
 ```
 
 ```{=latex}
-\newpage
+\cleartoverso
+\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
 \blandscape
-\footnotesize
+\small
 ```
 
 ```{r spatial orienting table pdf, results='show'}
@@ -203,8 +209,9 @@ pander(tbl_spatial_orienting, split.tables = Inf, justify = 'left',  missing = '
 \
 
 ```{=latex}
-\normalsize
+\cleartoverso
 \elandscape
+\restoregeometry
 \newpage
 ```
 
@@ -253,7 +260,8 @@ cap_spatial_bias <- paste("__Studies using spatial bias tasks, in healthy contro
 
 
 ```{=latex}
-\newpage
+\cleartoverso
+\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
 \blandscape
 \footnotesize
 ```
@@ -273,6 +281,7 @@ pander(tbl_spatial_bias, split.tables = Inf, justify = 'left',  missing = '',
 ```{=latex}
 \normalsize
 \elandscape
+\restoregeometry
 \newpage
 ```
 
@@ -306,9 +315,10 @@ cap_sustained_attention <- paste("__Studies using sustained attention tasks, in 
 ```
 
 ```{=latex}
-\newpage
+\cleartoverso
+\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
 \blandscape
-\footnotesize
+\small
 ```
 
 ```{r sustained attention table pdf, results='show'}
@@ -316,7 +326,7 @@ cap_sustained_attention <- paste("__Studies using sustained attention tasks, in 
 if (knitr::is_latex_output()) {
 #panderOptions('table.alignment.default', function(df) ifelse(sapply(df, is.numeric), 'right', 'left'))
 pander(tbl_sustained_attention, split.tables = Inf, justify = 'left',  missing = '',
-       split.cells = c(30,1,1,20,5,10,7,25,60),
+       split.cells = c(30,1,1,20,5,10,7,25,55),
        caption = paste('(\\#tab:sustained-attention)', cap_sustained_attention))
 }
 ```
@@ -326,7 +336,9 @@ pander(tbl_sustained_attention, split.tables = Inf, justify = 'left',  missing =
 ```{=latex}
 \normalsize
 \elandscape
+\restoregeometry
 \newpage
+\LTcapwidth=\textwidth
 ```
 
 ```{r sustained-attention, results='show'}

@@ -313,8 +313,10 @@ We increased the stimulation duration from 10 to 15 minutes, in order to have mo
 
 ```{=latex}
 \newpage
+\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
+\LTcapwidth=\textwidth
 \blandscape
-\footnotesize
+\small
 ```
 
 | Difference                                 | Here                                                                | @Kanai2012                                         | Reason                                                                                                                   |
@@ -340,7 +342,9 @@ Table: (\#tab:differences) __Methodological differences between @Kanai2012 and t
 ```{=latex}
 \normalsize
 \elandscape
+\restoregeometry
 \newpage
+\LTcapwidth=\textwidth
 ```
 
 We stress that @Kanai2012 also did an experiment with a different electrode montage, in which they delivered bilateral tDCS by placing the anode over the left or right FEF and the cathode over the other FEF (counterbalanced across participants). This montage produced a similar effect, but actually was more effective: tDCS now also speeded saccades contralateral to the anode, but the effect was bigger (7.8 vs. 6.4 ms), and follow-up tests revealed that it was significant at more time points (from 0--30 min after tDCS vs. only 10--20 minutes after tDCS). Nevertheless, we chose to go with a unilateral montage, to be sensitive to possible lateralization of effects. With a bilateral montage, it is impossible to tell whether the effect stems from anodal tDCS to one FEF, cathodal tDCS to the other FEF, or from both at the same time.
