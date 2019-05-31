@@ -15,11 +15,12 @@ bookdown::pdf_book:
     in_header: preamble.tex
     before_body: title_page.tex
   latex_engine: xelatex
-  citation_package: natbib
+  citation_package: none
   keep_tex: yes
   pandoc_args: [
    "--variable", "papersize=a4",
-   "--variable", "citecolor=Gray"
+   "--variable", "linkcolor=gray",
+   "--csl",       "apa.csl" 
    ]
 bookdown::epub_book:
   pandoc_args: [ "--csl", "apa.csl" ]
