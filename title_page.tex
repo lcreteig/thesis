@@ -86,5 +86,43 @@ Overige leden: & prof. dr. M.M. Lorist          & Rijksuniversiteit Groningen \\
 Faculteit:     & Faculteit der Maatschappij- en Gedragswetenschappen \\ %CHANGE
 \end{tabular}\\
 
+%% Page 5: quotes
+
+% poem attribution (from memoir class manual, chapter on poetry)
+\newcommand{\attrib}[1]{%
+  \nopagebreak{\raggedleft\footnotesize #1\par}}
+% dotted line for omitted stanzas in poem (http://xpt.sourceforge.net/techdocs/language/latex/latex03-LaTexUsage/ar01s18.html)
+\newcommand{\dotrule}[1]{%
+   \parbox[t]{#1}{\dotfill}}
+
 \clearpage
+\begin{vplace} % center vertically
+
+% EPIGRAPH
+\setlength\epigraphwidth{0.5\textwidth}
+\epigraph{There's an awful lot of talk about groundbreaking research\ldots\ [G]roundbreaking is what you do when you start a building. You go into a field and you dig a hole in the ground. If you're only rewarded for groundbreaking research, there's going to be a lot of fields with a small hole in, and no buildings.}{\textsc{Ottoline Leyser}\\ \textit{The Life Scientific, BBC Radio 4}}
+
+\vspace{2\baselineskip}
+
+% POEM
+\PoemTitle*{O ME! O LIFE!}
+\settowidth{\versewidth}{Of myself forever reproaching myself, (for who more foolish than)} % length of longest line
+\begin{verse}[\versewidth]
+O \textsc{me} ! O life ! of the questions of these recurring, \\
+\dotrule{\versewidth} \\
+Of myself forever reproaching myself, (for who more foolish than \\> I, and who more faithless?) \\
+\dotrule{\versewidth} \\
+Of the poor results of all, of the plodding and sordid crowds I \\> see around me, \\
+Of the empty and useless years of the rest, with the rest me inter- \\> twined, \\
+The question, O me ! so sad, recurring--- What good amid these, \\> O me, O life? \\
+\vinphantom{The question, O me ! so sad, } \textbf{\textit{\footnotesize Answer.}} \\
+\dotrule{\versewidth} \\
+That the powerful play goes on, and you may contribute a verse.\\
+\end{verse}
+\attrib{(1, 3, 5--8, 10)}
+\attrib{---Walt Whitman}
+
+\end{vplace}
+
 } % End \pagestyle{empty}
+\clearpage
