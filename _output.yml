@@ -13,7 +13,7 @@ bookdown::gitbook:
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
-    before_body: title_page.tex
+    before_body: front_matter.tex
   latex_engine: xelatex
   citation_package: none
   keep_tex: yes
