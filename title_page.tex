@@ -3,11 +3,11 @@
 
 {\pagestyle{empty} 
 
-
-% Page 1: the half-title / `franse pagina'
-\vspace*{2cm}
+%% Page 1: the half-title / "Franse pagina"
+\def\drop{.1\textheight}
+\vspace*{\drop}
 \begin{center}
-\Huge\textbf{Neuroplasticity of Attention} % CHANGE THIS TO MATCH THESIS TITLE
+\Huge \textsc{Neuroplasticity of Attention} % CHANGE thesis title
 \end{center}
 
 %% Page 2: Colophon
@@ -34,29 +34,36 @@ An online version of this thesis is available at
 , licensed under a 
 Creative Commons Attribution 4.0 International License. % CHANGE license
 \endgroup
+
+%% Page 3: `Title page' mandated by University of Amsterdam
+\cleardoublepage
+\vspace*{\drop}
 \begin{center}
-\Huge\textbf{Neuroplasticity of Attention} % CHANGE THIS TO MATCH THESIS TITLE
-\par\vspace {1cm}
+\Huge\textbf{Neuroplasticity of Attention}\par % CHANGE thesis title
+\vspace{\baselineskip}
 \Large\textit{How brain stimulation and mental fatigue\\
-affect attentional performance} % CHANGE THIS TO MATCH SUBTITLE
-\par\vspace {4cm}
-{\large \sc Academisch Proefschrift}
-\par\vspace {1cm}
+affect attentional performance}\par % CHANGE thesis subtitle
+\vfill % this space will be whatever is left on the page
+\large \textsc{Academisch Proefschrift}\par
+\vspace{\baselineskip}
 \linespread{1.3}{\normalsize ter verkrijging van de graad van doctor\\
 aan de Universiteit van Amsterdam\\
 op gezag van de Rector Magnificus\\
-prof. dr. ir. K.I.J. Maex\\ % CHECK IF THIS MATCHES CURRENT RECTOR MAGNIFICUS
+prof. dr. ir. K.I.J. Maex\\ % CHANGE to name of current rector magnificus
 ten overstaan van een door het College voor Promoties ingestelde commissie,\\
-\mbox{in het openbaar te verdedigen in de Agnietenkapel}\\  %CHANGE
+in het openbaar te verdedigen in de Agnietenkapel\\  % CHANGE defense location
 % The part after "de" should either read "Agnietenkapel" or "Aula der Universiteit"
-%op [……]dag […datum…] […maand…] 20[….], te [……] uur \\ } %CHANGE
-op woensdag 20 november 2019, te 14.00 uur \\ } %CHANGE
+op woensdag 20 november 2019, te 14.00 uur \\ }\par % CHANGE defense data
+%op [……]dag […datum…] […maand…] 20[….], te [……] uur \\
 % e.g. maandag 1 januari 2001, te 12.00 uur
-\par\vspace {1cm} {door}
-\par \vspace {1cm} 
-{Leon Cyro Reteig} % CHANGE TO YOUR FULL NAME 
-\par\vspace {1cm} % and your birthplace
-{geboren te Amsterdam} %CHANGE
+\vspace{\baselineskip}
+{\large door}\par
+\vspace{\baselineskip}
+{\Large Leon Cyro Reteig}\par % CHANGE full name
+% and your birthplace
+\vspace{\baselineskip}
+{\large geboren te Amsterdam} %CHANGE place of birth
+\vspace*{\drop}
 % If your country of birth is the Netherlands, this should be only your place of birth,
 % e.g.: geboren te Amsterdam
 % If you were born outside the Netherlands, you should add your country of birth,
@@ -65,15 +72,16 @@ op woensdag 20 november 2019, te 14.00 uur \\ } %CHANGE
 
 %% Page 4: info on thesis committee
 \clearpage
+\def\colw{6.5em}
 \noindent%
-{\bf Promotiecommissie:}\\
+\textbf{Promotiecommissie:}\\
 \\
-\begin{tabular}[t]{@{}p{2.75cm}ll}
+\begin{tabular}[t]{@{}p{\colw}ll}
 Promotores:    & prof. dr. K.R. Ridderinkhof    & Universiteit van Amsterdam \\  %CHANGE
                & prof. dr. H.A. Slagter         & Universiteit van Amsterdam \\  %CHANGE
 \\
 % Uncomment the two lines below if there are copromotor(es)
-%Copromotor(es): & prof. dr. something something  & Universiteit van Amsterdam \\  %CHANGE
+%Copromotor(es): & prof. dr. something something  & Universiteit van Amsterdam \\ %CHANGE
 %\\
 Overige leden: & prof. dr. M.M. Lorist          & Rijksuniversiteit Groningen \\ %CHANGE
                & prof. dr. B.U. Forstmann       & Universiteit van Amsterdam \\  %CHANGE
@@ -85,7 +93,7 @@ Overige leden: & prof. dr. M.M. Lorist          & Rijksuniversiteit Groningen \\
 \end{tabular}\\
 
 \noindent%
-\begin{tabular}[t]{@{}p{2.75cm}l}
+\begin{tabular}[t]{@{}p{\colw}l}
 Faculteit:     & Faculteit der Maatschappij- en Gedragswetenschappen \\ %CHANGE
 \end{tabular}\\
 

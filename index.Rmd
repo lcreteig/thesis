@@ -6,7 +6,6 @@ date: "`r format(Sys.time(), '%d %B, %Y')`"
 bibliography: [thesis.bib, r-packages.bib]
 description: This is the PhD thesis of Leon Reteig
 documentclass: memoir
-classoption: oldfontcommands # when using memoir with title_page.tex from ILLC template
 fontsize: 12pt
 #geometry: false # when memoir should handle page layout
 site: bookdown::bookdown_site
