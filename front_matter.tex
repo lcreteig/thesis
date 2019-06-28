@@ -1,9 +1,9 @@
 % Based on template from the "IILC Dissertation Style"
 % https://www.illc.uva.nl/PhDProgramme/current-candidates/other/illcdiss.html#latex
 \frontmatter
+\pagestyle{empty} 
 
 %% Page 1: the half-title / "Franse pagina"
-\thispagestyle{empty} 
 \def\drop{.1\textheight}
 \vspace*{\drop}
 \begin{center}
@@ -12,7 +12,6 @@
 
 %% Page 2: Colophon
 \clearpage
-\thispagestyle{empty} 
 \vspace*{\fill}
 \begingroup % to change formatting only temporarily
 \small
@@ -38,7 +37,6 @@ Creative Commons Attribution 4.0 International License. % CHANGE license
 
 %% Page 3: `Title page' mandated by University of Amsterdam
 \cleardoublepage
-\thispagestyle{empty} 
 \vspace*{\drop}
 \begin{center}
 \Huge\textbf{Neuroplasticity of Attention}\par % CHANGE thesis title
@@ -74,7 +72,6 @@ op woensdag 20 november 2019, te 14.00 uur \\ }\par % CHANGE defense data
 
 %% Page 4: info on thesis committee
 \clearpage
-\thispagestyle{empty} 
 \def\colw{6.5em}
 \noindent%
 \textbf{Promotiecommissie:}\\
@@ -110,7 +107,6 @@ Faculteit:     & Faculteit der Maatschappij- en Gedragswetenschappen \\ %CHANGE
    \parbox[t]{#1}{\dotfill}}
 
 \clearpage
-\thispagestyle{empty} 
 \begin{vplace} % center vertically
 
 % EPIGRAPH
@@ -141,10 +137,13 @@ That the powerful play goes on, and you may contribute a verse.\\
 
 %% Table of contents
 \clearpage
-{
 \pagestyle{plain}
+
+{
 \hypersetup{linkcolor=black} % force black table of contents
 \tableofcontents* % in memoir, starred version keeps the toc out of the toc
 }
 
+\clearpage
+\pagestyle{companion}
 \mainmatter

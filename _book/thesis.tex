@@ -21,7 +21,6 @@
 \usepackage{microtype}
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
 \hypersetup{unicode=true,
@@ -73,7 +72,7 @@
 \usepackage{titling}
 
 % Create subtitle command for use in maketitle
-\newcommand{\subtitle}[1]{
+\providecommand{\subtitle}[1]{
   \posttitle{
     \begin{center}\large#1\end{center}
     }
@@ -90,21 +89,22 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{27 June, 2019}
+    \date{28 June, 2019}
 
-\usepackage{booktabs}
 \usepackage[width=\textwidth,font=small]{caption}
+\usepackage[driver=xetex,margin=1in]{geometry}
 \usepackage{pdflscape}
+
 \newcommand{\blandscape}{\begin{landscape}}
 \newcommand{\elandscape}{\end{landscape}}
-\chapterstyle{ntglike}
-\pagestyle{companion}
 \renewcommand{\arraystretch}{1.5} % increase vertical spacing in tables
 \setlength{\cftpartnumwidth}{2.5em} % more space for part numbering in ToC
 \setlength\cftchapternumwidth{2.5em} % also adjust others to match
 \setlength\cftsectionindent{2.5em} % also adjust others to match
 \AtBeginDocument{\let\maketitle\relax} % don't make automatic title page as first page
-%\frontmatter $ add \mainmatter to top of index.Rmd, \backmatter to end of last chapter. But: messes up figure numbering in old versions of memoir
+
+%\pagestyle{companion}
+\chapterstyle{ntglike}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -125,8 +125,8 @@
 
 % Based on template from the "IILC Dissertation Style"
 % https://www.illc.uva.nl/PhDProgramme/current-candidates/other/illcdiss.html#latex
-
-{\pagestyle{empty} 
+\frontmatter
+\pagestyle{empty} 
 
 %% Page 1: the half-title / "Franse pagina"
 \def\drop{.1\textheight}
@@ -153,7 +153,7 @@ ISBN: xxx-xx-xxx-xxxx-x \newline % CHANGE ISBN
 Printing: Ridderprint BV \newline % CHANGE printer
 Cover art: X, \url{www.website.com} % CHANGE cover art credits
 
-\includegraphics{_bookdown_files/CC-BY.eps} \newline
+\includegraphics{_bookdown_files/CC-BY.png} \newline
 An online version of this thesis is available at 
 \url{lcreteig.github.io/thesis} % CHANGE thesis website
 , licensed under a 
@@ -256,18 +256,23 @@ The question, O me ! so sad, recurring--- What good amid these, \\> O me, O life
 That the powerful play goes on, and you may contribute a verse.\\
 \end{verse}
 \attrib{(1, 3, 5--8, 10)}
-\attrib{---Walt Whitman}
+\attrib{--- Walt Whitman}
 
 \end{vplace}
 
-} % End \pagestyle{empty}
+%% Table of contents
 \clearpage
+\pagestyle{plain}
 
 {
-\hypersetup{linkcolor=black}
-\setcounter{tocdepth}{1}
-\tableofcontents
+\hypersetup{linkcolor=black} % force black table of contents
+\tableofcontents* % in memoir, starred version keeps the toc out of the toc
 }
+
+\clearpage
+\pagestyle{companion}
+\mainmatter
+
 \hypertarget{part-intro}{%
 \part{General introduction and literature review}\label{part-intro}}
 
@@ -4191,6 +4196,8 @@ When we look at what we have really learned about cognition from tACS, tDCS and 
 \end{quote}
 
 This thesis started out with a rather grand introduction to cognitive enhancement (Chapter \ref{intro-general}). Some see this future on the horizon already, and point out potential ethical problems in the use of tES for this purpose (Cohen Kadosh, Levy, O'Shea, Shea, \& Savulescu, \protect\hyperlink{ref-CohenKadosh2012}{2012}). The potential of tES has also been recognized beyond academia, as it has gained a lot of attention in the media (Dubljević, Saigle, \& Racine, \protect\hyperlink{ref-Dubljevic2014}{2014}). There is even a group of early adopters who have started to use tES at home (Jwa, \protect\hyperlink{ref-Jwa2015}{2015})---primarily for cognitive enhancement of attention. The interest in tES is further fueled by companies who market tES devices to consumers, along with promises of the stars and the moon (Santarnecchi, Feurra, Galli, Rossi, \& Rossi, \protect\hyperlink{ref-Santarnecchi2013b}{2013}). These are all important developments that scientists should have a voice in. When we do, we should not forget to be as skeptical towards others as we can be among ourselves (Riggall et al., \protect\hyperlink{ref-Riggall2015}{2015}; Steenbergen et al., \protect\hyperlink{ref-Steenbergen2016}{2016}; Walsh, \protect\hyperlink{ref-Walsh2013}{2013}; Wurzman et al., \protect\hyperlink{ref-Wurzman2016}{2016}). Certainly, the promises of non-invasive brain stimulation are exciting. But it will require a lot of careful research and steady progress to make them a reality.
+
+\backmatter
 
 \hypertarget{appendix-appendix}{%
 \appendix}

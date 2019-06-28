@@ -2,7 +2,7 @@
 title: "Neuroplasticity of Attention"
 subtitle: "How brain stimulation and mental fatigue affect attentional performance"
 author: "Leon C. Reteig"
-date: "27 June, 2019"
+date: "28 June, 2019"
 bibliography: [thesis.bib, r-packages.bib]
 description: This is the PhD thesis of Leon Reteig
 documentclass: memoir
@@ -59,7 +59,10 @@ However, while many of these initial results are exciting, there is also a growi
 
 [^tDCS-polarity]: The term "anodal tDCS" is used when the anode is placed over the brain area of interest, and the cathode is placed elsewhere (and vice versa for "cathodal tDCS"). The electrode over the brain area of interest is also sometimes referred to as the "active electrode"; the second electrode is then the "reference electrode". However, all of these terms can be misleading. The "reference electrode" is not inactive; there are always two "active electrodes": one anode and one cathode. Also, because a circuit has to be closed for current to flow, current will always enter the brain at one location and exit at another. So "anodal tDCS" or "cathodal tDCS" cannot be applied in isolation---the opposite polarity is always concurrently applied somewhere else.
 
-![(\#fig:figure-1-tDCS)(ref:caption-figure-tDCS)](introduction_files/figures/figure_1_tDCS.pdf) 
+<div class="figure">
+<img src="introduction_files/figures/figure_1_tDCS.png" alt="(ref:caption-figure-tDCS)" width="1194" />
+<p class="caption">(\#fig:figure-1-tDCS)(ref:caption-figure-tDCS)</p>
+</div>
 
 (ref:caption-figure-tDCS) __transcranial Direct Current Stimulation__. (__A__) The tDCS device (neuroConn DC-STIMULATOR-PLUS) used for the studies in this thesis, connected to a pair of rubber electrodes (in black). Shown are two electrode sizes: 3x3 cm and 7x5 cm, as was used in Chapter \@ref(sacc-tDCS). To make contact with the skin, the electrodes can either be inserted in sponges with saline solution (as shown in the image), or can be covered in conductive paste (as in the studies in this thesis). (__B__) tDCS montage that was used in Chapter \@ref(AB-tDCS-EEG) and Chapter \@ref(AB-tDCS-sEBR). One electrode was placed over the left dorsolateral prefrontal cortex (F3 in the international 10-20 system); the other was placed on the right forehead (approximately corresponding to 10-20 position Fp2). Shown here is the "anodal tDCS" montage with the anode (in red) over F3 and the cathode (in blue) on the forehead. For "cathodal tDCS", the electrodes were swapped. (__C__) The tDCS waveform for the anodal (red) and cathodal (blue) electrodes. The dotted lines mark the end of the ramp-up and start of the ramp-down periods (typically < 1 minute), in which the current intensity is gradually increased and decreased, respectively. In between, the current is held at a constant intensity, typically at 1--2 mA for 10--30 minutes. (__D__) Simulated electric field for the montage in (B), for the gray matter in the MNI152 template, calculated using SimNIBS software [Version 2.2.1;  @Saturnino2018; @Thielscher2015]. As is typical with tDCS, peaks in the electric field are localized near the electrodes, but they do not necessarily occur exactly underneath, and the distribution of the field is diffuse.
 

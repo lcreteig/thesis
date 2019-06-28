@@ -16,48 +16,256 @@
 
 
 
-\begin{figure}[H]
-\includegraphics{sacc_tDCS_files/figures/figure_S1_AE} \caption{(ref:caption-fig-sacc-tDCS-AE)}(\#fig:fig-sacc-tDCS-AE)
-\end{figure}
+<div class="figure">
+<img src="sacc_tDCS_files/figures/figure_S1_AE.png" alt="(ref:caption-fig-sacc-tDCS-AE)" width="1436"  />
+<p class="caption">(\#fig:fig-sacc-tDCS-AE)(ref:caption-fig-sacc-tDCS-AE)</p>
+</div>
 
 (ref:caption-fig-sacc-tDCS-AE) __tDCS adverse effects__. Number of reports out of 62 sessions (either anodal or cathodal tDCS). Top row shows intensity ratings [_little, moderate, strong, very strong_]; bottom row shows participant's confidence that event was related to tDCS [_unlikely, possibly, likely, very likely_]. Adverse effects are sorted in descending order of number of reports (for very rare events (five reports or fewer for a given polarity), some text counts have been removed to prevent overlap).
 
-\begin{table}[H]
-
-\caption{(\#tab:tab-sacc-tDCS-AE)Number of reports of tDCS adverse effects}
-\centering
-\resizebox{\linewidth}{!}{
-\begin{tabular}{lrrrrrrrrrr}
-\toprule
-\multicolumn{1}{c}{ } & \multicolumn{5}{c}{Intensity rating\textsuperscript{a}} & \multicolumn{5}{c}{Confidence rating\textsuperscript{b}} \\
-\cmidrule(l{3pt}r{3pt}){2-6} \cmidrule(l{3pt}r{3pt}){7-11}
-  & none & a little & moderate & strong & very strong & n/a & unlikely & possibly & likely & very likely\\
-\midrule
-\addlinespace[0.3em]
-\multicolumn{11}{l}{\textbf{anodal session}}\\
-\hspace{1em}burning & 12 & 10 & 6 & 2 & 0 & 12 & 0 & 2 & 5 & 11\\
-\hspace{1em}dizziness & 28 & 1 & 1 & 0 & 0 & 28 & 2 & 0 & 0 & 0\\
-\hspace{1em}fatigue & 20 & 6 & 0 & 3 & 1 & 21 & 7 & 1 & 1 & 0\\
-\hspace{1em}headache & 25 & 5 & 0 & 0 & 0 & 25 & 5 & 0 & 0 & 0\\
-\hspace{1em}itching & 13 & 10 & 4 & 2 & 1 & 13 & 0 & 1 & 8 & 8\\
-\hspace{1em}nausea & 30 & 0 & 0 & 0 & 0 & 30 & 0 & 0 & 0 & 0\\
-\hspace{1em}pain & 24 & 4 & 2 & 0 & 0 & 25 & 0 & 1 & 2 & 2\\
-\hspace{1em}tingling & 5 & 12 & 10 & 3 & 0 & 5 & 0 & 1 & 8 & 16\\
-\addlinespace[0.3em]
-\multicolumn{11}{l}{\textbf{cathodal session}}\\
-\hspace{1em}burning & 11 & 5 & 12 & 2 & 2 & 11 & 0 & 3 & 6 & 12\\
-\hspace{1em}dizziness & 29 & 2 & 1 & 0 & 0 & 27 & 3 & 1 & 1 & 0\\
-\hspace{1em}fatigue & 18 & 7 & 3 & 4 & 0 & 20 & 8 & 4 & 0 & 0\\
-\hspace{1em}headache & 27 & 2 & 3 & 0 & 0 & 26 & 3 & 1 & 1 & 1\\
-\hspace{1em}itching & 14 & 14 & 4 & 0 & 0 & 14 & 0 & 1 & 9 & 8\\
-\hspace{1em}nausea & 32 & 0 & 0 & 0 & 0 & 30 & 2 & 0 & 0 & 0\\
-\hspace{1em}pain & 25 & 6 & 1 & 0 & 0 & 24 & 0 & 3 & 2 & 3\\
-\hspace{1em}tingling & 7 & 6 & 13 & 5 & 1 & 7 & 0 & 1 & 7 & 17\\
-\bottomrule
-\multicolumn{11}{l}{\textsuperscript{a} "To which degree were the following sensations present during stimulation?"}\\
-\multicolumn{11}{l}{\textsuperscript{b} "To which degree do you believe this was caused by the stimulation?"}\\
-\end{tabular}}
-\end{table}
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<caption>(\#tab:tab-sacc-tDCS-AE)Number of reports of tDCS adverse effects</caption>
+ <thead>
+<tr>
+<th style="border-bottom:hidden" colspan="1"></th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="5"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Intensity rating<sup>a</sup>
+</div></th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="5"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Confidence rating<sup>b</sup>
+</div></th>
+</tr>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> none </th>
+   <th style="text-align:right;"> a little </th>
+   <th style="text-align:right;"> moderate </th>
+   <th style="text-align:right;"> strong </th>
+   <th style="text-align:right;"> very strong </th>
+   <th style="text-align:right;"> n/a </th>
+   <th style="text-align:right;"> unlikely </th>
+   <th style="text-align:right;"> possibly </th>
+   <th style="text-align:right;"> likely </th>
+   <th style="text-align:right;"> very likely </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr grouplength="8"><td colspan="11" style="border-bottom: 1px solid;"><strong>anodal session</strong></td></tr>
+<tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> burning </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 11 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> dizziness </td>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> fatigue </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 21 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> headache </td>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> itching </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 8 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> nausea </td>
+   <td style="text-align:right;"> 30 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 30 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> pain </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> tingling </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 16 </td>
+  </tr>
+  <tr grouplength="8"><td colspan="11" style="border-bottom: 1px solid;"><strong>cathodal session</strong></td></tr>
+<tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> burning </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 12 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> dizziness </td>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> fatigue </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> headache </td>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 26 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> itching </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 8 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> nausea </td>
+   <td style="text-align:right;"> 32 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 30 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> pain </td>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> tingling </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 17 </td>
+  </tr>
+</tbody>
+<tfoot>
+<tr><td style="padding: 0; border: 0;" colspan="100%">
+<sup>a</sup> "To which degree were the following sensations present during stimulation?"</td></tr>
+<tr><td style="padding: 0; border: 0;" colspan="100%">
+<sup>b</sup> "To which degree do you believe this was caused by the stimulation?"</td></tr>
+</tfoot>
+</table>
 
 ## MNI coordinates
 

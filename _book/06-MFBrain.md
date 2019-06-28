@@ -57,7 +57,10 @@ Participants performed a modified version of the sustained attention task from @
 
 (ref:caption-MFBrain-figure-1-task) __Sustained attention task__. All stimuli were presented 3° to the left and 1.5° below the yellow fixation square. The inset (dotted square) depicts a zoomed view of the stimuli. Each trial started with the presentation of the mask stimulus for 1850 ms. Then either a non-target (long line; 80% of trials) or a target (short line; 20% of trials) was presented for 150 ms. Participants were instructed to only respond to targets.
 
-![(\#fig:MFBrain-figure-1-task)(ref:caption-MFBrain-figure-1-task)](MFBrain_files/figures/figure_1_task.pdf) 
+<div class="figure">
+<img src="MFBrain_files/figures/figure_1_task.png" alt="(ref:caption-MFBrain-figure-1-task)" width="910" />
+<p class="caption">(\#fig:MFBrain-figure-1-task)(ref:caption-MFBrain-figure-1-task)</p>
+</div>
 
 Stimuli were presented at a viewing distance of 110 cm against a black background on a 17-inch Benq TFT monitor, running at a 60 Hz refresh rate. Participants were instructed to maintain fixation on a central yellow square (0.11° x 0.11°), which remained on screen throughout the task. All other stimuli were presented 3° to the left and 1.5° lower than fixation, so participants had to continuously and covertly direct their attention to this location. Every 2000 ms, a light gray line (width: 0.03°) was presented for 150 ms, which could be either short (a target; 20% of trials) or long (a non-target; 80% of trials). Participants were tasked to respond with their right index finger whenever they detected a target (short line). Non-targets were always 1.89° long; target length was calibrated individually (see [Procedure]) for each participant (_M_ = 1.40°, _SD_ = 0.10°, range = 1.21--1.59°). Line stimuli were preceded and followed by a mask stimulus, presented for the remaining 1850 ms. The mask was composed of many short lines (0.03° x 0.12°), subtending an area of 0.21° by 2.44°. To prevent participants from judging the length of (non-)target lines relative to the mask, the lines that comprised the mask were vertically shifted by a random small amount (within ±0.06°) on each presentation.
 
@@ -152,7 +155,10 @@ After one hour (after block 6), participants learned that they could earn an add
 
 (ref:caption-figure-2) __Declining performance with time-on-task is only partially counteracted by increases in motivation__. (__A__) Accuracy ($A'$) declined with time on task and was only partially and transiently restored by the motivation manipulation (after 60 minutes of task performance; vertical dotted line). These changes in accuracy were mirrored in the response time data (__B__) and mostly due to changes in Hit rate (__C__); there was no significant change over time in False alarm rate (__D__). The motivation manipulation successfully restored motivation ratings to their initial levels (__E__), but aversion ratings (__F__) remained elevated. The left y-axis of each plot shows the absolute value; the right y-axis shows the change compared to the first measurement (horizontal dotted line). Error bars are 95% confidence intervals of the paired difference between the first and each subsequent mean; paired differences are significant when the confidence interval does not overlap the dotted line. The x-axis depicts time-on-task in blocks of 10 minutes. The motivation and aversion ratings (horizontal dotted lines: minimum of 1, maximum of 7) were taken after each block (1 through 8), as well as before the task started (_begin_) and directly after the motivation manipulation (_post_).
 
-![(\#fig:figure-2-behav)(ref:caption-figure-2)](MFBrain_files/figures/figure_2_behav.pdf) 
+<div class="figure">
+<img src="MFBrain_files/figures/figure_2_behav.png" alt="(ref:caption-figure-2)" width="2174" />
+<p class="caption">(\#fig:figure-2-behav)(ref:caption-figure-2)</p>
+</div>
 
 The motivation manipulation improved accuracy in the following block of task performance (6 vs. 7: _M~diff~_ = -0.024, *t*(20) = -2.51, *p* = .021, *d* = -0.55, BF~10~ = 2.75). However, accuracy was still significantly lower than the first block (1 vs. 7: _M~diff~_ = 0.029, *t*(20) = 2.40, *p* = .026, *d* = 0.52, BF~10~ = 2.28), and reached its lowest point overall in the final ten minutes of task performance (1 vs. 8: _M~diff~_ = 0.062, *t*(20) = 4.23, *p* < .001, *d* = 0.92, BF~10~ = 79.2), despite equal levels of self-reported motivation. These changes in $A'$ appeared to be mostly driven by hit rate (Figure \@ref(fig:figure-2-behav)C), as hit rate also worsened significantly with time-on-task (*F*(2.45, 48.92) = 8.74, *p* < .001, $\eta^2$ = .30), and improved transiently after the motivation manipulation (6 vs. 7: _M~diff~_ = -0.077, *t*(20) = -2.17, *p* = .042, *d* = -0.47, BF~10~ = 1.56). False alarm rate appeared to decrease slightly over time (Figure \@ref(fig:figure-2-behav)D), but not significantly (*F*(3.08, 61.69) = 2.30, *p* = .084, $\eta^2$ = .10), and was also not significantly affected by motivation (6 vs. 7: _M~diff~_ = 0.006, *t*(20) = 1.10, *p* = .286, *d* = 0.24, BF~01~ = 2.59). False alarms were rare, as false alarm rate was already near the floor at the start of the experiment (3.1% of non-target trials). Finally, although response time showed the same pattern as accuracy (Figure \@ref(fig:figure-2-behav)B), response time did not significantly change after the motivation manipulation (6 vs. 7: _M~diff~_ = 22, *t*(20) = 1.45, *p* = .163, *d* = 0.32, BF~01~ = 1.78).
 
@@ -168,7 +174,10 @@ We also investigated to what extent dynamics in theta power were similar to thet
 
 (ref:caption-figure-3) __Changes in behavioral performance with time-on-task and motivation are closely tracked by cross-trial consistency of post-stimulus theta phase (A--D), but not theta power (E--H)__. Theta inter-trial phase clustering (ITPC) peaked from 150--500 ms post-stimulus (vertical dotted-line) between 3 and 7 Hz (time-frequency window outlined in white) (__A__, average of electrodes of interest) on left parieto-occipital (left PO) electrodes (PO7, P5, P7), right parieto-occipital (right PO) electrodes (PO8, P6, P8), and mid-frontal (MF) electrodes (FC1, FCz, FC2) (__B__, average of time-frequency window, electrodes marked in white). The same electrode sites and time-frequency windows of interest were used for theta power (__E__, __F__), baseline corrected from -400 to -100 ms using a decibel conversion. Theta ITPC in correct rejection trials (CRs) decreased with time-on-task (8 blocks of 10 minutes each) and increased after the motivation manipulation (directly after block 6; vertical dotted line) (__C__), closely resembling changes in task performance (Figure \@ref(fig:figure-2-behav)A). Power in the theta band decreased linearly over time, but did not change after the motivation manipulation (__G__). Both theta ITPC (__D__) and power (__H__) were higher for hit than miss trials, but this difference did not change significantly over time (4 blocks of 20 minutes each). Error bars are within-subject [@Cousineau2005; @Morey2008] 95% confidence intervals.
 
-![(\#fig:figure-3-theta)(ref:caption-figure-3)](MFBrain_files/figures/figure_3_theta.pdf) 
+<div class="figure">
+<img src="MFBrain_files/figures/figure_3_theta.png" alt="(ref:caption-figure-3)" width="2229" />
+<p class="caption">(\#fig:figure-3-theta)(ref:caption-figure-3)</p>
+</div>
 
 In sum, theta-band inter-trial phase clustering was higher in hit than in miss trials, suggesting it indexes behavioral performance. Changes in theta ITPC in correct rejection trials were tightly coupled to and predicted changes in behavioral performance ($A'$). Power in the theta band also decreased over time, but did not appear to respond to the motivation manipulation, suggesting that the change in power with time-on-task was partially independent of and less strongly associated with behavior than theta ITPC.
 
@@ -182,7 +191,10 @@ As top-down attention is known to increase the amplitudes of the P1 and N1, we a
 
 (ref:caption-figure-4) __Time-on task and motivation do not affect attentional modulation of early visual processing: P1 (A-D) and N1 (E-H) ERP components__. The P1 peaked between 110--180 ms (gray shaded rectangle) post-stimulus (vertical dotted line) on left parieto-occipital (left PO) electrodes (PO7, P5, P7) (__A__). The N1 peaked between 190--260 ms (gray shaded rectangle) on right parieto-occipital (right PO) electrodes (PO8, P6, P8) (__E__). The attentional modulation of the components, defined as the difference between hits and misses, was also lateralized to the left PO region for the P1 (__B__, average of P1 time window, left PO electrodes marked in white) and the right PO region for the N1 (__F__, average of N1 time window, right PO electrodes marked in white). P1 amplitude (__C__) did not change significantly over time in correct rejection (CR) trials, but N1 amplitude did decrease with time-on-task (__G__) (8 blocks of 10 minutes each). The time of the motivation manipulation (directly after block 6) is indicated with the vertical dotted line. There was no significant change in the attentional modulation (hits vs. misses) of the P1 (__D__) and N1 (__H__) over time (4 blocks of 20 minutes each). Error bars are within-subject [@Cousineau2005; @Morey2008] 95% confidence intervals; shaded areas in (A) and (E) represent the standard error of the mean.
 
-![(\#fig:figure-4-ERPs)(ref:caption-figure-4)](MFBrain_files/figures/figure_4_ERPs.pdf) 
+<div class="figure">
+<img src="MFBrain_files/figures/figure_4_ERPs.png" alt="(ref:caption-figure-4)" width="2225" />
+<p class="caption">(\#fig:figure-4-ERPs)(ref:caption-figure-4)</p>
+</div>
 
 In sum, N1 amplitude decreased with time-on-task (in correct rejection trials), but appeared to be unaffected by the motivation manipulation. The P1 and N1 components and attentional modulations thereof were completely lateralized: the P1 dissociated between hits and misses in the irrelevant hemisphere (left); the N1 dissociated between hits and misses in the relevant hemisphere (right) [see @Slagter2016]. However, this pattern did not change significantly with time-on-task or motivation.
 
@@ -198,7 +210,10 @@ In sum, although only one hemifield (the left) was ever relevant, we observed hi
 
 (ref:caption-figure-5) __Pre-stimulus alpha power remains right-lateralized over time, despite stimuli appearing exclusively in the left visual hemifield__. For each time-frequency point, we computed a lateralization index, by subtracting power at each left electrode from its counterpart on the right side, and dividing by the sum. Positive values therefore mean that power was relatively stronger over the right hemisphere. Our data show that pre-stimulus (vertical dotted line) alpha power is right-lateralized (__A__, time-frequency window: 9--14 Hz, -1000 to -100 ms, outlined in white), when comparing left (PO7, P5, P7) and right parieto-occipital (right PO: PO8, P6, P8) electrode sites (__B__, electrodes marked in white). This pattern did not change significantly with time-on-task, neither in correction rejection trials (CRs) (__C__, 8 blocks of 10 minutes each; time of the motivation manipulation indicated with vertical dotted line), nor in hit and miss trials (__D__, 4 blocks of 20 minutes each). Error bars are within-subject [@Cousineau2005; @Morey2008] 95% confidence intervals.
 
-![(\#fig:figure-5-latindex)(ref:caption-figure-5)](MFBrain_files/figures/figure_5_latindex.pdf) 
+<div class="figure">
+<img src="MFBrain_files/figures/figure_5_latindex.png" alt="(ref:caption-figure-5)" width="2233" />
+<p class="caption">(\#fig:figure-5-latindex)(ref:caption-figure-5)</p>
+</div>
 
 ## Discussion {#MFBrain-discussion}
 
