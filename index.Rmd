@@ -8,6 +8,7 @@ description: This is the PhD thesis of Leon Reteig
 documentclass: memoir
 fontsize: 12pt
 #geometry: false # when memoir should handle page layout
+indent: true
 site: bookdown::bookdown_site
 link-citations: yes
 links-as-notes: true
