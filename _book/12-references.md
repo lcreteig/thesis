@@ -1,3 +1,4 @@
+\backmatter
 \cleardoublepage
 \phantomsection
 \addcontentsline{toc}{part}{Bibliography}
