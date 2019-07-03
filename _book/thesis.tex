@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper,]{memoir}
+\documentclass[11pt,]{memoir}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -44,12 +44,6 @@
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 % Make links footnotes instead of hotlinks:
 \renewcommand{\href}[2]{#2\footnote{\url{#1}}}
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -89,10 +83,10 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{28 June, 2019}
+    \date{03 July, 2019}
 
 \usepackage[width=\textwidth,font=small]{caption}
-\usepackage[driver=xetex,margin=1in]{geometry}
+\usepackage[driver=xetex]{geometry}
 \usepackage{pdflscape}
 
 \newcommand{\blandscape}{\begin{landscape}}
@@ -103,8 +97,30 @@
 \setlength\cftsectionindent{2.5em} % also adjust others to match
 \AtBeginDocument{\let\maketitle\relax} % don't make automatic title page as first page
 
-%\pagestyle{companion}
+% Page and chapter styles
+%\pagestyle{companion} % now defined in front matter
 \chapterstyle{ntglike}
+
+% Font family
+\usepackage{fontspec}
+\setmainfont{MinionPro-Regular}
+
+% The length of the lowercase alphabet in 11 pt Minion Pro is 127.80293pt (116.7151 pt for 10pt).
+% According to equation 2.1 of the memoir manual, the optimal width of the typeblock (66 characters) would then be 294.38358306 pt, or 103.9 mm
+% According to table 2.2 of the memoir manual, the typeblock should be between 22 pica's (= 93.13 mm), which would be 59 characters wide, or 26 pica's a little bit more than 22 pica's (= 110.1 mm), which would be 70 characters wide. 
+
+% Page layout
+\setstocksize{240mm}{170mm} % adjusted B5, with no bleed on each side for now
+\settrimmedsize{240mm}{170mm}{*} % adjusted B5 (standard thesis size)
+\setpageml{\paperheight}{\paperwidth}{*} % center the adjusted B5 page to the middle left (so the right, bottom and top will be trimmed)
+\settypeblocksize{*}{105mm}{1.618} % typeblock of 105 mm wide (little wider than optimal, to save paper). The golden ratio is a good rule to set the height, which amounts to about 105*1.618 = 170. The actual height of the text block will differ slightly, because it has to fit an integer number of lines.
+\setlrmargins{*}{40mm}{*} % leaves 170-105 = 65 mm for margins. Set the foredge margin so its relation to the spine margin is about the golden ratio as well (65/1.618 is 40.2). A foreedge of twice the spine is also common, but I think this makes the foreedge a bit too big. The spine is then 65-40 = 25 mm.
+\setulmargins{25mm}{*}{*} % the top margin is often 1/9 of the page height, or 1/9 * 240 mm = 27 mm. Often the top margin is also the same as the spine. Both of these rules almost converge here. 
+% This automatically determines the bottom margin at 240 - 25 - 170 = 45. This is bigger than the top margin, which is good, as this is where you hold the book (often the bottom margin is even twice as big as the top).
+%\setheadfoot{\onelineskip}{2\onelineskip} % defaults from memoir manual
+%\setheaderspaces{*}{2\onelineskip}{*} % defaults from memoir manual
+\settypeoutlayoutunit{mm} % use mm for printing to the log
+\checkandfixthelayout
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -148,15 +164,15 @@ from
 the Netherlands Organization for Scientific Research (NWO). % CHANGE funding body
 
 \includegraphics{_bookdown_files/FSC.pdf} \newline
-This thesis was typeset using \LaTeX\ and the \verb+bookdown+ R-package \newline
+This thesis was typeset using Markdown, \LaTeX\ and the \verb+bookdown+ R-package \newline
 ISBN: xxx-xx-xxx-xxxx-x \newline % CHANGE ISBN
 Printing: Ridderprint BV \newline % CHANGE printer
 Cover art: X, \url{www.website.com} % CHANGE cover art credits
 
 \includegraphics{_bookdown_files/CC-BY.png} \newline
 An online version of this thesis is available at 
-\url{lcreteig.github.io/thesis} % CHANGE thesis website
-, licensed under a 
+\url{lcreteig.github.io/thesis},  % CHANGE thesis website
+licensed under a 
 Creative Commons Attribution 4.0 International License. % CHANGE license
 \endgroup
 
@@ -175,7 +191,7 @@ affect attentional performance}\par % CHANGE thesis subtitle
 aan de Universiteit van Amsterdam\\
 op gezag van de Rector Magnificus\\
 prof. dr. ir. K.I.J. Maex\\ % CHANGE to name of current rector magnificus
-ten overstaan van een door het College voor Promoties ingestelde commissie,\\
+\mbox{ten overstaan van een door het College voor Promoties ingestelde commissie,}\\
 in het openbaar te verdedigen in de Agnietenkapel\\  % CHANGE defense location
 % The part after "de" should either read "Agnietenkapel" or "Aula der Universiteit"
 op woensdag 20 november 2019, te 14.00 uur \\ }\par % CHANGE defense data
@@ -188,7 +204,7 @@ op woensdag 20 november 2019, te 14.00 uur \\ }\par % CHANGE defense data
 % and your birthplace
 \vspace{\baselineskip}
 {\large geboren te Amsterdam} %CHANGE place of birth
-\vspace*{\drop}
+%\vspace*{\drop}
 % If your country of birth is the Netherlands, this should be only your place of birth,
 % e.g.: geboren te Amsterdam
 % If you were born outside the Netherlands, you should add your country of birth,
@@ -197,10 +213,13 @@ op woensdag 20 november 2019, te 14.00 uur \\ }\par % CHANGE defense data
 
 %% Page 4: info on thesis committee
 \clearpage
-\def\colw{6.5em}
-\noindent%
-\textbf{Promotiecommissie:}\\
+\def\colw{6em} % fix width of first column to align the two tables
+\begin{adjustwidth}{-1cm}{}% make the left margin a bit smaller, as the table won't fit otherwise
+\noindent\textbf{Promotiecommissie:}\\
 \\
+%\begin{adjustbox}{center}
+%\centerline{% center the table; it will spill into the margins
+%\noindent\makebox[\textwidth]{%
 \begin{tabular}[t]{@{}p{\colw}ll}
 Promotores:    & prof. dr. K.R. Ridderinkhof    & Universiteit van Amsterdam \\  %CHANGE
                & prof. dr. H.A. Slagter         & Universiteit van Amsterdam \\  %CHANGE
@@ -216,11 +235,15 @@ Overige leden: & prof. dr. M.M. Lorist          & Rijksuniversiteit Groningen \\
                & dr. W.P.M. van den Wildenberg  & Universiteit van Amsterdam \\  %CHANGE
 \\               
 \end{tabular}\\
+%}
 
 \noindent%
+%\centerline{%
 \begin{tabular}[t]{@{}p{\colw}l}
 Faculteit:     & Faculteit der Maatschappij- en Gedragswetenschappen \\ %CHANGE
 \end{tabular}\\
+\end{adjustwidth}
+%}
 
 %% Page 5: quotes
 
@@ -261,7 +284,7 @@ That the powerful play goes on, and you may contribute a verse.\\
 \end{vplace}
 
 %% Table of contents
-\clearpage
+\cleardoublepage
 \pagestyle{plain}
 
 {
@@ -272,6 +295,13 @@ That the powerful play goes on, and you may contribute a verse.\\
 \clearpage
 \pagestyle{companion}
 \mainmatter
+
+% \newlength{\mylen}                % a length
+% \newcommand{\alphabet}{abcdefghijklmnopqrstuvwxyz} % the lowercase alphabet
+% \begingroup                       % keep font change local% font specification e.g., \Large\sffamily
+% \settowidth{\mylen}{\alphabet}
+% The length of this alphabet is \the\mylen. % print in document\typeout{The length of the Large sans alphabetis \the\mylen}                    % put in log file
+% \endgroup                         % end the grouping
 
 \hypertarget{part-intro}{%
 \part{General introduction and literature review}\label{part-intro}}
@@ -4197,8 +4227,6 @@ When we look at what we have really learned about cognition from tACS, tDCS and 
 
 This thesis started out with a rather grand introduction to cognitive enhancement (Chapter \ref{intro-general}). Some see this future on the horizon already, and point out potential ethical problems in the use of tES for this purpose (Cohen Kadosh, Levy, O'Shea, Shea, \& Savulescu, \protect\hyperlink{ref-CohenKadosh2012}{2012}). The potential of tES has also been recognized beyond academia, as it has gained a lot of attention in the media (Dubljević, Saigle, \& Racine, \protect\hyperlink{ref-Dubljevic2014}{2014}). There is even a group of early adopters who have started to use tES at home (Jwa, \protect\hyperlink{ref-Jwa2015}{2015})---primarily for cognitive enhancement of attention. The interest in tES is further fueled by companies who market tES devices to consumers, along with promises of the stars and the moon (Santarnecchi, Feurra, Galli, Rossi, \& Rossi, \protect\hyperlink{ref-Santarnecchi2013b}{2013}). These are all important developments that scientists should have a voice in. When we do, we should not forget to be as skeptical towards others as we can be among ourselves (Riggall et al., \protect\hyperlink{ref-Riggall2015}{2015}; Steenbergen et al., \protect\hyperlink{ref-Steenbergen2016}{2016}; Walsh, \protect\hyperlink{ref-Walsh2013}{2013}; Wurzman et al., \protect\hyperlink{ref-Wurzman2016}{2016}). Certainly, the promises of non-invasive brain stimulation are exciting. But it will require a lot of careful research and steady progress to make them a reality.
 
-\backmatter
-
 \hypertarget{appendix-appendix}{%
 \appendix}
 
@@ -4412,6 +4440,7 @@ Do your best! Good luck!
 \renewcommand{\arraystretch}{1.5}
 \normalsize
 
+\backmatter
 \cleardoublepage
 \phantomsection
 \addcontentsline{toc}{part}{Bibliography}

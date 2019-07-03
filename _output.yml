@@ -19,7 +19,6 @@ bookdown::pdf_book:
   citation_package: none
   keep_tex: yes
   pandoc_args: [
-   "--variable", "papersize=a4",
    "--variable", "linkcolor=gray",
    "--csl",       "apa.csl" 
    ]

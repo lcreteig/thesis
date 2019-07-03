@@ -1,5 +1,5 @@
 \usepackage[width=\textwidth,font=small]{caption}
-\usepackage[driver=xetex,margin=1in]{geometry}
+\usepackage[driver=xetex]{geometry}
 \usepackage{pdflscape}
 
 \newcommand{\blandscape}{\begin{landscape}}
@@ -10,5 +10,27 @@
 \setlength\cftsectionindent{2.5em} % also adjust others to match
 \AtBeginDocument{\let\maketitle\relax} % don't make automatic title page as first page
 
-%\pagestyle{companion}
+% Page and chapter styles
+%\pagestyle{companion} % now defined in front matter
 \chapterstyle{ntglike}
+
+% Font family
+\usepackage{fontspec}
+\setmainfont{MinionPro-Regular}
+
+% The length of the lowercase alphabet in 11 pt Minion Pro is 127.80293pt (116.7151 pt for 10pt).
+% According to equation 2.1 of the memoir manual, the optimal width of the typeblock (66 characters) would then be 294.38358306 pt, or 103.9 mm
+% According to table 2.2 of the memoir manual, the typeblock should be between 22 pica's (= 93.13 mm), which would be 59 characters wide, or 26 pica's a little bit more than 22 pica's (= 110.1 mm), which would be 70 characters wide. 
+
+% Page layout
+\setstocksize{240mm}{170mm} % adjusted B5, with no bleed on each side for now
+\settrimmedsize{240mm}{170mm}{*} % adjusted B5 (standard thesis size)
+\setpageml{\paperheight}{\paperwidth}{*} % center the adjusted B5 page to the middle left (so the right, bottom and top will be trimmed)
+\settypeblocksize{*}{105mm}{1.618} % typeblock of 105 mm wide (little wider than optimal, to save paper). The golden ratio is a good rule to set the height, which amounts to about 105*1.618 = 170. The actual height of the text block will differ slightly, because it has to fit an integer number of lines.
+\setlrmargins{*}{40mm}{*} % leaves 170-105 = 65 mm for margins. Set the foredge margin so its relation to the spine margin is about the golden ratio as well (65/1.618 is 40.2). A foreedge of twice the spine is also common, but I think this makes the foreedge a bit too big. The spine is then 65-40 = 25 mm.
+\setulmargins{25mm}{*}{*} % the top margin is often 1/9 of the page height, or 1/9 * 240 mm = 27 mm. Often the top margin is also the same as the spine. Both of these rules almost converge here. 
+% This automatically determines the bottom margin at 240 - 25 - 170 = 45. This is bigger than the top margin, which is good, as this is where you hold the book (often the bottom margin is even twice as big as the top).
+%\setheadfoot{\onelineskip}{2\onelineskip} % defaults from memoir manual
+%\setheaderspaces{*}{2\onelineskip}{*} % defaults from memoir manual
+\settypeoutlayoutunit{mm} % use mm for printing to the log
+\checkandfixthelayout

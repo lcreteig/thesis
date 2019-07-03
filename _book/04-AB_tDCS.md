@@ -47,10 +47,7 @@ The experiment and recruitment took place at the University of Amsterdam. All pr
 
 The study procedures were identical to @London2015: participants received anodal and cathodal tDCS in separate sessions (Figure \@ref(fig:AB-tDCS-fig-procedure)), which typically took place exactly one week apart (cf. minimum of 48 hours in @London2015). The time in between served to keep the sessions as similar as possible, and to minimize the risk of tDCS carry-over effects. 18 participants received anodal tDCS in the first session and cathodal tDCS in the second, and vice versa for the remaining 22 participants.
 
-<div class="figure">
-<img src="AB_tDCS_files/figures/figure_1_procedure.png" alt="(ref:caption-AB-tDCS-fig-procedure)" width="1064" />
-<p class="caption">(\#fig:AB-tDCS-fig-procedure)(ref:caption-AB-tDCS-fig-procedure)</p>
-</div>
+![(\#fig:AB-tDCS-fig-procedure)(ref:caption-AB-tDCS-fig-procedure)](AB_tDCS_files/figures/figure_1_procedure.pdf) 
 
 First, participants experienced the sensations induced by tDCS in a brief trial stimulation (see the [tDCS](#AB_tDCS-tDCS) section). Next, participants completed 20 practice trials of the task (see the [Task](#AB_tDCS-task) section). For the main portion of the experiment, participants performed three blocks of the task (Figure \@ref(fig:AB-tDCS-fig-procedure)): before tDCS (_baseline_), during anodal/cathodal tDCS (_tDCS_), and after tDCS (_post_). Finally, after completing the three blocks, participants filled in a questionnaire on tDCS-related adverse effects (see Table \@ref(tab:tab-AB-tDCS-AE) and Figure \@ref(fig:fig-AB-tDCS-AE) in Appendix \@ref(AB-tDCS-supplement)).
 
@@ -66,10 +63,7 @@ The letter stream was preceded by a fixation cross (same color as the letters) p
 
 Trial duration varied slightly because both the T1 and T2 response questions were self-paced, so some participants completed more trials than others depending on their response times. On average, participants completed 130 short lag trials (_SD_ = 17; range = 78--163) and 65 long lag trials (_SD_ = 9; range = 39--87) per 20-minute block.
 
-<div class="figure">
-<img src="AB_tDCS_files/figures/figure_2_task.png" alt="(ref:caption-AB-tDCS-fig-task)" width="1064" />
-<p class="caption">(\#fig:AB-tDCS-fig-task)(ref:caption-AB-tDCS-fig-task)</p>
-</div>
+![(\#fig:AB-tDCS-fig-task)(ref:caption-AB-tDCS-fig-task)](AB_tDCS_files/figures/figure_2_task.pdf) 
 
 (ref:caption-AB-tDCS-fig-task) __Attentional blink task__. Participants viewed rapid serial visual presentation streams of 15 letters, all of which were distractors (gray letters) except for T1 and T2. T1 was presented in red at position 5; T2 was presented in green and followed T1 after 2 distractors (_lag 3_, inside the AB window) or 7 distractors (_lag 8_, outside the AB window). At the end of the trial, participants reported the identity of T1 and then T2 (self-paced).
 
@@ -157,10 +151,7 @@ All of the data and materials from this study and the data from @London2015 are 
 
 ### Group-level
 
-<div class="figure">
-<img src="AB_tDCS_files/figures/figure_3_group.png" alt="(ref:caption-fig-group)" width="1653" />
-<p class="caption">(\#fig:fig-group)(ref:caption-fig-group)</p>
-</div>
+![(\#fig:fig-group)(ref:caption-fig-group)](AB_tDCS_files/figures/figure_3_group.pdf) 
 
 (ref:caption-fig-group) __No effects of tDCS on the attentional blink at the group level__. There was a clear attentional blink effect: a lower % T2 accuracy (given T1 correct: _T2|T1_; dashed lines) for _lag 3_ (T2 presented inside the attentional blink window) than _lag 8_ (T2 presented outside the attentional blink window, on par with _T1 accuracy_). However, the attentional blink did not change systematically over stimulation conditions (_anodal_, _cathodal_) and blocks (_pre_, _tDCS_, _post_). T1 accuracy (solid lines) was also not affected by tDCS.
 
@@ -168,75 +159,34 @@ Figure \@ref(fig:fig-group) shows the attentional blink (T2|T1 accuracy per lag)
 
 \small
 
-<table class="table" style="font-size: 11px; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">(\#tab:tab-descriptives-T2)Descriptive statistics for T2|T1 accuracy</caption>
- <thead>
-<tr>
-<th style="border-bottom:hidden" colspan="1"></th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">First session: anodal (n = 18)</div></th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">First session: cathodal (n = 22)</div></th>
-</tr>
-  <tr>
-   <th style="text-align:left;">  </th>
-   <th style="text-align:left;"> anodal </th>
-   <th style="text-align:left;"> cathodal </th>
-   <th style="text-align:left;"> anodal </th>
-   <th style="text-align:left;"> cathodal </th>
-  </tr>
- </thead>
-<tbody>
-  <tr grouplength="2"><td colspan="5" style="border-bottom: 1px solid;"><strong>baseline</strong></td></tr>
-<tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> lag 3 </td>
-   <td style="text-align:left;"> 0.395 (0.149) </td>
-   <td style="text-align:left;"> 0.486 (0.167) </td>
-   <td style="text-align:left;"> 0.469 (0.211) </td>
-   <td style="text-align:left;"> 0.423 (0.168) </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> lag 8 </td>
-   <td style="text-align:left;"> 0.826 (0.119) </td>
-   <td style="text-align:left;"> 0.819 (0.095) </td>
-   <td style="text-align:left;"> 0.854 (0.125) </td>
-   <td style="text-align:left;"> 0.855 (0.087) </td>
-  </tr>
-  <tr grouplength="2"><td colspan="5" style="border-bottom: 1px solid;"><strong>tDCS</strong></td></tr>
-<tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> lag 3 </td>
-   <td style="text-align:left;"> 0.415 (0.168) </td>
-   <td style="text-align:left;"> 0.450 (0.165) </td>
-   <td style="text-align:left;"> 0.460 (0.201) </td>
-   <td style="text-align:left;"> 0.444 (0.188) </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> lag 8 </td>
-   <td style="text-align:left;"> 0.787 (0.131) </td>
-   <td style="text-align:left;"> 0.819 (0.098) </td>
-   <td style="text-align:left;"> 0.830 (0.115) </td>
-   <td style="text-align:left;"> 0.849 (0.096) </td>
-  </tr>
-  <tr grouplength="2"><td colspan="5" style="border-bottom: 1px solid;"><strong>post</strong></td></tr>
-<tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> lag 3 </td>
-   <td style="text-align:left;"> 0.437 (0.171) </td>
-   <td style="text-align:left;"> 0.451 (0.160) </td>
-   <td style="text-align:left;"> 0.453 (0.190) </td>
-   <td style="text-align:left;"> 0.447 (0.164) </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> lag 8 </td>
-   <td style="text-align:left;"> 0.783 (0.118) </td>
-   <td style="text-align:left;"> 0.825 (0.098) </td>
-   <td style="text-align:left;"> 0.840 (0.145) </td>
-   <td style="text-align:left;"> 0.846 (0.120) </td>
-  </tr>
-</tbody>
-<tfoot>
-<tr><td style="padding: 0; border: 0;" colspan="100%"><span style="font-style: italic;">Note: </span></td></tr>
-<tr><td style="padding: 0; border: 0;" colspan="100%">
-<sup></sup> Values are "Mean (SD)"</td></tr>
-</tfoot>
-</table>
+\begin{table}[t]
+
+\caption{(\#tab:tab-descriptives-T2)Descriptive statistics for T2|T1 accuracy}
+\centering
+\fontsize{11}{13}\selectfont
+\begin{tabular}{lllll}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{2}{c}{First session: anodal (n = 18)} & \multicolumn{2}{c}{First session: cathodal (n = 22)} \\
+\cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-5}
+ & anodal & cathodal & anodal & cathodal\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{5}{l}{\textbf{baseline}}\\
+\hspace{1em}lag 3 & 0.395 (0.149) & 0.486 (0.167) & 0.469 (0.211) & 0.423 (0.168)\\
+\hspace{1em}lag 8 & 0.826 (0.119) & 0.819 (0.095) & 0.854 (0.125) & 0.855 (0.087)\\
+\addlinespace[0.3em]
+\multicolumn{5}{l}{\textbf{tDCS}}\\
+\hspace{1em}lag 3 & 0.415 (0.168) & 0.450 (0.165) & 0.460 (0.201) & 0.444 (0.188)\\
+\hspace{1em}lag 8 & 0.787 (0.131) & 0.819 (0.098) & 0.830 (0.115) & 0.849 (0.096)\\
+\addlinespace[0.3em]
+\multicolumn{5}{l}{\textbf{post}}\\
+\hspace{1em}lag 3 & 0.437 (0.171) & 0.451 (0.160) & 0.453 (0.190) & 0.447 (0.164)\\
+\hspace{1em}lag 8 & 0.783 (0.118) & 0.825 (0.098) & 0.840 (0.145) & 0.846 (0.120)\\
+\bottomrule
+\multicolumn{5}{l}{\textit{Note: }}\\
+\multicolumn{5}{l}{Values are "Mean (SD)"}\\
+\end{tabular}
+\end{table}
 
 \normalsize
 
@@ -244,29 +194,37 @@ Effects of tDCS at the group-level should manifest as a three-way interaction be
 
 \small
 
-<caption>(\#tab:tab-anova-T2)</caption>
 
-<caption>*Repeated measures ANOVA on T2|T1 accuracy*</caption>
-
-
-
-Effect                                                           $F$      $\mathit{df}_1^{GG}$   $\mathit{df}_2^{GG}$   $p$      $\hat{\eta}^2_G$ 
----------------------------------------------------------------  -------  ---------------------  ---------------------  -------  -----------------
-Session order                                                    0.33     1                      38                     .568     .006             
-Block                                                            1.13     1.91                   72.71                  .328     .001             
-Stimulation                                                      2.47     1                      38                     .125     .002             
-Lag                                                              432.11   1                      38                     < .001   .634             
-Session order $\times$ Block                                     0.29     1.91                   72.71                  .741     .000             
-Session order $\times$ Stimulation                               5.55     1                      38                     .024     .005             
-Session order $\times$ Lag                                       0.48     1                      38                     .494     .002             
-Block $\times$ Stimulation                                       0.28     1.91                   72.51                  .747     .000             
-Block $\times$ Lag                                               1.67     1.7                    64.73                  .199     .001             
-Stimulation $\times$ Lag                                         0.10     1                      38                     .751     .000             
-Session order $\times$ Block $\times$ Stimulation                1.93     1.91                   72.51                  .154     .001             
-Session order $\times$ Block $\times$ Lag                        0.24     1.7                    64.73                  .752     .000             
-Session order $\times$ Stimulation $\times$ Lag                  5.84     1                      38                     .021     .002             
-Block $\times$ Stimulation $\times$ Lag                          2.77     1.77                   67.17                  .076     .001             
-Session order $\times$ Block $\times$ Stimulation $\times$ Lag   7.25     1.77                   67.17                  .002     .003             
+\begin{table}[tbp]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:tab-anova-T2}Repeated measures ANOVA on T2|T1 accuracy}
+\small{
+\begin{tabular}{llllll}
+\toprule
+Effect & \multicolumn{1}{c}{$F$} & \multicolumn{1}{c}{$\mathit{df}_1^{GG}$} & \multicolumn{1}{c}{$\mathit{df}_2^{GG}$} & \multicolumn{1}{c}{$p$} & \multicolumn{1}{c}{$\hat{\eta}^2_G$}\\
+\midrule
+Session order & 0.33 & 1 & 38 & .568 & .006\\
+Block & 1.13 & 1.91 & 72.71 & .328 & .001\\
+Stimulation & 2.47 & 1 & 38 & .125 & .002\\
+Lag & 432.11 & 1 & 38 & < .001 & .634\\
+Session order $\times$ Block & 0.29 & 1.91 & 72.71 & .741 & .000\\
+Session order $\times$ Stimulation & 5.55 & 1 & 38 & .024 & .005\\
+Session order $\times$ Lag & 0.48 & 1 & 38 & .494 & .002\\
+Block $\times$ Stimulation & 0.28 & 1.91 & 72.51 & .747 & .000\\
+Block $\times$ Lag & 1.67 & 1.7 & 64.73 & .199 & .001\\
+Stimulation $\times$ Lag & 0.10 & 1 & 38 & .751 & .000\\
+Session order $\times$ Block $\times$ Stimulation & 1.93 & 1.91 & 72.51 & .154 & .001\\
+Session order $\times$ Block $\times$ Lag & 0.24 & 1.7 & 64.73 & .752 & .000\\
+Session order $\times$ Stimulation $\times$ Lag & 5.84 & 1 & 38 & .021 & .002\\
+Block $\times$ Stimulation $\times$ Lag & 2.77 & 1.77 & 67.17 & .076 & .001\\
+Session order $\times$ Block $\times$ Stimulation $\times$ Lag & 7.25 & 1.77 & 67.17 & .002 & .003\\
+\bottomrule
+\end{tabular}
+}
+\end{threeparttable}
+\end{center}
+\end{table}
 
 \normalsize
 
@@ -274,29 +232,37 @@ We ran the same repeated measures ANOVA for T1 accuracy (Table \@ref(tab:tab-ano
 
 In sum, we conclude that there is no significant effect of tDCS on the attentional blink or T1 accuracy at the group level, in agreement with @London2015.
 
-<caption>(\#tab:tab-anova-T1)</caption>
 
-<caption>*Repeated measures ANOVA on T1 accuracy*</caption>
-
-
-
-Effect                                                           $F$     $\mathit{df}_1^{GG}$   $\mathit{df}_2^{GG}$   $p$      $\hat{\eta}^2_G$ 
----------------------------------------------------------------  ------  ---------------------  ---------------------  -------  -----------------
-Session order                                                    0.96    1                      38                     .332     .018             
-Block                                                            6.64    1.89                   71.87                  .003     .010             
-Stimulation                                                      0.00    1                      38                     .996     .000             
-Lag                                                              29.23   1                      38                     < .001   .013             
-Session order $\times$ Block                                     0.60    1.89                   71.87                  .540     .001             
-Session order $\times$ Stimulation                               11.24   1                      38                     .002     .030             
-Session order $\times$ Lag                                       0.04    1                      38                     .844     .000             
-Block $\times$ Stimulation                                       0.24    1.92                   73.08                  .777     .000             
-Block $\times$ Lag                                               1.91    1.93                   73.2                   .158     .001             
-Stimulation $\times$ Lag                                         0.31    1                      38                     .584     .000             
-Session order $\times$ Block $\times$ Stimulation                9.94    1.92                   73.08                  < .001   .007             
-Session order $\times$ Block $\times$ Lag                        0.19    1.93                   73.2                   .821     .000             
-Session order $\times$ Stimulation $\times$ Lag                  0.96    1                      38                     .333     .000             
-Block $\times$ Stimulation $\times$ Lag                          0.31    1.86                   70.75                  .718     .000             
-Session order $\times$ Block $\times$ Stimulation $\times$ Lag   0.53    1.86                   70.75                  .580     .000             
+\begin{table}[tbp]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:tab-anova-T1}Repeated measures ANOVA on T1 accuracy}
+\small{
+\begin{tabular}{llllll}
+\toprule
+Effect & \multicolumn{1}{c}{$F$} & \multicolumn{1}{c}{$\mathit{df}_1^{GG}$} & \multicolumn{1}{c}{$\mathit{df}_2^{GG}$} & \multicolumn{1}{c}{$p$} & \multicolumn{1}{c}{$\hat{\eta}^2_G$}\\
+\midrule
+Session order & 0.96 & 1 & 38 & .332 & .018\\
+Block & 6.64 & 1.89 & 71.87 & .003 & .010\\
+Stimulation & 0.00 & 1 & 38 & .996 & .000\\
+Lag & 29.23 & 1 & 38 & < .001 & .013\\
+Session order $\times$ Block & 0.60 & 1.89 & 71.87 & .540 & .001\\
+Session order $\times$ Stimulation & 11.24 & 1 & 38 & .002 & .030\\
+Session order $\times$ Lag & 0.04 & 1 & 38 & .844 & .000\\
+Block $\times$ Stimulation & 0.24 & 1.92 & 73.08 & .777 & .000\\
+Block $\times$ Lag & 1.91 & 1.93 & 73.2 & .158 & .001\\
+Stimulation $\times$ Lag & 0.31 & 1 & 38 & .584 & .000\\
+Session order $\times$ Block $\times$ Stimulation & 9.94 & 1.92 & 73.08 & < .001 & .007\\
+Session order $\times$ Block $\times$ Lag & 0.19 & 1.93 & 73.2 & .821 & .000\\
+Session order $\times$ Stimulation $\times$ Lag & 0.96 & 1 & 38 & .333 & .000\\
+Block $\times$ Stimulation $\times$ Lag & 0.31 & 1.86 & 70.75 & .718 & .000\\
+Session order $\times$ Block $\times$ Stimulation $\times$ Lag & 0.53 & 1.86 & 70.75 & .580 & .000\\
+\bottomrule
+\end{tabular}
+}
+\end{threeparttable}
+\end{center}
+\end{table}
 
 ### Individual differences
 
@@ -304,10 +270,7 @@ Our main aim was to replicate @London2015, who found a negative correlation betw
 
 We ran the same partial correlation (attempting to adjust for Session order) between the anodal and cathodal AB magnitude change scores (_tDCS_ - _baseline_) on our data (Figure \@ref(fig:fig-corr)). However, here the resulting correlation did not go in the same direction (_r_(37) = .02), and was not significant (_p_ = .899). In the next sections, we present a number of follow-up analyses that further explore this difference in results between both studies (see the [Replication analyses](#AB_tDCS-rep-analyses) subsection in the [Methods](#AB_tDCS-methods) section).
 
-<div class="figure">
-<img src="AB_tDCS_files/figures/figure_4_corr.png" alt="(ref:caption-fig-corr)" width="1653" />
-<p class="caption">(\#fig:fig-corr)(ref:caption-fig-corr)</p>
-</div>
+![(\#fig:fig-corr)(ref:caption-fig-corr)](AB_tDCS_files/figures/figure_4_corr.pdf) 
 
 (ref:caption-fig-corr) __The effects of anodal and cathodal tDCS are not correlated in the present study.__ Data points show AB magnitude change scores (_tDCS - baseline_, _post - baseline_) for each participant in the study, in the _anodal_ session (x-axis) and the _cathodal_ session (y-axis). While @London2015 found a negative partial correlation (for _tDCS - baseline_), suggesting opposite effects of anodal and cathodal tDCS, this effect appears to be absent here. The partial correlation coefficients (attempting to adjust for Session order) and p-values are printed in the upper left.
 
@@ -335,19 +298,13 @@ The meta-analytic estimate of the correlation is _r_ = -0.20, 95%CI[-0.42, 0.04]
 
 In addition, we pooled the data from both studies at the single-subject level and re-calculated the partial correlation on the combined sample (n = 74). To make the datasets as comparable as possible, we first averaged over T2|T1 accuracy at lags 2 and 4 in @London2015, to mimic a "lag 3" condition cf. the present study (Figure \@ref(fig:fig-corr-pooled)).
 
-<div class="figure">
-<img src="AB_tDCS_files/figures/figure_5_pooledcorr.png" alt="(ref:caption-fig-corr-pooled)" width="1062" />
-<p class="caption">(\#fig:fig-corr-pooled)(ref:caption-fig-corr-pooled)</p>
-</div>
+![(\#fig:fig-corr-pooled)(ref:caption-fig-corr-pooled)](AB_tDCS_files/figures/figure_5_pooledcorr.pdf) 
 
 (ref:caption-fig-corr-pooled) __The effects of anodal and cathodal tDCS are also not correlated when pooling data from both studies.__ As in Figure \@ref(fig:fig-corr), data points show AB magnitude change scores (_tDCS_ - _baseline_) in the _anodal_ session (x-axis) and the _cathodal_ session (y-axis), but now for each participant in @London2015 (_study 1_) and the present study (_study 2_). While @London2015 found a negative partial correlation, suggesting opposite effects of anodal and cathodal tDCS, this effect appears to be absent when based on the combined data of both studies. The partial correlation coefficient (attempting to adjust for Session order) is printed in the upper left.
 
 The partial correlation based on the pooled data is _r_(71) = -.18. Thus, the correlation across a combination of both samples is a lot smaller than in @London2015, and slightly smaller still than the meta-analytic estimate that included the original correlation from @London2015 (Figure \@ref(fig:fig-rep-estimate)).
 
-<div class="figure">
-<img src="AB_tDCS_files/figures/figure_6_estimates.png" alt="(ref:caption-fig-rep-estimate)" width="1653" />
-<p class="caption">(\#fig:fig-rep-estimate)(ref:caption-fig-rep-estimate)</p>
-</div>
+![(\#fig:fig-rep-estimate)(ref:caption-fig-rep-estimate)](AB_tDCS_files/figures/figure_6_estimates.pdf) 
 
 (ref:caption-fig-rep-estimate) __Summary of all the replication analyses__ (with exception of the replication Bayes Factor). The first two rows show the partial correlation (attempting to adjust for Session order) between the AB magnitude change scores (tDCS - baseline) in the anodal and cathodal sessions, for @London2015 and the present study. The first is significantly negative, the second is slightly positive and not significant, because its 95% confidence interval (CI) overlaps with zero. The third row shows the 90% CI around the correlation in the present study. Because this interval does not overlap with the "small telescopes" effect size, (indicated by the `x`: $-r_{33\%}$ = -.27), this correlation is significantly smaller. The fourth row shows the  95% prediction interval (PI) around the correlation in @London2015. Because this interval does not overlap with the correlation in the present study, both correlations are not consistent. The final two rows show the overall effect when the two correlations are meta-analyzed, and when one correlation is computed over the pooled data from both studies. Neither are significant (95% CI overlaps with zero). Thus, our replication analyses all suggest that we failed to replicate London & Slagter (2015), and when the results are examined in combination, no evidence in support of a negative relationship between the AB magnitude change scores (_tDCS - baseline_) in the anodal and cathodal sessions is obtained.
 

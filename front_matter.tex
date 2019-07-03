@@ -50,7 +50,7 @@ affect attentional performance}\par % CHANGE thesis subtitle
 aan de Universiteit van Amsterdam\\
 op gezag van de Rector Magnificus\\
 prof. dr. ir. K.I.J. Maex\\ % CHANGE to name of current rector magnificus
-ten overstaan van een door het College voor Promoties ingestelde commissie,\\
+\mbox{ten overstaan van een door het College voor Promoties ingestelde commissie,}\\
 in het openbaar te verdedigen in de Agnietenkapel\\  % CHANGE defense location
 % The part after "de" should either read "Agnietenkapel" or "Aula der Universiteit"
 op woensdag 20 november 2019, te 14.00 uur \\ }\par % CHANGE defense data
@@ -63,7 +63,7 @@ op woensdag 20 november 2019, te 14.00 uur \\ }\par % CHANGE defense data
 % and your birthplace
 \vspace{\baselineskip}
 {\large geboren te Amsterdam} %CHANGE place of birth
-\vspace*{\drop}
+%\vspace*{\drop}
 % If your country of birth is the Netherlands, this should be only your place of birth,
 % e.g.: geboren te Amsterdam
 % If you were born outside the Netherlands, you should add your country of birth,
@@ -72,9 +72,9 @@ op woensdag 20 november 2019, te 14.00 uur \\ }\par % CHANGE defense data
 
 %% Page 4: info on thesis committee
 \clearpage
-\def\colw{6.5em}
-\noindent%
-\textbf{Promotiecommissie:}\\
+\def\colw{6em} % fix width of first column to align the two tables
+\begin{adjustwidth}{-1cm}{}% make the left margin a bit smaller, as the table won't fit otherwise
+\noindent\textbf{Promotiecommissie:}\\
 \\
 \begin{tabular}[t]{@{}p{\colw}ll}
 Promotores:    & prof. dr. K.R. Ridderinkhof    & Universiteit van Amsterdam \\  %CHANGE
@@ -96,6 +96,7 @@ Overige leden: & prof. dr. M.M. Lorist          & Rijksuniversiteit Groningen \\
 \begin{tabular}[t]{@{}p{\colw}l}
 Faculteit:     & Faculteit der Maatschappij- en Gedragswetenschappen \\ %CHANGE
 \end{tabular}\\
+\end{adjustwidth}
 
 %% Page 5: quotes
 
@@ -136,7 +137,7 @@ That the powerful play goes on, and you may contribute a verse.\\
 \end{vplace}
 
 %% Table of contents
-\clearpage
+\cleardoublepage
 \pagestyle{plain}
 
 {
@@ -147,3 +148,10 @@ That the powerful play goes on, and you may contribute a verse.\\
 \clearpage
 \pagestyle{companion}
 \mainmatter
+
+% \newlength{\mylen}                % a length
+% \newcommand{\alphabet}{abcdefghijklmnopqrstuvwxyz} % the lowercase alphabet
+% \begingroup                       % keep font change local% font specification e.g., \Large\sffamily
+% \settowidth{\mylen}{\alphabet}
+% The length of this alphabet is \the\mylen. % print in document\typeout{The length of the Large sans alphabetis \the\mylen}                    % put in log file
+% \endgroup                         % end the grouping
