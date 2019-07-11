@@ -1,5 +1,6 @@
 \usepackage[width=\textwidth,font=small]{caption}
-\usepackage[driver=xetex]{geometry}
+%\usepackage[driver=xetex]{geometry}
+\usepackage[pass]{geometry} % load the package, but none of the default settings
 \usepackage{pdflscape}
 
 \newcommand{\blandscape}{\begin{landscape}}
@@ -10,19 +11,16 @@
 \setlength\cftsectionindent{2.5em} % also adjust others to match
 \AtBeginDocument{\let\maketitle\relax} % don't make automatic title page as first page
 
-% Page and chapter styles
-%\pagestyle{companion} % now defined in front matter
-\chapterstyle{ntglike}
-
 % Font family
 \usepackage{fontspec}
 \setmainfont{MinionPro-Regular}
+
+% Page layout
 
 % The length of the lowercase alphabet in 11 pt Minion Pro is 127.80293pt (116.7151 pt for 10pt).
 % According to equation 2.1 of the memoir manual, the optimal width of the typeblock (66 characters) would then be 294.38358306 pt, or 103.9 mm
 % According to table 2.2 of the memoir manual, the typeblock should be between 22 pica's (= 93.13 mm), which would be 59 characters wide, or 26 pica's a little bit more than 22 pica's (= 110.1 mm), which would be 70 characters wide. 
 
-% Page layout
 \setstocksize{240mm}{170mm} % adjusted B5, with no bleed on each side for now
 \settrimmedsize{240mm}{170mm}{*} % adjusted B5 (standard thesis size)
 \setpageml{\paperheight}{\paperwidth}{*} % center the adjusted B5 page to the middle left (so the right, bottom and top will be trimmed)
@@ -32,5 +30,10 @@
 % This automatically determines the bottom margin at 240 - 25 - 170 = 45. This is bigger than the top margin, which is good, as this is where you hold the book (often the bottom margin is even twice as big as the top).
 %\setheadfoot{\onelineskip}{2\onelineskip} % defaults from memoir manual
 %\setheaderspaces{*}{2\onelineskip}{*} % defaults from memoir manual
+\setmarginnotes{5mm}{15mm}{\onelineskip} % too narrow (15mm, with 5 mm separation from text) for actual margin notes; but some chapter / pagestyles (e.g. companion) run off the page if this is not set.
 \settypeoutlayoutunit{mm} % use mm for printing to the log
 \checkandfixthelayout
+
+% Page and chapter styles
+\def\defstyle{Ruled} % pagestyle set here will be used on all pages with regular text
+\chapterstyle{companion}
