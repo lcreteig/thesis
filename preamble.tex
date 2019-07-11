@@ -37,4 +37,11 @@
 
 % Page and chapter styles
 \def\defstyle{Ruled} % pagestyle set here will be used on all pages with regular text
-\chapterstyle{companion}
+\chapterstyle{companion}%% Abstracts
+%% Abstracts
+\abstractrunin % set "ABSTRACT" title in-line
+\renewcommand{\abstractnamefont}{\normalfont\small\scshape\bfseries} % set "ABSTRACT" in bold small scaps
+\setlength{\absleftindent}{0pt} % don't increase left margin for abstracts
+\setlength{\absrightindent}{0pt} % don't increase right margin for abstracts
+\abslabeldelim{\quad} % some space after "ABSTRACT"
+% see front_matter.tex for two more commands
