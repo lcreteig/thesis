@@ -3,17 +3,20 @@
 # Sustaining attention for a prolonged period of time increases temporal variability in cortical responses {#MFBrain}
 \chaptermark{EEG markers of sustained attention}
 
-`<p><strong>Abstract</strong></p>`{=html}
-`\begin{abstract}`{=latex}
-Our ability to stay focused is limited: prolonged performance of a task typically results in mental fatigue and decrements in performance over time. This so-called vigilance decrement has been attributed to depletion of attentional resources, though other factors such as reductions in motivation likely also play a role. In this study, we examined three electroencephalography (EEG) markers of attentional control, to elucidate which stage of attentional processing is most affected by time-on-task and motivation. To elicit the vigilance decrement, participants performed a sustained attention task for 80 minutes without breaks. After 60 minutes, participants were motivated by an unexpected monetary incentive to increase performance in the final 20 minutes. We found that task performance and self-reported motivation declined rapidly, reaching a stable level well before the motivation manipulation was introduced. Thereafter, motivation increased back up to the initial level, and remained there for the final 20 minutes. While task performance also increased, it did not return to the initial level, and fell to the lowest level overall during the final 10 minutes. This pattern of performance changes was mirrored by the trial-to-trial consistency of the phase of theta (3--7 Hz) oscillations, an index of the variability in timing of the neural response to the stimulus. As task performance decreased, temporal variability increased, suggesting that attentional stability is crucial for sustained attention performance. The effects of attention on our two other EEG measures---early P1/N1 event-related potentials (ERPs) and pre-stimulus alpha (9--14 Hz) power---did not change with time-on-task or motivation. In sum, these findings show that the vigilance decrement is accompanied by a decline in only some facets of attentional control, which cannot be fully brought back online by increases in motivation. The vigilance decrement might thus not occur due to a single cause, but is likely multifactorial in origin.
-`\end{abstract}`{=latex}
+\vspace*{\fill}
 
 ---
 
-\vspace*{\fill}
+\small
 \noindent
 _This chapter has been published as_: Reteig, L. C., van den Brink, R. L., Prinssen, S., Cohen, M. X., & Slagter, H. A. (2019). Sustaining attention for a prolonged period of time increases temporal variability in cortical responses. *Cortex, 117*, 16--32. <https://doi.org/10.1016/j.cortex.2019.02.016>
 \newpage
+\normalsize
+
+`<p><strong>Abstract</strong></p>`{=html}
+`\begin{abstract}`{=latex}
+Our ability to stay focused is limited: prolonged performance of a task typically results in mental fatigue and decrements in performance over time. This so-called vigilance decrement has been attributed to depletion of attentional resources, though other factors such as reductions in motivation likely also play a role. In this study, we examined three electroencephalography (EEG) markers of attentional control, to elucidate which stage of attentional processing is most affected by time-on-task and motivation. To elicit the vigilance decrement, participants performed a sustained attention task for 80 minutes without breaks. After 60 minutes, participants were motivated by an unexpected monetary incentive to increase performance in the final 20 minutes. We found that task performance and self-reported motivation declined rapidly, reaching a stable level well before the motivation manipulation was introduced. Thereafter, motivation increased back up to the initial level, and remained there for the final 20 minutes. While task performance also increased, it did not return to the initial level, and fell to the lowest level overall during the final 10 minutes. This pattern of performance changes was mirrored by the trial-to-trial consistency of the phase of theta (3--7 Hz) oscillations, an index of the variability in timing of the neural response to the stimulus. As task performance decreased, temporal variability increased, suggesting that attentional stability is crucial for sustained attention performance. The effects of attention on our two other EEG measures---early P1/N1 event-related potentials (ERPs) and pre-stimulus alpha (9--14 Hz) power---did not change with time-on-task or motivation. In sum, these findings show that the vigilance decrement is accompanied by a decline in only some facets of attentional control, which cannot be fully brought back online by increases in motivation. The vigilance decrement might thus not occur due to a single cause, but is likely multifactorial in origin.
+`\end{abstract} \newpage`{=latex}
 
 ## Introduction {#MFBrain-introduction}
 

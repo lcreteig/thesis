@@ -83,33 +83,27 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{03 July, 2019}
+    \date{15 July, 2019}
 
-\usepackage[width=\textwidth,font=small]{caption}
-\usepackage[driver=xetex]{geometry}
+\usepackage[width=\textwidth,font={small,sf}]{caption}
+\usepackage[pass]{geometry} % load the package, but none of the default settings
 \usepackage{pdflscape}
 
 \newcommand{\blandscape}{\begin{landscape}}
 \newcommand{\elandscape}{\end{landscape}}
-\renewcommand{\arraystretch}{1.5} % increase vertical spacing in tables
-\setlength{\cftpartnumwidth}{2.5em} % more space for part numbering in ToC
-\setlength\cftchapternumwidth{2.5em} % also adjust others to match
-\setlength\cftsectionindent{2.5em} % also adjust others to match
 \AtBeginDocument{\let\maketitle\relax} % don't make automatic title page as first page
 
-% Page and chapter styles
-%\pagestyle{companion} % now defined in front matter
-\chapterstyle{ntglike}
-
-% Font family
+%% Typefaces
 \usepackage{fontspec}
 \setmainfont{MinionPro-Regular}
+\setsansfont[Ligatures=TeX]{Helvetica}
+
+%% Page layout
 
 % The length of the lowercase alphabet in 11 pt Minion Pro is 127.80293pt (116.7151 pt for 10pt).
 % According to equation 2.1 of the memoir manual, the optimal width of the typeblock (66 characters) would then be 294.38358306 pt, or 103.9 mm
 % According to table 2.2 of the memoir manual, the typeblock should be between 22 pica's (= 93.13 mm), which would be 59 characters wide, or 26 pica's a little bit more than 22 pica's (= 110.1 mm), which would be 70 characters wide. 
 
-% Page layout
 \setstocksize{240mm}{170mm} % adjusted B5, with no bleed on each side for now
 \settrimmedsize{240mm}{170mm}{*} % adjusted B5 (standard thesis size)
 \setpageml{\paperheight}{\paperwidth}{*} % center the adjusted B5 page to the middle left (so the right, bottom and top will be trimmed)
@@ -119,8 +113,43 @@
 % This automatically determines the bottom margin at 240 - 25 - 170 = 45. This is bigger than the top margin, which is good, as this is where you hold the book (often the bottom margin is even twice as big as the top).
 %\setheadfoot{\onelineskip}{2\onelineskip} % defaults from memoir manual
 %\setheaderspaces{*}{2\onelineskip}{*} % defaults from memoir manual
+\setmarginnotes{5mm}{15mm}{\onelineskip} % too narrow (15mm, with 5 mm separation from text) for actual margin notes; but some chapter / pagestyles (e.g. companion) run off the page if this is not set.
 \settypeoutlayoutunit{mm} % use mm for printing to the log
 \checkandfixthelayout
+
+%% Page and chapter styles
+\def\defstyle{Ruled} % pagestyle set here will be used on all pages with regular text
+\chapterstyle{companion}
+\headstyles{crosshead}
+
+%% Spacing
+\midsloppy % middle ground between overfull lines ("fussy"), or lots of variation in interword spaces ("sloppy")
+
+% try to avoid widows (last line of paragraph at the top of otherwise empty page)
+\setlength{\topskip}{1.6\topskip}
+\checkandfixthelayout
+\sloppybottom
+
+\renewcommand{\arraystretch}{1.5} % increase vertical spacing in tables
+\setlength{\cftpartnumwidth}{2.5em} % more space for part numbering in ToC
+\setlength\cftchapternumwidth{2.5em} % also adjust others to match
+\setlength\cftsectionindent{2.5em} % also adjust others to match
+
+%% Abstracts
+\abstractrunin % set "ABSTRACT" title in-line
+\renewcommand{\abstractnamefont}{\normalfont\normalsize\scshape\bfseries} % set "ABSTRACT" in bold small scaps
+\renewcommand{\abstracttextfont}{\normalfont\normalsize} % normalsize for text
+\setlength{\absleftindent}{0pt} % don't increase left margin for abstracts
+\setlength{\absrightindent}{0pt} % don't increase right margin for abstracts
+\abslabeldelim{\quad} % some space after "ABSTRACT"
+% see front_matter.tex for two more commands
+
+%% Part titles 
+%format similarly to companion chapter style
+\renewcommand{\partnamefont}{\normalfont\huge\scshape}
+\renewcommand{\partnumfont}{\normalfont\HUGE}
+
+%\setlength\beforechapskip{-\baselineskip}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -139,7 +168,10 @@
 \begin{document}
 \maketitle
 
-% Based on template from the "IILC Dissertation Style"
+% for some reason this cannot be in the preamble
+\setlength{\abstitleskip}{-\absparindent}
+
+%Based on template from the "IILC Dissertation Style"
 % https://www.illc.uva.nl/PhDProgramme/current-candidates/other/illcdiss.html#latex
 \frontmatter
 \pagestyle{empty} 
@@ -147,9 +179,11 @@
 %% Page 1: the half-title / "Franse pagina"
 \def\drop{.1\textheight}
 \vspace*{\drop}
+\begin{adjustwidth}{+15mm}{} % make left-margin equal to right, to center the title (as this page does not have a verso)
 \begin{center}
 \Huge \textsc{Neuroplasticity of Attention} % CHANGE thesis title
 \end{center}
+\end{adjustwidth}
 
 %% Page 2: Colophon
 \clearpage
@@ -217,9 +251,6 @@ op woensdag 20 november 2019, te 14.00 uur \\ }\par % CHANGE defense data
 \begin{adjustwidth}{-1cm}{}% make the left margin a bit smaller, as the table won't fit otherwise
 \noindent\textbf{Promotiecommissie:}\\
 \\
-%\begin{adjustbox}{center}
-%\centerline{% center the table; it will spill into the margins
-%\noindent\makebox[\textwidth]{%
 \begin{tabular}[t]{@{}p{\colw}ll}
 Promotores:    & prof. dr. K.R. Ridderinkhof    & Universiteit van Amsterdam \\  %CHANGE
                & prof. dr. H.A. Slagter         & Universiteit van Amsterdam \\  %CHANGE
@@ -235,15 +266,12 @@ Overige leden: & prof. dr. M.M. Lorist          & Rijksuniversiteit Groningen \\
                & dr. W.P.M. van den Wildenberg  & Universiteit van Amsterdam \\  %CHANGE
 \\               
 \end{tabular}\\
-%}
 
 \noindent%
-%\centerline{%
 \begin{tabular}[t]{@{}p{\colw}l}
 Faculteit:     & Faculteit der Maatschappij- en Gedragswetenschappen \\ %CHANGE
 \end{tabular}\\
 \end{adjustwidth}
-%}
 
 %% Page 5: quotes
 
@@ -293,7 +321,11 @@ That the powerful play goes on, and you may contribute a verse.\\
 }
 
 \clearpage
-\pagestyle{companion}
+%\setlength{\headwidth}{\textwidth}
+%\addtolength{\headwidth}{\marginparsep}
+%\addtolength{\headwidth}{\marginparwidth}
+%\pagestyle{companion}
+\pagestyle{\defstyle}
 \mainmatter
 
 % \newlength{\mylen}                % a length
@@ -417,17 +449,20 @@ In Chapter \ref{MFBrain} in Part \ref{part-MF} of the thesis, I used EEG to trac
 
 \chaptermark{tES as a tool to enhance attention}
 
-\begin{abstract} \noindent
-Attention is a fundamental cognitive process---without it, we would be helplessly adrift in an overload of sensory input. There is considerable interest in techniques that can be used to enhance attention, including transcranial electrical stimulation (tES). We present an overview of 52 studies that have paired attention tasks with tES, mostly in the form of transcranial direct current stimulation (tDCS). In particular, we discuss four aspects of attention that have been most extensively targeted to date: visual search, spatial orienting (e.g., Posner cueing tasks), spatial bias (e.g., line bisection tasks), and sustained attention. Some promising results have been reported in each of these domains. However, drawing general conclusions about the efficacy of tES is at present hampered by a large diversity in study design and inconsistent findings. We highlight some pitfalls and opportunities and suggest how these may be addressed in future research aiming to use tES as a tool to enhance or test theoretical hypotheses about attention.
-\end{abstract}
+\vspace*{\fill}
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
-\vspace*{\fill}
+\small
 
 \noindent
 \emph{This chapter has been published as}: Reteig, L. C., Talsma, L. J., van Schouwenburg, M. R., \& Slagter, H. A. (2017). Transcranial Electrical Stimulation as a Tool to Enhance Attention. \emph{Journal of Cognitive Enhancement, 1}, 10--25. \url{https://doi.org/10.1007/s41465-017-0010-y}
 \newpage
+\normalsize
+
+\begin{abstract}
+Attention is a fundamental cognitive process---without it, we would be helplessly adrift in an overload of sensory input. There is considerable interest in techniques that can be used to enhance attention, including transcranial electrical stimulation (tES). We present an overview of 52 studies that have paired attention tasks with tES, mostly in the form of transcranial direct current stimulation (tDCS). In particular, we discuss four aspects of attention that have been most extensively targeted to date: visual search, spatial orienting (e.g., Posner cueing tasks), spatial bias (e.g., line bisection tasks), and sustained attention. Some promising results have been reported in each of these domains. However, drawing general conclusions about the efficacy of tES is at present hampered by a large diversity in study design and inconsistent findings. We highlight some pitfalls and opportunities and suggest how these may be addressed in future research aiming to use tES as a tool to enhance or test theoretical hypotheses about attention.
+\end{abstract} \newpage
 
 \hypertarget{tDCS_att_review-introduction}{%
 \section{Introduction}\label{tDCS_att_review-introduction}}
@@ -458,9 +493,11 @@ Whether you are looking for a particular pair of socks or crossing a busy inters
 In visual search tasks, participants look for a target item among an array of distractors (Wolfe, \protect\hyperlink{ref-Wolfe1998}{1998}). This involves keeping a template of the target online and shifting spatial attention across the visual field, while constantly filtering out distracting information. Faster reaction times on these tasks indicate more efficient visual search. Visual search performance is supported by an extensive network of brain areas, centered on the right posterior parietal cortex and frontal eye field (Reynolds \& Chelazzi, \protect\hyperlink{ref-Reynolds2004}{2004}).
 
 \cleartoverso
-\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
-\LTcapwidth=\textwidth
+\pagestyle{empty}
+%\changepage{+30mm}{}{-25mm}{-10mm}{}{-10mm}{}{}{} % increase text height, decrease margins
+\newgeometry{left=20mm,right=0.5in,top=0.2in,bottom=0.2in} % narrow margins (0.5), bit more at top, adjust table sides
 \blandscape
+\LTcapwidth=200mm % make caption almost as wide as table
 \small
 
 \begin{longtable}[]{@{}lllllllll@{}}
@@ -666,10 +703,12 @@ during stimulation\strut
 \bottomrule
 \end{longtable}
 
+\newpage
 \normalsize
 \elandscape
-\restoregeometry
-\newpage
+%\changepage{-30mm}{}{+25mm}{+10mm}{}{+10mm}{}{}{} % revert
+\restoregeometry % revert to normal margins set with memoir
+\pagestyle{\defstyle}
 
 Ball, Lane, Smith, \& Ellison (\protect\hyperlink{ref-Ball2013}{2013}) investigated the effect of anodal and cathodal tDCS on both of these areas. They observed no effects of anodal tDCS, but cathodal stimulation to the right posterior parietal cortex increased reaction times, a finding later replicated by the same group (Ellison et al., \protect\hyperlink{ref-Ellison2014}{2014}). Interestingly, an earlier study did find that anodal stimulation over the parietal cortex decreased search time (Bolognini et al., \protect\hyperlink{ref-Bolognini2010}{2010}\protect\hyperlink{ref-Bolognini2010}{a}). As the studies differ in many design choices, it is hard to tell what may account for these inconsistent results.
 
@@ -682,8 +721,10 @@ The largest and most consistent effects of tDCS on visual search processes hail 
 In conclusion, anodal tDCS over the right parietal cortex may speed up visual search, while cathodal stimulation may slow it down. However, results are inconsistent, may differ per hemifield, and appear restricted to particular aspects of visual search (e.g., salient distractors). Anodal stimulation over the right inferior frontal cortex has consistently shown to speed up object detection. Perhaps this success can be attributed to the challenging nature of the task: tES effects might be greatest for difficult tasks with plenty of room for improvement (e.g., Jones \& Berryhill, \protect\hyperlink{ref-Jones2012}{2012}). Because this task is more complex than the typical visual search paradigm, it could also be that tDCS affected other processes such as threat detection or scene perception, and not those underlying visual search per se.
 
 \cleartoverso
-\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
+\pagestyle{empty}
+\newgeometry{left=20mm,right=0.5in,top=0.2in,bottom=0.2in} % narrow margins (0.5), bit more at top, adjust table sides
 \blandscape
+\LTcapwidth=200mm % make caption almost as wide as table
 \small
 
 \begin{longtable}[]{@{}lllllllll@{}}
@@ -1115,10 +1156,11 @@ conjunction searches only\strut
 \bottomrule
 \end{longtable}
 
+\newpage
 \normalsize
 \elandscape
-\restoregeometry
-\newpage
+\restoregeometry % revert to normal margins set with memoir
+\pagestyle{\defstyle}
 
 \hypertarget{spatial-orienting}{%
 \section{Spatial orienting}\label{spatial-orienting}}
@@ -1150,8 +1192,10 @@ Two studies so far have paired tACS with a spatial cueing task. Laczó, Antal, N
 In conclusion, whether preceded by a spatial cue or not, anodal tDCS to the right parietal cortex did not consistently enhance processing of left visual field stimuli. Several studies even found performance decreases (Filmer et al., \protect\hyperlink{ref-Filmer2015}{2015}; Learmonth et al., \protect\hyperlink{ref-Learmonth2015}{2015}). Not a single study reported a benefit to the endogenous control of attention. Future studies should aim to replicate these (null) findings and explore different nodes of the top-down (e.g., the frontal eye fields) or bottom-up (e.g., the temporoparietal junction) attention networks (Corbetta \& Shulman, \protect\hyperlink{ref-Corbetta2002}{2002}).
 
 \cleartoverso
-\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
+\pagestyle{empty}
+\newgeometry{left=20mm,right=0.5in,top=0.2in,bottom=0.2in} % narrow margins (0.5), bit more at top, adjust table sides
 \blandscape
+\LTcapwidth=200mm % make caption almost as wide as table
 \small
 
 \begin{longtable}[]{@{}lllllllll@{}}
@@ -1603,10 +1647,11 @@ with spatial cues\strut
 \bottomrule
 \end{longtable}
 
-\cleartoverso
-\elandscape
-\restoregeometry
 \newpage
+\normalsize
+\elandscape
+\restoregeometry % revert to normal margins set with memoir
+\pagestyle{\defstyle}
 
 \hypertarget{spatial-bias}{%
 \section{Spatial bias}\label{spatial-bias}}
@@ -1634,8 +1679,10 @@ Notably, one study did not find any effect of tDCS (Smit et al., \protect\hyperl
 Although promising, these initial results should therefore be interpreted with some caution. Moreover, follow-up tests are crucial to assess whether the stimulation effects have any long-term clinical value. Only Brem et al. (\protect\hyperlink{ref-Brem2014}{2014}\protect\hyperlink{ref-Brem2014}{b}) had a 3-month follow-up, but treated just a single patient. Still, the current findings warrant a large-scale clinical trial to determine the efficacy of tDCS for treatment of hemispatial neglect.
 
 \cleartoverso
-\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
+\pagestyle{empty}
+\newgeometry{left=20mm,right=0.5in,top=0.2in,bottom=0.2in} % narrow margins (0.5), bit more at top, adjust table sides
 \blandscape
+\LTcapwidth=200mm % make caption almost as wide as table
 \footnotesize
 
 \begin{longtable}[]{@{}lllllllll@{}}
@@ -2175,10 +2222,11 @@ more than standard treatment\strut
 \bottomrule
 \end{longtable}
 
+\newpage
 \normalsize
 \elandscape
-\restoregeometry
-\newpage
+\restoregeometry % revert to normal margins set with memoir
+\pagestyle{\defstyle}
 
 \hypertarget{sustained-attention-1}{%
 \section{Sustained attention}\label{sustained-attention-1}}
@@ -2192,9 +2240,11 @@ Other studies that were not geared towards time-on-task effects have reported mi
 In conclusion, while most studies found no or restricted effects on sustained attention, two studies report that prefrontal tDCS specifically offsets the vigilance decrement, suggesting that its effects may only become apparent after prolonged task performance. If replicated, it may be interesting for future studies to investigate the cognitive mechanisms at work: does tDCS allow fatigued individuals to tap into additional attentional resources, or do they simply become more motivated or less prone to mind wandering?
 
 \cleartoverso
-\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
+\pagestyle{empty}
+\newgeometry{left=20mm,right=0.5in,top=0.2in,bottom=0.2in} % narrow margins (0.5), bit more at top, adjust table sides
 \blandscape
-\small
+\LTcapwidth=200mm % make caption almost as wide as table
+\footnotesize
 
 \begin{longtable}[]{@{}lllllllll@{}}
 \caption{\label{tab:sustained-attention} \textbf{Studies using sustained attention tasks, in healthy controls or neglect patients}. Studies are presented in order of appearance in the body text; studies not cited in the body text appear in the bottom section of the table (in alphabetical order). All studies were sham controlled. \emph{A}: anodal, \emph{C}: cathodal, \emph{ref}: location of tDCS electrode that was not of interest, \emph{Online}: task performed during stimulation, \emph{Offline}: task performed after stimulation.}\tabularnewline
@@ -2517,11 +2567,11 @@ stimulation decreased reaction time\strut
 \bottomrule
 \end{longtable}
 
+\newpage
 \normalsize
 \elandscape
-\restoregeometry
-\newpage
-\LTcapwidth=\textwidth
+\restoregeometry % revert to normal margins set with memoir
+\pagestyle{\defstyle}
 
 \hypertarget{tDCS_att_review-discussion}{%
 \section{Discussion}\label{tDCS_att_review-discussion}}
@@ -2556,17 +2606,20 @@ Is transcranial electrical stimulation an effective tool to enhance attention? A
 
 \chaptermark{FEF-tDCS does not affect saccades}
 
-\begin{abstract} \noindent
-Transcranial direct current stimulation (tDCS) may be used to directly affect neural activity from outside of the skull. However, its exact physiological mechanisms remain elusive, particularly when applied to new brain areas. The frontal eye field (FEF) has rarely been targeted with tDCS, even though it plays a crucial role in control of overt and covert spatial attention. Here, we investigate whether tDCS over the FEF can affect the latency and accuracy of saccadic eye movements. Twenty-six participants performed a prosaccade task in which they made eye movements to a sudden-onset eccentric visual target (\emph{lateral saccades}). After each lateral saccade, they made an eye movement back to the center (\emph{center saccades}). The task was administered before, during, and after anodal or cathodal tDCS over the FEF, in a randomized, double-blind, within-subject design. One previous study (Kanai et al., \protect\hyperlink{ref-Kanai2012}{2012}) found that anodal tDCS over the FEF decreased the latency of saccades contralateral to the stimulated hemisphere. We did not find the same effect: neither anodal nor cathodal tDCS influenced the latency of lateral saccades. tDCS also did not affect accuracy of lateral saccades (saccade endpoint deviation and saccade endpoint variability). For center saccades, we found some differences between the anodal and cathodal sessions, but these were not consistent across analyses (latency, endpoint variability), or were already present before tDCS onset (endpoint deviation). We tried to improve on the design of Kanai et al. (\protect\hyperlink{ref-Kanai2012}{2012}) in several ways, including the tDCS duration and electrode montage, which could explain the discrepant results. Our findings add to a growing number of null results, which have sparked concerns that tDCS outcomes are highly variable. Future studies should aim to establish the boundary conditions for FEF-tDCS to be effective, in addition to increasing sample size and adding additional controls such as a sham condition. At present, we conclude that it is unclear whether eye movements or other aspects of spatial attention can be affected through tDCS of the frontal eye fields.
-\end{abstract}
+\vspace*{\fill}
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
-\vspace*{\fill}
+\small
 
 \noindent
 \emph{This chapter has been published as}: Reteig, L. C., Knapen, T., Roelofs, F. J. F. W., Ridderinkhof, K. R., \& Slagter, H. A. (2018). No evidence that frontal eye field tDCS affects latency or accuracy of prosaccades. \emph{Frontiers in Neuroscience} 12:617. \url{https://doi.org/10.3389/fnins.2018.00617}
 \newpage
+\normalsize
+
+\begin{abstract}
+Transcranial direct current stimulation (tDCS) may be used to directly affect neural activity from outside of the skull. However, its exact physiological mechanisms remain elusive, particularly when applied to new brain areas. The frontal eye field (FEF) has rarely been targeted with tDCS, even though it plays a crucial role in control of overt and covert spatial attention. Here, we investigate whether tDCS over the FEF can affect the latency and accuracy of saccadic eye movements. Twenty-six participants performed a prosaccade task in which they made eye movements to a sudden-onset eccentric visual target (\emph{lateral saccades}). After each lateral saccade, they made an eye movement back to the center (\emph{center saccades}). The task was administered before, during, and after anodal or cathodal tDCS over the FEF, in a randomized, double-blind, within-subject design. One previous study (Kanai et al., \protect\hyperlink{ref-Kanai2012}{2012}) found that anodal tDCS over the FEF decreased the latency of saccades contralateral to the stimulated hemisphere. We did not find the same effect: neither anodal nor cathodal tDCS influenced the latency of lateral saccades. tDCS also did not affect accuracy of lateral saccades (saccade endpoint deviation and saccade endpoint variability). For center saccades, we found some differences between the anodal and cathodal sessions, but these were not consistent across analyses (latency, endpoint variability), or were already present before tDCS onset (endpoint deviation). We tried to improve on the design of Kanai et al. (\protect\hyperlink{ref-Kanai2012}{2012}) in several ways, including the tDCS duration and electrode montage, which could explain the discrepant results. Our findings add to a growing number of null results, which have sparked concerns that tDCS outcomes are highly variable. Future studies should aim to establish the boundary conditions for FEF-tDCS to be effective, in addition to increasing sample size and adding additional controls such as a sham condition. At present, we conclude that it is unclear whether eye movements or other aspects of spatial attention can be affected through tDCS of the frontal eye fields.
+\end{abstract} \newpage
 
 \hypertarget{sacc_tDCS-introduction}{%
 \section{Introduction}\label{sacc_tDCS-introduction}}
@@ -2886,7 +2939,7 @@ Out of all these results, our null finding for saccade latency is the most surpr
 We increased the stimulation duration from 10 to 15 minutes, in order to have more trials during tDCS and possibly a larger neural effect. But longer stimulation durations do not necessarily scale linearly with the effect of tDCS. For example, changing the stimulation duration from 20 to 26 minutes changed the effect of anodal tDCS on motor-evoked potentials from excitatory to inhibitory (Monte-Silva et al., \protect\hyperlink{ref-Monte-Silva2013}{2013}). In addition, we changed the location of the second electrode from the shoulder to the forehead, to more closely resemble the canonical montage used in motor cortex tDCS, and because decreasing the inter-electrode distance can enhance the effect of tDCS (Moliadze, Antal, \& Paulus, \protect\hyperlink{ref-Moliadze2010}{2010}). However, next to applying tDCS over the right frontal eye field, it is possible that we now also delivered opposite polarity stimulation to left anterior frontal brain structures. In addition, the exact montage determines to a large extent which brain structures will be in the path of the current---not just those directly under the electrodes, but also those in between (Opitz et al., \protect\hyperlink{ref-Opitz2015}{2015}), as well as distant structures that are anatomically connected (Wokke et al., \protect\hyperlink{ref-Wokke2015}{2015}).
 
 \newpage
-\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
+%\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
 \LTcapwidth=\textwidth
 \blandscape
 \small
@@ -3030,7 +3083,7 @@ Eye tracker: saccade threshold\strut
 
 \normalsize
 \elandscape
-\restoregeometry
+%\restoregeometry
 \newpage
 \LTcapwidth=\textwidth
 
@@ -3053,17 +3106,20 @@ Such large, well-controlled and more informed (Polanía, Nitsche, \& Ruff, \prot
 
 \chaptermark{Replicating tDCS effects on the attentional blink}
 
-\begin{abstract} \noindent
-The attentional blink (AB) phenomenon reveals a bottleneck of human information processing: the second of two targets is often missed when they are presented in rapid succession among distractors. A recent study by London \& Slagter (\emph{Journal of Cognitive Neuroscience}, \emph{27}, 2382--93, 2015) showed that the size of the AB can be changed by applying transcranial direct current stimulation (tDCS) over the left dorsolateral prefrontal cortex (lDLPFC). Although AB size at the group level remained unchanged, the effects of anodal and cathodal tDCS were negatively correlated: if a given individual's AB size decreased from baseline during anodal tDCS, their AB size would increase during cathodal tDCS, and vice versa. Here, we attempted to replicate this finding. Like London \& Slagter, we found no group effects of tDCS, but also no longer found a significant negative correlation. We present a series of statistical measures of replication success, all of which confirm that both studies are not in agreement. First, the correlation here is significantly smaller than a conservative estimate of the original correlation. Second, the difference between the correlations is greater than expected due to sampling error, and our data are more consistent with a zero-effect than with the original estimate. Finally, the overall effect when combining both studies is small and not significant. Our findings thus indicate that the effects of lDPLFC-tDCS on the AB are less substantial than suggested by London \& Slagter (2015). Although this should be quite a common scenario, negative findings can be difficult to interpret and are still under-represented in the brain stimulation and cognitive neuroscience literatures. An auxiliary goal of this chapter is therefore to provide a tutorial for other researchers, to maximize the evidential value from negative findings.
-\end{abstract}
+\vspace*{\fill}
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
-\vspace*{\fill}
+\small
 
 \noindent
 \emph{This chapter is in preparation as}: Reteig, L. C., Newman, L. A., Ridderinkhof, K. R., \& Slagter, H. A. (n.d.). Effects of tDCS on the attentional blink revisited: A statistical evaluation of a replication attempt.
 \newpage
+\normalsize
+
+\begin{abstract}
+The attentional blink (AB) phenomenon reveals a bottleneck of human information processing: the second of two targets is often missed when they are presented in rapid succession among distractors. A recent study by London \& Slagter (\emph{Journal of Cognitive Neuroscience}, \emph{27}, 2382--93, 2015) showed that the size of the AB can be changed by applying transcranial direct current stimulation (tDCS) over the left dorsolateral prefrontal cortex (lDLPFC). Although AB size at the group level remained unchanged, the effects of anodal and cathodal tDCS were negatively correlated: if a given individual's AB size decreased from baseline during anodal tDCS, their AB size would increase during cathodal tDCS, and vice versa. Here, we attempted to replicate this finding. Like London \& Slagter, we found no group effects of tDCS, but also no longer found a significant negative correlation. We present a series of statistical measures of replication success, all of which confirm that both studies are not in agreement. First, the correlation here is significantly smaller than a conservative estimate of the original correlation. Second, the difference between the correlations is greater than expected due to sampling error, and our data are more consistent with a zero-effect than with the original estimate. Finally, the overall effect when combining both studies is small and not significant. Our findings thus indicate that the effects of lDPLFC-tDCS on the AB are less substantial than suggested by London \& Slagter (2015). Although this should be quite a common scenario, negative findings can be difficult to interpret and are still under-represented in the brain stimulation and cognitive neuroscience literatures. An auxiliary goal of this chapter is therefore to provide a tutorial for other researchers, to maximize the evidential value from negative findings.
+\end{abstract} \newpage
 
 \hypertarget{AB_tDCS-introduction}{%
 \section{Introduction}\label{AB_tDCS-introduction}}
@@ -3427,17 +3483,20 @@ To make sure the literature accurately reflects the efficacy of the technique, i
 
 \chaptermark{sEBR \& tDCS do not influence attentional blink size}
 
-\begin{abstract} \noindent
-The attentional blink (AB) phenomenon illustrates our limited capacity to process incoming information. When tasked to identify two targets embedded in close temporal proximity in a stream of distractors, the second target is often missed. The magnitude of the AB (the proportion of times this second target is missed) varies considerably across individuals. Here, we examined two factors that might drive these individual differences: baseline dopamine levels and cortical excitability. We measured spontaneous Eye Blink Rate (sEBR) as a proxy for dopamine levels, and attempted to manipulate cortical excitability using transcranial Direct Current Stimulation (tDCS). Participants (n=40) performed an AB task before, during, and after anodal or cathodal tDCS to the left dorsolateral prefrontal cortex, in two separate sessions. At the start of each session, we measured their sEBR. sEBR had good test-retest reliability across the sessions. Test-retest reliability for AB magnitude was moderate, but in line with previous reports. We found no linear- or U-shaped relationship between sEBR and AB magnitude at baseline (before tDCS onset), with more evidence for the null hypothesis. Lastly, we also did not find an association between sEBR and the effect of tDCS on AB magnitude (neither anodal nor cathodal tDCS, compared to baseline). Larger-scale studies with more direct measures of dopamine and cortical excitability are called for to advance our understanding of their effects on the attentional blink, and rapid, selective gating of information, more generally.
-\end{abstract}
+\vspace*{\fill}
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
-\vspace*{\fill}
+\small
 
 \noindent
 \emph{This chapter is in preparation as}: Reteig, L. C., Newman, L. A., Ridderinkhof, K. R., \& Slagter, H. A. (n.d.). Spontaneous eye blink rate does not predict attentional blink size, nor the effects of tDCS on attentional blink size.
 \newpage
+\normalsize
+
+\begin{abstract}
+The attentional blink (AB) phenomenon illustrates our limited capacity to process incoming information. When tasked to identify two targets embedded in close temporal proximity in a stream of distractors, the second target is often missed. The magnitude of the AB (the proportion of times this second target is missed) varies considerably across individuals. Here, we examined two factors that might drive these individual differences: baseline dopamine levels and cortical excitability. We measured spontaneous Eye Blink Rate (sEBR) as a proxy for dopamine levels, and attempted to manipulate cortical excitability using transcranial Direct Current Stimulation (tDCS). Participants (n=40) performed an AB task before, during, and after anodal or cathodal tDCS to the left dorsolateral prefrontal cortex, in two separate sessions. At the start of each session, we measured their sEBR. sEBR had good test-retest reliability across the sessions. Test-retest reliability for AB magnitude was moderate, but in line with previous reports. We found no linear- or U-shaped relationship between sEBR and AB magnitude at baseline (before tDCS onset), with more evidence for the null hypothesis. Lastly, we also did not find an association between sEBR and the effect of tDCS on AB magnitude (neither anodal nor cathodal tDCS, compared to baseline). Larger-scale studies with more direct measures of dopamine and cortical excitability are called for to advance our understanding of their effects on the attentional blink, and rapid, selective gating of information, more generally.
+\end{abstract} \newpage
 
 \hypertarget{AB_sEBR-introduction}{%
 \section{Introduction}\label{AB_sEBR-introduction}}
@@ -3804,17 +3863,20 @@ We found that spontaneous eye blink rate is a reliable measure, but that it does
 
 \chaptermark{EEG markers of sustained attention}
 
-\begin{abstract} \noindent
-Our ability to stay focused is limited: prolonged performance of a task typically results in mental fatigue and decrements in performance over time. This so-called vigilance decrement has been attributed to depletion of attentional resources, though other factors such as reductions in motivation likely also play a role. In this study, we examined three electroencephalography (EEG) markers of attentional control, to elucidate which stage of attentional processing is most affected by time-on-task and motivation. To elicit the vigilance decrement, participants performed a sustained attention task for 80 minutes without breaks. After 60 minutes, participants were motivated by an unexpected monetary incentive to increase performance in the final 20 minutes. We found that task performance and self-reported motivation declined rapidly, reaching a stable level well before the motivation manipulation was introduced. Thereafter, motivation increased back up to the initial level, and remained there for the final 20 minutes. While task performance also increased, it did not return to the initial level, and fell to the lowest level overall during the final 10 minutes. This pattern of performance changes was mirrored by the trial-to-trial consistency of the phase of theta (3--7 Hz) oscillations, an index of the variability in timing of the neural response to the stimulus. As task performance decreased, temporal variability increased, suggesting that attentional stability is crucial for sustained attention performance. The effects of attention on our two other EEG measures---early P1/N1 event-related potentials (ERPs) and pre-stimulus alpha (9--14 Hz) power---did not change with time-on-task or motivation. In sum, these findings show that the vigilance decrement is accompanied by a decline in only some facets of attentional control, which cannot be fully brought back online by increases in motivation. The vigilance decrement might thus not occur due to a single cause, but is likely multifactorial in origin.
-\end{abstract}
+\vspace*{\fill}
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
-\vspace*{\fill}
+\small
 
 \noindent
 \emph{This chapter has been published as}: Reteig, L. C., van den Brink, R. L., Prinssen, S., Cohen, M. X., \& Slagter, H. A. (2019). Sustaining attention for a prolonged period of time increases temporal variability in cortical responses. \emph{Cortex, 117}, 16--32. \url{https://doi.org/10.1016/j.cortex.2019.02.016}
 \newpage
+\normalsize
+
+\begin{abstract}
+Our ability to stay focused is limited: prolonged performance of a task typically results in mental fatigue and decrements in performance over time. This so-called vigilance decrement has been attributed to depletion of attentional resources, though other factors such as reductions in motivation likely also play a role. In this study, we examined three electroencephalography (EEG) markers of attentional control, to elucidate which stage of attentional processing is most affected by time-on-task and motivation. To elicit the vigilance decrement, participants performed a sustained attention task for 80 minutes without breaks. After 60 minutes, participants were motivated by an unexpected monetary incentive to increase performance in the final 20 minutes. We found that task performance and self-reported motivation declined rapidly, reaching a stable level well before the motivation manipulation was introduced. Thereafter, motivation increased back up to the initial level, and remained there for the final 20 minutes. While task performance also increased, it did not return to the initial level, and fell to the lowest level overall during the final 10 minutes. This pattern of performance changes was mirrored by the trial-to-trial consistency of the phase of theta (3--7 Hz) oscillations, an index of the variability in timing of the neural response to the stimulus. As task performance decreased, temporal variability increased, suggesting that attentional stability is crucial for sustained attention performance. The effects of attention on our two other EEG measures---early P1/N1 event-related potentials (ERPs) and pre-stimulus alpha (9--14 Hz) power---did not change with time-on-task or motivation. In sum, these findings show that the vigilance decrement is accompanied by a decline in only some facets of attentional control, which cannot be fully brought back online by increases in motivation. The vigilance decrement might thus not occur due to a single cause, but is likely multifactorial in origin.
+\end{abstract} \newpage
 
 \hypertarget{MFBrain-introduction}{%
 \section{Introduction}\label{MFBrain-introduction}}
