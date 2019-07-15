@@ -1,4 +1,4 @@
-\usepackage[width=\textwidth,font={small,sf}]{caption}
+\usepackage{caption}
 \usepackage[pass]{geometry} % load the package, but none of the default settings
 \usepackage{pdflscape}
 
@@ -70,3 +70,12 @@
 
 %\setlength\beforechapskip{-\baselineskip} % this would remove any space above the chapter titles
 
+%% Captions
+% Memoir:
+%\captionnamefont{\small\sffamily}
+%\captiontitlefont{\small\sffamily}
+%\hangcaption
+% caption package:
+\captionsetup[table]{name=TABLE,font={small,sf}} % small sans for table captions
+\DeclareCaptionFormat{llap}{\llap{#1#2}#3\par} % same as table captions, but hang in margin
+\captionsetup[figure]{name=FIGURE,font={small,sf},format=llap,labelsep=quad,singlelinecheck=no}
