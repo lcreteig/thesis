@@ -36,6 +36,10 @@
 \def\defstyle{Ruled} % pagestyle set here will be used on all pages with regular text
 \makeevenhead{Ruled}{\leftmark}{}{} % get rid of small caps in verso headers
 
+% distinguish lower-level headings
+\setsubsubsecheadstyle{\normalsize\bfseries\itshape} % bold italic
+\setparaheadstyle{\normalsize\itshape} % just italic
+
 %% Spacing
 \midsloppy % middle ground between overfull lines ("fussy"), or lots of variation in interword spaces ("sloppy")
 
