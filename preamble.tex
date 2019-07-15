@@ -31,8 +31,10 @@
 \checkandfixthelayout
 
 %% Page and chapter styles
-\def\defstyle{Ruled} % pagestyle set here will be used on all pages with regular text
 \chapterstyle{companion}
+
+\def\defstyle{Ruled} % pagestyle set here will be used on all pages with regular text
+\makeevenhead{Ruled}{\leftmark}{}{} % get rid of small caps in verso headers
 
 %% Spacing
 \midsloppy % middle ground between overfull lines ("fussy"), or lots of variation in interword spaces ("sloppy")
