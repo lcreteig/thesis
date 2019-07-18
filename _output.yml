@@ -16,11 +16,7 @@ bookdown::pdf_book:
     in_header: preamble.tex
     before_body: front_matter.tex
   latex_engine: xelatex
-  citation_package: none
+  citation_package: biblatex
   keep_tex: yes
-  pandoc_args: [
-   "--variable", "linkcolor=gray",
-   "--csl",       "apa.csl" 
-   ]
 bookdown::epub_book:
   pandoc_args: [ "--csl", "apa.csl" ]

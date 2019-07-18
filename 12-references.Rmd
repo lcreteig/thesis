@@ -2,14 +2,13 @@
 \cleardoublepage
 \phantomsection
 \addcontentsline{toc}{part}{Bibliography}
+\let\href\oldhref
 
-\begingroup
+`r if (knitr::is_html_output()) '
 # References {-}
-\chaptermark{References}
-\hspace{\parindent}
-\setlength{\parindent}{-0.25in}
-\setlength{\leftskip}{0.25in}
-\setlength{\parskip}{0pt}
-\footnotesize
+'`
 <div id="refs"></div>
-\endgroup
+
+\printbibliography[title=References]
+\renewcommand{\printbibliography}{}
+

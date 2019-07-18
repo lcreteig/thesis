@@ -2,6 +2,9 @@
 \usepackage[pass]{geometry} % load the package, but none of the default settings
 \usepackage{pdflscape}
 
+\let\oldhref\href % save command before redefininig, so we can turn it off again
+\renewcommand{\href}[2]{#2\footnote{\url{#1}}} % same as "link-as-notes: true"
+
 \newcommand{\blandscape}{\begin{landscape}}
 \newcommand{\elandscape}{\end{landscape}}
 \AtBeginDocument{\let\maketitle\relax} % don't make automatic title page as first page
@@ -79,3 +82,38 @@
 \captionsetup[table]{name=TABLE,font={small,sf}} % small sans for table captions
 \DeclareCaptionFormat{llap}{\llap{#1#2}#3\par} % same as table captions, but hang in margin
 \captionsetup[figure]{name=FIGURE,font={small,sf},format=llap,labelsep=quad,singlelinecheck=no}
+
+%% Bibliography
+\renewcommand*{\bibfont}{\footnotesize}
+
+% Hyperlink entire author-year citation; not just year
+%https://tex.stackexchange.com/questions/15951/hyperlink-name-with-biblatex-authoryear-biblatex-1-4b
+\DeclareFieldFormat{citehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{#1}}
+\DeclareFieldFormat{textcitehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{%
+    #1%
+    \ifbool{cbx:parens}
+      {\bibcloseparen\global\boolfalse{cbx:parens}}
+      {}}}
+\savebibmacro{cite}
+\savebibmacro{textcite}
+\renewbibmacro*{cite}{%
+  \printtext[citehyperref]{%
+    \restorebibmacro{cite}%
+    \usebibmacro{cite}}}
+\renewbibmacro*{textcite}{%
+  \ifboolexpr{
+    ( not test {\iffieldundef{prenote}} and
+      test {\ifnumequal{\value{citecount}}{1}} )
+    or
+    ( not test {\iffieldundef{postnote}} and
+      test {\ifnumequal{\value{citecount}}{\value{citetotal}}} )
+  }
+    {\DeclareFieldAlias{textcitehyperref}{noformat}}
+    {}%
+  \printtext[textcitehyperref]{%
+    \restorebibmacro{textcite}%
+    \usebibmacro{textcite}}}
