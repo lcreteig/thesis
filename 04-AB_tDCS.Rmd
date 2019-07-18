@@ -291,4 +291,4 @@ In addition, we hope this chapter provides inspiration for others in the fields 
 
 To make sure the literature accurately reflects the efficacy of the technique, it is crucial to combat publication bias. Positive results are heavily over-represented in most of the scientific literature, [@Ferguson2012; @Franco2014; @Fanelli2012], which has recently prompted a call to brain stimulation researchers to also publish their null results[^frontiers]. Publishing null results and replication studies---and making the most of their interpretation---is crucial to better this situation.
 
-[^frontiers]: Research Topic in Frontiers, "Non-Invasive Brain Stimulation Effects on Cognition and Brain Activity: Positive Lessons from Negative Findings": <https://www.frontiersin.org/research-topics/5535/non-invasive-brain-stimulation-effects-on-cognition-and-brain-activity-positive-lessons-from-negativ>
+[^frontiers]: Research Topic in Frontiers, "Non-Invasive Brain Stimulation Effects on Cognition and Brain Activity: Positive Lessons from Negative Findings": <https://www.frontiersin.org/research-topics/5535>
