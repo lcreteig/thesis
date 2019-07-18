@@ -42,60 +42,68 @@ As our overview reveals, there is tremendous variability in design and stimulati
 
 Whether you are looking for a particular pair of socks or crossing a busy intersection, the process of scanning the visual field is ubiquitous in daily life and therefore an interesting target for cognitive enhancement. We included 13 studies that examined the effects of tES on visual search (Table \@ref(tab:visual-search)).
 
-In visual search tasks, participants look for a target item among an array of distractors [@Wolfe1998]. This involves keeping a template of the target online and shifting spatial attention across the visual field, while constantly filtering out distracting information. Faster reaction times on these tasks indicate more efficient visual search. Visual search performance is supported by an extensive network of brain areas, centered on the right posterior parietal cortex and frontal eye field [@Reynolds2004].
-
 
 
 ```{=latex}
 \cleartoverso
-\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
-\LTcapwidth=\textwidth
+\pagestyle{empty}
+%\changepage{+30mm}{}{-25mm}{-10mm}{}{-10mm}{}{}{} % increase text height, decrease margins
+\newgeometry{left=20mm,right=0.5in,top=0.2in,bottom=0.2in} % narrow margins (0.5), bit more at top, adjust table sides
 \blandscape
-\small
+\LTcapwidth=200mm % make caption almost as wide as table
+\footnotesize
 ```
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Reference       n    Design    Stimulation                 Size    Dosage       Timing    Task              Findings                                                                
---------------- ---- --------- --------------------------- ------- ------------ --------- ----------------- ------------------------------------------------------------------------
-@Bardi2013      9,   within    P3 (A,C), P4 (C,A)          9       1.5 mA, 20   online    local/global +    in exp. 1 (conditions blocked), right-anodal/left-cathodal stimulation  
-                12   subject                               cm^2^   min                    salience          increased inverse efficiency in local task and for salient targets. In  
-                                                                                                            exp. 2 (conditions varied trial-by-trial), the opposite montage         
-                                                                                                            produced the local effect, but no effect on saliency                    
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Reference       n    Design    Stimulation            Size    Dosage   Timing    Task           Findings                                            
+--------------- ---- --------- ---------------------- ------- -------- --------- -------------- ----------------------------------------------------
+@Bardi2013      9,   within    P3 (A,C), P4 (C,A)     9       1.5      online    local/global   in exp. 1 (conditions blocked),                     
+                12   subject                          cm^2^   mA, 20             + salience     right-anodal/left-cathodal stimulation increased    
+                                                              min                               inverse efficiency in local task and for salient    
+                                                                                                targets. In exp. 2 (conditions varied               
+                                                                                                trial-by-trial), the opposite montage produced the  
+                                                                                                local effect, but no effect on saliency             
 
-@Blumberg2015   48   between   F3 (A), right upper arm     11      2 mA, 30     online    multiple object   anodal tDCS to the anterior intraparietal sulcus (CP4) improved high    
-                     group     (ref); CP4 (A), left        cm^2^   min                    tracking          load MOT performance                                                    
-                               upper arm (ref)                                                                                                                                      
+@Blumberg2015   48   between   F3 (A), right upper    11      2 mA,    online    multiple       anodal tDCS to the anterior intraparietal sulcus    
+                     group     arm (ref); CP4 (A),    cm^2^   30 min             object         (CP4) improved high load MOT performance            
+                               left upper arm (ref)                              tracking                                                           
 
-@London2015     34   within    F3 (A,C) , right forehead   35      1 mA, 20     online    attentional       anodal tDCS decreased attentional blink in low baseline performers;     
-                     subject   (ref)                       cm^2^   min                    blink             increased attentional blink in high baseline performers                 
+@London2015     34   within    F3 (A,C) , right       35      1 mA,    online    attentional    anodal tDCS decreased attentional blink in low      
+                     subject   forehead (ref)         cm^2^   20 min             blink          baseline performers; increased attentional blink    
+                                                                                                in high baseline performers                         
 
-@Moos2012       20   within    right IPS (A,C), left       36,     1 or 2 mA,   offline   target partial    2 mA cathodal tDCS reduced alpha parameter of Theory of Visual          
-                     subject   forehead (ref)              95      20 min                 report            Attention model (in both hemifields), reflecting enhanced top-down      
-                                                           cm^2^                                            control                                                                 
+@Moos2012       20   within    right IPS (A,C),       36,     1 or 2   offline   target         2 mA cathodal tDCS reduced alpha parameter of       
+                     subject   left forehead (ref)    95      mA, 20             partial        Theory of Visual Attention model (in both           
+                                                      cm^2^   min                report         hemifields), reflecting enhanced top-down control   
 
-@Roe2016        32   within    P3 (A,C), P4 (C,A)          35      1.5 mA, 24   online    multiple object   tDCS with both montages decreased high load MOT performance             
-                     subject                               cm^2^   min                    tracking                                                                                  
+@Roe2016        32   within    P3 (A,C), P4 (C,A)     35      1.5      online    multiple       tDCS with both montages decreased high load MOT     
+                     subject                          cm^2^   mA, 24             object         performance                                         
+                                                              min                tracking                                                           
 
-@Stone2009      14   within    P3 (A,C), right lower arm   25      2 mA, 20     online    local/global      no effect on local/global contrast feature discrimination. Anodal tDCS  
-                     subject   (ref)                       cm^2^   min                                      decreased performance on local-to-global switch trials after            
-                                                                                                            stimulation; cathodal tDCS decreased performance on all switch trials   
-                                                                                                            during stimulation                                                      
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@Stone2009      14   within    P3 (A,C), right        25      2 mA,    online    local/global   no effect on local/global contrast feature          
+                     subject   lower arm (ref)        cm^2^   20 min                            discrimination. Anodal tDCS decreased performance   
+                                                                                                on local-to-global switch trials after              
+                                                                                                stimulation; cathodal tDCS decreased performance    
+                                                                                                on all switch trials during stimulation             
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 Table: (\#tab:other) __Studies using other attention paradigms (not discussed in the body text)__. All studies were sham controlled, except @London2015. _A_: anodal, _C_: cathodal, _ref_: location of tDCS electrode that was not of interest, _Online_: task performed during stimulation, _Offline_: task performed after stimulation.
 
 \
 
 ```{=latex}
+\newpage
 \normalsize
 \elandscape
-\restoregeometry
-\newpage
+%\changepage{-30mm}{}{+25mm}{+10mm}{}{+10mm}{}{}{} % revert
+\restoregeometry % revert to normal margins set with memoir
+\pagestyle{\defstyle}
 ```
 
 
 
+In visual search tasks, participants look for a target item among an array of distractors [@Wolfe1998]. This involves keeping a template of the target online and shifting spatial attention across the visual field, while constantly filtering out distracting information. Faster reaction times on these tasks indicate more efficient visual search. Visual search performance is supported by an extensive network of brain areas, centered on the right posterior parietal cortex and frontal eye field [@Reynolds2004].
 
 @Ball2013 investigated the effect of anodal and cathodal tDCS on both of these areas. They observed no effects of anodal tDCS, but cathodal stimulation to the right posterior parietal cortex increased reaction times, a finding later replicated by the same group [@Ellison2014]. Interestingly, an earlier study did find that anodal stimulation over the parietal cortex decreased search time [@Bolognini2010]. As the studies differ in many design choices, it is hard to tell what may account for these inconsistent results.
 
@@ -103,16 +111,14 @@ More recent studies suggest that stimulation effects on visual search depend on 
 
 Two other studies also observed effects specific to distractor processing. One study found that cathodal tDCS to the right parietal cortex increased the effect of task-irrelevant flanker stimuli on performance, specifically for difficult searches [@Weiss2012]. Another study was unable to replicate this result, but found that in fact anodal tDCS decreased the flanker effect for easy searches [@Kajimura2015]. These inconsistencies could be due to a difference in stimulation timing--- @Weiss2012 applied online tDCS; @Kajimura2015 stimulated offline---but otherwise these two studies used highly similar tasks and stimulation protocols.
 
-The largest and most consistent effects of tDCS on visual search processes hail from a series of studies by Clark and colleagues. They found that learning to detect concealed threatening objects embedded in naturalistic scenes was greatly enhanced by anodal tDCS over the right inferior frontal cortex---up to a factor of 2 compared to sham stimulation [@Clark2012]. Subsequent studies replicated this effect [@Coffman2012] and showed it is retained for at least 24 h [@Falcone2012].
-
-In conclusion, anodal tDCS over the right parietal cortex may speed up visual search, while cathodal stimulation may slow it down. However, results are inconsistent, may differ per hemifield, and appear restricted to particular aspects of visual search (e.g., salient distractors). Anodal stimulation over the right inferior frontal cortex has consistently shown to speed up object detection. Perhaps this success can be attributed to the challenging nature of the task: tES effects might be greatest for difficult tasks with plenty of room for improvement [e.g., @Jones2012]. Because this task is more complex than the typical visual search paradigm, it could also be that tDCS affected other processes such as threat detection or scene perception, and not those underlying visual search per se.
-
 
 
 ```{=latex}
 \cleartoverso
-\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
+\pagestyle{empty}
+\newgeometry{left=20mm,right=0.5in,top=0.2in,bottom=0.2in} % narrow margins (0.5), bit more at top, adjust table sides
 \blandscape
+\LTcapwidth=200mm % make caption almost as wide as table
 \small
 ```
 
@@ -181,13 +187,19 @@ Table: (\#tab:visual-search) __Studies using visual search tasks__. Studies are 
 \
 
 ```{=latex}
+\newpage
 \normalsize
 \elandscape
-\restoregeometry
-\newpage
+\restoregeometry % revert to normal margins set with memoir
+\pagestyle{\defstyle}
 ```
 
 
+
+
+The largest and most consistent effects of tDCS on visual search processes hail from a series of studies by Clark and colleagues. They found that learning to detect concealed threatening objects embedded in naturalistic scenes was greatly enhanced by anodal tDCS over the right inferior frontal cortex---up to a factor of 2 compared to sham stimulation [@Clark2012]. Subsequent studies replicated this effect [@Coffman2012] and showed it is retained for at least 24 h [@Falcone2012].
+
+In conclusion, anodal tDCS over the right parietal cortex may speed up visual search, while cathodal stimulation may slow it down. However, results are inconsistent, may differ per hemifield, and appear restricted to particular aspects of visual search (e.g., salient distractors). Anodal stimulation over the right inferior frontal cortex has consistently shown to speed up object detection. Perhaps this success can be attributed to the challenging nature of the task: tES effects might be greatest for difficult tasks with plenty of room for improvement [e.g., @Jones2012]. Because this task is more complex than the typical visual search paradigm, it could also be that tDCS affected other processes such as threat detection or scene perception, and not those underlying visual search per se.
 
 ## Spatial orienting
 
@@ -215,12 +227,22 @@ Two studies so far have paired tACS with a spatial cueing task. @Laczo2012 found
 
 In conclusion, whether preceded by a spatial cue or not, anodal tDCS to the right parietal cortex did not consistently enhance processing of left visual field stimuli. Several studies even found performance decreases [@Filmer2015; @Learmonth2015]. Not a single study reported a benefit to the endogenous control of attention. Future studies should aim to replicate these (null) findings and explore different nodes of the top-down (e.g., the frontal eye fields) or bottom-up (e.g., the temporoparietal junction) attention networks [@Corbetta2002].
 
+## Spatial bias
+
+### Pseudoneglect
+
+A closely related line of studies has used tES to modify spatial biases in attention, both in the healthy and diseased brains. These studies capitalize on the finding that attention is not symmetrically distributed over the visual field. Most people exhibit _pseudoneglect_: they overemphasize features in the left versus the right hemifield [@Jewell2000]. This bias likely occurs because the right hemisphere is slightly more active than the left at rest, thus shifting attention towards the left visual hemifield. Spatial biases can be quantified with line bisection tests [@Bowers1980], in which people typically bisect the line slightly towards the left. In contrast to the naturally occurring pseudoneglect, _hemispatial neglect_ is a much more extreme bias that can occur in stroke patients. We identified 15 studies examining the effect of tDCS on both of these biases, which have produced relatively consistent results (Table \@ref(tab:spatial-bias)).
+
+@Loftus2012 demonstrated that pseudoneglect can be reversed with anodal tDCS over the left parietal cortex. Presumably, tDCS increased the activity of the left parietal cortex beyond that of the right, causing a rightward shift in spatial bias. Similarly, @Giglia2011 report a rightward shift for right cathodal tDCS (although note that @Loftus2012 did not find this). They furthermore observed that a “dual” montage with one electrode on each posterior parietal cortex (anode left; cathode right) was even more effective.
+
 
 
 ```{=latex}
 \cleartoverso
-\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
+\pagestyle{empty}
+\newgeometry{left=20mm,right=0.5in,top=0.2in,bottom=0.2in} % narrow margins (0.5), bit more at top, adjust table sides
 \blandscape
+\LTcapwidth=200mm % make caption almost as wide as table
 \small
 ```
 
@@ -290,21 +312,14 @@ Table: (\#tab:spatial-orienting) __Studies using spatial orienting tasks, with a
 \
 
 ```{=latex}
-\cleartoverso
-\elandscape
-\restoregeometry
 \newpage
+\normalsize
+\elandscape
+\restoregeometry % revert to normal margins set with memoir
+\pagestyle{\defstyle}
 ```
 
 
-
-## Spatial bias
-
-### Pseudoneglect
-
-A closely related line of studies has used tES to modify spatial biases in attention, both in the healthy and diseased brains. These studies capitalize on the finding that attention is not symmetrically distributed over the visual field. Most people exhibit _pseudoneglect_: they overemphasize features in the left versus the right hemifield [@Jewell2000]. This bias likely occurs because the right hemisphere is slightly more active than the left at rest, thus shifting attention towards the left visual hemifield. Spatial biases can be quantified with line bisection tests [@Bowers1980], in which people typically bisect the line slightly towards the left. In contrast to the naturally occurring pseudoneglect, _hemispatial neglect_ is a much more extreme bias that can occur in stroke patients. We identified 15 studies examining the effect of tDCS on both of these biases, which have produced relatively consistent results (Table \@ref(tab:spatial-bias)).
-
-@Loftus2012 demonstrated that pseudoneglect can be reversed with anodal tDCS over the left parietal cortex. Presumably, tDCS increased the activity of the left parietal cortex beyond that of the right, causing a rightward shift in spatial bias. Similarly, @Giglia2011 report a rightward shift for right cathodal tDCS (although note that @Loftus2012 did not find this). They furthermore observed that a “dual” montage with one electrode on each posterior parietal cortex (anode left; cathode right) was even more effective.
 
 This dual montage effect was replicated with a larger sample, although the overall effect size was fairly small [@Benwell2015]. An exploratory analysis revealed that the effect was strongly modulated by individual differences: those who performed well at baseline responded only to weaker current intensity (1 mA); those who did poorly at baseline responded only to 2 mA tDCS. This pattern makes sense: those with a large bias to begin with likely had a more active right hemisphere at baseline, so higher intensity stimulation would be needed to tip the scales.
 
@@ -320,183 +335,191 @@ Notably, one study did not find any effect of tDCS [@Smit2015]. Possibly this is
 
 Although promising, these initial results should therefore be interpreted with some caution. Moreover, follow-up tests are crucial to assess whether the stimulation effects have any long-term clinical value. Only @Brem2014 had a 3-month follow-up, but treated just a single patient. Still, the current findings warrant a large-scale clinical trial to determine the efficacy of tDCS for treatment of hemispatial neglect.
 
-
-
-
-```{=latex}
-\cleartoverso
-\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
-\blandscape
-\footnotesize
-```
-
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Reference              n    Design    Stimulation                Size    Dosage       Timing    Task                                  Findings                                                      
----------------------- ---- --------- -------------------------- ------- ------------ --------- ------------------------------------- --------------------------------------------------------------
-__Pseudoneglect                                                                                                                                                                                     
-(healthy controls)__                                                                                                                                                                                
-
-_Cited in-text_                                                                                                                                                                                     
-
-@Loftus2012            30   within    P3 (A,C) or P4 (A,C), Cz   35      1 mA, 20     offline   greyscales                            anodal tDCS of the left PPC abolished pseudoneglect           
-                            subject   (ref)                      cm^2^   min                                                          (rightward shift in bias)                                     
-
-@Giglia2011            11   within    P5 (A), P6 (C); P6(C),     16      1 mA, 15     online    landmark task                         right cathodal and particularly left anodal + right cathodal  
-                            subject   left forehead (ref)        cm^2^   min                                                          tDCS abolished pseudoneglect                                  
-
-@Benwell2015           38   within    P5 (A,C), P6 (C,A)         16      1 or 2 mA,   online    landmark task                         left anodal + right cathodal tDCS shifted bias rightward;     
-                            subject                              cm^2^   20 min                                                       low performers responded to 2 mA stimulation only; high       
-                                                                                                                                      performers to 1 mA only                                       
-
-@Wright2014            12   within    P3 (A), P4 (C)             ca.     1 mA, 15     online    centroid localization                 left anodal + right cathodal tDCS produced more rightward     
-                            subject                              50      min          or                                              mislocalization compared to the opposite montage              
-                                                                 cm^2^                offline                                                                                                       
-
-_Other studies_                                                                                                                                                                                     
-
-@Picazio2015           13   within    left cerebellum (A,C);     25      2 mA, 20     offline   landmark task                         cathodal tDCS to the left cerebellum abolished                
-                            subject   left shoulder (ref)        cm^2^   min                                                          pseudoneglect, but only in combination with music listening   
-
-@DeTommaso2014         20   within    P3 (A), right forehead     35      2 mA, 20     offline   line bisection, landmark              stimulation decreased rightward errors in the landmark task,  
-                            subject   (ref)                      cm^2^   min                                                          but only in men                                               
-
-__Hemispatial                                                                                                                                                                                       
-neglect (patients)__                                                                                                                                                                                
-
-_Cited in-text_                                                                                                                                                                                     
-
-@Sparing2009           10   within    P3 (A,C), P4 (A), Cz       25,     1 mA, 10     offline   Test of Attentional Performance       no effect on neglect subtest. One session of anodal tDCS of   
-                            subject   (ref)                      35      min                    (neglect subtest), line bisection     the right and cathodal tDCS of the left hemisphere flipped    
-                                                                 cm^2^                                                                rightward bias to left. Patients with small lesions showed a  
-                                                                                                                                      larger bias shift                                             
-
-@Smit2015              5    within    P3 (C), P4 (A)                     2 mA, 20     offline   Behavioral Inattention Test           no significant effects after 5 sessions                       
-                            subject                                      min                                                                                                                        
-
-@Ladavas2015           30   between   P5 (A/C), P6 (A/C),        35      2 mA, 20     online    Behavioral Inattention Test           group with 10 sessions of right anodal tDCS improved more     
-                            group     contralateral forehead     cm^2^   min                                                          than sham when paired with prism adaptation training; the     
-                                      (ref)                                                                                           left cathodal group did not improve                           
-
-@Yi2016                30   between   P3 (C), P4 (A), Cz (ref)   25      2 mA, 30     offline   motor-free visual perception, line    15 sessions of both right anodal or left cathodal tDCS        
-                            group                                cm^2^   min                    bisection, star cancellation          produced greater improvement on all tests than sham           
-
-@Brem2014              1    within    P3 (C), P4 (A)             35      1 mA, 20     online    Test of Attentional Performance       one stimulation session already decreased reaction time,      
-                            subject                              cm^2^   min                    (incl. Posner), Behavioral            mostly toward invalid left hemifield targets. Effect was      
-                                                                                                Inattention Test (incl. line          retained 3 months later after 6 sessions in total             
-                                                                                                bisection)                                                                                          
-
-_Other studies_                                                                                                                                                                                     
-
-@Bang2015              12   between   P3 (C), P4 (A),            35      1 mA, 20     offline   motor-free visual perception, line    15 sessions of tDCS paired with feedback training improved    
-                            group     contralateral foreheads    cm^2^   min                    bisection                             scores on all tests more than just feedback training          
-                                      (ref)                                                                                                                                                         
-
-@Ko2008                15   within    P4 (A), left forehead      25      2 mA, 20     offline   figure cancellation, line bisection   one stimulation session decreased line bisection errors       
-                            subject   (ref)                      cm^2^   min                                                                                                                        
-
-@Sunwoo2013            10   within    P3 (C), P4 (A),            25      1 mA, 20     offline   line bisection, star cancelllation    one session of right anodal and right anodal + left cathodal  
-                            subject   contralateral foreheads    cm^2^   min                                                          tDCS improved line bisection (latter more effective)          
-                                      (ref); P4 (A), right                                                                                                                                          
-                                      forehead (ref)                                                                                                                                                
-
-@Turgut2016            32   between   P3 or P4 (C), P4 or P3             1.5--2 mA,   online    body orientation, clock drawing,      8 sessions of tDCS paired with optokinetic training improved  
-                            group     (A)                                20 min                 apple cancellation, line bisection    body orientation and clock drawing test (right lesions only)  
-                                                                                                                                      more than standard treatment                                  
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Table: (\#tab:spatial-bias) __Studies using spatial bias tasks, in healthy controls or neglect patients__. Studies are presented in order of appearance in the body text; studies not cited in the body text appear in the bottom section of the table (in alphabetical order). All studies were sham controlled, except @Turgut2016 and @Bang2015. _A_: anodal, _C_: cathodal, _ref_: location of tDCS electrode that was not of interest, _Online_: task performed during stimulation, _Offline_: task performed after stimulation, _Dosage_ is zero-to-peak amplitude
-
-\
-
-```{=latex}
-\normalsize
-\elandscape
-\restoregeometry
-\newpage
-```
-
-
-
 ## Sustained attention
 
 The final aspect of attention that multiple tES studies have targeted is sustained attention. In sustained attention paradigms, participants continuously monitor a stimulus stream for targets. Typically, after prolonged time-on-task, performance declines rapidly—the so-called vigilance decrement [@Mackworth1948; @Parasuraman1979]. Finding ways to counter the vigilance decrement is especially pertinent given that these tasks mirror many real-life situations, such as air traffic control, surveillance, and quality control.
 
 We found nine studies that examined effects of tES on sustained attention (Table \@ref(tab:sustained-attention)). @Nelson2014 report that the vigilance decrement could be prevented by applying bilateral tDCS to the dorsolateral prefrontal cortex early into a vigilance task. Prefrontal tDCS may also counter the effects of sleep deprivation on vigilance, to the same or greater extent than caffeine [@McIntire2014]. When bilateral stimulation was applied to parietal cortex, @Li2015a found that tDCS only affected performance on the final block of a reaction time task, but this effect reflected slower instead of faster reaction times.
 
-Other studies that were not geared towards time-on-task effects have reported mixed results. For example, prefrontal tDCS did not affect performance on a sustained attention to response task, but did increase mind wandering [@Axelrod2015]. Two other studies employing a go/no-go task found that tDCS negatively affected performance, but only when increased demand was placed on inhibitory control [@Nieratschker2015] and set shifting abilities [@Plewnia2013]. However, these effects were restricted to carriers of particular subtypes of the COMT gene, involved in regulation of dopamine levels. Still, this lends some support to the idea that tDCS effects are most apparent at higher levels of task difficulty. Similarly, @Hsu2015 only found effects in a multitasking context, not when participants were performing a single task. These findings collectively suggest that prefrontal tDCS primarily affects higher-order processes involved in sustained attention, and not simple target detection per se.
-
-In conclusion, while most studies found no or restricted effects on sustained attention, two studies report that prefrontal tDCS specifically offsets the vigilance decrement, suggesting that its effects may only become apparent after prolonged task performance. If replicated, it may be interesting for future studies to investigate the cognitive mechanisms at work: does tDCS allow fatigued individuals to tap into additional attentional resources, or do they simply become more motivated or less prone to mind wandering?
 
 
 
 ```{=latex}
 \cleartoverso
-\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
+\renewcommand{\arraystretch}{1.35} % a little less extra vertical space here
+\pagestyle{empty}
+\newgeometry{left=20mm,right=0.5in,top=0.2in,bottom=0.2in} % narrow margins (0.5), bit more at top, adjust table sides
 \blandscape
-\small
+\LTcapwidth=200mm % make caption almost as wide as table
+\footnotesize
 ```
 
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Reference           n    Design    Stimulation            Size    Dosage      Timing        Task                        Findings                                                 
-------------------- ---- --------- ---------------------- ------- ----------- ------------- --------------------------- ---------------------------------------------------------
-_Cited in-text_                                                                                                                                                                  
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Reference           n    Design    Stimulation            Size    Dosage   Timing    Task                   Findings                                                      
+------------------- ---- --------- ---------------------- ------- -------- --------- ---------------------- --------------------------------------------------------------
+__Pseudoneglect__                                                                                                                                                         
 
-@Nelson2014         19   between   F3 (A,C) , F4 (C,A)    35      1 mA, 10    online        air traffic controller      both montages prevented time-on-task performance         
-                         group                            cm^2^   min                       simulation                  decline that occurred in sham group, when stimulation    
-                                                                                                                        was started after 10 min (early group); not 30 (late     
-                                                                                                                        group).                                                  
+_Cited in-text_                                                                                                                                                           
 
-@McIntire2014       30   between   F3 (A), right upper    10      2 mA, 30    offline       Mackworth Clock Test,       when sleep deprived for 22h, performance in tDCS group   
-                         group     arm (ref)              cm^2^   min                       Psychomotor Vigilance       remained stable throughout the night compared to sham    
-                                                                                            Task                        (accuracy in Mackworth and reaction time on PVT)         
+@Loftus2012         30   within    P3 (A,C) or P4         35      1 mA,    offline   greyscales             anodal tDCS of the left PPC abolished pseudoneglect           
+                         subject   (A,C), Cz (ref)        cm^2^   20 min                                    (rightward shift in bias)                                     
 
-@Li2015a            18   within    P3 (A), P4 (C)         25      2 mA, 30    online        Choice Reaction Time,       right-anodal + left-cathodal stimulation increased       
-                         subject                          cm^2^   min         (CRT;         Rapid Visual Processing     reaction time on CRT, only for short interval trials in  
-                                                                              RVP                                       the final block. Effect only present when compared to    
-                                                                              immediately                               opposite montage, not sham                               
-                                                                              after)                                                                                             
+@Giglia2011         11   within    P5 (A), P6 (C);        16      1 mA,    online    landmark task          right cathodal and particularly left anodal + right cathodal  
+                         subject   P6(C), left forehead   cm^2^   15 min                                    tDCS abolished pseudoneglect                                  
+                                   (ref)                                                                                                                                  
 
-@Axelrod2015        45   between   F3 (A), right          16,     1 mA, 20    online        Sustained Attention to      no effects on accuracy or reaction time, but frontal     
-                         group     forehead (ref); Oz     35      min                       Response Task               tDCS did increase mind wandering                         
-                                   (A), Cz (ref)          cm^2^                                                                                                                  
+@Benwell2015        38   within    P5 (A,C), P6 (C,A)     16      1 or 2   online    landmark task          left anodal + right cathodal tDCS shifted bias rightward;     
+                         subject                          cm^2^   mA, 20                                    low performers responded to 2 mA stimulation only; high       
+                                                                  min                                       performers to 1 mA only                                       
 
-@Nieratschker2015   41   within    F3 (C), right          35      1 mA, 20    online        parametric go/no-go [just   cathodal tDCS decreased performance at medium task       
-                         subject   forehead (ref)         cm^2^   min                       "go" responses]             difficulty (response inhibition), only for Val/Val       
-                                                                                                                        allele carriers of the COMT gene. No effects on          
-                                                                                                                        reaction time                                            
+@Wright2014         12   within    P3 (A), P4 (C)         ca.     1 mA,    online    centroid               left anodal + right cathodal tDCS produced more rightward     
+                         subject                          50      15 min   or        localization           mislocalization compared to the opposite montage              
+                                                          cm^2^            offline                                                                                        
 
-@Plewnia2013        46   within    F3 (A), right          35      1 mA, 20    online        parametric go/no-go [just   anodal tDCS decreased performance at highest task        
-                         subject   forehead (ref)         cm^2^   min                       "go" responses]             difficulty (set shifting), only for Met/Met allele       
-                                                                                                                        carriers of the COMT gene. No effects on reaction time   
+_Other studies_                                                                                                                                                           
 
-@Hsu2015            39   between   F3 (A), Fp2 (ref)      45      1 mA, 10    offline       NeuroRacer [go/no-go task   no effects on accuracy (d_) for the go/no-go task only,  
-                         group                            cm^2^   min                       only]                       but tDCS did reduce multitasking costs                   
+@Picazio2015        13   within    left cerebellum        25      2 mA,    offline   landmark task          cathodal tDCS to the left cerebellum abolished                
+                         subject   (A,C); left shoulder   cm^2^   20 min                                    pseudoneglect, but only in combination with music listening   
+                                   (ref)                                                                                                                                  
 
-_Other studies_                                                                                                                                                                  
+@DeTommaso2014      20   within    P3 (A), right          35      2 mA,    offline   line bisection,        stimulation decreased rightward errors in the landmark task,  
+                         subject   forehead (ref)         cm^2^   20 min             landmark               but only in men                                               
 
-@Miller2015         8    within    AFz (A), under chin    35      1 mA, 15    offline       go/no-go                    no effects on accuracy or reaction time                  
-                         subject   (ref)                  cm^2^   min                                                                                                            
+__Hemineglect__                                                                                                                                                           
 
-@Mauri2015          14   within    FPz, Oz (100-640 Hz)   23      2 mA, 81    online        Continuous Performance      stimulation decreased reaction time                      
-                         subject                          cm^2^   bursts of                 Test                                                                                 
-                                                                  900 ms                                                                                                         
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+_Cited in-text_                                                                                                                                                           
+
+@Sparing2009        10   within    P3 (A,C), P4 (A), Cz   25,     1 mA,    offline   TAP (neglect           no effect on neglect subtest. One session of anodal tDCS of   
+                         subject   (ref)                  35      10 min             subtest), line         the right and cathodal tDCS of the left hemisphere flipped    
+                                                          cm^2^                      bisection              rightward bias to left. Patients with small lesions showed a  
+                                                                                                            larger bias shift                                             
+
+@Smit2015           5    within    P3 (C), P4 (A)                 2 mA,    offline   BIT                    no significant effects after 5 sessions                       
+                         subject                                  20 min                                                                                                  
+
+@Ladavas2015        30   between   P5 (A/C), P6 (A/C),    35      2 mA,    online    BIT                    group with 10 sessions of right anodal tDCS improved more     
+                         group     contralateral          cm^2^   20 min                                    than sham when paired with prism adaptation training; the     
+                                   forehead (ref)                                                           left cathodal group did not improve                           
+
+@Yi2016             30   between   P3 (C), P4 (A), Cz     25      2 mA,    offline   motor-free visual      15 sessions of both right anodal or left cathodal tDCS        
+                         group     (ref)                  cm^2^   30 min             perception, line       produced greater improvement on all tests than sham           
+                                                                                     bisection, star                                                                      
+                                                                                     cancellation                                                                         
+
+@Brem2014           1    within    P3 (C), P4 (A)         35      1 mA,    online    TAP (incl. Posner),    one stimulation session already decreased reaction time,      
+                         subject                          cm^2^   20 min             BIT (incl. line        mostly toward invalid left hemifield targets. Effect was      
+                                                                                     bisection)             retained 3 months later after 6 sessions in total             
+
+_Other studies_                                                                                                                                                           
+
+@Bang2015           12   between   P3 (C), P4 (A),        35      1 mA,    offline   motor-free visual      15 sessions of tDCS paired with feedback training improved    
+                         group     contralateral          cm^2^   20 min             perception, line       scores on all tests more than just feedback training          
+                                   foreheads (ref)                                   bisection                                                                            
+
+@Ko2008             15   within    P4 (A), left           25      2 mA,    offline   figure cancellation,   one stimulation session decreased line bisection errors       
+                         subject   forehead (ref)         cm^2^   20 min             line bisection                                                                       
+
+@Sunwoo2013         10   within    P3 (C), P4 (A),        25      1 mA,    offline   line bisection, star   one session of right anodal and right anodal + left cathodal  
+                         subject   contralateral          cm^2^   20 min             cancelllation          tDCS improved line bisection (latter more effective)          
+                                   foreheads (ref)                                                                                                                        
+
+@Turgut2016         32   between   P3 or P4 (C), P4 or            1.5--2   online    body orientation,      8 sessions of tDCS paired with optokinetic training improved  
+                         group     P3 (A)                         mA, 20             clock drawing, apple   body orientation and clock drawing test (right lesions only)  
+                                                                  min                cancellation, line     more than standard treatment                                  
+                                                                                     bisection                                                                            
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Table: (\#tab:spatial-bias) __Studies using spatial bias tasks, in healthy controls (pseudoneglect) or stroke patients (hemineglect)__. Studies are presented in order of appearance in the body text; studies not cited in the body text appear in the bottom section of the table (in alphabetical order). All studies were sham controlled, except @Turgut2016 and @Bang2015. _A_: anodal, _C_: cathodal, _ref_: location of tDCS electrode that was not of interest, _Online_: task performed during stimulation, _Offline_: task performed after stimulation, _TAP_: Test of Attentional Performance, _BIT_: Behavioral Inattention Test
+
+\
+
+```{=latex}
+\newpage
+\normalsize
+\elandscape
+\restoregeometry % revert to normal margins set with memoir
+\pagestyle{\defstyle}
+```
+
+
+
+
+
+```{=latex}
+\cleartoverso
+\renewcommand{\arraystretch}{1.5} % restore extra vertical space
+\pagestyle{empty}
+\newgeometry{left=20mm,right=0.5in,top=0.2in,bottom=0.2in} % narrow margins (0.5), bit more at top, adjust table sides
+\blandscape
+\LTcapwidth=200mm % make caption almost as wide as table
+\footnotesize
+```
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Reference           n    Design    Stimulation                     Size    Dosage      Timing        Task                        Findings                                                 
+------------------- ---- --------- ------------------------------- ------- ----------- ------------- --------------------------- ---------------------------------------------------------
+_Cited in-text_                                                                                                                                                                           
+
+@Nelson2014         19   between   F3 (A,C) , F4 (C,A)             35      1 mA, 10    online        air traffic controller      both montages prevented time-on-task performance         
+                         group                                     cm^2^   min                       simulation                  decline that occurred in sham group, when stimulation    
+                                                                                                                                 was started after 10 min (early group); not 30 (late     
+                                                                                                                                 group).                                                  
+
+@McIntire2014       30   between   F3 (A), right upper arm (ref)   10      2 mA, 30    offline       Mackworth Clock Test,       when sleep deprived for 22h, performance in tDCS group   
+                         group                                     cm^2^   min                       Psychomotor Vigilance       remained stable throughout the night compared to sham    
+                                                                                                     Task                        (accuracy in Mackworth and reaction time on PVT)         
+
+@Li2015a            18   within    P3 (A), P4 (C)                  25      2 mA, 30    online        Choice Reaction Time,       right-anodal + left-cathodal stimulation increased       
+                         subject                                   cm^2^   min         (CRT;         Rapid Visual Processing     reaction time on CRT, only for short interval trials in  
+                                                                                       RVP                                       the final block. Effect only present when compared to    
+                                                                                       immediately                               opposite montage, not sham                               
+                                                                                       after)                                                                                             
+
+@Axelrod2015        45   between   F3 (A), right forehead (ref);   16,     1 mA, 20    online        Sustained Attention to      no effects on accuracy or reaction time, but frontal     
+                         group     Oz (A), Cz (ref)                35      min                       Response Task               tDCS did increase mind wandering                         
+                                                                   cm^2^                                                                                                                  
+
+@Nieratschker2015   41   within    F3 (C), right forehead (ref)    35      1 mA, 20    online        parametric go/no-go [just   cathodal tDCS decreased performance at medium task       
+                         subject                                   cm^2^   min                       "go" responses]             difficulty (response inhibition), only for Val/Val       
+                                                                                                                                 allele carriers of the COMT gene. No effects on          
+                                                                                                                                 reaction time                                            
+
+@Plewnia2013        46   within    F3 (A), right forehead (ref)    35      1 mA, 20    online        parametric go/no-go [just   anodal tDCS decreased performance at highest task        
+                         subject                                   cm^2^   min                       "go" responses]             difficulty (set shifting), only for Met/Met allele       
+                                                                                                                                 carriers of the COMT gene. No effects on reaction time   
+
+@Hsu2015            39   between   F3 (A), Fp2 (ref)               45      1 mA, 10    offline       NeuroRacer [go/no-go task   no effects on accuracy (d_) for the go/no-go task only,  
+                         group                                     cm^2^   min                       only]                       but tDCS did reduce multitasking costs                   
+
+_Other studies_                                                                                                                                                                           
+
+@Miller2015         8    within    AFz (A), under chin (ref)       35      1 mA, 15    offline       go/no-go                    no effects on accuracy or reaction time                  
+                         subject                                   cm^2^   min                                                                                                            
+
+@Mauri2015          14   within    FPz, Oz (100-640 Hz)            23      2 mA, 81    online        Continuous Performance      stimulation decreased reaction time                      
+                         subject                                   cm^2^   bursts of                 Test                                                                                 
+                                                                           900 ms                                                                                                         
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Table: (\#tab:sustained-attention) __Studies using sustained attention tasks, in healthy controls or neglect patients__. Studies are presented in order of appearance in the body text; studies not cited in the body text appear in the bottom section of the table (in alphabetical order). All studies were sham controlled. _A_: anodal, _C_: cathodal, _ref_: location of tDCS electrode that was not of interest, _Online_: task performed during stimulation, _Offline_: task performed after stimulation.
 
 \
 
 ```{=latex}
+\newpage
 \normalsize
 \elandscape
-\restoregeometry
-\newpage
-\LTcapwidth=\textwidth
+\restoregeometry % revert to normal margins set with memoir
+\pagestyle{\defstyle}
 ```
 
 
+
+Other studies that were not geared towards time-on-task effects have reported mixed results. For example, prefrontal tDCS did not affect performance on a sustained attention to response task, but did increase mind wandering [@Axelrod2015]. Two other studies employing a go/no-go task found that tDCS negatively affected performance, but only when increased demand was placed on inhibitory control [@Nieratschker2015] and set shifting abilities [@Plewnia2013]. However, these effects were restricted to carriers of particular subtypes of the COMT gene, involved in regulation of dopamine levels. Still, this lends some support to the idea that tDCS effects are most apparent at higher levels of task difficulty. Similarly, @Hsu2015 only found effects in a multitasking context, not when participants were performing a single task. These findings collectively suggest that prefrontal tDCS primarily affects higher-order processes involved in sustained attention, and not simple target detection per se.
+
+In conclusion, while most studies found no or restricted effects on sustained attention, two studies report that prefrontal tDCS specifically offsets the vigilance decrement, suggesting that its effects may only become apparent after prolonged task performance. If replicated, it may be interesting for future studies to investigate the cognitive mechanisms at work: does tDCS allow fatigued individuals to tap into additional attentional resources, or do they simply become more motivated or less prone to mind wandering?
 
 ## Discussion {#tDCS_att_review-discussion}
 

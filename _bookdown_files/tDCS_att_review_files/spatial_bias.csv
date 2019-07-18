@@ -1,5 +1,5 @@
 Reference;n;Design;Stimulation;Size ;Dosage;Timing;Task;Findings
-__Pseudoneglect (healthy controls)__;;;;;;;;
+__Pseudoneglect__;;;;;;;;
 _Cited in-text_;;;;;;;;
 @Loftus2012;30;within subject;P3 (A,C) or P4 (A,C), Cz (ref);35 cm^2^;1 mA, 20 min;offline;greyscales;anodal tDCS of the left PPC abolished pseudoneglect (rightward shift in bias)
 @Giglia2011;11;within subject;"P5 (A), P6 (C); P6(C), left forehead (ref)";16 cm^2^;1 mA, 15 min;online;landmark task;right cathodal and particularly left anodal + right cathodal tDCS abolished pseudoneglect
@@ -8,15 +8,15 @@ _Cited in-text_;;;;;;;;
 _Other studies_;;;;;;;;
 @Picazio2015;13;within subject;"left cerebellum (A,C); left shoulder (ref)";25 cm^2^;2 mA, 20 min;offline;landmark task;cathodal tDCS to the left cerebellum abolished pseudoneglect, but only in combination with music listening
 @DeTommaso2014;20;within subject;P3 (A), right forehead (ref);35 cm^2^;2 mA, 20 min;offline;line bisection, landmark;stimulation decreased rightward errors in the landmark task, but only in men
-__Hemispatial neglect (patients)__;;;;;;;;
+__Hemineglect__;;;;;;;;
 _Cited in-text_;;;;;;;;
-@Sparing2009;10;within subject;P3 (A,C), P4 (A), Cz (ref);25, 35 cm^2^;1 mA, 10 min;offline;Test of Attentional Performance (neglect subtest), line bisection;no effect on neglect subtest. One session of anodal tDCS of the right and cathodal tDCS of the left hemisphere flipped rightward bias to left. Patients with small lesions showed a larger bias shift
-@Smit2015;5;within subject;P3 (C), P4 (A);;2 mA, 20 min;offline;Behavioral Inattention Test;no significant effects after 5 sessions
-@Ladavas2015;30;between group;P5 (A/C), P6 (A/C), contralateral forehead (ref);35 cm^2^;2 mA, 20 min;online;Behavioral Inattention Test;"group with 10 sessions of right anodal tDCS improved more than sham when paired with prism adaptation training; the left cathodal group did not improve"
+@Sparing2009;10;within subject;P3 (A,C), P4 (A), Cz (ref);25, 35 cm^2^;1 mA, 10 min;offline;TAP (neglect subtest), line bisection;no effect on neglect subtest. One session of anodal tDCS of the right and cathodal tDCS of the left hemisphere flipped rightward bias to left. Patients with small lesions showed a larger bias shift
+@Smit2015;5;within subject;P3 (C), P4 (A);;2 mA, 20 min;offline;BIT;no significant effects after 5 sessions
+@Ladavas2015;30;between group;P5 (A/C), P6 (A/C), contralateral forehead (ref);35 cm^2^;2 mA, 20 min;online;BIT;"group with 10 sessions of right anodal tDCS improved more than sham when paired with prism adaptation training; the left cathodal group did not improve"
 @Yi2016;30;between group;P3 (C), P4 (A), Cz (ref);25 cm^2^;2 mA, 30 min;offline;motor-free visual perception, line bisection, star cancellation;15 sessions of both right anodal or left cathodal tDCS produced greater improvement on all tests than sham
-@Brem2014;1;within subject;P3 (C), P4 (A);35 cm^2^;1 mA, 20 min;online;Test of Attentional Performance (incl. Posner), Behavioral Inattention Test (incl. line bisection);one stimulation session already decreased reaction time, mostly toward invalid left hemifield targets. Effect was retained 3 months later after 6 sessions in total
+@Brem2014;1;within subject;P3 (C), P4 (A);35 cm^2^;1 mA, 20 min;online;TAP (incl. Posner), BIT (incl. line bisection);one stimulation session already decreased reaction time, mostly toward invalid left hemifield targets. Effect was retained 3 months later after 6 sessions in total
 _Other studies_;;;;;;;;
 @Bang2015;12;between group;P3 (C), P4 (A), contralateral foreheads (ref);35 cm^2^;1 mA, 20 min;offline;motor-free visual perception, line bisection;15 sessions of tDCS paired with feedback training improved scores on all tests more than just feedback training
 @Ko2008;15;within subject;P4 (A), left forehead (ref);25 cm^2^;2 mA, 20 min;offline;figure cancellation, line bisection;one stimulation session decreased line bisection errors
-@Sunwoo2013;10;within subject;"P3 (C), P4 (A), contralateral foreheads (ref); P4 (A), right forehead (ref)";25 cm^2^;1 mA, 20 min;offline;line bisection, star cancelllation;one session of right anodal and right anodal + left cathodal tDCS improved line bisection (latter more effective)
+@Sunwoo2013;10;within subject;"P3 (C), P4 (A), contralateral foreheads (ref)";25 cm^2^;1 mA, 20 min;offline;line bisection, star cancelllation;one session of right anodal and right anodal + left cathodal tDCS improved line bisection (latter more effective)
 @Turgut2016;32;between group;P3 or P4 (C), P4 or P3 (A);;1.5--2 mA, 20 min;online;body orientation, clock drawing, apple cancellation, line bisection;8 sessions of tDCS paired with optokinetic training improved body orientation and clock drawing test (right lesions only) more than standard treatment
