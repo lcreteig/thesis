@@ -82,9 +82,7 @@
 %\captiontitlefont{\small\sffamily}
 %\hangcaption
 % caption package:
-\captionsetup[table]{name=TABLE,font={small,sf}} % small sans for table captions
-\DeclareCaptionFormat{llap}{\llap{#1#2}#3\par} % same as table captions, but hang in margin
-\captionsetup[figure]{name=FIGURE,font={small,sf},format=llap,labelsep=quad,singlelinecheck=no}
+\captionsetup{labelfont={rm,sc},textfont={small,sf},labelsep=space} % small sans for table captions, with small caps for label
 
 %% Bibliography
 \renewcommand*{\bibfont}{\footnotesize}
