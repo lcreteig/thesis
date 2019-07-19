@@ -1,12 +1,12 @@
 \backmatter
+\addtocontents{toc}{\protect\vspace{12pt}}
 \cleardoublepage
-\phantomsection
-\addcontentsline{toc}{part}{Bibliography}
+\bookmarksetup{startatroot} 
 \let\href\oldhref
 
 
 <div id="refs"></div>
 
-\printbibliography[title=References]
+\printbibliography
 \renewcommand{\printbibliography}{}
 

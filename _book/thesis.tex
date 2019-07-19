@@ -85,11 +85,12 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{18 July, 2019}
+    \date{19 July, 2019}
 
 \usepackage{caption}
 \usepackage[pass]{geometry} % load the package, but none of the default settings
-\usepackage{pdflscape}
+\usepackage{pdflscape} % landscape pages and rotation
+\usepackage{bookmark} % section links in pdf
 
 \let\oldhref\href % save command before redefininig, so we can turn it off again
 \renewcommand{\href}[2]{#2\footnote{\url{#1}}} % same as "link-as-notes: true"
@@ -4583,14 +4584,14 @@ Do your best! Good luck!
 \normalsize
 
 \backmatter
+\addtocontents{toc}{\protect\vspace{12pt}}
 \cleardoublepage
-\phantomsection
-\addcontentsline{toc}{part}{Bibliography}
+\bookmarksetup{startatroot} 
 \let\href\oldhref
 
 \hypertarget{refs}{}
 
-\printbibliography[title=References]
+\printbibliography
 \renewcommand{\printbibliography}{}
 
 \hypertarget{contributions-to-the-chapters}{%
@@ -4714,6 +4715,12 @@ van Schouwenburg, M. R., Sörensen, L. K. A., de Klerk, R., \textbf{Reteig, L. C
 Slagter, H. A., Mazaheri, A., \textbf{Reteig, L. C.}, Smolders, R., Figee, M., Mantione, M., \ldots{} Denys, D. (2017). Contributions of the Ventral Striatum to Conscious Perception: An Intracranial EEG Study of the Attentional Blink. \emph{Journal of Neuroscience, 37}, 1081--1089. \url{https://doi.org/10.1523/jneurosci.2282-16.2016}\newline
 
 Slagter, H. A., Prinssen, S., \textbf{Reteig, L. C.}, \& Mazaheri, A. (2016). Facilitation and inhibition in attention: Functional dissociation of pre-stimulus alpha activity, P1, and N1 components. \emph{NeuroImage, 125}, 25--35. \url{https://doi.org/10.1016/j.neuroimage.2015.09.058}
+
+\hypertarget{nederlandse-samenvatting-summary-in-dutch}{%
+\chapter{Nederlandse samenvatting (Summary in Dutch)}\label{nederlandse-samenvatting-summary-in-dutch}}
+
+\hypertarget{dankwoord-acknowledgments}{%
+\chapter{Dankwoord (acknowledgments)}\label{dankwoord-acknowledgments}}
 
 \printbibliography
 
