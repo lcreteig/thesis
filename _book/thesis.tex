@@ -145,6 +145,9 @@
 
 \renewcommand{\arraystretch}{1.5} % increase vertical spacing in tables
 
+% when figures are wider than text block, center them with respect to text block
+\setfloatadjustment{figure}{\centerfloat} 
+
 %\setlength{\cftpartnumwidth}{2.5em} % more space for part numbering in ToC
 %\setlength\cftchapternumwidth{2.5em} % also adjust others to match
 %\setlength\cftsectionindent{2.5em} % also adjust others to match
@@ -171,9 +174,7 @@
 %\captiontitlefont{\small\sffamily}
 %\hangcaption
 % caption package:
-\captionsetup[table]{name=TABLE,font={small,sf}} % small sans for table captions
-\DeclareCaptionFormat{llap}{\llap{#1#2}#3\par} % same as table captions, but hang in margin
-\captionsetup[figure]{name=FIGURE,font={small,sf},format=llap,labelsep=quad,singlelinecheck=no}
+\captionsetup{labelfont={rm,sc},textfont={small,sf},labelsep=space} % small sans for table captions, with small caps for label
 
 %% Bibliography
 \renewcommand*{\bibfont}{\footnotesize}
@@ -2747,9 +2748,7 @@ The study followed a randomized, double-blind, crossover design, in which subjec
 Neuronavigation was always performed at the start of the first session (see \protect\hyperlink{frontal-eye-field-localization}{Frontal eye field localization}), and was usually not repeated on the second session. Otherwise, the procedure for each session was identical. First, a brief trial stimulation allowed participants to experience the sensations induced by tDCS and to decide whether they wanted to continue with the experiment (see \protect\hyperlink{sacc-methods-tDCS}{tDCS}). After setting up the eye tracker (see \protect\hyperlink{eye-tracking}{Eye tracking}), participants practiced the prosaccade task (see \protect\hyperlink{sacc-task}{Task}) for one block (120 trials). Subsequently, participants performed 12 blocks of the task in three phases (Figure \ref{fig:sacc-tDCS-procedure}): 3 blocks prior to stimulation (\emph{baseline}), 3 blocks during stimulation (anodal or cathodal tDCS), and 6 blocks after stimulation (\emph{post-1} and \emph{post-2}). Each block lasted approximately 5 minutes.
 
 \begin{figure}
-\centering
-\includegraphics{sacc_tDCS_files/figures/figure_1_procedure.pdf}
-\caption{\label{fig:sacc-tDCS-procedure}\textbf{Experimental design.} After a baseline measurement, participants received either anodal or cathodal tDCS while continuing to perform the prosaccade task, followed by two more post-tDCS assessments. After a washout period of at least 48 hours, the second session followed the same protocol, except that the tDCS polarity was opposite (e.g.~if participants received anodal tDCS in the first session, cathodal tDCS was applied in the second session, and vice versa).}
+\includegraphics[width=130mm]{sacc_tDCS_files/figures/figure_1_procedure} \caption{\textbf{Experimental design.} After a baseline measurement, participants received either anodal or cathodal tDCS while continuing to perform the prosaccade task, followed by two more post-tDCS assessments. After a washout period of at least 48 hours, the second session followed the same protocol, except that the tDCS polarity was opposite (e.g.~if participants received anodal tDCS in the first session, cathodal tDCS was applied in the second session, and vice versa).}\label{fig:sacc-tDCS-procedure}
 \end{figure}
 
 
@@ -2879,23 +2878,24 @@ Anodal or cathodal tDCS also did not seem to affect lateral saccade latency in o
 Center saccade latency also appeared to be unaffected, as there was no statistical evidence for an interaction of Stimulation with Time Period and/or Saccade Direction (Table \ref{tab:tab-latency}). Yet, there was very strong evidence for a main effect of Stimulation in the Bayesian ANOVA. Curiously, this effect was non-significant in the classical ANOVA. This divergence compelled us to delve into the single-subject data, which revealed that one participant showed an effect that was much larger than the other participants (a difference between anodal and cathodal of around 30 ms). When we reran the Bayesian ANOVA without this participant, the inclusion BF\textsubscript{10} plummeted from 67.1 to 2.4. This participant may have induced a violation of certain assumptions for the Bayesian model, which caused it to behave differently than the classical ANOVA. Still, we decided to run follow-up one-sample tests with this participant included, which showed that latency did not significantly change from baseline for either anodal (\emph{p} = .33, BF\textsubscript{01} = 3.11) or cathodal (\emph{p} = .41, BF\textsubscript{01} = 3.52) tDCS. Thus, we conclude that our hypothesis that anodal tDCS would decrease median contralateral saccade latency is not supported, and that tDCS had no other effects on median saccade latency.
 
 \begin{figure}
-\centering
-\includegraphics{sacc_tDCS_files/figures/figure_4_latency.pdf}
-\caption{\label{fig:fig-latency}\textbf{Effects of frontal eye field tDCS on saccade latency.} Data are shown for left vs.~rightward saccades, in the anodal vs.~cathodal session, for four 15-minute time periods: baseline, during tDCS, and after tDCS (post-1 and post-2). \textbf{Top row}: Colored lines show data from individual participants; black lines show the group median. \textbf{Bottom row}: Change in saccade latency after baseline subtraction. Numbers inside the plot axes are the baseline saccade latencies per condition. Error bars show 95\% confidence intervals of the pairwise difference between baseline and each subsequent time period.}
+\includegraphics[width=130mm]{sacc_tDCS_files/figures/figure_4_latency} \caption{\textbf{Effects of frontal eye field tDCS on saccade latency.} Data are shown for left vs.~rightward saccades, in the anodal vs.~cathodal session, for four 15-minute time periods: baseline, during tDCS, and after tDCS (post-1 and post-2). \textbf{Top row}: Colored lines show data from individual participants; black lines show the group median. \textbf{Bottom row}: Change in saccade latency after baseline subtraction. Numbers inside the plot axes are the baseline saccade latencies per condition. Error bars show 95\% confidence intervals of the pairwise difference between baseline and each subsequent time period.}\label{fig:fig-latency}
 \end{figure}
 
 
 
-\footnotesize
+\begingroup
+\setlength{\LTleft}{-20cm plus -1fill}
+\setlength{\LTright}{\LTleft}
+\small
 
 \begin{longtable}[]{@{}lllllll@{}}
 \caption{\label{tab:tab-latency} \textbf{Classical and Bayesian repeated measures ANOVA results for saccade latency}. Factors: \emph{Stimulation} (anodal vs.~cathodal), \emph{Time Period} (during tDCS, post-tDCS {[}0-15 min{]}, post-tDCS {[}0-30 min{]}), \emph{Direction} (saccade to the left vs.~saccade to the right).}\tabularnewline
 \toprule
-Effect & df & F & \(\eta_{G}^{2}\) & \emph{p} & inclusion BF\textsubscript{10} & inclusion BF\textsubscript{01}\tabularnewline
+Effect & df & F & \(\eta_{G}^{2}\) & \emph{p} & BF\textsubscript{10} & BF\textsubscript{01}\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-Effect & df & F & \(\eta_{G}^{2}\) & \emph{p} & inclusion BF\textsubscript{10} & inclusion BF\textsubscript{01}\tabularnewline
+Effect & df & F & \(\eta_{G}^{2}\) & \emph{p} & BF\textsubscript{10} & BF\textsubscript{01}\tabularnewline
 \midrule
 \endhead
 \textbf{lateral saccades} & & & & & &\tabularnewline
@@ -2911,7 +2911,7 @@ Stimulation x Direction x Time Period & 2, 50 & 1.96 & .001 & .15 & 0.19 & 5.40\
 \bottomrule
 \end{longtable}
 
-\normalsize
+\endgroup
 
 \hypertarget{saccade-latency-distribution}{%
 \subsection{Saccade latency distribution}\label{saccade-latency-distribution}}
@@ -2919,9 +2919,7 @@ Stimulation x Direction x Time Period & 2, 50 & 1.96 & .001 & .15 & 0.19 & 5.40\
 Because the hypothesized effect on median saccade latency was absent, we conducted an additional exploratory analysis (see \protect\hyperlink{quantile-analysis}{Quantile analysis} in the \protect\hyperlink{sacc_tDCS-methods}{Material and Methods} section) by comparing the entire saccade latency distributions between the anodal and cathodal sessions (Figure \ref{fig:quantiles}). Across the board, saccade latencies in the cathodal session were slightly faster than the anodal session, which is opposite to the hypothesized effect of tDCS on FEF excitability. For lateral saccades, the slowest saccades seem to show the biggest difference in latency between the sessions; for center saccades, differences were most pronounced in the fastest saccades. However, these differences were already present in the baseline block, and appear to be driven by a small number of participants. Overall, effects were never significant in the same direction in more than 12 (out of 26) participants.
 
 \begin{figure}
-\centering
-\includegraphics{sacc_tDCS_files/figures/figure_5_quantiles.pdf}
-\caption{\label{fig:quantiles}\textbf{Shift functions of saccade latency distributions under anodal and cathodal tDCS.} Data are shown for left- vs.~rightward saccades for four 15-minute time periods: baseline, during tDCS, and after tDCS (post-1 and post-2). \textbf{Left column}: The x-axis shows saccade latencies for the 9 deciles in the anodal session. The median is plotted as a vertical dashed line. The y-axis shows the difference scores (anodal - cathodal) at each decile. These decile differences express by how much latencies for the cathodal deciles should be \emph{shifted} to match the anodal deciles. Positive differences mean that cathodal saccades had lower latencies than anodal saccades. Error bars show 95\% confidence intervals of the decile differences. \textbf{Right column}: Counts of participants showing significant effects for the difference between anodal and cathodal sessions at each decile. Red/top bars count the number of participants with faster anodal saccade latencies; blue/bottom bars show counts for faster cathodal latencies. 26 participants is the maximum; the exact number for each contrast is superimposed on the bars.}
+\includegraphics[width=130mm]{sacc_tDCS_files/figures/figure_5_quantiles} \caption{\textbf{Shift functions of saccade latency distributions under anodal and cathodal tDCS.} Data are shown for left- vs.~rightward saccades for four 15-minute time periods: baseline, during tDCS, and after tDCS (post-1 and post-2). \textbf{Left column}: The x-axis shows saccade latencies for the 9 deciles in the anodal session. The median is plotted as a vertical dashed line. The y-axis shows the difference scores (anodal - cathodal) at each decile. These decile differences express by how much latencies for the cathodal deciles should be \emph{shifted} to match the anodal deciles. Positive differences mean that cathodal saccades had lower latencies than anodal saccades. Error bars show 95\% confidence intervals of the decile differences. \textbf{Right column}: Counts of participants showing significant effects for the difference between anodal and cathodal sessions at each decile. Red/top bars count the number of participants with faster anodal saccade latencies; blue/bottom bars show counts for faster cathodal latencies. 26 participants is the maximum; the exact number for each contrast is superimposed on the bars.}\label{fig:quantiles}
 \end{figure}
 
 
@@ -2934,23 +2932,24 @@ No significant effects of tDCS on saccade endpoint deviation were expected, as n
 However, this interpretation is muddled by a difference between anodal and cathodal in the baseline, so before tDCS onset (Figure \ref{fig:fig-deviation}). For center saccades, the difference was in fact larger in the baseline than at any other time period (left: mean difference = -0.11°, 95\% CI = -0.20° -- -0.01°, \emph{p} = .025; right: mean difference = -0.06°, 95\% CI = -0.11° -- 0.00°, \emph{p} = .066). For example, during tDCS, this difference between anodal and cathodal had completely disappeared (left: \emph{M}\textsubscript{anodal} = 0.91° = \emph{M}\textsubscript{cathodal} = 0.91°; right: \emph{M}\textsubscript{anodal} = \emph{M}\textsubscript{cathodal} = 0.72°), as endpoint deviation in the anodal session increased from baseline, while it decreased in the cathodal session, thereby cancelling out the baseline difference. Thus, like in \textcite{Kanai2012}, our results do not appear to support an effect of tDCS on saccade endpoint deviation.
 
 \begin{figure}
-\centering
-\includegraphics{sacc_tDCS_files/figures/figure_6_deviation.pdf}
-\caption{\label{fig:fig-deviation}\textbf{Effects of frontal eye field tDCS on saccade endpoint deviation.} Data are shown for left vs.~rightward saccades, in the anodal vs.~cathodal session, averaged over four 15-minute time periods: baseline, during tDCS, and after tDCS (post-1 and post-2). \textbf{Top row}: Colored lines show data from individual participants; black lines show the group median. \textbf{Bottom row}: Change in saccade endpoint deviation after baseline subtraction. Numbers inside the plot axes are the baseline saccade endpoint deviations. Error bars show 95\% confidence intervals of the pairwise difference between baseline and each subsequent time period.}
+\includegraphics[width=130mm]{sacc_tDCS_files/figures/figure_6_deviation} \caption{\textbf{Effects of frontal eye field tDCS on saccade endpoint deviation.} Data are shown for left vs.~rightward saccades, in the anodal vs.~cathodal session, averaged over four 15-minute time periods: baseline, during tDCS, and after tDCS (post-1 and post-2). \textbf{Top row}: Colored lines show data from individual participants; black lines show the group median. \textbf{Bottom row}: Change in saccade endpoint deviation after baseline subtraction. Numbers inside the plot axes are the baseline saccade endpoint deviations. Error bars show 95\% confidence intervals of the pairwise difference between baseline and each subsequent time period.}\label{fig:fig-deviation}
 \end{figure}
 
 
 
-\footnotesize
+\begingroup
+\setlength{\LTleft}{-20cm plus -1fill}
+\setlength{\LTright}{\LTleft}
+\small
 
 \begin{longtable}[]{@{}lllllll@{}}
 \caption{\label{tab:tab-deviation} \textbf{Classical and Bayesian repeated measures ANOVA results for saccade endpoint deviation}. Factors: \emph{Stimulation} (anodal vs.~cathodal), \emph{Time Period} (during tDCS, post-tDCS {[}0-15 min{]}, post-tDCS {[}0-30 min{]}), \emph{Direction} (saccade to the left vs.~saccade to the right).}\tabularnewline
 \toprule
-Effect & df & F & \(\eta_{G}^{2}\) & \emph{p} & inclusion BF\textsubscript{10} & inclusion BF\textsubscript{01}\tabularnewline
+Effect & df & F & \(\eta_{G}^{2}\) & \emph{p} & BF\textsubscript{10} & BF\textsubscript{01}\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-Effect & df & F & \(\eta_{G}^{2}\) & \emph{p} & inclusion BF\textsubscript{10} & inclusion BF\textsubscript{01}\tabularnewline
+Effect & df & F & \(\eta_{G}^{2}\) & \emph{p} & BF\textsubscript{10} & BF\textsubscript{01}\tabularnewline
 \midrule
 \endhead
 \textbf{lateral saccades} & & & & & &\tabularnewline
@@ -2966,7 +2965,7 @@ Stimulation x Direction x Time Period & 2, 50 & 0.59 & .001 & .56 & 0.11 & 8.73\
 \bottomrule
 \end{longtable}
 
-\normalsize
+\endgroup
 
 \hypertarget{saccade-endpoint-variability}{%
 \subsection{Saccade endpoint variability}\label{saccade-endpoint-variability}}
@@ -2974,23 +2973,24 @@ Stimulation x Direction x Time Period & 2, 50 & 0.59 & .001 & .56 & 0.11 & 8.73\
 Like for saccade endpoint deviation, we had no specific hypotheses on endpoint variability, as \textcite{Kanai2012} obtained no effects. However, like the decrease in endpoint deviation, cathodal tDCS also appeared to decrease saccade endpoint variability (Figure \ref{fig:fig-variability}). For center saccades, there was extreme evidence for inclusion of the main effect of Stimulation in the Bayesian ANOVA, yet the effect only approached significance in the classical ANOVA (Table \ref{tab:tab-variability}). However, while the variability changes in the anodal and cathodal sessions may have differed from each other, follow-up one sample tests showed that neither anodal (\emph{p} = .11, BF\textsubscript{01} = 1.40) nor cathodal (\emph{p} = .23, BF\textsubscript{01} = 2.44) changed significantly from baseline. Thus, saccade endpoint variability also does not seem to be affected by tDCS, conform the findings of \textcite{Kanai2012}.
 
 \begin{figure}
-\centering
-\includegraphics{sacc_tDCS_files/figures/figure_7_variability.pdf}
-\caption{\label{fig:fig-variability}\textbf{Effects of frontal eye field tDCS on saccade endpoint variability.} Data are shown for left vs.~rightward saccades, in the anodal vs.~cathodal session, averaged over four 15-minute time periods: baseline, during tDCS, and after tDCS (post-1 and post-2). \textbf{Top row}: Colored lines show data from individual participants; black lines show the group median. \textbf{Bottom row}: Change in saccade endpoint variability after baseline subtraction. Numbers inside the plot axes are the baseline saccade endpoint variability values. Error bars show 95\% confidence intervals of the pairwise difference between baseline and each subsequent time period.}
+\includegraphics[width=130mm]{sacc_tDCS_files/figures/figure_7_variability} \caption{\textbf{Effects of frontal eye field tDCS on saccade endpoint variability.} Data are shown for left vs.~rightward saccades, in the anodal vs.~cathodal session, averaged over four 15-minute time periods: baseline, during tDCS, and after tDCS (post-1 and post-2). \textbf{Top row}: Colored lines show data from individual participants; black lines show the group median. \textbf{Bottom row}: Change in saccade endpoint variability after baseline subtraction. Numbers inside the plot axes are the baseline saccade endpoint variability values. Error bars show 95\% confidence intervals of the pairwise difference between baseline and each subsequent time period.}\label{fig:fig-variability}
 \end{figure}
 
 
 
-\footnotesize
+\begingroup
+\setlength{\LTleft}{-20cm plus -1fill}
+\setlength{\LTright}{\LTleft}
+\small
 
 \begin{longtable}[]{@{}lllllll@{}}
 \caption{\label{tab:tab-variability} \textbf{Classical and Bayesian repeated measures ANOVA results for saccade endpoint variability}. Factors: \emph{Stimulation} (anodal vs.~cathodal), \emph{Time Period} (during tDCS, post-tDCS {[}0-15 min{]}, post-tDCS {[}0-30 min{]}), \emph{Direction} (saccade to the left vs.~saccade to the right).}\tabularnewline
 \toprule
-Effect & df & F & \(\eta_{G}^{2}\) & \emph{p} & inclusion BF\textsubscript{10} & inclusion BF\textsubscript{01}\tabularnewline
+Effect & df & F & \(\eta_{G}^{2}\) & \emph{p} & BF\textsubscript{10} & BF\textsubscript{01}\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-Effect & df & F & \(\eta_{G}^{2}\) & \emph{p} & inclusion BF\textsubscript{10} & inclusion BF\textsubscript{01}\tabularnewline
+Effect & df & F & \(\eta_{G}^{2}\) & \emph{p} & BF\textsubscript{10} & BF\textsubscript{01}\tabularnewline
 \midrule
 \endhead
 \textbf{lateral saccades} & & & & & &\tabularnewline
@@ -3006,7 +3006,7 @@ Stimulation x Direction x Time Period & 2, 50 & 0.47 & .0007 & .63 & 0.12 & 8.30
 \bottomrule
 \end{longtable}
 
-\normalsize
+\endgroup
 
 \hypertarget{sacc_tDCS-discussion}{%
 \section{Discussion}\label{sacc_tDCS-discussion}}
@@ -3017,16 +3017,15 @@ For saccades back to the center location, Bayesian analyses provided evidence fo
 
 Out of all these results, our null finding for saccade latency is the most surprising. Why did \textcite{Kanai2012} find that anodal tDCS speeded (contralateral) saccades, but we did not? Our study should not be considered a direct replication of \textcite{Kanai2012}, and there are a number of methodological differences between the two. We have tried to enumerate and explain all of them in Table \ref{tab:differences}. Some are clear and simple improvements, such as the increased statistical power, trial count, and eye tracker sampling rate. Others are more ambiguous: of course, each change was made with the aim to increase the size of the tDCS effect, but each change could also be the cause of why we no longer obtain an effect at all. If that is the case, the changes to the stimulation duration and electrode montage would likely have had the most consequences.
 
-We increased the stimulation duration from 10 to 15 minutes, in order to have more trials during tDCS and possibly a larger neural effect. But longer stimulation durations do not necessarily scale linearly with the effect of tDCS. For example, changing the stimulation duration from 20 to 26 minutes changed the effect of anodal tDCS on motor-evoked potentials from excitatory to inhibitory \autocite{Monte-Silva2013}. In addition, we changed the location of the second electrode from the shoulder to the forehead, to more closely resemble the canonical montage used in motor cortex tDCS, and because decreasing the inter-electrode distance can enhance the effect of tDCS \autocite{Moliadze2010}. However, next to applying tDCS over the right frontal eye field, it is possible that we now also delivered opposite polarity stimulation to left anterior frontal brain structures. In addition, the exact montage determines to a large extent which brain structures will be in the path of the current---not just those directly under the electrodes, but also those in between \autocite{Opitz2015}, as well as distant structures that are anatomically connected \autocite{Wokke2015}.
-
 \newpage
-%\newgeometry{bottom=0.5in,left=0.5in,right=0.5in,top=1in}
-\LTcapwidth=\textwidth
+\pagestyle{empty}
+\newgeometry{left=20mm,right=0.5in,top=0.2in,bottom=0.2in} % narrow margins (0.5), bit more at top, adjust table sides
 \blandscape
+\LTcapwidth=200mm % make caption almost as wide as table
 \small
 
 \begin{longtable}[]{@{}llll@{}}
-\caption{\label{tab:differences} \textbf{Methodological differences between \textcite{Kanai2012} and the present study.}}\tabularnewline
+\caption{\label{tab:differences} Methodological differences between \textcite{Kanai2012} and the present study.}\tabularnewline
 \toprule
 \begin{minipage}[b]{0.14\columnwidth}\raggedright
 Difference\strut
@@ -3162,11 +3161,13 @@ Eye tracker: saccade threshold\strut
 \bottomrule
 \end{longtable}
 
+\newpage
 \normalsize
 \elandscape
-%\restoregeometry
-\newpage
-\LTcapwidth=\textwidth
+\restoregeometry % revert to normal margins set with memoir
+\pagestyle{\defstyle}
+
+We increased the stimulation duration from 10 to 15 minutes, in order to have more trials during tDCS and possibly a larger neural effect. But longer stimulation durations do not necessarily scale linearly with the effect of tDCS. For example, changing the stimulation duration from 20 to 26 minutes changed the effect of anodal tDCS on motor-evoked potentials from excitatory to inhibitory \autocite{Monte-Silva2013}. In addition, we changed the location of the second electrode from the shoulder to the forehead, to more closely resemble the canonical montage used in motor cortex tDCS, and because decreasing the inter-electrode distance can enhance the effect of tDCS \autocite{Moliadze2010}. However, next to applying tDCS over the right frontal eye field, it is possible that we now also delivered opposite polarity stimulation to left anterior frontal brain structures. In addition, the exact montage determines to a large extent which brain structures will be in the path of the current---not just those directly under the electrodes, but also those in between \autocite{Opitz2015}, as well as distant structures that are anatomically connected \autocite{Wokke2015}.
 
 We stress that \textcite{Kanai2012} also did an experiment with a different electrode montage, in which they delivered bilateral tDCS by placing the anode over the left or right FEF and the cathode over the other FEF (counterbalanced across participants). This montage produced a similar effect, but actually was more effective: tDCS now also speeded saccades contralateral to the anode, but the effect was bigger (7.8 vs.~6.4 ms), and follow-up tests revealed that it was significant at more time points (from 0--30 min after tDCS vs.~only 10--20 minutes after tDCS). Nevertheless, we chose to go with a unilateral montage, to be sensitive to possible lateralization of effects. With a bilateral montage, it is impossible to tell whether the effect stems from anodal tDCS to one FEF, cathodal tDCS to the other FEF, or from both at the same time.
 
