@@ -85,7 +85,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{19 July, 2019}
+    \date{24 July, 2019}
 
 \usepackage{caption}
 \usepackage[pass]{geometry} % load the package, but none of the default settings
@@ -145,8 +145,9 @@
 
 \renewcommand{\arraystretch}{1.5} % increase vertical spacing in tables
 
-% when figures are wider than text block, center them with respect to text block
-\setfloatadjustment{figure}{\centerfloat} 
+% when figures/tables are wider than text block, center them with respect to text block
+\setfloatadjustment{figure}{\centerfloat}
+\setfloatadjustment{table}{\centerfloat}
 
 %\setlength{\cftpartnumwidth}{2.5em} % more space for part numbering in ToC
 %\setlength\cftchapternumwidth{2.5em} % also adjust others to match
@@ -2858,7 +2859,7 @@ Data from 26 participants were included in the analyses. 14 participants receive
 \hypertarget{neuronavigation}{%
 \subsection{Neuronavigation}\label{neuronavigation}}
 
-Figure \ref{fig:FEF} shows the MNI coordinates of the presumed right frontal eye field. While there is some spread (see Table \ref{tab:MNI} in Appendix \ref{sacc-tDCS-supplement} for the coordinates of all participants), the average coordinate (31.5, -1.8, 51.6) matched the anatomical definition we used for the individual MRIs: slightly anterior to the pre-central sulcus and slightly lateral to the superior frontal sulcus. The average coordinate also lies close to the one used in \textcite{Kanai2012}, which was taken from \textcite{Paus1996} (31.3, -4.5, 50.9).
+Figure \ref{fig:FEF} shows the MNI coordinates of the presumed right frontal eye field. While there is some spread (see Table \ref{tab:tab-sacc-tDCS-MNI} in Appendix \ref{sacc-tDCS-supplement} for the coordinates of all participants), the average coordinate (31.5, -1.8, 51.6) matched the anatomical definition we used for the individual MRIs: slightly anterior to the pre-central sulcus and slightly lateral to the superior frontal sulcus. The average coordinate also lies close to the one used in \textcite{Kanai2012}, which was taken from \textcite{Paus1996} (31.3, -4.5, 50.9).
 
 \begin{figure}
 \includegraphics[width=\textwidth]{sacc_tDCS_files/figures/figure_3_FEF} \caption{\textbf{MNI coordinates of the right frontal eye field.} Green/more vertical arrows indicate the superior frontal sulcus, purple/more horizontal arrows indicate the pre-central sulcus. \textbf{(A)} Average MNI coordinate across participants. \textbf{(B)} Coordinates for individual participants overlaid on a glass brain representation of the MNI template using Surf Ice software \autocite{Rorden2017}.}\label{fig:FEF}
@@ -4379,6 +4380,7 @@ This thesis started out with a rather grand introduction to cognitive enhancemen
 \phantomsection
 \addcontentsline{toc}{part}{Appendices}
 \appendixpage*
+\setlength\beforechapskip{-\baselineskip}
 
 \hypertarget{sacc-tDCS-supplement}{%
 \chapter{Supplement to Chapter \ref{sacc-tDCS}}\label{sacc-tDCS-supplement}}
@@ -4386,22 +4388,19 @@ This thesis started out with a rather grand introduction to cognitive enhancemen
 \hypertarget{tdcs-adverse-effects}{%
 \section{tDCS adverse effects}\label{tdcs-adverse-effects}}
 
-\begin{figure}[H]
-\includegraphics{sacc_tDCS_files/figures/figure_S1_AE} \caption{\textbf{tDCS adverse effects}. Number of reports out of 62 sessions (either anodal or cathodal tDCS). Top row shows intensity ratings {[}\emph{little, moderate, strong, very strong}{]}; bottom row shows participant's confidence that event was related to tDCS {[}\emph{unlikely, possibly, likely, very likely}{]}. Adverse effects are sorted in descending order of number of reports (for very rare events (five reports or fewer for a given polarity), some text counts have been removed to prevent overlap).}\label{fig:fig-sacc-tDCS-AE}
-\end{figure}
+\begingroup
+\renewcommand{\arraystretch}{1.25}
+\setlength{\LTleft}{-20cm plus -1fill}
+\setlength{\LTright}{\LTleft}
 
+\begingroup\fontsize{8}{10}\selectfont
 
-
-\begin{table}[H]
-
-\caption{\label{tab:tab-sacc-tDCS-AE}Number of reports of tDCS adverse effects}
-\centering
-\resizebox{\linewidth}{!}{
-\begin{tabular}{lrrrrrrrrrr}
+\begin{longtable}{lrrrrrrrrrr}
+\caption{\label{tab:tab-sacc-tDCS-AE}Number of reports of tDCS adverse effects}\\
 \toprule
 \multicolumn{1}{c}{ } & \multicolumn{5}{c}{Intensity rating\textsuperscript{a}} & \multicolumn{5}{c}{Confidence rating\textsuperscript{b}} \\
 \cmidrule(l{3pt}r{3pt}){2-6} \cmidrule(l{3pt}r{3pt}){7-11}
-  & none & a little & moderate & strong & very strong & n/a & unlikely & possibly & likely & very likely\\
+  & none & \makecell[c]{a\\little} & \makecell[c]{mode-\\rate} & strong & \makecell[c]{very\\strong} & n/a & \makecell[c]{un-\\likely} & \makecell[c]{possi-\\bly} & likely & \makecell[c]{very\\likely}\\
 \midrule
 \addlinespace[0.3em]
 \multicolumn{11}{l}{\textbf{anodal session}}\\
@@ -4426,50 +4425,57 @@ This thesis started out with a rather grand introduction to cognitive enhancemen
 \bottomrule
 \multicolumn{11}{l}{\textsuperscript{a} "To which degree were the following sensations present during stimulation?"}\\
 \multicolumn{11}{l}{\textsuperscript{b} "To which degree do you believe this was caused by the stimulation?"}\\
-\end{tabular}}
-\end{table}
+\end{longtable}
+\endgroup{}
+
+\endgroup
+
+\newpage
+\pagestyle{empty}
+\changetext{}{}{-25mm}{}{}
+\blandscape
+
+\begin{figure}
+\centering
+\includegraphics{sacc_tDCS_files/figures/figure_S1_AE.pdf}
+\caption{\label{fig:fig-sacc-tDCS-AE}\textbf{tDCS adverse effects in Chapter \ref{sacc-tDCS}}. Number of reports out of 62 sessions (either anodal or cathodal tDCS). Top row shows intensity ratings {[}\emph{little, moderate, strong, very strong}{]}; bottom row shows participant's confidence that event was related to tDCS {[}\emph{unlikely, possibly, likely, very likely}{]}. Adverse effects are sorted in descending order of number of reports (for very rare events (five reports or fewer for a given polarity), some text counts have been removed to prevent overlap).}
+\end{figure}
+
+
+
+\newpage
+\elandscape
+\changetext{}{}{+25mm}{}{}
+\pagestyle{\defstyle}
 
 \hypertarget{mni-coordinates}{%
 \section{MNI coordinates}\label{mni-coordinates}}
 
-\begin{longtable}[]{@{}llll@{}}
-\caption{\label{tab:MNI} \textbf{Individual MNI coordinates of the right frontal eye field.}}\tabularnewline
+\begin{table}[!h]
+
+\caption{\label{tab:tab-sacc-tDCS-MNI}Individual MNI coordinates of the right frontal eye field.}
+\centering
+\fontsize{10}{12}\selectfont
+\begin{tabular}{crrr|>{}crrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrr}
 \toprule
-participant & X & Y & Z\tabularnewline
+participant & X & Y & Z & participant & X & Y & Z\\
 \midrule
-\endfirsthead
-\toprule
-participant & X & Y & Z\tabularnewline
-\midrule
-\endhead
-1 & 29.4 & 1.1 & 54.9\tabularnewline
-2 & 33.0 & -2.2 & 50.4\tabularnewline
-3 & 30.6 & -1.5 & 50.6\tabularnewline
-4 & 25.7 & -3.8 & 56.4\tabularnewline
-5 & 29.8 & -5.2 & 55.8\tabularnewline
-6 & 29.8 & -1.1 & 58.3\tabularnewline
-7 & 38.1 & 3.0 & 46.0\tabularnewline
-8 & 31.5 & 0.5 & 45.6\tabularnewline
-9 & 28.5 & 3.6 & 51.3\tabularnewline
-10 & 28.1 & -1.9 & 50.7\tabularnewline
-11 & 30.6 & -3.8 & 52.0\tabularnewline
-12 & 36.5 & -0.4 & 46.8\tabularnewline
-13 & 26.2 & -1.1 & 54.7\tabularnewline
-14 & 37.5 & -1.6 & 52.6\tabularnewline
-15 & 31.8 & -8.4 & 59.0\tabularnewline
-16 & 31.0 & -5.1 & 54.3\tabularnewline
-17 & 35.0 & 8.4 & 49.8\tabularnewline
-18 & 28.1 & -3.8 & 52.8\tabularnewline
-19 & 41.2 & -1.7 & 47.6\tabularnewline
-20 & 37.3 & -0.9 & 43.4\tabularnewline
-21 & 34.3 & -2.9 & 49.2\tabularnewline
-22 & 27.7 & -10.1 & 51.0\tabularnewline
-23 & 30.3 & -5.3 & 55.3\tabularnewline
-24 & 26.8 & -3.9 & 54.6\tabularnewline
-25 & 29.0 & 4.9 & 49.1\tabularnewline
-26 & 30.3 & -3.9 & 50.9\tabularnewline
+1 & 29.4 & 1.1 & 54.9 & 14 & 37.5 & -1.6 & 52.6\\
+2 & 33.0 & -2.2 & 50.4 & 15 & 31.8 & -8.4 & 59.0\\
+3 & 30.6 & -1.5 & 50.6 & 16 & 31.0 & -5.1 & 54.3\\
+4 & 25.7 & -3.8 & 56.4 & 17 & 35.0 & 8.4 & 49.8\\
+5 & 29.8 & -5.2 & 55.8 & 18 & 28.1 & -3.8 & 52.8\\
+6 & 29.8 & -1.1 & 58.3 & 19 & 41.2 & -1.7 & 47.6\\
+7 & 38.1 & 3.0 & 46.0 & 20 & 37.3 & -0.9 & 43.4\\
+8 & 31.5 & 0.5 & 45.6 & 21 & 34.3 & -2.9 & 49.2\\
+9 & 28.5 & 3.6 & 51.3 & 22 & 27.7 & -10.1 & 51.0\\
+10 & 28.1 & -1.9 & 50.7 & 23 & 30.3 & -5.3 & 55.3\\
+11 & 30.6 & -3.8 & 52.0 & 24 & 26.8 & -3.9 & 54.6\\
+12 & 36.5 & -0.4 & 46.8 & 25 & 29.0 & 4.9 & 49.1\\
+13 & 26.2 & -1.1 & 54.7 & 26 & 30.3 & -3.9 & 50.9\\
 \bottomrule
-\end{longtable}
+\end{tabular}
+\end{table}
 
 \hypertarget{AB-tDCS-supplement}{%
 \chapter{Supplement to Chapters \ref{AB-tDCS-EEG} and \ref{AB-tDCS-sEBR}}\label{AB-tDCS-supplement}}
@@ -4477,22 +4483,19 @@ participant & X & Y & Z\tabularnewline
 \hypertarget{tdcs-adverse-effects-1}{%
 \section{tDCS adverse effects}\label{tdcs-adverse-effects-1}}
 
-\begin{figure}[H]
-\includegraphics{AB_tDCS_files/figures/figure_S1_AE} \caption{\textbf{tDCS adverse effects}. Number of reports out of 89 sessions (either anodal or cathodal tDCS). Top row shows intensity ratings {[}\emph{little, moderate, strong, very strong}{]}; bottom row shows participant's confidence that event was related to tDCS {[}\emph{unlikely, possibly, likely, very likely}{]}. Adverse effects are sorted in descending order of number of reports (for very rare events (five reports or fewer for a given polarity), some text counts have been removed to prevent overlap).}\label{fig:fig-AB-tDCS-AE}
-\end{figure}
+\begingroup
+\renewcommand{\arraystretch}{1.25}
+\setlength{\LTleft}{-20cm plus -1fill}
+\setlength{\LTright}{\LTleft}
 
+\begingroup\fontsize{8}{10}\selectfont
 
-
-\begin{table}[H]
-
-\caption{\label{tab:tab-AB-tDCS-AE}Number of reports of tDCS adverse effects}
-\centering
-\resizebox{\linewidth}{!}{
-\begin{tabular}{lrrrrrrrrrr}
+\begin{longtable}{lrrrrrrrrrr}
+\caption{\label{tab:tab-AB-tDCS-AE}Number of reports of tDCS adverse effects}\\
 \toprule
 \multicolumn{1}{c}{ } & \multicolumn{5}{c}{Intensity rating\textsuperscript{a}} & \multicolumn{5}{c}{Confidence rating\textsuperscript{b}} \\
 \cmidrule(l{3pt}r{3pt}){2-6} \cmidrule(l{3pt}r{3pt}){7-11}
-  & none & a little & moderate & strong & very strong & n/a & unlikely & possibly & likely & very likely\\
+  & none & \makecell[c]{a\\little} & \makecell[c]{mode-\\rate} & strong & \makecell[c]{very\\strong} & n/a & \makecell[c]{un-\\likely} & \makecell[c]{possi-\\bly} & likely & \makecell[c]{very\\likely}\\
 \midrule
 \addlinespace[0.3em]
 \multicolumn{11}{l}{\textbf{anodal session}}\\
@@ -4517,8 +4520,28 @@ participant & X & Y & Z\tabularnewline
 \bottomrule
 \multicolumn{11}{l}{\textsuperscript{a} "To which degree were the following sensations present during stimulation?"}\\
 \multicolumn{11}{l}{\textsuperscript{b} "To which degree do you believe this was caused by the stimulation?"}\\
-\end{tabular}}
-\end{table}
+\end{longtable}
+\endgroup{}
+
+\endgroup
+
+\newpage
+\pagestyle{empty}
+\changetext{}{}{-25mm}{}{}
+\blandscape
+
+\begin{figure}
+\centering
+\includegraphics{AB_tDCS_files/figures/figure_S1_AE.pdf}
+\caption{\label{fig:fig-AB-tDCS-AE}\textbf{tDCS adverse effects in Chapters \ref{AB-tDCS-EEG} and \ref{AB-tDCS-sEBR}}. Number of reports out of 89 sessions (either anodal or cathodal tDCS). Top row shows intensity ratings {[}\emph{little, moderate, strong, very strong}{]}; bottom row shows participant's confidence that event was related to tDCS {[}\emph{unlikely, possibly, likely, very likely}{]}. Adverse effects are sorted in descending order of number of reports (for very rare events (five reports or fewer for a given polarity), some text counts have been removed to prevent overlap).}
+\end{figure}
+
+
+
+\newpage
+\elandscape
+\changetext{}{}{+25mm}{}{}
+\pagestyle{\defstyle}
 
 \hypertarget{MFBrain-supplement}{%
 \chapter{Supplement to Chapter \ref{MFBrain}}\label{MFBrain-supplement}}
@@ -4547,42 +4570,67 @@ Do your best! Good luck!
 \hypertarget{resources-supplement}{%
 \chapter{Data, code and materials}\label{resources-supplement}}
 
-\scriptsize
+\vspace{-12pt}
+
+\begingroup
 \renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{0pt}
+\setlength{\LTleft}{-20cm plus -1fill}
+\setlength{\LTright}{\LTleft}
+\footnotesize
 
 \begin{longtable}[]{@{}llll@{}}
 \toprule
-& Resource & Platform & DOI\tabularnewline
+Chapter & Resource & Platform & DOI\tabularnewline
 \midrule
 \endhead
-\textbf{Chapter \ref{tDCS-att-review}} & & &\tabularnewline
-\autocite{Reteig2017} & overview & \href{https://osf.io/kqvap/}{Open Science Framework} & \texttt{10.17605/OSF.IO/KQVAP}\tabularnewline
-\textbf{Chapter \ref{sacc-tDCS}} & & &\tabularnewline
-\autocite{Reteig2018b} & overview & \href{https://lcreteig.github.io/sacc-tDCS}{Project website} &\tabularnewline
-& data & \href{https://doi.org/10.21942/uva.6462770.v1}{figshare} & \texttt{10.21942/uva.6462770}\tabularnewline
-& code & \href{https://github.com/lcreteig/sacc-tDCS}{GitHub} & \texttt{10.5281/zenodo.1410502}\tabularnewline
-& materials & \href{https://osf.io/8jpv9/}{Open Science Framework} & \texttt{10.17605/OSF.IO/8JPV9}\tabularnewline
+\textbf{Chapter \ref{tDCS-att-review}} \footnote{\emph{Published as}: Reteig, L. C., Talsma, L. J., van Schouwenburg, M. R., \& Slagter, H. A. (2017). Transcranial Electrical Stimulation as a Tool to Enhance Attention. \emph{Journal of Cognitive Enhancement, 1}, 10--25. \url{https://doi.org/10.1007/s41465-017-0010-y}} & & &\tabularnewline
+& overview & Open Science Framework & 10.17605/OSF.IO/KQVAP\tabularnewline
+& & \url{https://osf.io/kqvap/} &\tabularnewline
+\textbf{Chapter \ref{sacc-tDCS}} \footnote{\emph{Published as}: Reteig, L. C., Knapen, T., Roelofs, F. J. F. W., Ridderinkhof, K. R., \& Slagter, H. A. (2018). No evidence that frontal eye field tDCS affects latency or accuracy of prosaccades. \emph{Frontiers in Neuroscience} 12:617. \url{https://doi.org/10.3389/fnins.2018.00617}} & & &\tabularnewline
+& overview & Project website &\tabularnewline
+& & \url{https://lcreteig.github.io/sacc-tDCS} &\tabularnewline
+& data & figshare & 10.21942/uva.6462770\tabularnewline
+& & \url{https://doi.org/10.21942/uva.6462770.v1} &\tabularnewline
+& code & GitHub & 10.5281/zenodo.1410502\tabularnewline
+& & \url{https://github.com/lcreteig/sacc-tDCS} &\tabularnewline
+& materials & Open Science Framework & 10.17605/OSF.IO/8JPV9\tabularnewline
+& & \url{https://osf.io/8jpv9/} &\tabularnewline
 \textbf{Chapter \ref{AB-tDCS-EEG}} & & &\tabularnewline
-& overview & \href{https://lcreteig.github.io/AB-tDCS}{Project website} &\tabularnewline
-& behavioral data & \href{https://osf.io/rju7f/}{Open Science Framework} & \texttt{10.17605/OSF.IO/RJU7F}\tabularnewline
-& EEG data & \href{https://openneuro.org/datasets/ds001810}{OpenNeuro} & \texttt{10.18112/openneuro.ds001810.v1.1.0}\tabularnewline
-& code & \href{https://github.com/lcreteig/AB-tDCS}{GitHub} & \texttt{10.5281/zenodo.3233872}\tabularnewline
-& materials & \href{https://osf.io/y6hsf}{Open Science Framework} & \texttt{10.17605/OSF.IO/Y6HSF}\tabularnewline
+& overview & Project website &\tabularnewline
+& & \url{https://lcreteig.github.io/AB-tDCS} &\tabularnewline
+& behavioral~~ & Open Science Framework & 10.17605/OSF.IO/RJU7F\tabularnewline
+& data & \url{https://osf.io/rju7f/} &\tabularnewline
+& EEG data & OpenNeuro & 10.18112/openneuro.ds001810.v1.1.0\tabularnewline
+& & \url{https://openneuro.org/datasets/ds001810} &\tabularnewline
+& code & GitHub & 10.5281/zenodo.3233872\tabularnewline
+& & \url{https://github.com/lcreteig/AB-tDCS} &\tabularnewline
+& materials & Open Science Framework & 10.17605/OSF.IO/Y6HSF\tabularnewline
+& & \url{https://osf.io/y6hsf} &\tabularnewline
 \textbf{Chapter \ref{AB-tDCS-sEBR}} & & &\tabularnewline
-& overview & \href{https://lcreteig.github.io/AB_tDCS-sEBR}{Project website} &\tabularnewline
-& data & \href{https://osf.io/cw2ma/}{Open Science Framework} & \texttt{10.17605/OSF.IO/CW2MA}\tabularnewline
-& code & \href{https://osf.io/bmp7s/}{Open Science Framework} & \texttt{10.17605/OSF.IO/BMP7S}\tabularnewline
-& materials & \href{https://osf.io/pzbgy/}{Open Science Framework} & \texttt{10.17605/OSF.IO/PZBGY}\tabularnewline
-\textbf{Chapter \ref{MFBrain}} & & &\tabularnewline
-\autocite{Reteig2019a} & overview & \href{https://lcreteig.github.io/MFBrain}{Project website} &\tabularnewline
-& data & \href{https://osf.io/456he/}{Open Science Framework} & \texttt{10.17605/OSF.IO/456HE}\tabularnewline
-& code & \href{https://osf.io/bnwap/}{Open Science Framework} & \texttt{10.17605/OSF.IO/BNWAP}\tabularnewline
-& materials & \href{https://osf.io/rzj2v/}{Open Science Framework} & \texttt{10.17605/OSF.IO/RZJ2V}\tabularnewline
+& overview & Project website &\tabularnewline
+& & \url{https://lcreteig.github.io/AB_tDCS-sEBR} &\tabularnewline
+& data & Open Science Framework & 10.17605/OSF.IO/CW2MA\tabularnewline
+& & \url{https://osf.io/cw2ma/} &\tabularnewline
+& code & Open Science Framework & 10.17605/OSF.IO/BMP7S\tabularnewline
+& & \url{https://osf.io/bmp7s/} &\tabularnewline
+& materials & Open Science Framework & 10.17605/OSF.IO/PZBGY\tabularnewline
+& & \url{https://osf.io/pzbgy/} &\tabularnewline
+\textbf{Chapter \ref{MFBrain}} \footnote{\emph{Published as}: Reteig, L. C., van den Brink, R. L., Prinssen, S., Cohen, M. X., \& Slagter, H. A. (2019). Sustaining attention for a prolonged period of time increases temporal variability in cortical responses. \emph{Cortex, 117}, 16--32. \url{https://doi.org/10.1016/j.cortex.2019.02.016}} & & &\tabularnewline
+& overview & Project website &\tabularnewline
+& & \url{https://lcreteig.github.io/MFBrain} &\tabularnewline
+& data & Open Science Framework & 10.17605/OSF.IO/456HE\tabularnewline
+& & \url{https://osf.io/456he/} &\tabularnewline
+& code & Open Science Framework & 10.17605/OSF.IO/BNWAP\tabularnewline
+& & \url{https://osf.io/bnwap/} &\tabularnewline
+& materials & Open Science Framework & 10.17605/OSF.IO/RZ2JV\tabularnewline
+& & \url{https://osf.io/rzj2v/} &\tabularnewline
 \bottomrule
 \end{longtable}
 
-\renewcommand{\arraystretch}{1.5}
-\normalsize
+\endgroup
+
+\setlength\beforechapskip{50pt}
 
 \backmatter
 \addtocontents{toc}{\protect\vspace{12pt}}
@@ -4598,8 +4646,6 @@ Do your best! Good luck!
 \hypertarget{contributions-to-the-chapters}{%
 \chapter*{Contributions to the chapters}\label{contributions-to-the-chapters}}
 \addcontentsline{toc}{chapter}{Contributions to the chapters}
-
-\chaptermark{Contributions to chapters}
 
 \setlength{\parindent}{0pt}
 \small
@@ -4653,8 +4699,6 @@ Reteig, L. C., Knapen, T., Roelofs, F. J. F. W., Ridderinkhof, K. R., \& Slagter
 I also thank Monja Hoven and Floortje Bouwkamp for their assistance in piloting and data collection, and Thiago Costa and David Fischer for reviewing the pre-publication manuscript. The following colleagues graciously shared their MRI data for neuronavigation purposes: Daan van Es, Anouk van Loon, Poppy Watson, Suzanne Oosterwijk, Yaïr Pinto, and Henk Cremers.
 \end{list}
 
-\clearpage
-
 \textbf{Chapter \ref{AB-tDCS-EEG}}, in preparation as:
 
 Reteig, L. C., Newman, L. A., Ridderinkhof, K. R., \& Slagter, H. A. (n.d.). Effects of tDCS on the attentional blink revisited: A statistical evaluation of a replication attempt.
@@ -4706,8 +4750,6 @@ I also thank Katherine MacLean for sharing the task code and stimuli used in Mac
 \hypertarget{list-of-other-publications}{%
 \chapter*{List of other publications}\label{list-of-other-publications}}
 \addcontentsline{toc}{chapter}{List of other publications}
-
-\chaptermark{List of other publications}
 
 Alilović, J., Timmermans, B., \textbf{Reteig, L. C.}, van Gaal, S., \& Slagter, H. A. (2019). No evidence that predictions and attention modulate the first feedforward sweep of cortical information processing. \emph{Cerebral Cortex, 29} 2261--2278. \url{https://doi.org/10.1093/cercor/bhz038}\newline
 
