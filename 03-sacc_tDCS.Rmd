@@ -163,7 +163,7 @@ Data from 26 participants were included in the analyses. 14 participants receive
 
 ### Neuronavigation
 
-Figure \@ref(fig:FEF) shows the MNI coordinates of the presumed right frontal eye field. While there is some spread (see Table \@ref(tab:MNI) in Appendix \@ref(sacc-tDCS-supplement) for the coordinates of all participants), the average coordinate (31.5, -1.8, 51.6) matched the anatomical definition we used for the individual MRIs: slightly anterior to the pre-central sulcus and slightly lateral to the superior frontal sulcus. The average coordinate also lies close to the one used in @Kanai2012, which was taken from @Paus1996 (31.3, -4.5, 50.9).
+Figure \@ref(fig:FEF) shows the MNI coordinates of the presumed right frontal eye field. While there is some spread (see Table \@ref(tab:tab-sacc-tDCS-MNI) in Appendix \@ref(sacc-tDCS-supplement) for the coordinates of all participants), the average coordinate (31.5, -1.8, 51.6) matched the anatomical definition we used for the individual MRIs: slightly anterior to the pre-central sulcus and slightly lateral to the superior frontal sulcus. The average coordinate also lies close to the one used in @Kanai2012, which was taken from @Paus1996 (31.3, -4.5, 50.9).
 
 ```{r FEF, fig.cap='(ref:caption-figure-FEF)', results='show', out.width='\\textwidth'}
 knitr::include_graphics("sacc_tDCS_files/figures/figure_3_FEF.png", dpi = 300)

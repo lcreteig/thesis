@@ -4,22 +4,19 @@
 
 ## tDCS adverse effects
 
-\begin{figure}[H]
-\includegraphics{AB_tDCS_files/figures/figure_S1_AE} \caption{(ref:caption-fig-AB-tDCS-AE)}(\#fig:fig-AB-tDCS-AE)
-\end{figure}
+\begingroup
+\renewcommand{\arraystretch}{1.25}
+\setlength{\LTleft}{-20cm plus -1fill}
+\setlength{\LTright}{\LTleft}
 
-(ref:caption-fig-AB-tDCS-AE) __tDCS adverse effects__. Number of reports out of 89 sessions (either anodal or cathodal tDCS). Top row shows intensity ratings [_little, moderate, strong, very strong_]; bottom row shows participant's confidence that event was related to tDCS [_unlikely, possibly, likely, very likely_]. Adverse effects are sorted in descending order of number of reports (for very rare events (five reports or fewer for a given polarity), some text counts have been removed to prevent overlap).
+\begingroup\fontsize{8}{10}\selectfont
 
-\begin{table}[H]
-
-\caption{(\#tab:tab-AB-tDCS-AE)Number of reports of tDCS adverse effects}
-\centering
-\resizebox{\linewidth}{!}{
-\begin{tabular}{lrrrrrrrrrr}
+\begin{longtable}{lrrrrrrrrrr}
+\caption{(\#tab:tab-AB-tDCS-AE)Number of reports of tDCS adverse effects}\\
 \toprule
 \multicolumn{1}{c}{ } & \multicolumn{5}{c}{Intensity rating\textsuperscript{a}} & \multicolumn{5}{c}{Confidence rating\textsuperscript{b}} \\
 \cmidrule(l{3pt}r{3pt}){2-6} \cmidrule(l{3pt}r{3pt}){7-11}
-  & none & a little & moderate & strong & very strong & n/a & unlikely & possibly & likely & very likely\\
+  & none & \makecell[c]{a\\little} & \makecell[c]{mode-\\rate} & strong & \makecell[c]{very\\strong} & n/a & \makecell[c]{un-\\likely} & \makecell[c]{possi-\\bly} & likely & \makecell[c]{very\\likely}\\
 \midrule
 \addlinespace[0.3em]
 \multicolumn{11}{l}{\textbf{anodal session}}\\
@@ -44,6 +41,21 @@
 \bottomrule
 \multicolumn{11}{l}{\textsuperscript{a} "To which degree were the following sensations present during stimulation?"}\\
 \multicolumn{11}{l}{\textsuperscript{b} "To which degree do you believe this was caused by the stimulation?"}\\
-\end{tabular}}
-\end{table}
+\end{longtable}
+\endgroup{}
 
+\endgroup
+
+\newpage
+\pagestyle{empty}
+\changetext{}{}{-25mm}{}{}
+\blandscape
+
+![(\#fig:fig-AB-tDCS-AE)(ref:caption-fig-AB-tDCS-AE)](AB_tDCS_files/figures/figure_S1_AE.pdf) 
+
+(ref:caption-fig-AB-tDCS-AE) __tDCS adverse effects in Chapters \@ref(AB-tDCS-EEG) and \@ref(AB-tDCS-sEBR)__. Number of reports out of 89 sessions (either anodal or cathodal tDCS). Top row shows intensity ratings [_little, moderate, strong, very strong_]; bottom row shows participant's confidence that event was related to tDCS [_unlikely, possibly, likely, very likely_]. Adverse effects are sorted in descending order of number of reports (for very rare events (five reports or fewer for a given polarity), some text counts have been removed to prevent overlap).
+
+\newpage
+\elandscape
+\changetext{}{}{+25mm}{}{}
+\pagestyle{\defstyle}

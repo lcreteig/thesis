@@ -15,24 +15,26 @@ load("AB_tDCS_files/AB_tDCS_supplement.RData")
 
 ## tDCS adverse effects
 
-```{r fig-AB-tDCS-AE, fig.cap='(ref:caption-fig-AB-tDCS-AE)', results='show', out.extra='', fig.pos='H'}
-knitr::include_graphics("AB_tDCS_files/figures/figure_S1_AE.png", auto_pdf = TRUE)
-```
-
-(ref:caption-fig-AB-tDCS-AE) __tDCS adverse effects__. Number of reports out of 89 sessions (either anodal or cathodal tDCS). Top row shows intensity ratings [_little, moderate, strong, very strong_]; bottom row shows participant's confidence that event was related to tDCS [_unlikely, possibly, likely, very likely_]. Adverse effects are sorted in descending order of number of reports (for very rare events (five reports or fewer for a given polarity), some text counts have been removed to prevent overlap).
+\begingroup
+\renewcommand{\arraystretch}{1.25}
+\setlength{\LTleft}{-20cm plus -1fill}
+\setlength{\LTright}{\LTleft}
 
 ```{r tab-AB-tDCS-AE, results='asis'}
 if (knitr::is_latex_output() | knitr::is_html_output()) {
 ae_colnames <- c(" ",
-                 "none", "a little", "moderate", "strong", "very strong",
-                 "n/a", "unlikely", "possibly", "likely", "very likely")
+                 "none", "a\nlittle", "mode-\nrate", "strong", "very\nstrong",
+                 "n/a", "un-\nlikely", "possi-\nbly", "likely", "very\nlikely")
                  
 bind_rows(full_join(tbl_int_anodal, tbl_conf_anodal, by  = "sensation"),
           full_join(tbl_int_cathodal, tbl_conf_cathodal, by  = "sensation")) %>%
-  kable(col.names = ae_colnames, booktabs = TRUE,
+  kable(col.names = kableExtra::linebreak(ae_colnames, align = "c"), 
+        booktabs = TRUE,
+        longtable = TRUE,
+        escape = FALSE,
         caption = "Number of reports of tDCS adverse effects") %>%
   kable_styling(bootstrap_options = "striped",
-                latex_options =  c("scale_down", "HOLD_position")) %>%
+                font_size = 8) %>%
   add_header_above(setNames(c(1,5,5), c(" ",
               paste0("Intensity rating", footnote_marker_alphabet(1, double_escape = TRUE)),
               paste0("Confidence rating", footnote_marker_alphabet(2, double_escape = TRUE)))),
@@ -44,3 +46,20 @@ bind_rows(full_join(tbl_int_anodal, tbl_conf_anodal, by  = "sensation"),
 }
 ```
 
+\endgroup
+
+\newpage
+\pagestyle{empty}
+\changetext{}{}{-25mm}{}{}
+\blandscape
+
+```{r fig-AB-tDCS-AE, fig.cap='(ref:caption-fig-AB-tDCS-AE)', results='show'}
+knitr::include_graphics("AB_tDCS_files/figures/figure_S1_AE.png", auto_pdf = TRUE)
+```
+
+(ref:caption-fig-AB-tDCS-AE) __tDCS adverse effects in Chapters \@ref(AB-tDCS-EEG) and \@ref(AB-tDCS-sEBR)__. Number of reports out of 89 sessions (either anodal or cathodal tDCS). Top row shows intensity ratings [_little, moderate, strong, very strong_]; bottom row shows participant's confidence that event was related to tDCS [_unlikely, possibly, likely, very likely_]. Adverse effects are sorted in descending order of number of reports (for very rare events (five reports or fewer for a given polarity), some text counts have been removed to prevent overlap).
+
+\newpage
+\elandscape
+\changetext{}{}{+25mm}{}{}
+\pagestyle{\defstyle}

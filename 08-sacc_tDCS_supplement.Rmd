@@ -15,6 +15,7 @@ knitr::opts_chunk$set(results = 'hide', echo = FALSE, message = FALSE, warning =
 \phantomsection
 \addcontentsline{toc}{part}{Appendices}
 \appendixpage*
+\setlength\beforechapskip{-\baselineskip}
 
 # Supplement to Chapter \@ref(sacc-tDCS) {#sacc-tDCS-supplement}
 
@@ -46,37 +47,10 @@ int_conf <- full_join(intensity,confidence)  %>%
   mutate(measure = factor(measure, levels = c("intensity", "confidence")))
 ```
 
-```{r}
-# ```{r fig-sacc-tDCS-AE, fig.cap='(ref:caption-fig-sacc-tDCS-AE)', fig.width=7.48031, fig.height=4.623, out.extra = '', fig.pos='H'}
-# # Variables
-# base_font_size <- 9;
-# geom_text_size <- (base_font_size-1) * 0.35 # so geom_text size is same as axis text
-# base_font_family <- "Helvetica";
-# 
-# ae_plot <- ggplot(int_conf, aes(x = rating, fill = stimulation)) +
-#      facet_grid(measure ~ fct_reorder(sensation, rating, 
-#                                       .fun = function(x) sum(x > 0, na.rm = TRUE), .desc = TRUE)) +
-#     geom_bar(position = "stack") +
-#     stat_bin(binwidth = 1, geom = "text", size = geom_text_size, 
-#              aes(label = ..count..), position = position_stack(vjust = 0.25), check_overlap = TRUE) +
-#     scale_fill_manual(values = c("#F25F5C", "#4B93B1")) +
-#     xlim(0.5,4.5) + # exclude "0" ratings that were not present
-#     scale_y_continuous("number of sessions reported", limits = c(0,sum(!is.na(tDCS_AE$stimulation))),
-#                        # bound plot at max number of ratings
-#                        breaks = c(0,10,20,30,40,50,sum(!is.na(tDCS_AE$stimulation)))) +
-#   theme_minimal_hgrid(font_size = base_font_size, font_family = base_font_family) +
-#   theme(legend.background = element_blank(), legend.position = "top", 
-#         legend.direction = "horizontal", legend.title = element_blank()) +
-#   theme(strip.background = element_rect(fill = "grey90"), panel.spacing.y = unit(1,"lines"), 
-#         axis.ticks.x = element_line(), axis.ticks.length = unit(.25,"lines"))
-# suppressWarnings(print(ae_plot))
-```
-
-```{r fig-sacc-tDCS-AE, fig.cap='(ref:caption-fig-sacc-tDCS-AE)', results='show', out.extra='', fig.pos='H'}
-knitr::include_graphics("sacc_tDCS_files/figures/figure_S1_AE.png", auto_pdf = TRUE)
-```
-
-(ref:caption-fig-sacc-tDCS-AE) __tDCS adverse effects__. Number of reports out of 62 sessions (either anodal or cathodal tDCS). Top row shows intensity ratings [_little, moderate, strong, very strong_]; bottom row shows participant's confidence that event was related to tDCS [_unlikely, possibly, likely, very likely_]. Adverse effects are sorted in descending order of number of reports (for very rare events (five reports or fewer for a given polarity), some text counts have been removed to prevent overlap).
+\begingroup
+\renewcommand{\arraystretch}{1.25}
+\setlength{\LTleft}{-20cm plus -1fill}
+\setlength{\LTright}{\LTleft}
 
 ```{r tab-sacc-tDCS-AE, results='asis'}
 if (knitr::is_latex_output() | knitr::is_html_output()) {
@@ -109,15 +83,18 @@ tbl_conf_cathodal <- confidence %>%
   mutate_if(is.double, as.integer)
 
 ae_colnames <- c(" ",
-                 "none", "a little", "moderate", "strong", "very strong",
-                 "n/a", "unlikely", "possibly", "likely", "very likely")
+                 "none", "a\nlittle", "mode-\nrate", "strong", "very\nstrong",
+                 "n/a", "un-\nlikely", "possi-\nbly", "likely", "very\nlikely")
                  
 bind_rows(full_join(tbl_int_anodal, tbl_conf_anodal, by  = "sensation"),
           full_join(tbl_int_cathodal, tbl_conf_cathodal, by  = "sensation")) %>%
-  kable(col.names = ae_colnames, booktabs = TRUE,
+  kable(col.names = kableExtra::linebreak(ae_colnames, align = "c"), 
+        booktabs = TRUE,
+        longtable = TRUE,
+        escape = FALSE,
         caption = "Number of reports of tDCS adverse effects") %>%
   kable_styling(bootstrap_options = "striped",
-                latex_options =  c("scale_down","HOLD_position")) %>%
+                font_size = 8) %>%
   add_header_above(setNames(c(1,5,5), c(" ",
               paste0("Intensity rating", footnote_marker_alphabet(1, double_escape = TRUE)),
               paste0("Confidence rating", footnote_marker_alphabet(2, double_escape = TRUE)))),
@@ -129,36 +106,35 @@ bind_rows(full_join(tbl_int_anodal, tbl_conf_anodal, by  = "sensation"),
 }
 ```
 
+\endgroup
+
+\newpage
+\pagestyle{empty}
+\changetext{}{}{-25mm}{}{}
+\blandscape
+
+```{r fig-sacc-tDCS-AE, fig.cap='(ref:caption-fig-sacc-tDCS-AE)', results='show'}
+knitr::include_graphics("sacc_tDCS_files/figures/figure_S1_AE.png", auto_pdf = TRUE)
+```
+
+(ref:caption-fig-sacc-tDCS-AE) __tDCS adverse effects in Chapter \@ref(sacc-tDCS)__. Number of reports out of 62 sessions (either anodal or cathodal tDCS). Top row shows intensity ratings [_little, moderate, strong, very strong_]; bottom row shows participant's confidence that event was related to tDCS [_unlikely, possibly, likely, very likely_]. Adverse effects are sorted in descending order of number of reports (for very rare events (five reports or fewer for a given polarity), some text counts have been removed to prevent overlap).
+
+\newpage
+\elandscape
+\changetext{}{}{+25mm}{}{}
+\pagestyle{\defstyle}
+
 ## MNI coordinates
 
-| participant | X    | Y     | Z    |
-|-------------|------|-------|------|
-| 1           | 29.4 | 1.1   | 54.9 |
-| 2           | 33.0 | -2.2  | 50.4 |
-| 3           | 30.6 | -1.5  | 50.6 |
-| 4           | 25.7 | -3.8  | 56.4 |
-| 5           | 29.8 | -5.2  | 55.8 |
-| 6           | 29.8 | -1.1  | 58.3 |
-| 7           | 38.1 | 3.0   | 46.0 |
-| 8           | 31.5 | 0.5   | 45.6 |
-| 9           | 28.5 | 3.6   | 51.3 |
-| 10          | 28.1 | -1.9  | 50.7 |
-| 11          | 30.6 | -3.8  | 52.0 |
-| 12          | 36.5 | -0.4  | 46.8 |
-| 13          | 26.2 | -1.1  | 54.7 |
-| 14          | 37.5 | -1.6  | 52.6 |
-| 15          | 31.8 | -8.4  | 59.0 |
-| 16          | 31.0 | -5.1  | 54.3 |
-| 17          | 35.0 | 8.4   | 49.8 |
-| 18          | 28.1 | -3.8  | 52.8 |
-| 19          | 41.2 | -1.7  | 47.6 |
-| 20          | 37.3 | -0.9  | 43.4 |
-| 21          | 34.3 | -2.9  | 49.2 |
-| 22          | 27.7 | -10.1 | 51.0 |
-| 23          | 30.3 | -5.3  | 55.3 |
-| 24          | 26.8 | -3.9  | 54.6 |
-| 25          | 29.0 | 4.9   | 49.1 |
-| 26          | 30.3 | -3.9  | 50.9 |
-
-Table: (\#tab:MNI) __Individual MNI coordinates of the right frontal eye field.__
-
+```{r tab-sacc-tDCS-MNI, results='asis'}
+read_csv("sacc_tDCS_files/FEF_coords_MNI_excl.csv") %>%
+  kable(col.names = c('participant','X','Y','Z','participant','X','Y','Z'),
+    align = c('crrrcrrr'),
+    linesep = "",
+    booktabs = TRUE,
+    caption = "Individual MNI coordinates of the right frontal eye field.") %>%
+  kable_styling(bootstrap_options = "striped",
+                latex_options = "hold_position",
+                font_size = 10) %>%
+  column_spec(5, border_left = TRUE)
+```
