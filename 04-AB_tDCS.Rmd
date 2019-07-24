@@ -172,7 +172,7 @@ All of the data and materials from this study and the data from @London2015 are 
 
 ### Group-level
 
-```{r fig-group, fig.cap='(ref:caption-fig-group)', results='show'}
+```{r fig-group, fig.cap='(ref:caption-fig-group)', results='show', out.width="5.5in"}
 knitr::include_graphics("AB_tDCS_files/figures/figure_3_group.png", auto_pdf = TRUE)
 ```
 
@@ -180,40 +180,44 @@ knitr::include_graphics("AB_tDCS_files/figures/figure_3_group.png", auto_pdf = T
 
 Figure \@ref(fig:fig-group) shows the attentional blink (T2|T1 accuracy per lag) for each of the three blocks (pre, tDCS, post) and stimulation conditions separately. The summary statistics and ANOVA results for T2|T1 accuracy can be found in Tables \@ref(tab:tab-descriptives-T2) and \@ref(tab:tab-anova-T2).  There was a clear attentional blink effect on average (main effect of Lag, `r apa_aov_T2.given.T1$statistic$lag`), as T2|T1 accuracy for lag 8 was higher than lag 3. 
 
-\small
-
 ```{r tab-descriptives-T2, results = 'asis'}
 if (knitr::is_latex_output() | knitr::is_html_output()) {
 T2_df %>%
   kable(col.names = c("", colnames(T2_df)[2:5]), # drop first column name
         caption = "Descriptive statistics for T2|T1 accuracy",
         booktabs = TRUE) %>%
-  kable_styling(font_size = 11) %>%
+  kable_styling(font_size = 10) %>%
   add_header_above(c(" " = 1, "First session: anodal (n = 18)" = 2, "First session: cathodal (n = 22)" = 2)) %>%
   pack_rows(index = c("baseline" = 2, "tDCS" = 2, "post" = 2)) %>%
-  footnote(general = 'Values are "Mean (SD)"')
+  footnote(general = 'Values are "Mean (SD)"', general_title = "")
 }
 ```
 
-\normalsize
-
 Effects of tDCS at the group-level should manifest as a three-way interaction between Block, Stimulation, and Lag. As in @London2015, this interaction was not significant (`r apa_aov_T2.given.T1$statistic$block_stimulation_lag`). However, the higher-order interaction with Session order did reach significance (`r apa_aov_T2.given.T1$statistic$session_order_block_stimulation_lag`). This interaction appears to be mostly driven by a learning effect across sessions and blocks (the Session order by Stimulation by Lag interaction). From the first to the 2nd session, lag 3 performance improved, while lag 8 performance declined somewhat (leading to a smaller attentional blink). This change was stronger in participants that received anodal tDCS in the first session, and less pronounced in the cathodal-first group. We do not consider this a genuine effect of tDCS on the attentional blink, because there is no clear reason why these randomized groups should differ, and because the largest difference between the anodal and cathodal session occurred in the baseline block already (see Table \@ref(tab:tab-descriptives-T2)).
-
-\small
-
-```{r tab-anova-T2, results='asis'}
-apa_table(apa_aov_T2.given.T1$table, caption = "Repeated measures ANOVA on T2|T1 accuracy", font_size = "small")
-```
-
-\normalsize
 
 We ran the same repeated measures ANOVA for T1 accuracy (Table \@ref(tab:tab-anova-T1)). On average, participants correctly identified T1 in `r round(mean_T1 * 100, 0)`% of trials (Figure \@ref(fig:fig-group)), which is comparable to previous studies using this task [86% in @London2015; in 82% in @Slagter2013]. T1 accuracy was also slightly lower for lag 3 than lag 8 (main effect of Lag, `r apa_aov_T1$statistic$lag`). There was a main effect of Block, reflecting that T1 accuracy decreased _within_ a session (`r apa_aov_T1$statistic$block`). Finally, T1 performance also decreased _across_ the sessions (interaction between Session order and Stimulation: `r apa_aov_T1$statistic$session_order_stimulation`).
 
 In sum, we conclude that there is no significant effect of tDCS on the attentional blink or T1 accuracy at the group level, in agreement with @London2015.
 
-```{r tab-anova-T1, results='asis'}
-apa_table(apa_aov_T1$table, caption = "Repeated measures ANOVA on T1 accuracy", font_size = "small")
+\begingroup
+\setlength{\LTleft}{-20cm plus -1fill}
+\setlength{\LTright}{\LTleft}
+
+```{r tab-anova-T2, results='asis'}
+apa_table(apa_aov_T2.given.T1$table, caption = "Repeated measures ANOVA on T2|T1 accuracy", font_size = "small", longtable = TRUE)
 ```
+
+\endgroup
+
+\begingroup
+\setlength{\LTleft}{-20cm plus -1fill}
+\setlength{\LTright}{\LTleft}
+
+```{r tab-anova-T1, results='asis'}
+apa_table(apa_aov_T1$table, caption = "Repeated measures ANOVA on T1 accuracy", font_size = "small", longtable = TRUE)
+```
+
+\endgroup
 
 ### Individual differences
 
@@ -221,7 +225,7 @@ Our main aim was to replicate @London2015, who found a negative correlation betw
 
 We ran the same partial correlation (attempting to adjust for Session order) between the anodal and cathodal AB magnitude change scores (_tDCS_ - _baseline_) on our data (Figure \@ref(fig:fig-corr)). However, here the resulting correlation did not go in the same direction (_r_(`r p_r_2$df[p_r_2$change == "tDCS - baseline"]`) = `r printnum( p_r_2$r[p_r_2$change == "tDCS - baseline"], gt1=F)`), and was not significant (_p_ = `r printp( p_r_2$pvalue[p_r_2$change == "tDCS - baseline"])`). In the next sections, we present a number of follow-up analyses that further explore this difference in results between both studies (see the [Replication analyses](#AB_tDCS-rep-analyses) subsection in the [Methods](#AB_tDCS-methods) section).
 
-```{r fig-corr, fig.cap='(ref:caption-fig-corr)', results='show'}
+```{r fig-corr, fig.cap='(ref:caption-fig-corr)', results='show', out.width="5.5in"}
 knitr::include_graphics("AB_tDCS_files/figures/figure_4_corr.png", auto_pdf = TRUE)
 ```
 
@@ -259,7 +263,7 @@ knitr::include_graphics("AB_tDCS_files/figures/figure_5_pooledcorr.png", auto_pd
 
 The partial correlation based on the pooled data is _r_(`r p_r_pooled$df`) = `r printnum(p_r_pooled$r, gt1=F)`. Thus, the correlation across a combination of both samples is a lot smaller than in @London2015, and slightly smaller still than the meta-analytic estimate that included the original correlation from @London2015 (Figure \@ref(fig:fig-rep-estimate)).
 
-```{r fig-rep-estimate, fig.cap='(ref:caption-fig-rep-estimate)', results='show'}
+```{r fig-rep-estimate, fig.cap='(ref:caption-fig-rep-estimate)', results='show', out.width="5.5in"}
 knitr::include_graphics("AB_tDCS_files/figures/figure_6_estimates.png", auto_pdf = TRUE)
 ```
 

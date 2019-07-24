@@ -99,6 +99,15 @@
 \newcommand{\elandscape}{\end{landscape}}
 \AtBeginDocument{\let\maketitle\relax} % don't make automatic title page as first page
 
+% From https://tex.stackexchange.com/questions/32547/how-to-measure-the-width-of-a-longtable-dynamically-and-use-this-width-in-footer
+% papaja requires the \getlongtablewidth command when using the longtable=TRUE option with apa_table
+\makeatletter
+\newcommand\LastLTentrywidth{1em}
+\newlength\longtablewidth
+\setlength{\longtablewidth}{1in}
+\newcommand{\getlongtablewidth}{\begingroup \ifcsname LT@\roman{LT@tables}\endcsname \global\longtablewidth=0pt \renewcommand{\LT@entry}[2]{\global\advance\longtablewidth by ##2\relax\gdef\LastLTentrywidth{##2}}\@nameuse{LT@\roman{LT@tables}} \fi \endgroup}
+\makeatother
+
 %% Typefaces
 \usepackage{fontspec}
 \setmainfont{Minion Pro}
@@ -3360,22 +3369,18 @@ All of the data and materials from this study and the data from \textcite{London
 \subsection{Group-level}\label{group-level}}
 
 \begin{figure}
-\centering
-\includegraphics{AB_tDCS_files/figures/figure_3_group.pdf}
-\caption{\label{fig:fig-group}\textbf{No effects of tDCS on the attentional blink at the group level}. There was a clear attentional blink effect: a lower \% T2 accuracy (given T1 correct: \emph{T2\textbar{}T1}; dashed lines) for \emph{lag 3} (T2 presented inside the attentional blink window) than \emph{lag 8} (T2 presented outside the attentional blink window, on par with \emph{T1 accuracy}). However, the attentional blink did not change systematically over stimulation conditions (\emph{anodal}, \emph{cathodal}) and blocks (\emph{pre}, \emph{tDCS}, \emph{post}). T1 accuracy (solid lines) was also not affected by tDCS.}
+\includegraphics[width=5.5in]{AB_tDCS_files/figures/figure_3_group} \caption{\textbf{No effects of tDCS on the attentional blink at the group level}. There was a clear attentional blink effect: a lower \% T2 accuracy (given T1 correct: \emph{T2\textbar{}T1}; dashed lines) for \emph{lag 3} (T2 presented inside the attentional blink window) than \emph{lag 8} (T2 presented outside the attentional blink window, on par with \emph{T1 accuracy}). However, the attentional blink did not change systematically over stimulation conditions (\emph{anodal}, \emph{cathodal}) and blocks (\emph{pre}, \emph{tDCS}, \emph{post}). T1 accuracy (solid lines) was also not affected by tDCS.}\label{fig:fig-group}
 \end{figure}
 
 
 
 Figure \ref{fig:fig-group} shows the attentional blink (T2\textbar{}T1 accuracy per lag) for each of the three blocks (pre, tDCS, post) and stimulation conditions separately. The summary statistics and ANOVA results for T2\textbar{}T1 accuracy can be found in Tables \ref{tab:tab-descriptives-T2} and \ref{tab:tab-anova-T2}. There was a clear attentional blink effect on average (main effect of Lag, \(F[1, 38] = 432.11\), \(p < .001\)), as T2\textbar{}T1 accuracy for lag 8 was higher than lag 3.
 
-\small
-
 \begin{table}[t]
 
 \caption{\label{tab:tab-descriptives-T2}Descriptive statistics for T2|T1 accuracy}
 \centering
-\fontsize{11}{13}\selectfont
+\fontsize{10}{12}\selectfont
 \begin{tabular}{lllll}
 \toprule
 \multicolumn{1}{c}{ } & \multicolumn{2}{c}{First session: anodal (n = 18)} & \multicolumn{2}{c}{First session: cathodal (n = 22)} \\
@@ -3395,23 +3400,25 @@ Figure \ref{fig:fig-group} shows the attentional blink (T2\textbar{}T1 accuracy 
 \hspace{1em}lag 3 & 0.437 (0.171) & 0.451 (0.160) & 0.453 (0.190) & 0.447 (0.164)\\
 \hspace{1em}lag 8 & 0.783 (0.118) & 0.825 (0.098) & 0.840 (0.145) & 0.846 (0.120)\\
 \bottomrule
-\multicolumn{5}{l}{\textit{Note: }}\\
 \multicolumn{5}{l}{Values are "Mean (SD)"}\\
 \end{tabular}
 \end{table}
 
-\normalsize
-
 Effects of tDCS at the group-level should manifest as a three-way interaction between Block, Stimulation, and Lag. As in \textcite{London2015}, this interaction was not significant (\(F[1.77, 67.17] = 2.77\), \(p = .076\)). However, the higher-order interaction with Session order did reach significance (\(F[1.77, 67.17] = 7.25\), \(p = .002\)). This interaction appears to be mostly driven by a learning effect across sessions and blocks (the Session order by Stimulation by Lag interaction). From the first to the 2nd session, lag 3 performance improved, while lag 8 performance declined somewhat (leading to a smaller attentional blink). This change was stronger in participants that received anodal tDCS in the first session, and less pronounced in the cathodal-first group. We do not consider this a genuine effect of tDCS on the attentional blink, because there is no clear reason why these randomized groups should differ, and because the largest difference between the anodal and cathodal session occurred in the baseline block already (see Table \ref{tab:tab-descriptives-T2}).
 
-\small
+We ran the same repeated measures ANOVA for T1 accuracy (Table \ref{tab:tab-anova-T1}). On average, participants correctly identified T1 in 82\% of trials (Figure \ref{fig:fig-group}), which is comparable to previous studies using this task \autocites[86\% in][]{London2015}[in 82\% in][]{Slagter2013}. T1 accuracy was also slightly lower for lag 3 than lag 8 (main effect of Lag, \(F[1, 38] = 29.23\), \(p < .001\)). There was a main effect of Block, reflecting that T1 accuracy decreased \emph{within} a session (\(F[1.89, 71.87] = 6.64\), \(p = .003\)). Finally, T1 performance also decreased \emph{across} the sessions (interaction between Session order and Stimulation: \(F[1, 38] = 11.24\), \(p = .002\)).
 
-\begin{table}[tbp]
+In sum, we conclude that there is no significant effect of tDCS on the attentional blink or T1 accuracy at the group level, in agreement with \textcite{London2015}.
+
+\begingroup
+\setlength{\LTleft}{-20cm plus -1fill}
+\setlength{\LTright}{\LTleft}
+
 \begin{center}
-\begin{threeparttable}
-\caption{\label{tab:tab-anova-T2}Repeated measures ANOVA on T2|T1 accuracy}
+\begin{ThreePartTable}
 \small{
-\begin{tabular}{llllll}
+\begin{longtable}{llllll}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:tab-anova-T2}Repeated measures ANOVA on T2|T1 accuracy}\\
 \toprule
 Effect & \multicolumn{1}{c}{$F$} & \multicolumn{1}{c}{$\mathit{df}_1^{GG}$} & \multicolumn{1}{c}{$\mathit{df}_2^{GG}$} & \multicolumn{1}{c}{$p$} & \multicolumn{1}{c}{$\hat{\eta}^2_G$}\\
 \midrule
@@ -3431,24 +3438,22 @@ Session order $\times$ Stimulation $\times$ Lag & 5.84 & 1 & 38 & .021 & .002\\
 Block $\times$ Stimulation $\times$ Lag & 2.77 & 1.77 & 67.17 & .076 & .001\\
 Session order $\times$ Block $\times$ Stimulation $\times$ Lag & 7.25 & 1.77 & 67.17 & .002 & .003\\
 \bottomrule
-\end{tabular}
+\end{longtable}
 }
-\end{threeparttable}
+\end{ThreePartTable}
 \end{center}
-\end{table}
 
-\normalsize
+\endgroup
 
-We ran the same repeated measures ANOVA for T1 accuracy (Table \ref{tab:tab-anova-T1}). On average, participants correctly identified T1 in 82\% of trials (Figure \ref{fig:fig-group}), which is comparable to previous studies using this task \autocites[86\% in][]{London2015}[in 82\% in][]{Slagter2013}. T1 accuracy was also slightly lower for lag 3 than lag 8 (main effect of Lag, \(F[1, 38] = 29.23\), \(p < .001\)). There was a main effect of Block, reflecting that T1 accuracy decreased \emph{within} a session (\(F[1.89, 71.87] = 6.64\), \(p = .003\)). Finally, T1 performance also decreased \emph{across} the sessions (interaction between Session order and Stimulation: \(F[1, 38] = 11.24\), \(p = .002\)).
+\begingroup
+\setlength{\LTleft}{-20cm plus -1fill}
+\setlength{\LTright}{\LTleft}
 
-In sum, we conclude that there is no significant effect of tDCS on the attentional blink or T1 accuracy at the group level, in agreement with \textcite{London2015}.
-
-\begin{table}[tbp]
 \begin{center}
-\begin{threeparttable}
-\caption{\label{tab:tab-anova-T1}Repeated measures ANOVA on T1 accuracy}
+\begin{ThreePartTable}
 \small{
-\begin{tabular}{llllll}
+\begin{longtable}{llllll}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:tab-anova-T1}Repeated measures ANOVA on T1 accuracy}\\
 \toprule
 Effect & \multicolumn{1}{c}{$F$} & \multicolumn{1}{c}{$\mathit{df}_1^{GG}$} & \multicolumn{1}{c}{$\mathit{df}_2^{GG}$} & \multicolumn{1}{c}{$p$} & \multicolumn{1}{c}{$\hat{\eta}^2_G$}\\
 \midrule
@@ -3468,11 +3473,12 @@ Session order $\times$ Stimulation $\times$ Lag & 0.96 & 1 & 38 & .333 & .000\\
 Block $\times$ Stimulation $\times$ Lag & 0.31 & 1.86 & 70.75 & .718 & .000\\
 Session order $\times$ Block $\times$ Stimulation $\times$ Lag & 0.53 & 1.86 & 70.75 & .580 & .000\\
 \bottomrule
-\end{tabular}
+\end{longtable}
 }
-\end{threeparttable}
+\end{ThreePartTable}
 \end{center}
-\end{table}
+
+\endgroup
 
 \hypertarget{individual-differences}{%
 \subsection{Individual differences}\label{individual-differences}}
@@ -3482,9 +3488,7 @@ Our main aim was to replicate \textcite{London2015}, who found a negative correl
 We ran the same partial correlation (attempting to adjust for Session order) between the anodal and cathodal AB magnitude change scores (\emph{tDCS} - \emph{baseline}) on our data (Figure \ref{fig:fig-corr}). However, here the resulting correlation did not go in the same direction (\emph{r}(37) = .02), and was not significant (\emph{p} = .899). In the next sections, we present a number of follow-up analyses that further explore this difference in results between both studies (see the \protect\hyperlink{AB_tDCS-rep-analyses}{Replication analyses} subsection in the \protect\hyperlink{AB_tDCS-methods}{Methods} section).
 
 \begin{figure}
-\centering
-\includegraphics{AB_tDCS_files/figures/figure_4_corr.pdf}
-\caption{\label{fig:fig-corr}\textbf{The effects of anodal and cathodal tDCS are not correlated in the present study.} Data points show AB magnitude change scores (\emph{tDCS - baseline}, \emph{post - baseline}) for each participant in the study, in the \emph{anodal} session (x-axis) and the \emph{cathodal} session (y-axis). While \textcite{London2015} found a negative partial correlation (for \emph{tDCS - baseline}), suggesting opposite effects of anodal and cathodal tDCS, this effect appears to be absent here. The partial correlation coefficients (attempting to adjust for Session order) and p-values are printed in the upper left.}
+\includegraphics[width=5.5in]{AB_tDCS_files/figures/figure_4_corr} \caption{\textbf{The effects of anodal and cathodal tDCS are not correlated in the present study.} Data points show AB magnitude change scores (\emph{tDCS - baseline}, \emph{post - baseline}) for each participant in the study, in the \emph{anodal} session (x-axis) and the \emph{cathodal} session (y-axis). While \textcite{London2015} found a negative partial correlation (for \emph{tDCS - baseline}), suggesting opposite effects of anodal and cathodal tDCS, this effect appears to be absent here. The partial correlation coefficients (attempting to adjust for Session order) and p-values are printed in the upper left.}\label{fig:fig-corr}
 \end{figure}
 
 
@@ -3527,9 +3531,7 @@ In addition, we pooled the data from both studies at the single-subject level an
 The partial correlation based on the pooled data is \emph{r}(71) = -.18. Thus, the correlation across a combination of both samples is a lot smaller than in \textcite{London2015}, and slightly smaller still than the meta-analytic estimate that included the original correlation from \textcite{London2015} (Figure \ref{fig:fig-rep-estimate}).
 
 \begin{figure}
-\centering
-\includegraphics{AB_tDCS_files/figures/figure_6_estimates.pdf}
-\caption{\label{fig:fig-rep-estimate}\textbf{Summary of all the replication analyses} (with exception of the replication Bayes Factor). The first two rows show the partial correlation (attempting to adjust for Session order) between the AB magnitude change scores (tDCS - baseline) in the anodal and cathodal sessions, for \textcite{London2015} and the present study. The first is significantly negative, the second is slightly positive and not significant, because its 95\% confidence interval (CI) overlaps with zero. The third row shows the 90\% CI around the correlation in the present study. Because this interval does not overlap with the ``small telescopes'' effect size, (indicated by the \texttt{x}: \(-r_{33\%}\) = -.27), this correlation is significantly smaller. The fourth row shows the 95\% prediction interval (PI) around the correlation in \textcite{London2015}. Because this interval does not overlap with the correlation in the present study, both correlations are not consistent. The final two rows show the overall effect when the two correlations are meta-analyzed, and when one correlation is computed over the pooled data from both studies. Neither are significant (95\% CI overlaps with zero). Thus, our replication analyses all suggest that we failed to replicate London \& Slagter (2015), and when the results are examined in combination, no evidence in support of a negative relationship between the AB magnitude change scores (\emph{tDCS - baseline}) in the anodal and cathodal sessions is obtained.}
+\includegraphics[width=5.5in]{AB_tDCS_files/figures/figure_6_estimates} \caption{\textbf{Summary of all the replication analyses} (with exception of the replication Bayes Factor). The first two rows show the partial correlation (attempting to adjust for Session order) between the AB magnitude change scores (tDCS - baseline) in the anodal and cathodal sessions, for \textcite{London2015} and the present study. The first is significantly negative, the second is slightly positive and not significant, because its 95\% confidence interval (CI) overlaps with zero. The third row shows the 90\% CI around the correlation in the present study. Because this interval does not overlap with the ``small telescopes'' effect size, (indicated by the \texttt{x}: \(-r_{33\%}\) = -.27), this correlation is significantly smaller. The fourth row shows the 95\% prediction interval (PI) around the correlation in \textcite{London2015}. Because this interval does not overlap with the correlation in the present study, both correlations are not consistent. The final two rows show the overall effect when the two correlations are meta-analyzed, and when one correlation is computed over the pooled data from both studies. Neither are significant (95\% CI overlaps with zero). Thus, our replication analyses all suggest that we failed to replicate London \& Slagter (2015), and when the results are examined in combination, no evidence in support of a negative relationship between the AB magnitude change scores (\emph{tDCS - baseline}) in the anodal and cathodal sessions is obtained.}\label{fig:fig-rep-estimate}
 \end{figure}
 
 
@@ -4647,6 +4649,7 @@ Chapter & Resource & Platform & DOI\tabularnewline
 \chapter*{Contributions to the chapters}\label{contributions-to-the-chapters}}
 \addcontentsline{toc}{chapter}{Contributions to the chapters}
 
+\chaptermark{Contributions to chapters}
 \setlength{\parindent}{0pt}
 \small
 
@@ -4750,6 +4753,8 @@ I also thank Katherine MacLean for sharing the task code and stimuli used in Mac
 \hypertarget{list-of-other-publications}{%
 \chapter*{List of other publications}\label{list-of-other-publications}}
 \addcontentsline{toc}{chapter}{List of other publications}
+
+\chaptermark{List of other publications}
 
 Alilović, J., Timmermans, B., \textbf{Reteig, L. C.}, van Gaal, S., \& Slagter, H. A. (2019). No evidence that predictions and attention modulate the first feedforward sweep of cortical information processing. \emph{Cerebral Cortex, 29} 2261--2278. \url{https://doi.org/10.1093/cercor/bhz038}\newline
 

@@ -10,6 +10,15 @@
 \newcommand{\elandscape}{\end{landscape}}
 \AtBeginDocument{\let\maketitle\relax} % don't make automatic title page as first page
 
+% From https://tex.stackexchange.com/questions/32547/how-to-measure-the-width-of-a-longtable-dynamically-and-use-this-width-in-footer
+% papaja requires the \getlongtablewidth command when using the longtable=TRUE option with apa_table
+\makeatletter
+\newcommand\LastLTentrywidth{1em}
+\newlength\longtablewidth
+\setlength{\longtablewidth}{1in}
+\newcommand{\getlongtablewidth}{\begingroup \ifcsname LT@\roman{LT@tables}\endcsname \global\longtablewidth=0pt \renewcommand{\LT@entry}[2]{\global\advance\longtablewidth by ##2\relax\gdef\LastLTentrywidth{##2}}\@nameuse{LT@\roman{LT@tables}} \fi \endgroup}
+\makeatother
+
 %% Typefaces
 \usepackage{fontspec}
 \setmainfont{Minion Pro}
