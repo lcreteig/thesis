@@ -153,11 +153,25 @@ The sustained attention task elicited a robust vigilance decrement: accuracy in 
 
 After one hour (after block 6), participants learned that they could earn an additional sum of money if they outperformed at least 65% of the other participants during the final 20 minutes of the task. Just before this manipulation, motivation was at its lowest (begin vs. 6: _M~diff~_ = 1.52, *t*(20) = 3.55, *p* = .002, *d* = 0.78, BF~10~ = 19.9), and aversion was at its peak (begin vs. 6: _M~diff~_ = -2.67, *t*(20) = -6.16, *p* < .001, *d* = -1.34, BF~10~ = 4057). Right after the motivation manipulation, participants were significantly more motivated compared to before (6 vs. post: _M~diff~_ = -2.10, *t*(20) = -5.14, *p* < .001, *d* = -1.12, BF~10~ = 515), and also displayed decreased aversion towards performing the task (6 vs. post: _M~diff~_ = 0.67, *t*(20) = 3.16, *p* = .005, *d* = 0.69, BF~10~ = 9.2). Motivation ratings were no longer significantly different from the beginning (begin vs. post: _M~diff~_ = -0.57, *t*(20) = -1.74, *p* = .097, *d* = -0.38, BF~01~ = 1.21), and remained at this level after the final two blocks (begin vs. 8: _M~diff~_ = 0.76, *t*(20) = 1.82, *p* = .084, *d* = 0.40, BF~01~ = 1.09).
 
+The motivation manipulation improved accuracy in the following block of task performance (6 vs. 7: _M~diff~_ = -0.024, *t*(20) = -2.51, *p* = .021, *d* = -0.55, BF~10~ = 2.75). However, accuracy was still significantly lower than the first block (1 vs. 7: _M~diff~_ = 0.029, *t*(20) = 2.40, *p* = .026, *d* = 0.52, BF~10~ = 2.28), and reached its lowest point overall in the final ten minutes of task performance (1 vs. 8: _M~diff~_ = 0.062, *t*(20) = 4.23, *p* < .001, *d* = 0.92, BF~10~ = 79.2), despite equal levels of self-reported motivation. These changes in $A'$ appeared to be mostly driven by hit rate (Figure \@ref(fig:figure-2-behav)C), as hit rate also worsened significantly with time-on-task (*F*(2.45, 48.92) = 8.74, *p* < .001, $\eta^2$ = .30), and improved transiently after the motivation manipulation (6 vs. 7: _M~diff~_ = -0.077, *t*(20) = -2.17, *p* = .042, *d* = -0.47, BF~10~ = 1.56). False alarm rate appeared to decrease slightly over time (Figure \@ref(fig:figure-2-behav)D), but not significantly (*F*(3.08, 61.69) = 2.30, *p* = .084, $\eta^2$ = .10), and was also not significantly affected by motivation (6 vs. 7: _M~diff~_ = 0.006, *t*(20) = 1.10, *p* = .286, *d* = 0.24, BF~01~ = 2.59). False alarms were rare, as false alarm rate was already near the floor at the start of the experiment (3.1% of non-target trials). Finally, although response time showed the same pattern as accuracy (Figure \@ref(fig:figure-2-behav)B), response time did not significantly change after the motivation manipulation (6 vs. 7: _M~diff~_ = 22, *t*(20) = 1.45, *p* = .163, *d* = 0.32, BF~01~ = 1.78).
+
+\newpage
+\pagestyle{empty}
+\changetext{}{}{}{-12.5mm}{}
+\blandscape
+\captionsetup{width=\linewidth}
+
 (ref:caption-figure-2) __Declining performance with time-on-task is only partially counteracted by increases in motivation__. (__A__) Accuracy ($A'$) declined with time on task and was only partially and transiently restored by the motivation manipulation (after 60 minutes of task performance; vertical dotted line). These changes in accuracy were mirrored in the response time data (__B__) and mostly due to changes in Hit rate (__C__); there was no significant change over time in False alarm rate (__D__). The motivation manipulation successfully restored motivation ratings to their initial levels (__E__), but aversion ratings (__F__) remained elevated. The left y-axis of each plot shows the absolute value; the right y-axis shows the change compared to the first measurement (horizontal dotted line). Error bars are 95% confidence intervals of the paired difference between the first and each subsequent mean; paired differences are significant when the confidence interval does not overlap the dotted line. The x-axis depicts time-on-task in blocks of 10 minutes. The motivation and aversion ratings (horizontal dotted lines: minimum of 1, maximum of 7) were taken after each block (1 through 8), as well as before the task started (_begin_) and directly after the motivation manipulation (_post_).
 
-![(\#fig:figure-2-behav)(ref:caption-figure-2)](MFBrain_files/figures/figure_2_behav.pdf) 
+\begin{figure}
+\includegraphics[width=190mm]{MFBrain_files/figures/figure_2_behav} \caption{(ref:caption-figure-2)}(\#fig:figure-2-behav)
+\end{figure}
 
-The motivation manipulation improved accuracy in the following block of task performance (6 vs. 7: _M~diff~_ = -0.024, *t*(20) = -2.51, *p* = .021, *d* = -0.55, BF~10~ = 2.75). However, accuracy was still significantly lower than the first block (1 vs. 7: _M~diff~_ = 0.029, *t*(20) = 2.40, *p* = .026, *d* = 0.52, BF~10~ = 2.28), and reached its lowest point overall in the final ten minutes of task performance (1 vs. 8: _M~diff~_ = 0.062, *t*(20) = 4.23, *p* < .001, *d* = 0.92, BF~10~ = 79.2), despite equal levels of self-reported motivation. These changes in $A'$ appeared to be mostly driven by hit rate (Figure \@ref(fig:figure-2-behav)C), as hit rate also worsened significantly with time-on-task (*F*(2.45, 48.92) = 8.74, *p* < .001, $\eta^2$ = .30), and improved transiently after the motivation manipulation (6 vs. 7: _M~diff~_ = -0.077, *t*(20) = -2.17, *p* = .042, *d* = -0.47, BF~10~ = 1.56). False alarm rate appeared to decrease slightly over time (Figure \@ref(fig:figure-2-behav)D), but not significantly (*F*(3.08, 61.69) = 2.30, *p* = .084, $\eta^2$ = .10), and was also not significantly affected by motivation (6 vs. 7: _M~diff~_ = 0.006, *t*(20) = 1.10, *p* = .286, *d* = 0.24, BF~01~ = 2.59). False alarms were rare, as false alarm rate was already near the floor at the start of the experiment (3.1% of non-target trials). Finally, although response time showed the same pattern as accuracy (Figure \@ref(fig:figure-2-behav)B), response time did not significantly change after the motivation manipulation (6 vs. 7: _M~diff~_ = 22, *t*(20) = 1.45, *p* = .163, *d* = 0.32, BF~01~ = 1.78).
+\newpage
+\elandscape
+\changetext{}{}{}{+12.5mm}{}
+\pagestyle{\defstyle}
+\captionsetup{width=\textwidth}
 
 ### Attentional stability: theta phase
 
@@ -167,11 +181,25 @@ Over the course of the eight task blocks, theta ITPC closely tracked the time co
 
 To more directly quantify the relationship between theta ITPC and $A'$ over time, we fitted a multilevel growth model wherein we regressed the $A'$ scores on the ITPC scores in correct rejection trials. This analysis showed that ITPC significantly predicted  $A'$ over time (left PO: _b_ = 0.11, _t_(166) = 3.11, _p_ = .002; right PO: _b_ = 0.12, _t_(166) = 3.89, _p_ < .001; MF: _b_ = 0.15, _t_(166) = 4.39, _p_ < .001). ITPC was also larger in hit than in miss trials (Figure \@ref(fig:figure-3-theta)D, *F*(1, 20) = 58.31, *p* < .001, $\eta^2_p$ = .74), which further corroborates that the theta ITPC signal was relevant for behavior. This difference between hits and misses did not change significantly over time (no Block by Condition interaction, *F*(3, 60) = 1.39, *p* = .254, $\eta^2_p$ = .07).
 
-We also investigated to what extent dynamics in theta power were similar to theta ITPC. Unsurprisingly, we observed a theta power response in the same time-frequency window and electrode sites (Figure \@ref(fig:figure-3-theta)E--F). Like theta ITPC, theta power decreased over time in correct rejection trials (Figure \@ref(fig:figure-3-theta)G, *F*(3.04, 60.85) = 4.91, *p* = .004, $\eta^2_p$ = .20). Theta power also differed between hits and misses (Figure \@ref(fig:figure-3-theta)H, *F*(1, 20) = 43.02, *p* < .001, $\eta^2_p$ = .68). This difference did not change significantly over time (no Block by Condition interaction, *F*(3, 60) = 1.04, *p* = .383, $\eta^2_p$ = .05). However, unlike theta ITPC, theta power was not significantly affected by the motivation manipulation (left PO, 6 vs. 7: *p* = .525, BF~01~ = 3.64; right PO, 6 vs. 7: *p* = .409, BF~01~ = 3.20; MF, 6 vs. 7: *p* = .214, BF~01~ = 2.14).
+\newpage
+\pagestyle{empty}
+\changetext{}{}{}{-12.5mm}{}
+\blandscape
+\captionsetup{width=190mm}
 
 (ref:caption-figure-3) __Changes in behavioral performance with time-on-task and motivation are closely tracked by cross-trial consistency of post-stimulus theta phase (A--D), but not theta power (E--H)__. Theta inter-trial phase clustering (ITPC) peaked from 150--500 ms post-stimulus (vertical dotted-line) between 3 and 7 Hz (time-frequency window outlined in white) (__A__, average of electrodes of interest) on left parieto-occipital (left PO) electrodes (PO7, P5, P7), right parieto-occipital (right PO) electrodes (PO8, P6, P8), and mid-frontal (MF) electrodes (FC1, FCz, FC2) (__B__, average of time-frequency window, electrodes marked in white). The same electrode sites and time-frequency windows of interest were used for theta power (__E__, __F__), baseline corrected from -400 to -100 ms using a decibel conversion. Theta ITPC in correct rejection trials (CRs) decreased with time-on-task (8 blocks of 10 minutes each) and increased after the motivation manipulation (directly after block 6; vertical dotted line) (__C__), closely resembling changes in task performance (Figure \@ref(fig:figure-2-behav)A). Power in the theta band decreased linearly over time, but did not change after the motivation manipulation (__G__). Both theta ITPC (__D__) and power (__H__) were higher for hit than miss trials, but this difference did not change significantly over time (4 blocks of 20 minutes each). Error bars are within-subject [@Cousineau2005; @Morey2008] 95% confidence intervals.
 
-![(\#fig:figure-3-theta)(ref:caption-figure-3)](MFBrain_files/figures/figure_3_theta.pdf) 
+\begin{figure}
+\includegraphics[width=190mm]{MFBrain_files/figures/figure_3_theta} \caption{(ref:caption-figure-3)}(\#fig:figure-3-theta)
+\end{figure}
+
+\newpage
+\elandscape
+\changetext{}{}{}{+12.5mm}{}
+\pagestyle{\defstyle}
+\captionsetup{width=\textwidth}
+
+We also investigated to what extent dynamics in theta power were similar to theta ITPC. Unsurprisingly, we observed a theta power response in the same time-frequency window and electrode sites (Figure \@ref(fig:figure-3-theta)E--F). Like theta ITPC, theta power decreased over time in correct rejection trials (Figure \@ref(fig:figure-3-theta)G, *F*(3.04, 60.85) = 4.91, *p* = .004, $\eta^2_p$ = .20). Theta power also differed between hits and misses (Figure \@ref(fig:figure-3-theta)H, *F*(1, 20) = 43.02, *p* < .001, $\eta^2_p$ = .68). This difference did not change significantly over time (no Block by Condition interaction, *F*(3, 60) = 1.04, *p* = .383, $\eta^2_p$ = .05). However, unlike theta ITPC, theta power was not significantly affected by the motivation manipulation (left PO, 6 vs. 7: *p* = .525, BF~01~ = 3.64; right PO, 6 vs. 7: *p* = .409, BF~01~ = 3.20; MF, 6 vs. 7: *p* = .214, BF~01~ = 2.14).
 
 In sum, theta-band inter-trial phase clustering was higher in hit than in miss trials, suggesting it indexes behavioral performance. Changes in theta ITPC in correct rejection trials were tightly coupled to and predicted changes in behavioral performance ($A'$). Power in the theta band also decreased over time, but did not appear to respond to the motivation manipulation, suggesting that the change in power with time-on-task was partially independent of and less strongly associated with behavior than theta ITPC.
 
@@ -179,13 +207,27 @@ In sum, theta-band inter-trial phase clustering was higher in hit than in miss t
 
 To investigate how time-on-task and motivation may affect early visual processing, we examined how the P1 (Figure \@ref(fig:figure-4-ERPs)A--D) and N1 (Figure \@ref(fig:figure-4-ERPs)E-H) ERP components evolved over the eight task blocks (i.e., in correct rejection trials). N1 amplitude decreased over time (Figure \@ref(fig:figure-4-ERPs)G, *F*(2.89, 57.75) = 5.79, *p* = .002, $\eta^2_p$ = .22), but there was no significant effect of Block for the P1 (Figure \@ref(fig:figure-4-ERPs)C, *F*(3.68, 73.70) = 1.16, *p* = .333, $\eta^2_p$ = .06). The N1 did not change significantly after the motivation manipulation, neither in the left hemisphere (6 vs. 7: *t*(20) = 0.73, *p* = .472, *d* = 0.16, BF~01~ = 3.45) nor in the right (6 vs. 7: *t*(20) = -0.33, *p* = .742, *d* = -0.07, BF~01~ = 4.18), suggesting that the decrease in the N1 with time-on-task is not sensitive to motivation, and may reflect other factors such as habituation to the repeatedly presented stimulus.
 
-The ANOVA for correct rejection trials also revealed main effects of Hemisphere, reflecting that the P1 was only visible over a left parieto-occipital scalp region (*F*(1, 20) = 13.07, *p* = .002, $\eta^2_p$ = .40), whereas the N1 peaked exclusively over the right parieto-occipital scalp region (*F*(1, 20) = 15.28, *p* < .001, $\eta^2_p$ = .43). This unusual lateralization of the components is further explored elsewhere [@Slagter2016]. Briefly, we found that this effect could be attributed to the specific stimulus used, as well as the fact that participants were continuously attending to the left hemifield, and the right hemifield was never relevant (which differs from typical attentional cueing studies).
-
-As top-down attention is known to increase the amplitudes of the P1 and N1, we also examined the difference between hit and miss trials, as a proxy for attentional modulation. We hypothesized that with time on task, top-down attentional modulation of these indices of visual processing would decrease. The attentional modulations of both components were also completely lateralized (Condition by Hemisphere interaction), as both the P1 and N1 amplitude were larger for hits than misses, but only in the left and right hemisphere, respectively (P1: Figure \@ref(fig:figure-4-ERPs)B, *F*(1, 20) = 7.48, *p* = .013, $\eta^2_p$ = .27; N1: Figure \@ref(fig:figure-4-ERPs)F, *F*(1, 20) = 11.86, *p* = .003, $\eta^2_p$ = .37). However, this effect did not interact with Block, suggesting that the attentional modulation of visual processing did not change over time or after the motivation instruction (P1: Figure \@ref(fig:figure-4-ERPs)D, *F*(3, 60) = 0.53, *p* = .664, $\eta^2_p$ = .03; N1: Figure \@ref(fig:figure-4-ERPs)H, *F*(3, 60) = 1.70, *p* = .177, $\eta^2_p$ = .08).
+\newpage
+\pagestyle{empty}
+\changetext{}{}{}{-12.5mm}{}
+\blandscape
+\captionsetup{width=\linewidth}
 
 (ref:caption-figure-4) __Time-on task and motivation do not affect attentional modulation of early visual processing: P1 (A-D) and N1 (E-H) ERP components__. The P1 peaked between 110--180 ms (gray shaded rectangle) post-stimulus (vertical dotted line) on left parieto-occipital (left PO) electrodes (PO7, P5, P7) (__A__). The N1 peaked between 190--260 ms (gray shaded rectangle) on right parieto-occipital (right PO) electrodes (PO8, P6, P8) (__E__). The attentional modulation of the components, defined as the difference between hits and misses, was also lateralized to the left PO region for the P1 (__B__, average of P1 time window, left PO electrodes marked in white) and the right PO region for the N1 (__F__, average of N1 time window, right PO electrodes marked in white). P1 amplitude (__C__) did not change significantly over time in correct rejection (CR) trials, but N1 amplitude did decrease with time-on-task (__G__) (8 blocks of 10 minutes each). The time of the motivation manipulation (directly after block 6) is indicated with the vertical dotted line. There was no significant change in the attentional modulation (hits vs. misses) of the P1 (__D__) and N1 (__H__) over time (4 blocks of 20 minutes each). Error bars are within-subject [@Cousineau2005; @Morey2008] 95% confidence intervals; shaded areas in (A) and (E) represent the standard error of the mean.
 
-![(\#fig:figure-4-ERPs)(ref:caption-figure-4)](MFBrain_files/figures/figure_4_ERPs.pdf) 
+\begin{figure}
+\includegraphics[width=190mm]{MFBrain_files/figures/figure_4_ERPs} \caption{(ref:caption-figure-4)}(\#fig:figure-4-ERPs)
+\end{figure}
+
+\newpage
+\elandscape
+\changetext{}{}{}{+12.5mm}{}
+\pagestyle{\defstyle}
+\captionsetup{width=\textwidth}
+
+The ANOVA for correct rejection trials also revealed main effects of Hemisphere, reflecting that the P1 was only visible over a left parieto-occipital scalp region (*F*(1, 20) = 13.07, *p* = .002, $\eta^2_p$ = .40), whereas the N1 peaked exclusively over the right parieto-occipital scalp region (*F*(1, 20) = 15.28, *p* < .001, $\eta^2_p$ = .43). This unusual lateralization of the components is further explored elsewhere [@Slagter2016]. Briefly, we found that this effect could be attributed to the specific stimulus used, as well as the fact that participants were continuously attending to the left hemifield, and the right hemifield was never relevant (which differs from typical attentional cueing studies).
+
+As top-down attention is known to increase the amplitudes of the P1 and N1, we also examined the difference between hit and miss trials, as a proxy for attentional modulation. We hypothesized that with time on task, top-down attentional modulation of these indices of visual processing would decrease. The attentional modulations of both components were also completely lateralized (Condition by Hemisphere interaction), as both the P1 and N1 amplitude were larger for hits than misses, but only in the left and right hemisphere, respectively (P1: Figure \@ref(fig:figure-4-ERPs)B, *F*(1, 20) = 7.48, *p* = .013, $\eta^2_p$ = .27; N1: Figure \@ref(fig:figure-4-ERPs)F, *F*(1, 20) = 11.86, *p* = .003, $\eta^2_p$ = .37). However, this effect did not interact with Block, suggesting that the attentional modulation of visual processing did not change over time or after the motivation instruction (P1: Figure \@ref(fig:figure-4-ERPs)D, *F*(3, 60) = 0.53, *p* = .664, $\eta^2_p$ = .03; N1: Figure \@ref(fig:figure-4-ERPs)H, *F*(3, 60) = 1.70, *p* = .177, $\eta^2_p$ = .08).
 
 In sum, N1 amplitude decreased with time-on-task (in correct rejection trials), but appeared to be unaffected by the motivation manipulation. The P1 and N1 components and attentional modulations thereof were completely lateralized: the P1 dissociated between hits and misses in the irrelevant hemisphere (left); the N1 dissociated between hits and misses in the relevant hemisphere (right) [see @Slagter2016]. However, this pattern did not change significantly with time-on-task or motivation.
 
@@ -201,7 +243,17 @@ In sum, although only one hemifield (the left) was ever relevant, we observed hi
 
 (ref:caption-figure-5) __Pre-stimulus alpha power remains right-lateralized over time, despite stimuli appearing exclusively in the left visual hemifield__. For each time-frequency point, we computed a lateralization index, by subtracting power at each left electrode from its counterpart on the right side, and dividing by the sum. Positive values therefore mean that power was relatively stronger over the right hemisphere. Our data show that pre-stimulus (vertical dotted line) alpha power is right-lateralized (__A__, time-frequency window: 9--14 Hz, -1000 to -100 ms, outlined in white), when comparing left (PO7, P5, P7) and right parieto-occipital (right PO: PO8, P6, P8) electrode sites (__B__, electrodes marked in white). This pattern did not change significantly with time-on-task, neither in correction rejection trials (CRs) (__C__, 8 blocks of 10 minutes each; time of the motivation manipulation indicated with vertical dotted line), nor in hit and miss trials (__D__, 4 blocks of 20 minutes each). Error bars are within-subject [@Cousineau2005; @Morey2008] 95% confidence intervals.
 
-![(\#fig:figure-5-latindex)(ref:caption-figure-5)](MFBrain_files/figures/figure_5_latindex.pdf) 
+\newpage
+\pagestyle{empty}
+\blandscape
+
+\begin{figure}
+\includegraphics[width=190mm]{MFBrain_files/figures/figure_5_latindex} \caption{(ref:caption-figure-5)}(\#fig:figure-5-latindex)
+\end{figure}
+
+\newpage
+\elandscape
+\pagestyle{\defstyle}
 
 ## Discussion {#MFBrain-discussion}
 
