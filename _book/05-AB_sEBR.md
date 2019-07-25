@@ -151,11 +151,27 @@ To be able to uncover relationships between sEBR and AB magnitude (see the [subs
 
 The intraclass correlation for AB magnitude (Figure \@ref(fig:fig-retest)B) is .60, indicating "moderate" test-retest reliability [@Koo2016], with a 95% confidence interval of .25 (poor) -- .79 (good). The standard (interclass) Pearson correlation for AB magnitude between sessions is comparable (_r_(38) = .68, CI~95%~ [.47, .82]) and comparable to previous reports [@Dale2013].
 
-![(\#fig:fig-retest)(ref:caption-fig-retest)](AB_sEBR_files/figures/figure_4_retest.pdf) 
+In contrast to AB magnitude, sEBR (Figure \@ref(fig:fig-retest)C), did not differ significantly between sessions (_F_(1, 39) = 0.149, _p_ = 0.701). We had some concerns that participants would blink less in the second session, because they had been instructed (after the sEBR measurement in session 1) that blinking can cause artifacts in the EEG signal (recorded during task performance). Yet, if anything, median sEBR was slightly higher in the second session (12.6) than the first (11.7). However, we also asked participants whether they had been in an EEG experiment
+
+\newpage
+\pagestyle{empty}
+\changetext{}{}{-25mm}{}{}
+\blandscape
+\captionsetup{width=\linewidth}
+
+\begin{figure}
+\includegraphics[width=180mm]{AB_sEBR_files/figures/figure_4_retest} \caption{(ref:caption-fig-retest)}(\#fig:fig-retest)
+\end{figure}
 
 (ref:caption-fig-retest)  __Reliability of the attentional blink and spontaneous eye blink rate__. (__A__) All participants showed an attentional blink in both sessions: higher T2|T1 accuracy (% T2 correct in trials where T1 was also correct) for lag 8 (orange) than lag 3 (yellow). Horizontal lines show group-average T2|T1 accuracy. The attentional blink magnitude (lag 8 - lag 3) is slightly smaller in the second session (dotted lines) than the first session (solid lines), due to better lag 3 performance on average.  (__B__) AB magnitude for each participant in session 1 vs. 2. The intraclass correlation indicates moderate test-retest reliability, though the 95% confidence interval ranges all the way from poor to good. AB magnitude in (__A__) and (__B__) was calculated on the _baseline_ block only, before tDCS onset. (__C__) sEBR values for each participant in session 1 vs. 2. The intraclass correlation indicates that the test-retest reliability for sEBR is good.
 
-In contrast to AB magnitude, sEBR (Figure \@ref(fig:fig-retest)C), did not differ significantly between sessions (_F_(1, 39) = 0.149, _p_ = 0.701). We had some concerns that participants would blink less in the second session, because they had been instructed (after the sEBR measurement in session 1) that blinking can cause artifacts in the EEG signal (recorded during task performance). Yet, if anything, median sEBR was slightly higher in the second session (12.6) than the first (11.7). However, we also asked participants whether they had been in an EEG experiment before. Participants that had done so exhibited a greatly reduced median sEBR in both sessions (6.3 in session 1; 4.1 in session 2). Because these were only 6 cases in an already small sample, we are unsure whether this finding is robust, but it is a cautionary note to others aiming to measure sEBR using (a full setup of) EEG electrodes. Because smoking has been reported to increase sEBR [@Klein1993], we also asked whether participants self-identified as a smoker (n = 5). These individuals were not clear outliers in the distribution, neither were those wearing contact lenses (n = 4), which also generally should increase blink rate.
+\newpage
+\elandscape
+\changetext{}{}{+25mm}{}{}
+\pagestyle{\defstyle}
+\captionsetup{width=\textwidth}
+
+\noindent before. Participants that had done so exhibited a greatly reduced median sEBR in both sessions (6.3 in session 1; 4.1 in session 2). Because these were only 6 cases in an already small sample, we are unsure whether this finding is robust, but it is a cautionary note to others aiming to measure sEBR using (a full setup of) EEG electrodes. Because smoking has been reported to increase sEBR [@Klein1993], we also asked whether participants self-identified as a smoker (n = 5). These individuals were not clear outliers in the distribution, neither were those wearing contact lenses (n = 4), which also generally should increase blink rate.
 
 Most importantly, the test-retest reliability for sEBR was "good" [@Koo2016], indicated by an intraclass correlation of .85 CI~95%~ [.73, .92]. The Pearson correlation was _r_(38) = .84, CI~95%~ [.72, .91] [cf. @Dang2017]; Cronbach's alpha was .91 CI~95%~ [.84, .95] [cf. @Kruis2016]. 
 
@@ -163,19 +179,21 @@ One participant's sEBR in session 2 seems remarkably high (57 blinks per minute)
 
 ### Relation between sEBR and baseline AB magnitude {#AB_sEBR-ABmag}
 
+![(\#fig:fig-AB-corr)(ref:caption-fig-AB-corr)](AB_sEBR_files/figures/figure_5_AB-corr.pdf) 
+
+(ref:caption-fig-AB-corr) __No significant relationships between sEBR and AB magnitude in the block before tDCS onset__. Grey solid lines show a linear fit over all data points (individual participants), with no clear relationship in both sessions. Grey dashed lines show a cubic spline fit over all data points. Colored lines show two separate linear fits, delimited by the break point in the cubic spline, as estimated with the "two-lines test" [@Simonsohn2018]. Both the spline fit and the two linear slopes suggest an Inverted-U shaped relationship in session 1, but neither slope is significant, and this pattern is not present in session 2. 
+
 Based on the results of @Colzato2008, we should expect to find a negative correlation between sEBR and AB magnitude (in the baseline block). However, the correlation here was not significant in either session 1 (_r_(38) = .08, CI~95%~ [-.24, .38], _p_ = .637), or session 2 (_r_(38) = .003, CI~95%~ [-.31, .31], _p_ = .987). The direction of the effect is close to zero or slightly positive (Figure \@ref(fig:fig-AB-corr)), which is not in accord with @Colzato2008.
 
 Bayesian correlations show that the data are BF~01~ = 2.57 times (session 1) and BF~01~ = 2.84 times (session 2) more likely under the null hypothesis, using the default prior. This constitutes some evidence for absence of a correlation, though not more than anecdotal. If we evaluate the prior over negative effect sizes only [based on the negative correlation in @Colzato2008], the support for the null increases slightly and becomes moderate (session 1: BF~0-~ = 3.90, session 2: BF~0-~ = 2.87). Finally, if we use the correlation as in @Colzato2008 (_r_(18) = -.53) as a prior [@Wagenmakers2016], the support for the null hypothesis becomes strong (session 1: BF~0r~ = 15.80, session 2: BF~0r~ = 10.43).
 
 We also probed for an Inverted-U-shaped relationship between sEBR and AB magnitude, using the "two lines test" [@Simonsohn2018]. In session 1, a cubic spline-fit indeed suggests an Inverted-U-shaped relationship (Figure \@ref(fig:fig-AB-corr)). The linear regressions do as well, since the first slope is positive (_b_ = .012, _p_ = .058) and the second is negative (_b_ = -.006, _p_ = .602). However, neither slope is significant. Furthermore, this pattern is absent in session 2 (line 1: _b_ = .001, _p_ = .931; line 2: _b_ = .003, _p_ = .545), with the spline fit also showing a more erratic pattern.
 
-![(\#fig:fig-AB-corr)(ref:caption-fig-AB-corr)](AB_sEBR_files/figures/figure_5_AB-corr.pdf) 
-
-(ref:caption-fig-AB-corr) __No significant relationships between sEBR and AB magnitude in the block before tDCS onset__. Grey solid lines show a linear fit over all data points (individual participants), with no clear relationship in both sessions. Grey dashed lines show a cubic spline fit over all data points. Colored lines show two separate linear fits, delimited by the break point in the cubic spline, as estimated with the "two-lines test" [@Simonsohn2018]. Both the spline fit and the two linear slopes suggest an Inverted-U shaped relationship in session 1, but neither slope is significant, and this pattern is not present in session 2. 
-
 ### Relation between sEBR and the effect of tDCS on AB magnitude
 
-![(\#fig:fig-tDCS-corr)(ref:caption-fig-tDCS-corr)](AB_sEBR_files/figures/figure_6_tDCS-corr.pdf) 
+\begin{figure}
+\includegraphics[width=130mm]{AB_sEBR_files/figures/figure_6_tDCS-corr} \caption{(ref:caption-fig-tDCS-corr)}(\#fig:fig-tDCS-corr)
+\end{figure}
 
 (ref:caption-fig-tDCS-corr) __No significant relationships between sEBR and AB magnitude change scores.__ Each plot shows spontaneous eye blink rates on the x-axis, and the change in AB magnitude on the y-axis (difference scores of the _tDCS_ block - the _baseline_ block, or the _post_ block - _baseline_) in the _anodal_ and _cathodal_ stimulation conditions.
 
@@ -185,7 +203,7 @@ Although there was no relationship between sEBR and AB magnitude itself, sEBR co
 
 \caption{(\#tab:ABmag)Variability of attentional blink magnitude scores and correlation with sEBR, per stimulation condition and block.}
 \centering
-\fontsize{11}{13}\selectfont
+\fontsize{10}{12}\selectfont
 \begin{threeparttable}
 \begin{tabular}{>{\raggedright\arraybackslash}p{10em}rr}
 \toprule
@@ -210,15 +228,18 @@ Block & $r$ sEBR\textsuperscript{a} & SD\textsuperscript{b}\\
 \end{threeparttable}
 \end{table}
 
+\begingroup
+\setlength{\tabcolsep}{4pt}
+
 \begin{table}[t]
 
 \caption{(\#tab:corrco)Attentional blink magnitude and spontaneous eye blink rate correlations.}
 \centering
-\fontsize{11}{13}\selectfont
+\fontsize{10}{12}\selectfont
 \begin{threeparttable}
 \begin{tabular}{lrrrrrr}
 \toprule
-\multicolumn{1}{c}{ } & \multicolumn{3}{c}{Correlation\textsuperscript{a}} & \multicolumn{2}{c}{Pearson-Filon test\textsuperscript{b}} & \multicolumn{1}{c}{Reliability\textsuperscript{c}} \\
+\multicolumn{1}{c}{ } & \multicolumn{3}{c}{Correlation\textsuperscript{a}} & \multicolumn{2}{c}{\makecell[c]{Pearson-Filon\\test\textsuperscript{b}}} & \multicolumn{1}{c}{Reliability\textsuperscript{c}} \\
 \cmidrule(l{3pt}r{3pt}){2-4} \cmidrule(l{3pt}r{3pt}){5-6} \cmidrule(l{3pt}r{3pt}){7-7}
 contrast & $r$ & $p$ & $BF_{01}$ & $Z$ & $p$ & $r$\\
 \midrule
@@ -240,6 +261,8 @@ contrast & $r$ & $p$ & $BF_{01}$ & $Z$ & $p$ & $r$\\
 \end{threeparttable}
 \end{table}
 
+\endgroup
+
 ## Discussion {#AB_sEBR-discussion}
 
 Dopamine levels play a central role in regulating cognitive functions. tDCS may be used to enhance cognitive functions, but its precise effects appear to be dependent on dopamine as well. Here we attempted to use sEBR---a proxy for dopaminergic activity---to study how dopamine may determine the size of the AB and its modulation by tDCS. As a prerequisite, we assessed the test-retest reliabilities of sEBR and AB magnitude, which proved to be good to moderate, respectively, in line with previous reports [@Kruis2016; @Dang2017; @Dale2013]. We then attempted to replicate a result from @Colzato2008, who reported that individuals with high sEBR tend to exhibit a smaller AB. However, we found no significant linear or Inverted-U-shaped relationship between sEBR and AB magnitude, with more evidence for the null hypothesis of no association. Finally, we also did not find any evidence that sEBR is associated with the effects of tDCS on AB magnitude.
@@ -250,7 +273,9 @@ The test-retest reliability of sEBR across two testing sessions (separated by ab
 
 In contrast to sEBR, AB magnitude was significantly smaller in the second session. Previous studies have reported that performance on an AB task can improve across sessions [@Dale2013; @Slagter2007], but for targets at all lags, whereas here we observed a specific increase in lag 3 T2|T1 performance (inside the attentional blink window). Test-retest reliability of AB magnitude was lower than sEBR: the point-estimate indicated only "moderate" reliability, though the 95% confidence interval was also consistent with "poor" to "good" reliability. However, this is comparable to previous reports (see Table \@ref(tab:AB-reliability)). The Pearson correlation in the present study (_r_ = .68) is even on the higher end of the range reported in previous studies (though note that regular correlations can overestimate "true" test-retest reliability [@Bland1986]). 
 
-The moderate reliability for AB magnitude limits the correlation that can be obtained between AB magnitude and sEBR. The AB phenomenon might suffer from the "individual differences paradox" [@Hedge2018]: precisely because it is robust at the group level (almost everyone has an AB), it might not exhibit sufficient between-subject variability to be reliable. On the other hand, the AB seems to have a larger range of individual differences than other tasks [@Willems2016], and even a moderate reliability should provide "enough room" to detect correlations between sEBR and AB magnitude in a plausible range.
+\begingroup
+\small
+\LTcapwidth=\textwidth
 
 | Study       | n   | Correlation             | Notes                                                                                 |
 |---------------------------------|-----|-------------------------|---------------------------------------------------------------------------------------|
@@ -260,6 +285,10 @@ The moderate reliability for AB magnitude limits the correlation that can be obt
 | @London2015 | 34  | .58                     | test and retest one week apart; almost same task as present study                     |
 
 Table: (\#tab:AB-reliability) Previous reports on the reliability of AB magnitude. Note that these all used interclass (Pearson) correlations.
+
+\endgroup
+
+The moderate reliability for AB magnitude limits the correlation that can be obtained between AB magnitude and sEBR. The AB phenomenon might suffer from the "individual differences paradox" [@Hedge2018]: precisely because it is robust at the group level (almost everyone has an AB), it might not exhibit sufficient between-subject variability to be reliable. On the other hand, the AB seems to have a larger range of individual differences than other tasks [@Willems2016], and even a moderate reliability should provide "enough room" to detect correlations between sEBR and AB magnitude in a plausible range.
 
 ### No significant relationships between sEBR and baseline AB magnitude
 
