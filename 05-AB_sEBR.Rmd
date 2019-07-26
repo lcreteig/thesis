@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 ```{r setup, include=FALSE}
 #Setup
 library(knitr) # rmarkdown output
@@ -223,6 +228,7 @@ Although there was no relationship between sEBR and AB magnitude itself, sEBR co
 
 ```{r ABmag, results='show'}
 if (knitr::is_latex_output() | knitr::is_html_output()) {
+ABmag_tbl$estimate <- printnum(ABmag_tbl$estimate, gt1=F) # format r-values
 ABmag_tbl %>%
   kable(col.names = c("Block", 
                       paste0("$r$ sEBR", footnote_marker_alphabet(1)),
@@ -230,6 +236,7 @@ ABmag_tbl %>%
         caption = "Variability of attentional blink magnitude scores and correlation with sEBR, per stimulation condition and block.",
         booktabs = TRUE,
         digits = 3,
+        align = c("l",rep("r",2)),
         escape = FALSE) %>%
   kable_styling(font_size = 10) %>%  
   pack_rows(index = c("anodal session" = 3, "cathodal session" = 3)) %>%
@@ -241,13 +248,15 @@ ABmag_tbl %>%
 ```
 
 \begingroup
-\setlength{\tabcolsep}{4pt}
 
 ```{r corrco, results='show'}
 if (knitr::is_latex_output() | knitr::is_html_output()) {
+corr_co_tbl[,c("estimate","r_reliability")] <- printnum(corr_co_tbl[,c("estimate","r_reliability")], gt1 = F) # format r-values
+corr_co_tbl[,c("p.value","p")] <- printnum(corr_co_tbl[,c("p.value","p")], gt1 = F, digits = 3) # format p-values
 corr_co_tbl %>%
   kable(col.names = c("contrast","$r$","$p$","$BF_{01}$","$Z$","$p$","$r$"),
-        digits = 3,
+        digits = 2,
+        align = c("l",rep("r",6)),
         caption = "Attentional blink magnitude and spontaneous eye blink rate correlations.",
         booktabs = TRUE,
         escape = FALSE) %>%

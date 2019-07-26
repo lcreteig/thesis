@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 
 
 # Spontaneous eye blink rate does not predict attentional blink size, nor the effects of tDCS on attentional blink size {#AB-tDCS-sEBR}
@@ -211,14 +216,14 @@ Block & $r$ sEBR\textsuperscript{a} & SD\textsuperscript{b}\\
 \midrule
 \addlinespace[0.3em]
 \multicolumn{3}{l}{\textbf{anodal session}}\\
-\hspace{1em}baseline & 0.037 & 0.140\\
-\hspace{1em}tDCS & 0.151 & 0.148\\
-\hspace{1em}post & 0.249 & 0.137\\
+\hspace{1em}baseline & .04 & 0.140\\
+\hspace{1em}tDCS & .15 & 0.148\\
+\hspace{1em}post & .25 & 0.137\\
 \addlinespace[0.3em]
 \multicolumn{3}{l}{\textbf{cathodal session}}\\
-\hspace{1em}baseline & 0.046 & 0.136\\
-\hspace{1em}tDCS & -0.053 & 0.128\\
-\hspace{1em}post & 0.086 & 0.120\\
+\hspace{1em}baseline & .05 & 0.136\\
+\hspace{1em}tDCS & -.05 & 0.128\\
+\hspace{1em}post & .09 & 0.120\\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}
@@ -229,7 +234,6 @@ Block & $r$ sEBR\textsuperscript{a} & SD\textsuperscript{b}\\
 \end{table}
 
 \begingroup
-\setlength{\tabcolsep}{4pt}
 
 \begin{table}[t]
 
@@ -245,12 +249,12 @@ contrast & $r$ & $p$ & $BF_{01}$ & $Z$ & $p$ & $r$\\
 \midrule
 \addlinespace[0.3em]
 \multicolumn{7}{l}{\textbf{anodal session}}\\
-\hspace{1em}tDCS - baseline & 0.208 & 0.199 & 1.371 & -1.269 & 0.204 & 0.836\\
-\hspace{1em}post - baseline & 0.241 & 0.133 & 1.053 & -1.592 & 0.111 & 0.629\\
+\hspace{1em}tDCS - baseline & .21 & .199 & 1.37 & -1.27 & .204 & .84\\
+\hspace{1em}post - baseline & .24 & .133 & 1.05 & -1.59 & .111 & .63\\
 \addlinespace[0.3em]
 \multicolumn{7}{l}{\textbf{cathodal session}}\\
-\hspace{1em}tDCS - baseline & -0.164 & 0.313 & 1.812 & 1.046 & 0.296 & 0.818\\
-\hspace{1em}post - baseline & 0.040 & 0.808 & 2.766 & -0.326 & 0.745 & 0.706\\
+\hspace{1em}tDCS - baseline & -.16 & .313 & 1.81 & 1.05 & .296 & .82\\
+\hspace{1em}post - baseline & .04 & .808 & 2.77 & -0.33 & .745 & .71\\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}
