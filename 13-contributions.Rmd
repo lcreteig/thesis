@@ -1,6 +1,5 @@
 # Contributions to the chapters {-}
 \chaptermark{Contributions to chapters}
-
 \setlength{\parindent}{0pt}
 \small
 
@@ -37,8 +36,6 @@ Reteig, L. C., Knapen, T., Roelofs, F. J. F. W., Ridderinkhof, K. R., & Slagter,
 \item
 I also thank Monja Hoven and Floortje Bouwkamp for their assistance in piloting and data collection, and Thiago Costa and David Fischer for reviewing the pre-publication manuscript. The following colleagues graciously shared their MRI data for neuronavigation purposes: Daan van Es, Anouk van Loon, Poppy Watson, Suzanne Oosterwijk, Yaïr Pinto, and Henk Cremers.
 \end{list}
-
-\clearpage
 
 __Chapter \@ref(AB-tDCS-EEG)__, in preparation as:
 

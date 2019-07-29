@@ -59,7 +59,7 @@ We therefore performed a conceptual replication of @Kanai2012 (see the [Discussi
 
 ### Participants
 
-31 participants took part in the study; data from 26 participants (14 female, mean age = 25.9, range = 21--34, _SD_ = 3.42) were included in the analyses (see [Participant and saccade exclusion] in the [Results](#sacc_tDCS-results) section). The experiment and recruitment took place at the University of Amsterdam; all procedures for this study were approved by the ethics committee of the Department of Psychology, and complied to relevant laws and institutional guidelines. Participation was precluded in case screening with a tDCS safety questionnaire revealed potential issues, including (a history of) neurological, psychiatric or skin conditions. All participants gave written informed consent and were compensated with course credit or money (€10 per hour).
+31 participants took part in the study; data from 26 participants (14 female, mean age = 25.9, range = 21--34, _SD_ = 3.42) were included in the analyses (see "[Participant and saccade exclusion]" in the [Results](#sacc_tDCS-results) section). The experiment and recruitment took place at the University of Amsterdam; all procedures for this study were approved by the ethics committee of the Department of Psychology, and complied to relevant laws and institutional guidelines. Participation was precluded in case screening with a tDCS safety questionnaire revealed potential issues, including (a history of) neurological, psychiatric or skin conditions. All participants gave written informed consent and were compensated with course credit or money (€10 per hour).
 
 ### Procedure
 
