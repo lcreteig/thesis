@@ -131,3 +131,22 @@
   \printtext[textcitehyperref]{%
     \restorebibmacro{textcite}%
     \usebibmacro{textcite}}}
+
+% Handle prefixes in surnames (e.g. "van", "de") correctly
+%https://tex.stackexchange.com/questions/440133/prefixes-in-author-names-in-references-and-bibliography
+\DeclareSortingNamekeyTemplate{
+  \keypart{
+    \namepart{family}
+  }
+  \keypart{
+    \namepart{prefix}
+  }
+  \keypart{
+    \namepart{given}
+  }
+  \keypart{
+    \namepart{suffix}
+  }
+}
+
+\renewbibmacro{begentry}{\midsentence}

@@ -1,4 +1,4 @@
-\documentclass[11pt,]{memoir}
+\documentclass[11pt,english,]{memoir}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -32,8 +32,17 @@
             urlcolor=Blue,
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[shorthands=off,dutch,main=english]{babel}
+  \newcommand{\textdutch}[2][]{\foreignlanguage{dutch}{#2}}
+  \newenvironment{dutch}[2][]{\begin{otherlanguage}{dutch}}{\end{otherlanguage}}
+\else
+  \usepackage{polyglossia}
+  \setmainlanguage[]{english}
+  \setotherlanguage[]{dutch}
+\fi
 \usepackage[style=apa]{biblatex}
-
+\ExecuteBibliographyOptions{useprefix=true}
 \addbibresource{thesis.bib}
 \addbibresource{r-packages.bib}
 \usepackage{longtable,booktabs}
@@ -85,7 +94,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{26 July, 2019}
+    \date{29 July, 2019}
 
 \usepackage{caption}
 \usepackage[pass]{geometry} % load the package, but none of the default settings
@@ -220,6 +229,25 @@
   \printtext[textcitehyperref]{%
     \restorebibmacro{textcite}%
     \usebibmacro{textcite}}}
+
+% Handle prefixes in surnames (e.g. "van", "de") correctly
+%https://tex.stackexchange.com/questions/440133/prefixes-in-author-names-in-references-and-bibliography
+\DeclareSortingNamekeyTemplate{
+  \keypart{
+    \namepart{family}
+  }
+  \keypart{
+    \namepart{prefix}
+  }
+  \keypart{
+    \namepart{given}
+  }
+  \keypart{
+    \namepart{suffix}
+  }
+}
+
+\renewbibmacro{begentry}{\midsentence}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -374,7 +402,7 @@ Of myself forever reproaching myself, (for who more foolish than \\> I, and who 
 \dotrule{\versewidth} \\
 Of the poor results of all, of the plodding and sordid crowds I \\> see around me, \\
 Of the empty and useless years of the rest, with the rest me inter- \\> twined, \\
-The question, O me ! so sad, recurring--- What good amid these, \\> O me, O life? \\
+The question, O me ! so sad, recurring---What good amid these, \\> O me, O life? \\
 \vinphantom{The question, O me ! so sad, } \textbf{\textit{\footnotesize Answer.}} \\
 \dotrule{\versewidth} \\
 That the powerful play goes on, and you may contribute a verse.\\
@@ -2748,7 +2776,7 @@ We therefore performed a conceptual replication of \textcite{Kanai2012} (see the
 \hypertarget{participants}{%
 \subsection{Participants}\label{participants}}
 
-31 participants took part in the study; data from 26 participants (14 female, mean age = 25.9, range = 21--34, \emph{SD} = 3.42) were included in the analyses (see \protect\hyperlink{participant-and-saccade-exclusion}{Participant and saccade exclusion} in the \protect\hyperlink{sacc_tDCS-results}{Results} section). The experiment and recruitment took place at the University of Amsterdam; all procedures for this study were approved by the ethics committee of the Department of Psychology, and complied to relevant laws and institutional guidelines. Participation was precluded in case screening with a tDCS safety questionnaire revealed potential issues, including (a history of) neurological, psychiatric or skin conditions. All participants gave written informed consent and were compensated with course credit or money (€10 per hour).
+31 participants took part in the study; data from 26 participants (14 female, mean age = 25.9, range = 21--34, \emph{SD} = 3.42) were included in the analyses (see ``\protect\hyperlink{participant-and-saccade-exclusion}{Participant and saccade exclusion}'' in the \protect\hyperlink{sacc_tDCS-results}{Results} section). The experiment and recruitment took place at the University of Amsterdam; all procedures for this study were approved by the ethics committee of the Department of Psychology, and complied to relevant laws and institutional guidelines. Participation was precluded in case screening with a tDCS safety questionnaire revealed potential issues, including (a history of) neurological, psychiatric or skin conditions. All participants gave written informed consent and were compensated with course credit or money (€10 per hour).
 
 \hypertarget{procedure}{%
 \subsection{Procedure}\label{procedure}}
@@ -2855,7 +2883,7 @@ Still, with 3 factors in the design, this analysis produces 19 Bayes factors, co
 \hypertarget{data-materials-and-code-availability}{%
 \subsection{Data, materials, and code availability}\label{data-materials-and-code-availability}}
 
-All code used for this study is available \href{https://doi.org/10.5281/zenodo.1410502}{on GitHub}, including R notebooks \autocites{Xie2015}{Xie2016} that demonstrate how to reproduce all the results, figures and statistics from the data. The eye tracking, questionnaire and meta-data can be downloaded from a figshare repository \autocite{Reteig2018}. All of these and additional resources can be found on this study's page \href{https://doi.org/10.17605/OSF.IO/8JPV9}{on the Open Science Framework}.
+All code used for this study is available \href{https://doi.org/10.5281/zenodo.1410502}{on GitHub}, including R notebooks \autocite{R-knitr} that demonstrate how to reproduce all the results, figures and statistics from the data. The eye tracking, questionnaire and meta-data can be downloaded from a figshare repository \autocite{Reteig2018}. All of these and additional resources can be found on this study's page \href{https://doi.org/10.17605/OSF.IO/8JPV9}{on the Open Science Framework}.
 
 \hypertarget{sacc_tDCS-results}{%
 \section{Results}\label{sacc_tDCS-results}}
@@ -3228,7 +3256,7 @@ London and Slagter's \autocite*{London2015} findings mesh well with earlier lite
 
 To foreshadow our results, like \textcite{London2015}, we do not find a group effect of tDCS on the AB. However, the correlation between the effects of anodal and cathodal tDCS was also not significant. Although this indicates that the two studies may differ, a failure to reject the null hypothesis by itself does not tell us much \autocite{Harms2018}: it is crucial to also take measures of the uncertainty and effect size in both studies into account \autocite{Simonsohn2015}.
 
-Therefore, we employ a number of statistical methods to maximize the evidential value in these two studies. We ask three questions that all aim to evaluate to what extent the present study is a successful replication of \textcites{London2015}{Zwaan2018}[cf.][]{Camerer2018}{OSC2015}. First, while the effect in our study was not significant, there might still be a meaningful effect that is simply smaller than anticipated. Therefore, we used equivalence testing \autocite{Lakens2018} to answer the question ``\emph{is the correlation in study 2 significantly small?}''. Second, although our result differs from \textcite{London2015}, it could still be more consistent with their findings than with alternative explanations. So in addition, we asked ``\emph{are the correlations consistent across studies 1 and 2?}'', and aimed to answer this question using prediction intervals \autocites{Spence2016}{Patil2016} and replication Bayes factors \autocites{Wagenmakers2016}{Verhagen2014}. Finally, it could be that the effect in our study alone is not sufficiently large, but the overall effect based on both studies is. This raises the question ``\emph{is the effect significant when combining study 1 and 2?}'', which we addressed through meta-analysis \autocites{Quintana2015}{Goh2016} and by pooling the data.
+Therefore, we employ a number of statistical methods to maximize the evidential value in these two studies. We ask three questions that all aim to evaluate to what extent the present study is a successful replication \autocites{Zwaan2018}[cf.][]{Camerer2018}{OSC2015} of \textcite{London2015}. First, while the effect in our study was not significant, there might still be a meaningful effect that is simply smaller than anticipated. Therefore, we used equivalence testing \autocite{Lakens2018} to answer the question ``\emph{is the correlation in study 2 significantly small?}''. Second, although our result differs from \textcite{London2015}, it could still be more consistent with their findings than with alternative explanations. So in addition, we asked ``\emph{are the correlations consistent across studies 1 and 2?}'', and aimed to answer this question using prediction intervals \autocites{Spence2016}{Patil2016} and replication Bayes factors \autocites{Wagenmakers2016}{Verhagen2014}. Finally, it could be that the effect in our study alone is not sufficiently large, but the overall effect based on both studies is. This raises the question ``\emph{is the effect significant when combining study 1 and 2?}'', which we addressed through meta-analysis \autocites{Quintana2015}{Goh2016} and by pooling the data.
 
 These questions address issues of reproducibility that are currently faced by many in the brain stimulation field \autocite{Heroux2017}, and in the cognitive neuroscience community at large \autocites{Munafo2017}{Huber2019}. Therefore, aside from our focus on tDCS and the AB, an auxiliary goal of this chapter is to provide a tutorial on the statistical evaluation of replication studies. We hope this may prove useful to other researchers who find themselves in similar situations.
 
@@ -3312,7 +3340,7 @@ We reproduced the analysis behind Figure 4 of \textcite{London2015}, which showe
 \hypertarget{AB_tDCS-rep-analyses}{%
 \subsubsection{Replication analyses}\label{AB_tDCS-rep-analyses}}
 
-In contrast to \textcite{London2015}, the analysis described in the previous section did not produce a significant correlation in our dataset. Therefore, we conducted five follow-up analyses that aim to quantify to what extent our results (do not) replicate \textcite{London2015}. These all provide a complementary perspective on this question. First, we performed an \protect\hyperlink{eq}{equivalence test} (1) to assess whether the effect in the present study was significantly smaller than in \textcite{London2015}. While this procedure is more focused on hypothesis testing, we also constructed \protect\hyperlink{pi}{prediction intervals} (2) to capture the range of effect sizes we can expect in a replication of \textcite{London2015}. Both of these procedures are based on frequentist statistics, which cannot directly quantify the amount of evidence for a (null) hypothesis. Therefore, we also computed a \protect\hyperlink{repBF}{replication Bayes factor} that expresses whether the data in the present study are more likely under the null hypothesis that the effect is absent, vs.~the alternative hypothesis that the effect is comparable to \textcite{London2015}. Finally, we directly combined both studies and estimated the size of the overall effect, through \protect\hyperlink{meta}{meta-analysis} (4) of both correlations, and by computing a new correlation on the \protect\hyperlink{pool}{pooled dataset} (5). More details on each analysis can be found in the following sections, and the provided online resources.
+In contrast to \textcite{London2015}, the analysis described in the previous section did not produce a significant correlation in our dataset. Therefore, we conducted five follow-up analyses that aim to quantify to what extent our results (do not) replicate \textcite{London2015}. These all provide a complementary perspective on this question. First, we performed an \protect\hyperlink{eq}{equivalence test} (1) to assess whether the effect in the present study was significantly smaller than in \textcite{London2015}. While this procedure is more focused on hypothesis testing, we also constructed \protect\hyperlink{pi}{prediction intervals} (2) to capture the range of effect sizes we can expect in a replication of \textcite{London2015}. Both of these procedures are based on frequentist statistics, which cannot directly quantify the amount of evidence for a (null) hypothesis. Therefore, we also computed a \protect\hyperlink{repBF}{replication Bayes factor} (3) that expresses whether the data in the present study are more likely under the null hypothesis that the effect is absent, vs.~the alternative hypothesis that the effect is comparable to \textcite{London2015}. Finally, we directly combined both studies and estimated the size of the overall effect, through \protect\hyperlink{meta}{meta-analysis} (4) of both correlations, and by computing a new correlation on the \protect\hyperlink{pool}{pooled dataset} (5). More details on each analysis can be found in the following sections, and the provided online resources.
 
 \hypertarget{eq}{%
 \paragraph{Equivalence tests}\label{eq}}
@@ -3545,7 +3573,7 @@ We conducted a replication study, and again found no effect of tDCS at the group
 
 The overall picture is consistent: all measures indicate that the present study is not a successful replication of \textcite{London2015}. But because both studies were similar in design and sample size, it is not warranted to dismiss the findings of \textcite{London2015}. Our analysis revealed substantial variation between both estimates of the effect, and so the conclusion whether tDCS is effective should not be based on any single study.
 
-Still, the marked difference in results of both studies is surprising: they are similar enough that the present study could be considered a direct replication of \textcites{London2015}{Zwaan2018}. We used the exact same electrode montage and tDCS parameters, followed the same experimental design (Figure \ref{fig:AB-tDCS-fig-procedure}), ran the experiment in the same location with the same participant population, and used a virtually identical task. Nevertheless, there are some discrepancies between the studies that could have contributed to the different outcome.
+Still, the marked difference in results of both studies is surprising: they are similar enough that the present study could be considered a direct replication \autocite{Zwaan2018} of \textcite{London2015}. We used the exact same electrode montage and tDCS parameters, followed the same experimental design (Figure \ref{fig:AB-tDCS-fig-procedure}), ran the experiment in the same location with the same participant population, and used a virtually identical task. Nevertheless, there are some discrepancies between the studies that could have contributed to the different outcome.
 
 The most important difference is that \textcite{London2015} presented T2 at lags 2, 4, and 10, whereas we used lags 3 and 8. This means that AB magnitude (the difference in T2\textbar{}T1 accuracy between the shortest and longest lag) was on average smaller in the present study. We introduced the change for precisely this reason: to have about as many trials for the EEG analyses in which T2 was seen vs.~missed, we needed the AB to be smaller. But this increase in average T2\textbar{}T1 accuracy may have also reduced the between-subject variability that is essential for analyses that capitalize on individual differences. Indeed, from Figure \ref{fig:fig-corr-pooled} it seems that the sample in \textcite{London2015} had a larger spread, at least in the change scores for AB magnitude.
 
@@ -3553,7 +3581,7 @@ Though the change in lags is probably the most important, the concurrent EEG mea
 
 At the group level, our results are in agreement with \textcite{London2015}: we find no differential effects of anodal and cathodal tDCS on the AB. This strongly suggests that the AB is not amenable to tDCS over the lDPLFC, at least with our fairly standard electrode montage and stimulation parameters \autocite{Santarnecchi2015}. These null results are consistent with recent reviews and meta-analyses highlighting there is little evidence that prefrontal tDCS can be used to enhance cognition \autocite{Medina2017}; or if so, that its effects are difficult to predict \autocite{Tremblay2014a}, rather small \autocite{Dedoncker2016a}, and restricted to a limited subset of outcome measures and stimulation parameters \autocite{Imburgio2018}.
 
-Interpreting null results is always difficult, especially in brain stimulation studies \autocite{DeGraaf2018}. Ultimately, a myriad of possible underlying explanations may apply, most of which we have no direct access to. For one, we cannot be sure that the current density in the lDLPFC reached sufficient levels \autocites{Kim2014}{Opitz2015} based on our montage alone. More precise targeting of the stimulation towards the lDPLFC \autocite{Datta2009} and modeling of the current flow \autocites{DeBerker2013}{Karabanov2019} could provide some more confidence. Still, it would be difficult to verify that anodal tDCS and cathodal tDCS indeed had an opposite effect on cortical excitability \autocites{Bestmann2014}{Bestmann2017}. This assumption holds in many cases, and would provide a plausible explanation for the negative correlation in \textcites{London2015}{Krause2014}. But ideally, it should be validated with direct measures of cortical excitability. Such measures are hard to obtain, although some recent studies suggest that combining tDCS with magnetic resonance spectroscopy can be used for this purpose \autocites{Filmer2019}{Antonenko2019}{Talsma2018}.
+Interpreting null results is always difficult, especially in brain stimulation studies \autocite{DeGraaf2018}. Ultimately, a myriad of possible underlying explanations may apply, most of which we have no direct access to. For one, we cannot be sure that the current density in the lDLPFC reached sufficient levels \autocites{Kim2014}{Opitz2015} based on our montage alone. More precise targeting of the stimulation towards the lDPLFC \autocite{Datta2009} and modeling of the current flow \autocites{DeBerker2013}{Karabanov2019} could provide some more confidence. Still, it would be difficult to verify that anodal tDCS and cathodal tDCS indeed had an opposite effect on cortical excitability \autocites{Bestmann2014}{Bestmann2017}. This assumption holds in many cases, and would provide a plausible explanation \autocite{Krause2014} for the negative correlation in \textcite{London2015}. But ideally, it should be validated with direct measures of cortical excitability. Such measures are hard to obtain, although some recent studies suggest that combining tDCS with magnetic resonance spectroscopy can be used for this purpose \autocites{Filmer2019}{Antonenko2019}{Talsma2018}.
 
 It is also possible that we do not find an effect because the studies did not have sufficient statistical power \autocite{Minarik2016}. Especially for the individual differences analyses, the sample size in both studies is on the lower end. For example, to detect a medium-sized correlation (\emph{r} = 0.3) with 80\% power, the required sample size is n = 84. We do approach this sample size when combining both studies (n = 74). Also, the correlation in \textcite{London2015} was larger (\emph{r} = -0.45), but we cannot have much confidence in the precision of this estimate. To estimate the size of a medium correlation (\emph{r} = 0.3) within ± 0.15 with 90\% confidence, a sample size of n = 134 would be required \autocite{Schonbrodt2013}. Although our analyses suggest that the correlation is small if anything, this means we cannot accurately estimate how small---even with the combined sample.
 
@@ -3755,7 +3783,7 @@ In contrast to AB magnitude, sEBR (Figure \ref{fig:fig-retest}C), did not differ
 
 \noindent before. Participants that had done so exhibited a greatly reduced median sEBR in both sessions (6.3 in session 1; 4.1 in session 2). Because these were only 6 cases in an already small sample, we are unsure whether this finding is robust, but it is a cautionary note to others aiming to measure sEBR using (a full setup of) EEG electrodes. Because smoking has been reported to increase sEBR \autocite{Klein1993}, we also asked whether participants self-identified as a smoker (n = 5). These individuals were not clear outliers in the distribution, neither were those wearing contact lenses (n = 4), which also generally should increase blink rate.
 
-Most importantly, the test-retest reliability for sEBR was ``good'' \autocite{Koo2016}, indicated by an intraclass correlation of .85 CI\textsubscript{95\%} {[}.73, .92{]}. The Pearson correlation was \emph{r}(38) = .84, CI\textsubscript{95\%} {[}.72, .91{]} \autocite[cf.][]{Dang2017}; Cronbach's alpha was .91 CI\textsubscript{95\%} {[}.84, .95{]} \autocite[cf.][]{Kruis2016}.
+Most importantly, the test-retest reliability for sEBR was ``good'' \autocite{Koo2016}, indicated by an intraclass correlation of .85 CI\textsubscript{95\%} {[}.73, .92{]}. The Pearson correlation was \emph{r}(38) = .84, CI\textsubscript{95\%} {[}.72, .91{]} \autocite[cf.][]{Dang2017}; Cronbach's alpha was .91, CI\textsubscript{95\%} {[}.84, .95{]} \autocite[cf.][]{Kruis2016}.
 
 One participant's sEBR in session 2 seems remarkably high (57 blinks per minute), and is quite a bit higher in session 2 than in session 1 (difference of 12). However, we confirmed this was not a data quality issue, and rerunning the analyses without this participant did not qualitatively change the results in the subsequent sections. Hence, this participant was included in all analyses.
 
@@ -4121,12 +4149,12 @@ In an additional post hoc analysis, we quantified the relationship over time bet
 
 Finally, to examine changes in preparatory attentional orienting, we extracted the average pre-stimulus (-1000 to -100 ms) power lateralization index values in the alpha range (9--14 Hz), again from the left PO and right PO electrode pools, and subjected these to 1x8 (Block) (correct rejections) and 4 (Block) x 2 (Condition: hits vs.~misses) repeated measures ANOVAs.
 
-All statistical analyses were conducted using several R \autocite{R2017} packages \autocites{R-ez}{R-BayesFactor}{R-nlme}{R-broom}{R-tidyverse} from within RStudio \autocite{RStudio2016}. Effect sizes are reported as (partial) eta-squared (\(\eta^{2}_{p}\)) or Cohen's \emph{d}. \(\alpha\) was fixed at 0.05. In case Mauchly's test for violations of sphericity was significant, we report Greenhouse-Geisser corrected p-values and degrees of freedom.
+All statistical analyses were conducted using several R \autocite{R-base} packages \autocites{R-ez}{R-BayesFactor}{R-nlme}{R-broom}{R-tidyverse} from within RStudio \autocite{RStudio2016}. Effect sizes are reported as (partial) eta-squared (\(\eta^{2}_{p}\)) or Cohen's \emph{d}. \(\alpha\) was fixed at 0.05. In case Mauchly's test for violations of sphericity was significant, we report Greenhouse-Geisser corrected p-values and degrees of freedom.
 
 \hypertarget{data-materials-and-code-availability-3}{%
 \subsection{Data, materials, and code availability}\label{data-materials-and-code-availability-3}}
 
-The data, materials, and analysis code can be obtained from this study's page on the \href{https://doi.org/10.17605/OSF.IO/EMF9H}{Open Science Framework}, including: The raw behavioral data, as well as the raw and preprocessed EEG data \autocite{Reteig2018a}; An R notebook \autocites{Xie2015}{R-knitr} that reproduces all of the statistical results in this publication; MATLAB scripts that reproduce all the figures in this publication; MATLAB code to compute the EEG measures from the preprocessed EEG data and extract the data for statistics.
+The data, materials, and analysis code can be obtained from this study's page on the \href{https://doi.org/10.17605/OSF.IO/EMF9H}{Open Science Framework}, including: The raw behavioral data, as well as the raw and preprocessed EEG data \autocite{Reteig2018a}; An R notebook \autocite{R-knitr} that reproduces all of the statistical results in this publication; MATLAB scripts that reproduce all the figures in this publication; MATLAB code to compute the EEG measures from the preprocessed EEG data and extract the data for statistics.
 
 \hypertarget{MFBrain-results}{%
 \section{Results}\label{MFBrain-results}}
@@ -4821,8 +4849,19 @@ Slagter, H. A., Mazaheri, A., \textbf{Reteig, L. C.}, Smolders, R., Figee, M., M
 
 Slagter, H. A., Prinssen, S., \textbf{Reteig, L. C.}, \& Mazaheri, A. (2016). Facilitation and inhibition in attention: Functional dissociation of pre-stimulus alpha activity, P1, and N1 components. \emph{NeuroImage, 125}, 25--35. \url{https://doi.org/10.1016/j.neuroimage.2015.09.058}
 
+\normalsize
+\setlength{\parindent}{1.5em}
+
 \hypertarget{nederlandse-samenvatting-summary-in-dutch}{%
 \chapter{Nederlandse samenvatting (Summary in Dutch)}\label{nederlandse-samenvatting-summary-in-dutch}}
+
+\begin{dutch}
+
+Dit is Nederlands!
+
+\end{dutch}
+
+More text in English. \textdutch{Maar dit is weer Nederlands.}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc laoreet laoreet augue quis vulputate. Donec cursus luctus nisl, a fringilla enim gravida ut. Pellentesque dolor nisi, faucibus et eros sit amet, eleifend tempor ipsum. Morbi placerat dapibus elementum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc tincidunt semper libero, non lacinia magna placerat sit amet. Phasellus diam tellus, vehicula non mattis eu, blandit ac nunc. Donec sed tristique lorem, eget vulputate ipsum. Aenean condimentum est vel sapien maximus, auctor tristique metus fringilla. Suspendisse non faucibus est. Mauris at gravida ligula.
 
@@ -4853,7 +4892,7 @@ Duis eget tortor eget arcu egestas interdum. Donec a libero quis mi porta bibend
 Cras non pretium purus. Fusce convallis mattis arcu non auctor. Quisque vulputate tincidunt vulputate. Etiam commodo tortor sit amet nisl pretium, ut facilisis velit tristique. Curabitur dolor massa, pharetra pretium ex vel, tristique maximus justo. Mauris quis mauris enim. Donec sed eros risus. Etiam tellus neque, viverra sit amet mollis et, porttitor nec nunc. Aliquam eu libero tincidunt, volutpat diam a, tincidunt ex. Sed quis nibh volutpat.
 
 \hypertarget{dankwoord-acknowledgments}{%
-\chapter{Dankwoord (acknowledgments)}\label{dankwoord-acknowledgments}}
+\chapter{Dankwoord (Acknowledgments)}\label{dankwoord-acknowledgments}}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus erat dolor, vulputate sed dapibus eget, facilisis vel sapien. Suspendisse sed velit bibendum, egestas elit quis, aliquet diam. Fusce eget lacus ut nunc euismod fringilla. Vivamus eget erat ac ipsum sagittis rhoncus. Sed vel est at tortor accumsan bibendum et et lacus. Mauris commodo, turpis eget consequat posuere, nulla augue ultrices risus, eu rutrum ante diam vitae diam. In laoreet sed neque eu pellentesque. Nullam id ipsum ac tortor venenatis faucibus sit amet eget eros. Praesent id enim quam. Duis eleifend nisi odio.
 

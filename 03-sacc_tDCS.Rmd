@@ -153,7 +153,7 @@ Still, with 3 factors in the design, this analysis produces 19 Bayes factors, co
 
 ### Data, materials, and code availability
 
-All code used for this study is available [on GitHub](https://doi.org/10.5281/zenodo.1410502), including R notebooks [@Xie2015; @Xie2016] that demonstrate how to reproduce all the results, figures and statistics from the data. The eye tracking, questionnaire and meta-data can be downloaded from a figshare repository [@Reteig2018]. All of these and additional resources can be found on this study’s page [on the Open Science Framework](https://doi.org/10.17605/OSF.IO/8JPV9).
+All code used for this study is available [on GitHub](https://doi.org/10.5281/zenodo.1410502), including R notebooks [@R-knitr] that demonstrate how to reproduce all the results, figures and statistics from the data. The eye tracking, questionnaire and meta-data can be downloaded from a figshare repository [@Reteig2018]. All of these and additional resources can be found on this study’s page [on the Open Science Framework](https://doi.org/10.17605/OSF.IO/8JPV9).
 
 ## Results {#sacc_tDCS-results}
 

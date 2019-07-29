@@ -141,11 +141,11 @@ In an additional post hoc analysis, we quantified the relationship over time bet
 
 Finally, to examine changes in preparatory attentional orienting, we extracted the average pre-stimulus (-1000 to -100 ms) power lateralization index values in the alpha range (9--14 Hz), again from the left PO and right PO electrode pools, and subjected these to 1x8  (Block) (correct rejections) and 4 (Block) x 2 (Condition: hits vs. misses) repeated measures ANOVAs.
 
-All statistical analyses were conducted using several R [@R2017] packages [@R-ez; @R-BayesFactor; @R-nlme; @R-broom; @R-tidyverse] from within RStudio [@RStudio2016]. Effect sizes are reported as (partial) eta-squared ($\eta^{2}_{p}$) or Cohen’s _d_. $\alpha$ was fixed at 0.05. In case Mauchly's test for violations of sphericity was significant, we report Greenhouse-Geisser corrected p-values and degrees of freedom.
+All statistical analyses were conducted using several R [@R-base] packages [@R-ez; @R-BayesFactor; @R-nlme; @R-broom; @R-tidyverse] from within RStudio [@RStudio2016]. Effect sizes are reported as (partial) eta-squared ($\eta^{2}_{p}$) or Cohen’s _d_. $\alpha$ was fixed at 0.05. In case Mauchly's test for violations of sphericity was significant, we report Greenhouse-Geisser corrected p-values and degrees of freedom.
 
 ### Data, materials, and code availability
 
-The data, materials, and analysis code can be obtained from this study’s page on the [Open Science Framework](https://doi.org/10.17605/OSF.IO/EMF9H), including: The raw behavioral data, as well as the raw and preprocessed EEG data [@Reteig2018a]; An R notebook [@Xie2015; @R-knitr] that reproduces all of the statistical results in this publication; MATLAB scripts that reproduce all the figures in this publication; MATLAB code to compute the EEG measures from the preprocessed EEG data and extract the data for statistics.
+The data, materials, and analysis code can be obtained from this study’s page on the [Open Science Framework](https://doi.org/10.17605/OSF.IO/EMF9H), including: The raw behavioral data, as well as the raw and preprocessed EEG data [@Reteig2018a]; An R notebook [@R-knitr] that reproduces all of the statistical results in this publication; MATLAB scripts that reproduce all the figures in this publication; MATLAB code to compute the EEG measures from the preprocessed EEG data and extract the data for statistics.
 
 ## Results {#MFBrain-results}
 

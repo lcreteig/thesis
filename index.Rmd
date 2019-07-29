@@ -11,7 +11,7 @@ fontsize: 11pt
 indent: true
 site: bookdown::bookdown_site
 biblio-style: "apa"
-#biblatexoptions: [backend=biber]
+biblatexoptions: "useprefix=true"
 link-citations: yes
 citecolor: gray
 nocite: |
