@@ -9,7 +9,6 @@ bookdown::gitbook:
         <li><a href="./">PhD thesis of Leon Reteig</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    download: ["pdf", "epub"]
 bookdown::pdf_book:
   toc: false
   includes:
@@ -18,5 +17,3 @@ bookdown::pdf_book:
   latex_engine: xelatex
   citation_package: biblatex
   keep_tex: yes
-bookdown::epub_book:
-  pandoc_args: [ "--csl", "apa.csl" ]
