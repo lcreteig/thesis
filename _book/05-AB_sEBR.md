@@ -44,7 +44,10 @@ Furthermore, two recent studies suggest that both tDCS and dopamine levels inter
 
 In the present study, we aimed to shed more light on the relation between dopamine and the AB, as well as the modulatory role that dopamine might play in the effects of tDCS on the AB. Following @London2015, participants performed an AB task before, during, and after anodal or cathodal tDCS to the lDLPFC, in two separate sessions. At the start of each session, we measured sEBR as a proxy for baseline dopamine levels. First, we investigated whether sEBR is a reliable measure, as there is little data on the test-retest reliability of sEBR [@Jongkees2016]. Our study design with two sEBR-measurements per individual is uniquely suited to help fill this gap. Second, we examined how sEBR relates to AB magnitude. One study found a significant negative correlation [@Colzato2008], but this was not replicated in a second study [@Slagter2013]. Furthermore, both of these studies only tested for a linear relationship, although there is mounting evidence that the relationship between dopamine and cognitive performance is Inverted-U-shaped [@Cools2011]. Third, we assessed whether the effects of tDCS on AB magnitude depend on sEBR. Following the model in Figure \@ref(fig:AB-sEBR-fig-model) [@Krause2013; @London2015; @Wiegand2016], anodal tDCS should increase performance (i.e., decrease AB magnitude) in low dopamine (i.e., low sEBR) individuals, but decrease performance in high dopamine individuals, and vice versa for cathodal tDCS.
 
-![(\#fig:AB-sEBR-fig-model)(ref:caption-AB-sEBR-fig-model)](AB_sEBR_files/figures/figure_1_model.pdf) 
+<div class="figure">
+<img src="AB_sEBR_files/figures/figure_1_model.png" alt="(ref:caption-AB-sEBR-fig-model)" width="828" />
+<p class="caption">(\#fig:AB-sEBR-fig-model)(ref:caption-AB-sEBR-fig-model)</p>
+</div>
 
 (ref:caption-AB-sEBR-fig-model) __Model where AB task performance is dependent on cortical excitability [left, @London2015] and dopamine levels [right, @Wiegand2016]__. Whether anodal (red arrows) or cathodal (blue arrows) tDCS improves performance depends on the baseline starting point on these axes, as shown in two example cases. First, an individual with relatively low levels of dopamine / cortical excitability (diamond shape) should benefit from anodal tDCS (as they move closer to the optimum), whereas cathodal tDCS would be detrimental (as they are pushed further away from the optimum). Reversely, an individual with high levels of dopamine / cortical excitability (square shape) would benefit from cathodal but not anodal tDCS.
 
@@ -70,7 +73,10 @@ First, participants experienced the sensations induced by tDCS in a brief trial 
 
 Within each block of the task, participants took a self-timed break every 50 trials (~5 minutes); between the blocks, the experimenter walked in. Participants performed the task for exactly 20 minutes during the _baseline_ and _post_ blocks. During the _tDCS_ block, the task started after the 1-minute ramp-up of the current was complete, and continued for 21 minutes (constant current, plus 1-minute of ramp-down).
 
-![(\#fig:AB-sEBR-fig-procedure)(ref:caption-AB-sEBR-fig-procedure)](AB_sEBR_files/figures/figure_2_procedure.pdf) 
+<div class="figure">
+<img src="AB_sEBR_files/figures/figure_2_procedure.png" alt="(ref:caption-AB-sEBR-fig-procedure)" width="532" />
+<p class="caption">(\#fig:AB-sEBR-fig-procedure)(ref:caption-AB-sEBR-fig-procedure)</p>
+</div>
 
 (ref:caption-AB-sEBR-fig-procedure) __Experimental design__. Spontaneous eye blink rate was measured for 6 minutes prior to the start of the task. Then (following a short practice block), participants performed three 20-minute blocks of the attentional blink task: a _baseline_ block without stimulation, a _tDCS_ block during 20 minutes of anodal (red) or cathodal (blue) stimulation, and finally a _post_-test block (also without stimulation). The second session (typically 7 days later at the same time of day) was identical, except that the tDCS polarity was reversed.
 
@@ -82,7 +88,10 @@ The letter stream was preceded by a fixation cross (same color as the letters) p
 
 Trial duration varied slightly because both the T1 and T2 response questions were self-paced, so some participants completed more trials than others depending on their response times. On average, participants completed 130 short lag trials (_SD_ = 17; range = 78--163) and 65 long lag trials (_SD_ = 9; range = 39--87) per 20-minute block.
 
-![(\#fig:AB-sEBR-fig-task)(ref:caption-AB-sEBR-fig-task)](AB_sEBR_files/figures/figure_3_task.pdf) 
+<div class="figure">
+<img src="AB_sEBR_files/figures/figure_3_task.png" alt="(ref:caption-AB-sEBR-fig-task)" width="532" />
+<p class="caption">(\#fig:AB-sEBR-fig-task)(ref:caption-AB-sEBR-fig-task)</p>
+</div>
 
 (ref:caption-AB-sEBR-fig-task) __Attentional blink task__. Participants viewed rapid serial visual presentation streams of 15 letters, all of which were distractors (gray letters) except for T1 and T2. T1 was presented in red at position 5; T2 was presented in green and followed T1 after 2 distractors (_lag 3_, inside the AB window) or 7 distractors (_lag 8_, outside the AB window). At the end of the trial, participants reported the identity of T1 and then T2 (self-paced).
 
@@ -164,9 +173,10 @@ In contrast to AB magnitude, sEBR (Figure \@ref(fig:fig-retest)C), did not diffe
 \blandscape
 \captionsetup{width=\linewidth}
 
-\begin{figure}
-\includegraphics[width=180mm]{AB_sEBR_files/figures/figure_4_retest} \caption{(ref:caption-fig-retest)}(\#fig:fig-retest)
-\end{figure}
+<div class="figure">
+<img src="AB_sEBR_files/figures/figure_4_retest.png" alt="(ref:caption-fig-retest)" width="180mm" />
+<p class="caption">(\#fig:fig-retest)(ref:caption-fig-retest)</p>
+</div>
 
 (ref:caption-fig-retest)  __Reliability of the attentional blink and spontaneous eye blink rate__. (__A__) All participants showed an attentional blink in both sessions: higher T2|T1 accuracy (% T2 correct in trials where T1 was also correct) for lag 8 (orange) than lag 3 (yellow). Horizontal lines show group-average T2|T1 accuracy. The attentional blink magnitude (lag 8 - lag 3) is slightly smaller in the second session (dotted lines) than the first session (solid lines), due to better lag 3 performance on average.  (__B__) AB magnitude for each participant in session 1 vs. 2. The intraclass correlation indicates moderate test-retest reliability, though the 95% confidence interval ranges all the way from poor to good. AB magnitude in (__A__) and (__B__) was calculated on the _baseline_ block only, before tDCS onset. (__C__) sEBR values for each participant in session 1 vs. 2. The intraclass correlation indicates that the test-retest reliability for sEBR is good.
 
@@ -178,13 +188,16 @@ In contrast to AB magnitude, sEBR (Figure \@ref(fig:fig-retest)C), did not diffe
 
 \noindent before. Participants that had done so exhibited a greatly reduced median sEBR in both sessions (6.3 in session 1; 4.1 in session 2). Because these were only 6 cases in an already small sample, we are unsure whether this finding is robust, but it is a cautionary note to others aiming to measure sEBR using (a full setup of) EEG electrodes. Because smoking has been reported to increase sEBR [@Klein1993], we also asked whether participants self-identified as a smoker (n = 5). These individuals were not clear outliers in the distribution, neither were those wearing contact lenses (n = 4), which also generally should increase blink rate.
 
-Most importantly, the test-retest reliability for sEBR was "good" [@Koo2016], indicated by an intraclass correlation of .85 CI~95%~ [.73, .92]. The Pearson correlation was _r_(38) = .84, CI~95%~ [.72, .91] [cf. @Dang2017]; Cronbach's alpha was .91 CI~95%~ [.84, .95] [cf. @Kruis2016]. 
+Most importantly, the test-retest reliability for sEBR was "good" [@Koo2016], indicated by an intraclass correlation of .85 CI~95%~ [.73, .92]. The Pearson correlation was _r_(38) = .84, CI~95%~ [.72, .91] [cf. @Dang2017]; Cronbach's alpha was .91, CI~95%~ [.84, .95] [cf. @Kruis2016]. 
 
 One participant's sEBR in session 2 seems remarkably high (57 blinks per minute), and is quite a bit higher in session 2 than in session 1 (difference of 12). However, we confirmed this was not a data quality issue, and rerunning the analyses without this participant did not qualitatively change the results in the subsequent sections. Hence, this participant was included in all analyses.
 
 ### Relation between sEBR and baseline AB magnitude {#AB_sEBR-ABmag}
 
-![(\#fig:fig-AB-corr)(ref:caption-fig-AB-corr)](AB_sEBR_files/figures/figure_5_AB-corr.pdf) 
+<div class="figure">
+<img src="AB_sEBR_files/figures/figure_5_AB-corr.png" alt="(ref:caption-fig-AB-corr)" width="511" />
+<p class="caption">(\#fig:fig-AB-corr)(ref:caption-fig-AB-corr)</p>
+</div>
 
 (ref:caption-fig-AB-corr) __No significant relationships between sEBR and AB magnitude in the block before tDCS onset__. Grey solid lines show a linear fit over all data points (individual participants), with no clear relationship in both sessions. Grey dashed lines show a cubic spline fit over all data points. Colored lines show two separate linear fits, delimited by the break point in the cubic spline, as estimated with the "two-lines test" [@Simonsohn2018]. Both the spline fit and the two linear slopes suggest an Inverted-U shaped relationship in session 1, but neither slope is significant, and this pattern is not present in session 2. 
 
@@ -196,74 +209,138 @@ We also probed for an Inverted-U-shaped relationship between sEBR and AB magnitu
 
 ### Relation between sEBR and the effect of tDCS on AB magnitude
 
-\begin{figure}
-\includegraphics[width=130mm]{AB_sEBR_files/figures/figure_6_tDCS-corr} \caption{(ref:caption-fig-tDCS-corr)}(\#fig:fig-tDCS-corr)
-\end{figure}
+<div class="figure">
+<img src="AB_sEBR_files/figures/figure_6_tDCS-corr.png" alt="(ref:caption-fig-tDCS-corr)" width="130mm" />
+<p class="caption">(\#fig:fig-tDCS-corr)(ref:caption-fig-tDCS-corr)</p>
+</div>
 
 (ref:caption-fig-tDCS-corr) __No significant relationships between sEBR and AB magnitude change scores.__ Each plot shows spontaneous eye blink rates on the x-axis, and the change in AB magnitude on the y-axis (difference scores of the _tDCS_ block - the _baseline_ block, or the _post_ block - _baseline_) in the _anodal_ and _cathodal_ stimulation conditions.
 
 Although there was no relationship between sEBR and AB magnitude itself, sEBR could potentially still be associated with tDCS-induced changes in AB magnitude. We therefore computed AB magnitude change scores (_tDCS - baseline_, _post - baseline_) in each stimulation condition (_anodal_, _cathodal_), and correlated these to sEBR. However, this analysis did not uncover any significant relationships (Figure \@ref(fig:fig-tDCS-corr) and columns 2--4 in Table \@ref(tab:corrco)). These change score correlations are ultimately based on a number of different variables: the within-session reliability of AB magnitude (Table \@ref(tab:ABmag)), the within-block variability in AB magnitude (Table \@ref(tab:corrco)), and, most importantly, the separate correlations between sEBR and AB magnitude in each block (Table \@ref(tab:ABmag)). None of the correlations in the baseline block differed significantly from the correlations in the subsequent blocks (columns 5--6 in Table \@ref(tab:corrco)), again suggesting there was no relationship between sEBR and AB magnitude change scores.
 
-\begin{table}[t]
-
-\caption{(\#tab:ABmag)Variability of attentional blink magnitude scores and correlation with sEBR, per stimulation condition and block.}
-\centering
-\fontsize{10}{12}\selectfont
-\begin{threeparttable}
-\begin{tabular}{>{\raggedright\arraybackslash}p{10em}rr}
-\toprule
-Block & $r$ sEBR\textsuperscript{a} & SD\textsuperscript{b}\\
-\midrule
-\addlinespace[0.3em]
-\multicolumn{3}{l}{\textbf{anodal session}}\\
-\hspace{1em}baseline & .04 & 0.140\\
-\hspace{1em}tDCS & .15 & 0.148\\
-\hspace{1em}post & .25 & 0.137\\
-\addlinespace[0.3em]
-\multicolumn{3}{l}{\textbf{cathodal session}}\\
-\hspace{1em}baseline & .05 & 0.136\\
-\hspace{1em}tDCS & -.05 & 0.128\\
-\hspace{1em}post & .09 & 0.120\\
-\bottomrule
-\end{tabular}
-\begin{tablenotes}
-\item[a] Pearson's correlation between AB magnitude and spontaneous eye blink rate
-\item[b] Standard deviation of AB magnitude
-\end{tablenotes}
-\end{threeparttable}
-\end{table}
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">(\#tab:ABmag)Variability of attentional blink magnitude scores and correlation with sEBR, per stimulation condition and block.</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Block </th>
+   <th style="text-align:right;"> $r$ sEBR<sup>a</sup> </th>
+   <th style="text-align:right;"> SD<sup>b</sup> </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr grouplength="3"><td colspan="3" style="border-bottom: 1px solid;"><strong>anodal session</strong></td></tr>
+<tr>
+   <td style="text-align:left; padding-left: 2em;width: 10em; " indentlevel="1"> baseline </td>
+   <td style="text-align:right;"> .04 </td>
+   <td style="text-align:right;"> 0.140 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;width: 10em; " indentlevel="1"> tDCS </td>
+   <td style="text-align:right;"> .15 </td>
+   <td style="text-align:right;"> 0.148 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;width: 10em; " indentlevel="1"> post </td>
+   <td style="text-align:right;"> .25 </td>
+   <td style="text-align:right;"> 0.137 </td>
+  </tr>
+  <tr grouplength="3"><td colspan="3" style="border-bottom: 1px solid;"><strong>cathodal session</strong></td></tr>
+<tr>
+   <td style="text-align:left; padding-left: 2em;width: 10em; " indentlevel="1"> baseline </td>
+   <td style="text-align:right;"> .05 </td>
+   <td style="text-align:right;"> 0.136 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;width: 10em; " indentlevel="1"> tDCS </td>
+   <td style="text-align:right;"> -.05 </td>
+   <td style="text-align:right;"> 0.128 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;width: 10em; " indentlevel="1"> post </td>
+   <td style="text-align:right;"> .09 </td>
+   <td style="text-align:right;"> 0.120 </td>
+  </tr>
+</tbody>
+<tfoot>
+<tr><td style="padding: 0; border: 0;" colspan="100%">
+<sup>a</sup> Pearson's correlation between AB magnitude and spontaneous eye blink rate</td></tr>
+<tr><td style="padding: 0; border: 0;" colspan="100%">
+<sup>b</sup> Standard deviation of AB magnitude</td></tr>
+</tfoot>
+</table>
 
 \begingroup
 
-\begin{table}[t]
-
-\caption{(\#tab:corrco)Attentional blink magnitude and spontaneous eye blink rate correlations.}
-\centering
-\fontsize{10}{12}\selectfont
-\begin{threeparttable}
-\begin{tabular}{lrrrrrr}
-\toprule
-\multicolumn{1}{c}{ } & \multicolumn{3}{c}{Correlation\textsuperscript{a}} & \multicolumn{2}{c}{\makecell[c]{Pearson-Filon\\test\textsuperscript{b}}} & \multicolumn{1}{c}{Reliability\textsuperscript{c}} \\
-\cmidrule(l{3pt}r{3pt}){2-4} \cmidrule(l{3pt}r{3pt}){5-6} \cmidrule(l{3pt}r{3pt}){7-7}
-contrast & $r$ & $p$ & $BF_{01}$ & $Z$ & $p$ & $r$\\
-\midrule
-\addlinespace[0.3em]
-\multicolumn{7}{l}{\textbf{anodal session}}\\
-\hspace{1em}tDCS - baseline & .21 & .199 & 1.37 & -1.27 & .204 & .84\\
-\hspace{1em}post - baseline & .24 & .133 & 1.05 & -1.59 & .111 & .63\\
-\addlinespace[0.3em]
-\multicolumn{7}{l}{\textbf{cathodal session}}\\
-\hspace{1em}tDCS - baseline & -.16 & .313 & 1.81 & 1.05 & .296 & .82\\
-\hspace{1em}post - baseline & .04 & .808 & 2.77 & -0.33 & .745 & .71\\
-\bottomrule
-\end{tabular}
-\begin{tablenotes}
-\item[a] Linear correlation (Pearson and Bayesian) between sEBR and AB magnitude change scores
-\item[b] Test for significant differences between the sEBR vs. AB magnitude correlations (reported in Table @ref(tab:ABmag)) in the baseline vs. tDCS or post blocks
-\item[c] Pearson correlation between AB magnitude scores in the baseline vs. tDCS or post blocks
-\end{tablenotes}
-\end{threeparttable}
-\end{table}
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">(\#tab:corrco)Attentional blink magnitude and spontaneous eye blink rate correlations.</caption>
+ <thead>
+<tr>
+<th style="border-bottom:hidden" colspan="1"></th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Correlation<sup>a</sup>
+</div></th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">\\makecell[c]{Pearson-Filon\\\\test<sup>b</sup>}</div></th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Reliability<sup>c</sup>
+</div></th>
+</tr>
+  <tr>
+   <th style="text-align:left;"> contrast </th>
+   <th style="text-align:right;"> $r$ </th>
+   <th style="text-align:right;"> $p$ </th>
+   <th style="text-align:right;"> $BF_{01}$ </th>
+   <th style="text-align:right;"> $Z$ </th>
+   <th style="text-align:right;"> $p$ </th>
+   <th style="text-align:right;"> $r$ </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr grouplength="2"><td colspan="7" style="border-bottom: 1px solid;"><strong>anodal session</strong></td></tr>
+<tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> tDCS - baseline </td>
+   <td style="text-align:right;"> .21 </td>
+   <td style="text-align:right;"> .199 </td>
+   <td style="text-align:right;"> 1.37 </td>
+   <td style="text-align:right;"> -1.27 </td>
+   <td style="text-align:right;"> .204 </td>
+   <td style="text-align:right;"> .84 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> post - baseline </td>
+   <td style="text-align:right;"> .24 </td>
+   <td style="text-align:right;"> .133 </td>
+   <td style="text-align:right;"> 1.05 </td>
+   <td style="text-align:right;"> -1.59 </td>
+   <td style="text-align:right;"> .111 </td>
+   <td style="text-align:right;"> .63 </td>
+  </tr>
+  <tr grouplength="2"><td colspan="7" style="border-bottom: 1px solid;"><strong>cathodal session</strong></td></tr>
+<tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> tDCS - baseline </td>
+   <td style="text-align:right;"> -.16 </td>
+   <td style="text-align:right;"> .313 </td>
+   <td style="text-align:right;"> 1.81 </td>
+   <td style="text-align:right;"> 1.05 </td>
+   <td style="text-align:right;"> .296 </td>
+   <td style="text-align:right;"> .82 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> post - baseline </td>
+   <td style="text-align:right;"> .04 </td>
+   <td style="text-align:right;"> .808 </td>
+   <td style="text-align:right;"> 2.77 </td>
+   <td style="text-align:right;"> -0.33 </td>
+   <td style="text-align:right;"> .745 </td>
+   <td style="text-align:right;"> .71 </td>
+  </tr>
+</tbody>
+<tfoot>
+<tr><td style="padding: 0; border: 0;" colspan="100%">
+<sup>a</sup> Linear correlation (Pearson and Bayesian) between sEBR and AB magnitude change scores</td></tr>
+<tr><td style="padding: 0; border: 0;" colspan="100%">
+<sup>b</sup> Test for significant differences between the sEBR vs. AB magnitude correlations (reported in Table \@ref(tab:ABmag)) in the baseline vs. tDCS or post blocks</td></tr>
+<tr><td style="padding: 0; border: 0;" colspan="100%">
+<sup>c</sup> Pearson correlation between AB magnitude scores in the baseline vs. tDCS or post blocks</td></tr>
+</tfoot>
+</table>
 
 \endgroup
 

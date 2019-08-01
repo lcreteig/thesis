@@ -8,3 +8,6 @@ van Schouwenburg, M. R., Sörensen, L. K. A., de Klerk, R., __Reteig, L. C.__, &
 Slagter, H. A., Mazaheri, A., __Reteig, L. C.__, Smolders, R., Figee, M., Mantione, M., … Denys, D. (2017). Contributions of the Ventral Striatum to Conscious Perception: An Intracranial EEG Study of the Attentional Blink. _Journal of Neuroscience, 37_, 1081--1089. <https://doi.org/10.1523/jneurosci.2282-16.2016>\newline
 
 Slagter, H. A., Prinssen, S., __Reteig, L. C.__, & Mazaheri, A. (2016). Facilitation and inhibition in attention: Functional dissociation of pre-stimulus alpha activity, P1, and N1 components. _NeuroImage, 125_, 25--35. <https://doi.org/10.1016/j.neuroimage.2015.09.058>
+
+\normalsize
+\setlength{\parindent}{1.5em}

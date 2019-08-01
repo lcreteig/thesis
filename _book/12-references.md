@@ -5,6 +5,8 @@
 \let\href\oldhref
 
 
+# Bibliography {-}
+
 <div id="refs"></div>
 
 \printbibliography
