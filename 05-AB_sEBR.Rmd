@@ -12,6 +12,16 @@ library(kableExtra) # complex tables
 
 knitr::opts_chunk$set(results = 'hide', echo = FALSE, message = FALSE, warning = FALSE)
 
+# create variable to resize figures depending on output
+if (knitr::is_latex_output()) {
+out_width <- "130mm" # for latex, this should be the max width
+out_width_h <- "180mm" # landscape figure
+} else {
+out_width <- NULL # for html, don't scale
+out_width_h <- NULL
+}
+
+
 # load data objects
 load("AB_sEBR_files/AB_sEBR.RData")
 ```
@@ -184,7 +194,7 @@ In contrast to AB magnitude, sEBR (Figure \@ref(fig:fig-retest)C), did not diffe
 \blandscape
 \captionsetup{width=\linewidth}
 
-```{r fig-retest, fig.cap='(ref:caption-fig-retest)', results='show', out.width="180mm"}
+```{r fig-retest, fig.cap='(ref:caption-fig-retest)', results='show', out.width = out_width_h}
 knitr::include_graphics("AB_sEBR_files/figures/figure_4_retest.png", auto_pdf = TRUE)
 ```
 
@@ -218,7 +228,7 @@ We also probed for an Inverted-U-shaped relationship between sEBR and AB magnitu
 
 ### Relation between sEBR and the effect of tDCS on AB magnitude
 
-```{r fig-tDCS-corr, fig.cap='(ref:caption-fig-tDCS-corr)', results='show', out.width="130mm"}
+```{r fig-tDCS-corr, fig.cap='(ref:caption-fig-tDCS-corr)', results='show', out.width = out_width}
 knitr::include_graphics("AB_sEBR_files/figures/figure_6_tDCS-corr.png", auto_pdf = TRUE)
 ```
 

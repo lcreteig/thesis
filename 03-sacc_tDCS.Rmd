@@ -5,6 +5,13 @@ library(pander)
 library(kableExtra)
 
 knitr::opts_chunk$set(results = 'hide', echo = FALSE, message = FALSE, warning = FALSE)
+
+# create variable to resize figures depending on output
+if (knitr::is_latex_output()) {
+out_width <- "130mm" # for latex, this should be the max width
+} else {
+out_width <- NULL # for html, don't scale
+}
 ```
 
 # (PART) Enhancing attentional performance with tDCS {- #part-tDCS} 
@@ -67,7 +74,7 @@ The study followed a randomized, double-blind, crossover design, in which subjec
 
 Neuronavigation was always performed at the start of the first session (see [Frontal eye field localization]), and was usually not repeated on the second session. Otherwise, the procedure for each session was identical. First, a brief trial stimulation allowed participants to experience the sensations induced by tDCS and to decide whether they wanted to continue with the experiment (see [tDCS](#sacc-methods-tDCS)). After setting up the eye tracker (see [Eye tracking]), participants practiced the prosaccade task (see [Task](#sacc-task)) for one block (120 trials). Subsequently, participants performed 12 blocks of the task in three phases (Figure \@ref(fig:sacc-tDCS-procedure)): 3 blocks prior to stimulation (_baseline_), 3 blocks during stimulation (anodal or cathodal tDCS), and 6 blocks after stimulation (_post-1_ and _post-2_). Each block lasted approximately 5 minutes.
 
-```{r sacc-tDCS-procedure, fig.cap='(ref:caption-figure-sacc-tDCS-procedure)', results='show', out.width="130mm"}
+```{r sacc-tDCS-procedure, fig.cap='(ref:caption-figure-sacc-tDCS-procedure)', results='show', out.width = out_width}
 knitr::include_graphics("sacc_tDCS_files/figures/figure_1_procedure.png", auto_pdf = TRUE)
 ```
 
@@ -165,8 +172,8 @@ Data from 26 participants were included in the analyses. 14 participants receive
 
 Figure \@ref(fig:FEF) shows the MNI coordinates of the presumed right frontal eye field. While there is some spread (see Table \@ref(tab:tab-sacc-tDCS-MNI) in Appendix \@ref(sacc-tDCS-supplement) for the coordinates of all participants), the average coordinate (31.5, -1.8, 51.6) matched the anatomical definition we used for the individual MRIs: slightly anterior to the pre-central sulcus and slightly lateral to the superior frontal sulcus. The average coordinate also lies close to the one used in @Kanai2012, which was taken from @Paus1996 (31.3, -4.5, 50.9).
 
-```{r FEF, fig.cap='(ref:caption-figure-FEF)', results='show', out.width='\\textwidth'}
-knitr::include_graphics("sacc_tDCS_files/figures/figure_3_FEF.png", dpi = 300)
+```{r FEF, fig.cap='(ref:caption-figure-FEF)', results='show', out.width = out_width}
+knitr::include_graphics("sacc_tDCS_files/figures/figure_3_FEF.png")
 ```
 
 (ref:caption-figure-FEF) __MNI coordinates of the right frontal eye field.__ Green/more vertical arrows indicate the superior frontal sulcus, purple/more horizontal arrows indicate the pre-central sulcus. __(A)__ Average MNI coordinate across participants. __(B)__ Coordinates for individual participants overlaid on a glass brain representation of the MNI template using Surf Ice software [@Rorden2017].
@@ -181,7 +188,7 @@ Anodal or cathodal tDCS also did not seem to affect lateral saccade latency in o
 
 Center saccade latency also appeared to be unaffected, as there was no statistical evidence for an interaction of Stimulation with Time Period and/or Saccade Direction (Table \@ref(tab:tab-latency)). Yet, there was very strong evidence for a main effect of Stimulation in the Bayesian ANOVA. Curiously, this effect was non-significant in the classical ANOVA. This divergence compelled us to delve into the single-subject data, which revealed that one participant showed an effect that was much larger than the other participants (a difference between anodal and cathodal of around 30 ms). When we reran the Bayesian ANOVA without this participant, the inclusion BF~10~ plummeted from 67.1 to 2.4. This participant may have induced a violation of certain assumptions for the Bayesian model, which caused it to behave differently than the classical ANOVA. Still, we decided to run follow-up one-sample tests with this participant included, which showed that latency did not significantly change from baseline for either anodal (_p_ = .33, BF~01~ = 3.11) or cathodal (_p_ = .41, BF~01~ = 3.52) tDCS. Thus, we conclude that our hypothesis that anodal tDCS would decrease median contralateral saccade latency is not supported, and that tDCS had no other effects on median saccade latency.
 
-```{r fig-latency, fig.cap='(ref:caption-figure-latency)', results='show', out.width="130mm"}
+```{r fig-latency, fig.cap='(ref:caption-figure-latency)', results='show', out.width = out_width}
 knitr::include_graphics("sacc_tDCS_files/figures/figure_4_latency.png", auto_pdf = TRUE)
 ```
 
@@ -241,7 +248,7 @@ Table: (\#tab:tab-latency) __Classical and Bayesian repeated measures ANOVA resu
 
 Because the hypothesized effect on median saccade latency was absent, we conducted an additional exploratory analysis (see [Quantile analysis] in the [Material and Methods](#sacc_tDCS-methods) section) by comparing the entire saccade latency distributions between the anodal and cathodal sessions (Figure \@ref(fig:quantiles)). Across the board, saccade latencies in the cathodal session were slightly faster than the anodal session, which is opposite to the hypothesized effect of tDCS on FEF excitability. For lateral saccades, the slowest saccades seem to show the biggest difference in latency between the sessions; for center saccades, differences were most pronounced in the fastest saccades. However, these differences were already present in the baseline block, and appear to be driven by a small number of participants. Overall, effects were never significant in the same direction in more than 12 (out of 26) participants.
 
-```{r quantiles, fig.cap='(ref:caption-figure-quantiles)', results='show', out.width="130mm"}
+```{r quantiles, fig.cap='(ref:caption-figure-quantiles)', results='show', out.width = out_width}
 knitr::include_graphics("sacc_tDCS_files/figures/figure_5_quantiles.png", auto_pdf = TRUE)
 ```
 
@@ -253,7 +260,7 @@ No significant effects of tDCS on saccade endpoint deviation were expected, as n
 
 However, this interpretation is muddled by a difference between anodal and cathodal in the baseline, so before tDCS onset (Figure \@ref(fig:fig-deviation)). For center saccades, the difference was in fact larger in the baseline than at any other time period (left: mean difference = -0.11°, 95% CI = -0.20° -- -0.01°, _p_ = .025; right: mean difference = -0.06°, 95% CI = -0.11° -- 0.00°, _p_ = .066). For example, during tDCS, this difference between anodal and cathodal had completely disappeared (left: _M_~anodal~ = 0.91° = _M_~cathodal~ = 0.91°; right: _M_~anodal~ = _M_~cathodal~ = 0.72°), as endpoint deviation in the anodal session increased from baseline, while it decreased in the cathodal session, thereby cancelling out the baseline difference. Thus, like in @Kanai2012, our results do not appear to support an effect of tDCS on saccade endpoint deviation.
 
-```{r fig-deviation, fig.cap='(ref:caption-figure-deviation)', results='show', out.width="130mm"}
+```{r fig-deviation, fig.cap='(ref:caption-figure-deviation)', results='show', out.width = out_width}
 knitr::include_graphics("sacc_tDCS_files/figures/figure_6_deviation.png", auto_pdf = TRUE)
 ```
 
@@ -285,7 +292,7 @@ Table: (\#tab:tab-deviation) __Classical and Bayesian repeated measures ANOVA re
 
 Like for saccade endpoint deviation, we had no specific hypotheses on endpoint variability, as @Kanai2012 obtained no effects. However, like the decrease in endpoint deviation, cathodal tDCS also appeared to decrease saccade endpoint variability (Figure \@ref(fig:fig-variability)). For center saccades, there was extreme evidence for inclusion of the main effect of Stimulation in the Bayesian ANOVA, yet the effect only approached significance in the classical ANOVA (Table \@ref(tab:tab-variability)). However, while the variability changes in the anodal and cathodal sessions may have differed from each other, follow-up one sample tests showed that neither anodal (_p_ = .11, BF~01~ = 1.40) nor cathodal (_p_ = .23, BF~01~ = 2.44) changed significantly from baseline. Thus, saccade endpoint variability also does not seem to be affected by tDCS, conform the findings of @Kanai2012.
 
-```{r fig-variability, fig.cap='(ref:caption-figure-variability)', results='show', out.width="130mm"}
+```{r fig-variability, fig.cap='(ref:caption-figure-variability)', results='show', out.width = out_width}
 knitr::include_graphics("sacc_tDCS_files/figures/figure_7_variability.png", auto_pdf = TRUE)
 ```
 

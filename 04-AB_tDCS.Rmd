@@ -7,6 +7,13 @@ library(kableExtra) # complex tables
 
 knitr::opts_chunk$set(results = 'hide', echo = FALSE, message = FALSE, warning = FALSE)
 
+# create variable to resize figures depending on output
+if (knitr::is_latex_output()) {
+out_width <- "130mm" # for latex, this should be the max width
+} else {
+out_width <- NULL # for html, don't scale
+}
+
 # load data objects
 load("AB_tDCS_files/AB_tDCS.RData")
 ```
@@ -172,7 +179,7 @@ All of the data and materials from this study and the data from @London2015 are 
 
 ### Group-level
 
-```{r fig-group, fig.cap='(ref:caption-fig-group)', results='show', out.width="5.5in"}
+```{r fig-group, fig.cap='(ref:caption-fig-group)', results='show', out.width = out_width}
 knitr::include_graphics("AB_tDCS_files/figures/figure_3_group.png", auto_pdf = TRUE)
 ```
 
@@ -225,7 +232,7 @@ Our main aim was to replicate @London2015, who found a negative correlation betw
 
 We ran the same partial correlation (attempting to adjust for Session order) between the anodal and cathodal AB magnitude change scores (_tDCS_ - _baseline_) on our data (Figure \@ref(fig:fig-corr)). However, here the resulting correlation did not go in the same direction (_r_(`r p_r_2$df[p_r_2$change == "tDCS - baseline"]`) = `r printnum( p_r_2$r[p_r_2$change == "tDCS - baseline"], gt1=F)`), and was not significant (_p_ = `r printp( p_r_2$pvalue[p_r_2$change == "tDCS - baseline"])`). In the next sections, we present a number of follow-up analyses that further explore this difference in results between both studies (see the [Replication analyses](#AB_tDCS-rep-analyses) subsection in the [Methods](#AB_tDCS-methods) section).
 
-```{r fig-corr, fig.cap='(ref:caption-fig-corr)', results='show', out.width="5.5in"}
+```{r fig-corr, fig.cap='(ref:caption-fig-corr)', results='show', out.width = out_width}
 knitr::include_graphics("AB_tDCS_files/figures/figure_4_corr.png", auto_pdf = TRUE)
 ```
 
@@ -263,7 +270,7 @@ knitr::include_graphics("AB_tDCS_files/figures/figure_5_pooledcorr.png", auto_pd
 
 The partial correlation based on the pooled data is _r_(`r p_r_pooled$df`) = `r printnum(p_r_pooled$r, gt1=F)`. Thus, the correlation across a combination of both samples is a lot smaller than in @London2015, and slightly smaller still than the meta-analytic estimate that included the original correlation from @London2015 (Figure \@ref(fig:fig-rep-estimate)).
 
-```{r fig-rep-estimate, fig.cap='(ref:caption-fig-rep-estimate)', results='show', out.width="5.5in"}
+```{r fig-rep-estimate, fig.cap='(ref:caption-fig-rep-estimate)', results='show', out.width = out_width}
 knitr::include_graphics("AB_tDCS_files/figures/figure_6_estimates.png", auto_pdf = TRUE)
 ```
 

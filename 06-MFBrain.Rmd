@@ -1,3 +1,13 @@
+```{r setup, include=FALSE}
+# create variable to resize figures depending on output
+if (knitr::is_latex_output()) {
+out_width_h <- "190mm" # for latex, this should be the max width
+} else {
+out_width_h <- NULL # for html, don't scale
+}
+
+```
+
 # (PART) Decreasing sustained attention with mental fatigue {- #part-MF} 
 
 # Sustaining attention for a prolonged period of time increases temporal variability in cortical responses {#MFBrain}
@@ -165,7 +175,7 @@ The motivation manipulation improved accuracy in the following block of task per
 
 (ref:caption-figure-2) __Declining performance with time-on-task is only partially counteracted by increases in motivation__. (__A__) Accuracy ($A'$) declined with time on task and was only partially and transiently restored by the motivation manipulation (after 60 minutes of task performance; vertical dotted line). These changes in accuracy were mirrored in the response time data (__B__) and mostly due to changes in Hit rate (__C__); there was no significant change over time in False alarm rate (__D__). The motivation manipulation successfully restored motivation ratings to their initial levels (__E__), but aversion ratings (__F__) remained elevated. The left y-axis of each plot shows the absolute value; the right y-axis shows the change compared to the first measurement (horizontal dotted line). Error bars are 95% confidence intervals of the paired difference between the first and each subsequent mean; paired differences are significant when the confidence interval does not overlap the dotted line. The x-axis depicts time-on-task in blocks of 10 minutes. The motivation and aversion ratings (horizontal dotted lines: minimum of 1, maximum of 7) were taken after each block (1 through 8), as well as before the task started (_begin_) and directly after the motivation manipulation (_post_).
 
-```{r figure-2-behav, fig.cap='(ref:caption-figure-2)', echo=FALSE, out.width="190mm"}
+```{r figure-2-behav, fig.cap='(ref:caption-figure-2)', echo=FALSE, out.width = out_width_h}
 knitr::include_graphics("MFBrain_files/figures/figure_2_behav.png", auto_pdf = TRUE)
 ```
 
@@ -191,7 +201,7 @@ To more directly quantify the relationship between theta ITPC and $A'$ over time
 
 (ref:caption-figure-3) __Changes in behavioral performance with time-on-task and motivation are closely tracked by cross-trial consistency of post-stimulus theta phase (A--D), but not theta power (E--H)__. Theta inter-trial phase clustering (ITPC) peaked from 150--500 ms post-stimulus (vertical dotted-line) between 3 and 7 Hz (time-frequency window outlined in white) (__A__, average of electrodes of interest) on left parieto-occipital (left PO) electrodes (PO7, P5, P7), right parieto-occipital (right PO) electrodes (PO8, P6, P8), and mid-frontal (MF) electrodes (FC1, FCz, FC2) (__B__, average of time-frequency window, electrodes marked in white). The same electrode sites and time-frequency windows of interest were used for theta power (__E__, __F__), baseline corrected from -400 to -100 ms using a decibel conversion. Theta ITPC in correct rejection trials (CRs) decreased with time-on-task (8 blocks of 10 minutes each) and increased after the motivation manipulation (directly after block 6; vertical dotted line) (__C__), closely resembling changes in task performance (Figure \@ref(fig:figure-2-behav)A). Power in the theta band decreased linearly over time, but did not change after the motivation manipulation (__G__). Both theta ITPC (__D__) and power (__H__) were higher for hit than miss trials, but this difference did not change significantly over time (4 blocks of 20 minutes each). Error bars are within-subject [@Cousineau2005; @Morey2008] 95% confidence intervals.
 
-```{r figure-3-theta, fig.cap='(ref:caption-figure-3)', echo=FALSE, out.width="190mm"}
+```{r figure-3-theta, fig.cap='(ref:caption-figure-3)', echo=FALSE, out.width = out_width_h}
 knitr::include_graphics("MFBrain_files/figures/figure_3_theta.png", auto_pdf = TRUE)
 ```
 
@@ -217,7 +227,7 @@ To investigate how time-on-task and motivation may affect early visual processin
 
 (ref:caption-figure-4) __Time-on task and motivation do not affect attentional modulation of early visual processing: P1 (A-D) and N1 (E-H) ERP components__. The P1 peaked between 110--180 ms (gray shaded rectangle) post-stimulus (vertical dotted line) on left parieto-occipital (left PO) electrodes (PO7, P5, P7) (__A__). The N1 peaked between 190--260 ms (gray shaded rectangle) on right parieto-occipital (right PO) electrodes (PO8, P6, P8) (__E__). The attentional modulation of the components, defined as the difference between hits and misses, was also lateralized to the left PO region for the P1 (__B__, average of P1 time window, left PO electrodes marked in white) and the right PO region for the N1 (__F__, average of N1 time window, right PO electrodes marked in white). P1 amplitude (__C__) did not change significantly over time in correct rejection (CR) trials, but N1 amplitude did decrease with time-on-task (__G__) (8 blocks of 10 minutes each). The time of the motivation manipulation (directly after block 6) is indicated with the vertical dotted line. There was no significant change in the attentional modulation (hits vs. misses) of the P1 (__D__) and N1 (__H__) over time (4 blocks of 20 minutes each). Error bars are within-subject [@Cousineau2005; @Morey2008] 95% confidence intervals; shaded areas in (A) and (E) represent the standard error of the mean.
 
-```{r figure-4-ERPs, fig.cap='(ref:caption-figure-4)', echo=FALSE, out.width="190mm"}
+```{r figure-4-ERPs, fig.cap='(ref:caption-figure-4)', echo=FALSE, out.width = out_width_h}
 knitr::include_graphics("MFBrain_files/figures/figure_4_ERPs.png", auto_pdf = TRUE)
 ```
 
@@ -249,7 +259,7 @@ In sum, although only one hemifield (the left) was ever relevant, we observed hi
 \pagestyle{empty}
 \blandscape
 
-```{r figure-5-latindex, fig.cap='(ref:caption-figure-5)', echo=FALSE, out.width="190mm"}
+```{r figure-5-latindex, fig.cap='(ref:caption-figure-5)', echo=FALSE, out.width = out_width_h}
 knitr::include_graphics("MFBrain_files/figures/figure_5_latindex.png", auto_pdf = TRUE)
 ```
 
