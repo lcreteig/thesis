@@ -8,6 +8,19 @@ library(cowplot) # plot themes
 
 knitr::opts_chunk$set(results = 'hide', echo = FALSE, message = FALSE, warning = FALSE)
 
+# create variable to resize figures/text depending on output
+if (knitr::is_latex_output()) {
+  tbl_font_size <- 8
+  line_break <- function(...) {kableExtra::linebreak(...)}
+} else {
+  tbl_font_size <- 12
+  # use html version of linebreak function
+  line_break <- function(x, ...) {
+    if (is.numeric(x) | is.logical(x)) return(x)
+    ifelse(stringr::str_detect(x, "\n"), stringr::str_replace_all(x, "\n", "<br />"), x)
+  }
+}
+
 ```
 
 # (APPENDIX) Appendix {-}
@@ -92,13 +105,13 @@ ae_colnames <- c(" ",
                  
 bind_rows(full_join(tbl_int_anodal, tbl_conf_anodal, by  = "sensation"),
           full_join(tbl_int_cathodal, tbl_conf_cathodal, by  = "sensation")) %>%
-  kable(col.names = kableExtra::linebreak(ae_colnames, align = "c"), 
+  kable(col.names = line_break(ae_colnames, align = "c"), 
         booktabs = TRUE,
         longtable = TRUE,
         escape = FALSE,
         caption = "Number of reports of tDCS adverse effects") %>%
   kable_styling(bootstrap_options = "striped",
-                font_size = 8) %>%
+                font_size = tbl_font_size) %>%
   add_header_above(setNames(c(1,5,5), c(" ",
               paste0("Intensity rating", footnote_marker_alphabet(1, double_escape = TRUE)),
               paste0("Confidence rating", footnote_marker_alphabet(2, double_escape = TRUE)))),
@@ -139,6 +152,6 @@ read_csv("sacc_tDCS_files/FEF_coords_MNI_excl.csv") %>%
     caption = "Individual MNI coordinates of the right frontal eye field.") %>%
   kable_styling(bootstrap_options = "striped",
                 latex_options = "hold_position",
-                font_size = 10) %>%
+                font_size = tbl_font_size) %>%
   column_spec(5, border_left = TRUE)
 ```

@@ -58,7 +58,9 @@ cap_other <- paste("__Studies using other attention paradigms (not discussed in 
 if (knitr::is_html_output()) {
 tbl_other %>%
     kable(caption = cap_other) %>%
-    kable_styling(font_size = 12)
+    kable_styling(font_size = 12) %>%
+    column_spec(column = 9, width_min = "30em") %>%
+    scroll_box(width = "100%")
 }
 ```
 
@@ -153,7 +155,9 @@ options(knitr.kable.NA = '')
 if (knitr::is_html_output()) {
 tbl_visual_search %>%
     kable(caption = cap_visual_search) %>%
-    kable_styling(font_size = 12)
+    kable_styling(font_size = 12) %>%
+    column_spec(column = 9, width_min = "30em") %>%
+    scroll_box(width = "100%")
 }
 ```
 
@@ -201,7 +205,8 @@ if (knitr::is_html_output()) {
 tbl_spatial_orienting %>%
     kable(caption = cap_spatial_orienting) %>%
     kable_styling(font_size = 12) %>%
-    column_spec(9, width = "10em")
+    column_spec(column = 9, width_min = "30em") %>%
+    scroll_box(width = "100%")
 }
 ```
 
@@ -271,7 +276,9 @@ cap_spatial_bias <- paste("__Studies using spatial bias tasks, in healthy contro
 if (knitr::is_html_output()) {
 tbl_spatial_bias %>%
     kable(caption = cap_spatial_bias) %>%
-    kable_styling(font_size = 12)
+    kable_styling(font_size = 12) %>%
+    column_spec(column = 9, width_min = "30em") %>%
+    scroll_box(width = "100%")
 }
 ```
 
@@ -356,7 +363,9 @@ In conclusion, while most studies found no or restricted effects on sustained at
 if (knitr::is_html_output()) {
 tbl_sustained_attention %>%
     kable(caption = cap_sustained_attention) %>%
-    kable_styling(font_size = 12)
+    kable_styling(font_size = 12) %>%
+    column_spec(column = 9, width_min = "30em") %>%
+    scroll_box(width = "100%")
 }
 ```
 

@@ -7,11 +7,13 @@ library(kableExtra) # complex tables
 
 knitr::opts_chunk$set(results = 'hide', echo = FALSE, message = FALSE, warning = FALSE)
 
-# create variable to resize figures depending on output
+# create variable to resize figures/text depending on output
 if (knitr::is_latex_output()) {
-out_width <- "130mm" # for latex, this should be the max width
+  out_width <- "130mm" # for latex, this should be the max width
+  tbl_font_size <- 10
 } else {
-out_width <- NULL # for html, don't scale
+  out_width <- NULL # for html, don't scale
+  tbl_font_size <- NULL
 }
 
 # load data objects
@@ -193,7 +195,7 @@ T2_df %>%
   kable(col.names = c("", colnames(T2_df)[2:5]), # drop first column name
         caption = "Descriptive statistics for T2|T1 accuracy",
         booktabs = TRUE) %>%
-  kable_styling(font_size = 10) %>%
+  kable_styling(font_size = tbl_font_size) %>%
   add_header_above(c(" " = 1, "First session: anodal (n = 18)" = 2, "First session: cathodal (n = 22)" = 2)) %>%
   pack_rows(index = c("baseline" = 2, "tDCS" = 2, "post" = 2)) %>%
   footnote(general = 'Values are "Mean (SD)"', general_title = "")
