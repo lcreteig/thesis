@@ -17,10 +17,10 @@ Stimulation as a Tool to Enhance Attention. _Journal of Cognitive Enhancement, 1
 - __M.R. van Schouwenburg__: Writing - review & editing.
 - __H.A. Slagter__: Conceptualization, Data curation, Funding Acquisition, Project administration, Supervision, Writing - review & editing.
 
-\begin{list}{}{\leftmargin=1.5em\rightmargin=0pt}
-\item
-I also thank Marlies Vissers and three anonymous reviewers for providing useful feedback on the pre-publication manuscript.
-\end{list}
+`\begin{list}{}{\leftmargin=1.5em\rightmargin=0pt}`{=latex}
+`\item`{=latex}
+  I also thank Marlies Vissers and three anonymous reviewers for providing useful feedback on the pre-publication manuscript.
+`\end{list}`{=latex}
 
 __Chapter \@ref(sacc-tDCS)__, published as:
 
@@ -32,10 +32,10 @@ Reteig, L. C., Knapen, T., Roelofs, F. J. F. W., Ridderinkhof, K. R., & Slagter,
 - __K.R. Ridderinkhof__: Supervision, Writing - review & editing.
 - __H.A. Slagter__: Conceptualization, Funding acquisition, Project administration, Supervision, Writing - review & editing.
 
-\begin{list}{}{\leftmargin=1.5em\rightmargin=0pt}
-\item
+`\begin{list}{}{\leftmargin=1.5em\rightmargin=0pt}`{=latex}
+`\item`{=latex}
 I also thank Monja Hoven and Floortje Bouwkamp for their assistance in piloting and data collection, and Thiago Costa and David Fischer for reviewing the pre-publication manuscript. The following colleagues graciously shared their MRI data for neuronavigation purposes: Daan van Es, Anouk van Loon, Poppy Watson, Suzanne Oosterwijk, Yaïr Pinto, and Henk Cremers.
-\end{list}
+`\end{list}`{=latex}
 
 __Chapter \@ref(AB-tDCS-EEG)__, in preparation as:
 
@@ -50,10 +50,10 @@ Reteig, L. C., Newman, L. A., Ridderinkhof, K. R., & Slagter, H. A. (n.d.). Spon
 - __K.R. Ridderinkhof__: Supervision, Writing - review & editing.
 - __H.A. Slagter__: Conceptualization, Funding acquisition, Project administration, Resources, Supervision, Writing - review & editing.
 
-\begin{list}{}{\leftmargin=1.5em\rightmargin=0pt}
-\item
+`\begin{list}{}{\leftmargin=1.5em\rightmargin=0pt}`{=latex}
+`\item`{=latex}
 I also thank Raquel London for sharing all her experience and materials, as well as Daphne Box and Esther van der Giessen for their assistance in data collection.\newline
-\end{list}
+`\end{list}`{=latex}
 
 __Chapter \@ref(MFBrain)__, published as:
 
@@ -65,7 +65,7 @@ Reteig, L. C., van den Brink, R. L., Prinssen, S., Cohen, M. X., & Slagter, H. A
 - __M.X. Cohen__: Software, Resources.
 - __H.A. Slagter__: Conceptualization, Writing - original draft, Writing - Review & Editing, Supervision, Project Administration, Funding Acquisition.
 
-\begin{list}{}{\leftmargin=1.5em\rightmargin=0pt}
-\item
+`\begin{list}{}{\leftmargin=1.5em\rightmargin=0pt}`{=latex}
+`\item`{=latex}
 I also thank Katherine MacLean for sharing the task code and stimuli used in MacLean et al. (2009) with us, Jonathan Smallwood and one anonymous reviewer for feedback on the pre-publication manuscript, as well as Hilde Huizenga, Raoul Grasman and Robert Zwitser for advice on the multilevel model.
-\end{list}
+`\end{list}`{=latex}
