@@ -1,4 +1,8 @@
-# Supplement to Chapter \@ref(MFBrain) {#MFBrain-supplement}
+`r if (knitr::is_html_output()) '
+# Supplement to Chapter 6 {#MFBrain-supplement}
+' else '
+# Supplement to Chapter \\@ref(MFBrain) {#MFBrain-supplement}
+'`
 
 ## Motivation manipulation
 

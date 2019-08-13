@@ -17,7 +17,11 @@ knitr::opts_chunk$set(results = 'hide', echo = FALSE, message = FALSE, warning =
 \appendixpage*
 \setlength\beforechapskip{-\baselineskip}
 
-# Supplement to Chapter \@ref(sacc-tDCS) {#sacc-tDCS-supplement}
+`r if (knitr::is_html_output()) '
+# Supplement to Chapter 3 {#sacc-tDCS-supplement}
+' else '
+# Supplement to Chapter \\@ref(sacc-tDCS) {#sacc-tDCS-supplement}
+'`
 
 ## tDCS adverse effects
 

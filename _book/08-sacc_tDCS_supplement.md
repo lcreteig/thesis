@@ -7,7 +7,9 @@
 \appendixpage*
 \setlength\beforechapskip{-\baselineskip}
 
+
 # Supplement to Chapter \@ref(sacc-tDCS) {#sacc-tDCS-supplement}
+
 
 ## tDCS adverse effects
 
@@ -20,249 +22,40 @@
 \setlength{\LTleft}{-20cm plus -1fill}
 \setlength{\LTright}{\LTleft}
 
-<table class="table table-striped" style="font-size: 8px; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">(\#tab:tab-sacc-tDCS-AE)Number of reports of tDCS adverse effects</caption>
- <thead>
-<tr>
-<th style="border-bottom:hidden" colspan="1"></th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="5"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Intensity rating<sup>a</sup>
-</div></th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="5"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Confidence rating<sup>b</sup>
-</div></th>
-</tr>
-  <tr>
-   <th style="text-align:left;">   </th>
-   <th style="text-align:right;"> none </th>
-   <th style="text-align:right;"> \makecell[c]{a\\little} </th>
-   <th style="text-align:right;"> \makecell[c]{mode-\\rate} </th>
-   <th style="text-align:right;"> strong </th>
-   <th style="text-align:right;"> \makecell[c]{very\\strong} </th>
-   <th style="text-align:right;"> n/a </th>
-   <th style="text-align:right;"> \makecell[c]{un-\\likely} </th>
-   <th style="text-align:right;"> \makecell[c]{possi-\\bly} </th>
-   <th style="text-align:right;"> likely </th>
-   <th style="text-align:right;"> \makecell[c]{very\\likely} </th>
-  </tr>
- </thead>
-<tbody>
-  <tr grouplength="8"><td colspan="11" style="border-bottom: 1px solid;"><strong>anodal session</strong></td></tr>
-<tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> burning </td>
-   <td style="text-align:right;"> 12 </td>
-   <td style="text-align:right;"> 10 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 12 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> 11 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> dizziness </td>
-   <td style="text-align:right;"> 28 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 28 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> fatigue </td>
-   <td style="text-align:right;"> 20 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 21 </td>
-   <td style="text-align:right;"> 7 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> headache </td>
-   <td style="text-align:right;"> 25 </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 25 </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> itching </td>
-   <td style="text-align:right;"> 13 </td>
-   <td style="text-align:right;"> 10 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 13 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> 8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> nausea </td>
-   <td style="text-align:right;"> 30 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 30 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> pain </td>
-   <td style="text-align:right;"> 24 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 25 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> tingling </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> 12 </td>
-   <td style="text-align:right;"> 10 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> 16 </td>
-  </tr>
-  <tr grouplength="8"><td colspan="11" style="border-bottom: 1px solid;"><strong>cathodal session</strong></td></tr>
-<tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> burning </td>
-   <td style="text-align:right;"> 11 </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> 12 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 11 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> 12 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> dizziness </td>
-   <td style="text-align:right;"> 29 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 27 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> fatigue </td>
-   <td style="text-align:right;"> 18 </td>
-   <td style="text-align:right;"> 7 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 20 </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> headache </td>
-   <td style="text-align:right;"> 27 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 26 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> itching </td>
-   <td style="text-align:right;"> 14 </td>
-   <td style="text-align:right;"> 14 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 14 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 9 </td>
-   <td style="text-align:right;"> 8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> nausea </td>
-   <td style="text-align:right;"> 32 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 30 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> pain </td>
-   <td style="text-align:right;"> 25 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 24 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left; padding-left: 2em;" indentlevel="1"> tingling </td>
-   <td style="text-align:right;"> 7 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;"> 13 </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 7 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 7 </td>
-   <td style="text-align:right;"> 17 </td>
-  </tr>
-</tbody>
-<tfoot>
-<tr><td style="padding: 0; border: 0;" colspan="100%">
-<sup>a</sup> "To which degree were the following sensations present during stimulation?"</td></tr>
-<tr><td style="padding: 0; border: 0;" colspan="100%">
-<sup>b</sup> "To which degree do you believe this was caused by the stimulation?"</td></tr>
-</tfoot>
-</table>
+\begingroup\fontsize{8}{10}\selectfont
+
+\begin{longtable}{lrrrrrrrrrr}
+\caption{(\#tab:tab-sacc-tDCS-AE)Number of reports of tDCS adverse effects}\\
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{5}{c}{Intensity rating\textsuperscript{a}} & \multicolumn{5}{c}{Confidence rating\textsuperscript{b}} \\
+\cmidrule(l{3pt}r{3pt}){2-6} \cmidrule(l{3pt}r{3pt}){7-11}
+  & none & \makecell[c]{a\\little} & \makecell[c]{mode-\\rate} & strong & \makecell[c]{very\\strong} & n/a & \makecell[c]{un-\\likely} & \makecell[c]{possi-\\bly} & likely & \makecell[c]{very\\likely}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{11}{l}{\textbf{anodal session}}\\
+\hspace{1em}burning & 12 & 10 & 6 & 2 & 0 & 12 & 0 & 2 & 5 & 11\\
+\hspace{1em}dizziness & 28 & 1 & 1 & 0 & 0 & 28 & 2 & 0 & 0 & 0\\
+\hspace{1em}fatigue & 20 & 6 & 0 & 3 & 1 & 21 & 7 & 1 & 1 & 0\\
+\hspace{1em}headache & 25 & 5 & 0 & 0 & 0 & 25 & 5 & 0 & 0 & 0\\
+\hspace{1em}itching & 13 & 10 & 4 & 2 & 1 & 13 & 0 & 1 & 8 & 8\\
+\hspace{1em}nausea & 30 & 0 & 0 & 0 & 0 & 30 & 0 & 0 & 0 & 0\\
+\hspace{1em}pain & 24 & 4 & 2 & 0 & 0 & 25 & 0 & 1 & 2 & 2\\
+\hspace{1em}tingling & 5 & 12 & 10 & 3 & 0 & 5 & 0 & 1 & 8 & 16\\
+\addlinespace[0.3em]
+\multicolumn{11}{l}{\textbf{cathodal session}}\\
+\hspace{1em}burning & 11 & 5 & 12 & 2 & 2 & 11 & 0 & 3 & 6 & 12\\
+\hspace{1em}dizziness & 29 & 2 & 1 & 0 & 0 & 27 & 3 & 1 & 1 & 0\\
+\hspace{1em}fatigue & 18 & 7 & 3 & 4 & 0 & 20 & 8 & 4 & 0 & 0\\
+\hspace{1em}headache & 27 & 2 & 3 & 0 & 0 & 26 & 3 & 1 & 1 & 1\\
+\hspace{1em}itching & 14 & 14 & 4 & 0 & 0 & 14 & 0 & 1 & 9 & 8\\
+\hspace{1em}nausea & 32 & 0 & 0 & 0 & 0 & 30 & 2 & 0 & 0 & 0\\
+\hspace{1em}pain & 25 & 6 & 1 & 0 & 0 & 24 & 0 & 3 & 2 & 3\\
+\hspace{1em}tingling & 7 & 6 & 13 & 5 & 1 & 7 & 0 & 1 & 7 & 17\\
+\bottomrule
+\multicolumn{11}{l}{\textsuperscript{a} "To which degree were the following sensations present during stimulation?"}\\
+\multicolumn{11}{l}{\textsuperscript{b} "To which degree do you believe this was caused by the stimulation?"}\\
+\end{longtable}
+\endgroup{}
 
 \endgroup
 
@@ -271,10 +64,7 @@
 \changetext{}{}{-25mm}{}{}
 \blandscape
 
-<div class="figure">
-<img src="sacc_tDCS_files/figures/figure_S1_AE.png" alt="(ref:caption-fig-sacc-tDCS-AE)" width="718" />
-<p class="caption">(\#fig:fig-sacc-tDCS-AE)(ref:caption-fig-sacc-tDCS-AE)</p>
-</div>
+![(\#fig:fig-sacc-tDCS-AE)(ref:caption-fig-sacc-tDCS-AE)](sacc_tDCS_files/figures/figure_S1_AE.pdf) 
 
 (ref:caption-fig-sacc-tDCS-AE) __tDCS adverse effects in Chapter \@ref(sacc-tDCS)__. Number of reports out of 62 sessions (either anodal or cathodal tDCS). Top row shows intensity ratings [_little, moderate, strong, very strong_]; bottom row shows participant's confidence that event was related to tDCS [_unlikely, possibly, likely, very likely_]. Adverse effects are sorted in descending order of number of reports (for very rare events (five reports or fewer for a given polarity), some text counts have been removed to prevent overlap).
 
@@ -285,150 +75,28 @@
 
 ## MNI coordinates
 
-<table class="table table-striped" style="font-size: 10px; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">(\#tab:tab-sacc-tDCS-MNI)Individual MNI coordinates of the right frontal eye field.</caption>
- <thead>
-  <tr>
-   <th style="text-align:center;"> participant </th>
-   <th style="text-align:right;"> X </th>
-   <th style="text-align:right;"> Y </th>
-   <th style="text-align:right;"> Z </th>
-   <th style="text-align:center;"> participant </th>
-   <th style="text-align:right;"> X </th>
-   <th style="text-align:right;"> Y </th>
-   <th style="text-align:right;"> Z </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:right;"> 29.4 </td>
-   <td style="text-align:right;"> 1.1 </td>
-   <td style="text-align:right;"> 54.9 </td>
-   <td style="text-align:center;border-left:1px solid;"> 14 </td>
-   <td style="text-align:right;"> 37.5 </td>
-   <td style="text-align:right;"> -1.6 </td>
-   <td style="text-align:right;"> 52.6 </td>
-  </tr>
-  <tr>
-   <td style="text-align:center;"> 2 </td>
-   <td style="text-align:right;"> 33.0 </td>
-   <td style="text-align:right;"> -2.2 </td>
-   <td style="text-align:right;"> 50.4 </td>
-   <td style="text-align:center;border-left:1px solid;"> 15 </td>
-   <td style="text-align:right;"> 31.8 </td>
-   <td style="text-align:right;"> -8.4 </td>
-   <td style="text-align:right;"> 59.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:center;"> 3 </td>
-   <td style="text-align:right;"> 30.6 </td>
-   <td style="text-align:right;"> -1.5 </td>
-   <td style="text-align:right;"> 50.6 </td>
-   <td style="text-align:center;border-left:1px solid;"> 16 </td>
-   <td style="text-align:right;"> 31.0 </td>
-   <td style="text-align:right;"> -5.1 </td>
-   <td style="text-align:right;"> 54.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:center;"> 4 </td>
-   <td style="text-align:right;"> 25.7 </td>
-   <td style="text-align:right;"> -3.8 </td>
-   <td style="text-align:right;"> 56.4 </td>
-   <td style="text-align:center;border-left:1px solid;"> 17 </td>
-   <td style="text-align:right;"> 35.0 </td>
-   <td style="text-align:right;"> 8.4 </td>
-   <td style="text-align:right;"> 49.8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:center;"> 5 </td>
-   <td style="text-align:right;"> 29.8 </td>
-   <td style="text-align:right;"> -5.2 </td>
-   <td style="text-align:right;"> 55.8 </td>
-   <td style="text-align:center;border-left:1px solid;"> 18 </td>
-   <td style="text-align:right;"> 28.1 </td>
-   <td style="text-align:right;"> -3.8 </td>
-   <td style="text-align:right;"> 52.8 </td>
-  </tr>
-  <tr>
-   <td style="text-align:center;"> 6 </td>
-   <td style="text-align:right;"> 29.8 </td>
-   <td style="text-align:right;"> -1.1 </td>
-   <td style="text-align:right;"> 58.3 </td>
-   <td style="text-align:center;border-left:1px solid;"> 19 </td>
-   <td style="text-align:right;"> 41.2 </td>
-   <td style="text-align:right;"> -1.7 </td>
-   <td style="text-align:right;"> 47.6 </td>
-  </tr>
-  <tr>
-   <td style="text-align:center;"> 7 </td>
-   <td style="text-align:right;"> 38.1 </td>
-   <td style="text-align:right;"> 3.0 </td>
-   <td style="text-align:right;"> 46.0 </td>
-   <td style="text-align:center;border-left:1px solid;"> 20 </td>
-   <td style="text-align:right;"> 37.3 </td>
-   <td style="text-align:right;"> -0.9 </td>
-   <td style="text-align:right;"> 43.4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:center;"> 8 </td>
-   <td style="text-align:right;"> 31.5 </td>
-   <td style="text-align:right;"> 0.5 </td>
-   <td style="text-align:right;"> 45.6 </td>
-   <td style="text-align:center;border-left:1px solid;"> 21 </td>
-   <td style="text-align:right;"> 34.3 </td>
-   <td style="text-align:right;"> -2.9 </td>
-   <td style="text-align:right;"> 49.2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:center;"> 9 </td>
-   <td style="text-align:right;"> 28.5 </td>
-   <td style="text-align:right;"> 3.6 </td>
-   <td style="text-align:right;"> 51.3 </td>
-   <td style="text-align:center;border-left:1px solid;"> 22 </td>
-   <td style="text-align:right;"> 27.7 </td>
-   <td style="text-align:right;"> -10.1 </td>
-   <td style="text-align:right;"> 51.0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:center;"> 10 </td>
-   <td style="text-align:right;"> 28.1 </td>
-   <td style="text-align:right;"> -1.9 </td>
-   <td style="text-align:right;"> 50.7 </td>
-   <td style="text-align:center;border-left:1px solid;"> 23 </td>
-   <td style="text-align:right;"> 30.3 </td>
-   <td style="text-align:right;"> -5.3 </td>
-   <td style="text-align:right;"> 55.3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:center;"> 11 </td>
-   <td style="text-align:right;"> 30.6 </td>
-   <td style="text-align:right;"> -3.8 </td>
-   <td style="text-align:right;"> 52.0 </td>
-   <td style="text-align:center;border-left:1px solid;"> 24 </td>
-   <td style="text-align:right;"> 26.8 </td>
-   <td style="text-align:right;"> -3.9 </td>
-   <td style="text-align:right;"> 54.6 </td>
-  </tr>
-  <tr>
-   <td style="text-align:center;"> 12 </td>
-   <td style="text-align:right;"> 36.5 </td>
-   <td style="text-align:right;"> -0.4 </td>
-   <td style="text-align:right;"> 46.8 </td>
-   <td style="text-align:center;border-left:1px solid;"> 25 </td>
-   <td style="text-align:right;"> 29.0 </td>
-   <td style="text-align:right;"> 4.9 </td>
-   <td style="text-align:right;"> 49.1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:center;"> 13 </td>
-   <td style="text-align:right;"> 26.2 </td>
-   <td style="text-align:right;"> -1.1 </td>
-   <td style="text-align:right;"> 54.7 </td>
-   <td style="text-align:center;border-left:1px solid;"> 26 </td>
-   <td style="text-align:right;"> 30.3 </td>
-   <td style="text-align:right;"> -3.9 </td>
-   <td style="text-align:right;"> 50.9 </td>
-  </tr>
-</tbody>
-</table>
+\begin{table}[!h]
+
+\caption{(\#tab:tab-sacc-tDCS-MNI)Individual MNI coordinates of the right frontal eye field.}
+\centering
+\fontsize{10}{12}\selectfont
+\begin{tabular}{crrr|>{}crrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrr}
+\toprule
+participant & X & Y & Z & participant & X & Y & Z\\
+\midrule
+1 & 29.4 & 1.1 & 54.9 & 14 & 37.5 & -1.6 & 52.6\\
+2 & 33.0 & -2.2 & 50.4 & 15 & 31.8 & -8.4 & 59.0\\
+3 & 30.6 & -1.5 & 50.6 & 16 & 31.0 & -5.1 & 54.3\\
+4 & 25.7 & -3.8 & 56.4 & 17 & 35.0 & 8.4 & 49.8\\
+5 & 29.8 & -5.2 & 55.8 & 18 & 28.1 & -3.8 & 52.8\\
+6 & 29.8 & -1.1 & 58.3 & 19 & 41.2 & -1.7 & 47.6\\
+7 & 38.1 & 3.0 & 46.0 & 20 & 37.3 & -0.9 & 43.4\\
+8 & 31.5 & 0.5 & 45.6 & 21 & 34.3 & -2.9 & 49.2\\
+9 & 28.5 & 3.6 & 51.3 & 22 & 27.7 & -10.1 & 51.0\\
+10 & 28.1 & -1.9 & 50.7 & 23 & 30.3 & -5.3 & 55.3\\
+11 & 30.6 & -3.8 & 52.0 & 24 & 26.8 & -3.9 & 54.6\\
+12 & 36.5 & -0.4 & 46.8 & 25 & 29.0 & 4.9 & 49.1\\
+13 & 26.2 & -1.1 & 54.7 & 26 & 30.3 & -3.9 & 50.9\\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -11,7 +11,11 @@ knitr::opts_chunk$set(results = 'hide', echo = FALSE, message = FALSE, warning =
 load("AB_tDCS_files/AB_tDCS_supplement.RData")
 ```
 
-# Supplement to Chapters \@ref(AB-tDCS-EEG) and \@ref(AB-tDCS-sEBR) {#AB-tDCS-supplement}
+`r if (knitr::is_html_output()) '
+# Supplement to Chapters 4 and 5 {#AB-tDCS-supplement}
+' else '
+# Supplement to Chapters \\@ref(AB-tDCS-EEG) and \\@ref(AB-tDCS-sEBR) {#AB-tDCS-supplement}
+'`
 
 ## tDCS adverse effects
 
