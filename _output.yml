@@ -1,8 +1,6 @@
 bookdown::gitbook:
   css: style.css
-  pandoc_args: [ "--csl", "apa.csl" ]
-  split_by: section
-  split_bib: FALSE
+  pandoc_args: [ "--csl", "apa.csl"]
   config:
     toc:
       before: |
