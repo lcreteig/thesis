@@ -94,12 +94,15 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{29 July, 2019}
+    \date{20 August, 2019}
 
 \usepackage{caption}
 \usepackage[pass]{geometry} % load the package, but none of the default settings
 \usepackage{pdflscape} % landscape pages and rotation
 \usepackage{bookmark} % section links in pdf
+\usepackage{enumitem} % formatting lists
+\usepackage[dvipsnames]{xcolor} % prevent error in pdfpages
+\usepackage{pdfpages} % for adding the book cover
 
 \let\oldhref\href % save command before redefininig, so we can turn it off again
 \renewcommand{\href}[2]{#2\footnote{\url{#1}}} % same as "link-as-notes: true"
@@ -107,6 +110,8 @@
 \newcommand{\blandscape}{\begin{landscape}}
 \newcommand{\elandscape}{\end{landscape}}
 \AtBeginDocument{\let\maketitle\relax} % don't make automatic title page as first page
+
+\newcommand{\CoverName}{cover} % to set page numbers of cover pages to "cover"
 
 % From https://tex.stackexchange.com/questions/32547/how-to-measure-the-width-of-a-longtable-dynamically-and-use-this-width-in-footer
 % papaja requires the \getlongtablewidth command when using the longtable=TRUE option with apa_table
@@ -266,15 +271,20 @@
 \begin{document}
 \maketitle
 
+%Based on template from the "IILC Dissertation Style"
+% https://www.illc.uva.nl/PhDProgramme/current-candidates/other/illcdiss.html#latex
+
 % for some reason this cannot be in the preamble
 \setlength{\abstitleskip}{-\absparindent}
 
-%Based on template from the "IILC Dissertation Style"
-% https://www.illc.uva.nl/PhDProgramme/current-candidates/other/illcdiss.html#latex
+% Include the cover page
+\pagestyle{empty}
+\renewcommand{\thepage}{\CoverName} % make sure this page is "numbered" with a name, not as page 1 or I
+\includepdf{thesis_cover.pdf}
+
+%% Page I: the half-title / "Franse pagina"
 \frontmatter
 \pagestyle{empty} 
-
-%% Page 1: the half-title / "Franse pagina"
 \def\drop{.1\textheight}
 \newlength{\mylength}
 
@@ -286,7 +296,7 @@
 \end{center}
 \end{adjustwidth*}
 
-%% Page 2: Colophon
+%% Page II: Colophon
 \clearpage
 \vspace*{\fill}
 \begingroup % to change formatting only temporarily
@@ -299,19 +309,22 @@ from
 the Netherlands Organization for Scientific Research (NWO). % CHANGE funding body
 
 \includegraphics{_bookdown_files/FSC.pdf} \newline
-This thesis was typeset using Markdown, \LaTeX\ and the \verb+bookdown+ R-package \newline
-ISBN: xxx-xx-xxx-xxxx-x \newline % CHANGE ISBN
-Printing: Ridderprint BV \newline % CHANGE printer
-Cover art: X, \url{www.website.com} % CHANGE cover art credits
-
+This thesis was typeset using Markdown, \LaTeX\ and the \verb+bookdown+ R-package
+\begin{itemize}[label={}, itemsep=0pt, partopsep=0pt, topsep=-\parskip, parsep=0pt, leftmargin=1em]
+  \item ISBN: xxx-xx-xxx-xxxx-x  % CHANGE ISBN
+  \item Printing: Ridderprint BV % CHANGE printer
+  \item Cover art: \textit{ENTROPY VIII} (2018), Alicia Martin Lopez{\large\textsuperscript{\textcopyright}}
+  \item \url{www.aliciamartinlopez.com} % CHANGE cover art credits
+\end{itemize}
+\vspace{\parskip}
 \includegraphics{_bookdown_files/CC-BY.png} \newline
 An online version of this thesis is available at 
-\url{lcreteig.github.io/thesis},  % CHANGE thesis website
+\url{https://lcreteig.github.io/thesis}, % CHANGE thesis website
 licensed under a 
 Creative Commons Attribution 4.0 International License. % CHANGE license
 \endgroup
 
-%% Page 3: `Title page' mandated by University of Amsterdam
+%% Page III: `Title page' mandated by University of Amsterdam
 \cleardoublepage
 \vspace*{\drop}
 \begin{center}
@@ -346,7 +359,7 @@ op woensdag 20 november 2019, te 14.00 uur \\ }\par % CHANGE defense data
 % e.g.: geboren te San Francisco, Verenigde Staten van Amerika
 \end{center}
 
-%% Page 4: info on thesis committee
+%% Page IV: info on thesis committee
 \clearpage
 \def\colw{6em} % fix width of first column to align the two tables
 \begin{adjustwidth}{-1cm}{}% make the left margin a bit smaller, as the table won't fit otherwise
@@ -374,7 +387,7 @@ Faculteit:     & Faculteit der Maatschappij- en Gedragswetenschappen \\ %CHANGE
 \end{tabular}\\
 \end{adjustwidth}
 
-%% Page 5: quotes
+%% Page V: quotes
 
 % poem attribution (from memoir class manual, chapter on poetry)
 \newcommand{\attrib}[1]{%
@@ -2899,7 +2912,7 @@ Data from 26 participants were included in the analyses. 14 participants receive
 Figure \ref{fig:FEF} shows the MNI coordinates of the presumed right frontal eye field. While there is some spread (see Table \ref{tab:tab-sacc-tDCS-MNI} in Appendix \ref{sacc-tDCS-supplement} for the coordinates of all participants), the average coordinate (31.5, -1.8, 51.6) matched the anatomical definition we used for the individual MRIs: slightly anterior to the pre-central sulcus and slightly lateral to the superior frontal sulcus. The average coordinate also lies close to the one used in \textcite{Kanai2012}, which was taken from \textcite{Paus1996} (31.3, -4.5, 50.9).
 
 \begin{figure}
-\includegraphics[width=\textwidth]{sacc_tDCS_files/figures/figure_3_FEF} \caption{\textbf{MNI coordinates of the right frontal eye field.} Green/more vertical arrows indicate the superior frontal sulcus, purple/more horizontal arrows indicate the pre-central sulcus. \textbf{(A)} Average MNI coordinate across participants. \textbf{(B)} Coordinates for individual participants overlaid on a glass brain representation of the MNI template using Surf Ice software \autocite{Rorden2017}.}\label{fig:FEF}
+\includegraphics[width=130mm]{sacc_tDCS_files/figures/figure_3_FEF} \caption{\textbf{MNI coordinates of the right frontal eye field.} Green/more vertical arrows indicate the superior frontal sulcus, purple/more horizontal arrows indicate the pre-central sulcus. \textbf{(A)} Average MNI coordinate across participants. \textbf{(B)} Coordinates for individual participants overlaid on a glass brain representation of the MNI template using Surf Ice software \autocite{Rorden2017}.}\label{fig:FEF}
 \end{figure}
 
 
@@ -3397,7 +3410,7 @@ All of the data and materials from this study and the data from \textcite{London
 \subsection{Group-level}\label{group-level}}
 
 \begin{figure}
-\includegraphics[width=5.5in]{AB_tDCS_files/figures/figure_3_group} \caption{\textbf{No effects of tDCS on the attentional blink at the group level}. There was a clear attentional blink effect: a lower \% T2 accuracy (given T1 correct: \emph{T2\textbar{}T1}; dashed lines) for \emph{lag 3} (T2 presented inside the attentional blink window) than \emph{lag 8} (T2 presented outside the attentional blink window, on par with \emph{T1 accuracy}). However, the attentional blink did not change systematically over stimulation conditions (\emph{anodal}, \emph{cathodal}) and blocks (\emph{pre}, \emph{tDCS}, \emph{post}). T1 accuracy (solid lines) was also not affected by tDCS.}\label{fig:fig-group}
+\includegraphics[width=130mm]{AB_tDCS_files/figures/figure_3_group} \caption{\textbf{No effects of tDCS on the attentional blink at the group level}. There was a clear attentional blink effect: a lower \% T2 accuracy (given T1 correct: \emph{T2\textbar{}T1}; dashed lines) for \emph{lag 3} (T2 presented inside the attentional blink window) than \emph{lag 8} (T2 presented outside the attentional blink window, on par with \emph{T1 accuracy}). However, the attentional blink did not change systematically over stimulation conditions (\emph{anodal}, \emph{cathodal}) and blocks (\emph{pre}, \emph{tDCS}, \emph{post}). T1 accuracy (solid lines) was also not affected by tDCS.}\label{fig:fig-group}
 \end{figure}
 
 
@@ -3516,7 +3529,7 @@ Our main aim was to replicate \textcite{London2015}, who found a negative correl
 We ran the same partial correlation (attempting to adjust for Session order) between the anodal and cathodal AB magnitude change scores (\emph{tDCS} - \emph{baseline}) on our data (Figure \ref{fig:fig-corr}). However, here the resulting correlation did not go in the same direction (\emph{r}(37) = .02), and was not significant (\emph{p} = .899). In the next sections, we present a number of follow-up analyses that further explore this difference in results between both studies (see the \protect\hyperlink{AB_tDCS-rep-analyses}{Replication analyses} subsection in the \protect\hyperlink{AB_tDCS-methods}{Methods} section).
 
 \begin{figure}
-\includegraphics[width=5.5in]{AB_tDCS_files/figures/figure_4_corr} \caption{\textbf{The effects of anodal and cathodal tDCS are not correlated in the present study.} Data points show AB magnitude change scores (\emph{tDCS - baseline}, \emph{post - baseline}) for each participant in the study, in the \emph{anodal} session (x-axis) and the \emph{cathodal} session (y-axis). While \textcite{London2015} found a negative partial correlation (for \emph{tDCS - baseline}), suggesting opposite effects of anodal and cathodal tDCS, this effect appears to be absent here. The partial correlation coefficients (attempting to adjust for Session order) and p-values are printed in the upper left.}\label{fig:fig-corr}
+\includegraphics[width=130mm]{AB_tDCS_files/figures/figure_4_corr} \caption{\textbf{The effects of anodal and cathodal tDCS are not correlated in the present study.} Data points show AB magnitude change scores (\emph{tDCS - baseline}, \emph{post - baseline}) for each participant in the study, in the \emph{anodal} session (x-axis) and the \emph{cathodal} session (y-axis). While \textcite{London2015} found a negative partial correlation (for \emph{tDCS - baseline}), suggesting opposite effects of anodal and cathodal tDCS, this effect appears to be absent here. The partial correlation coefficients (attempting to adjust for Session order) and p-values are printed in the upper left.}\label{fig:fig-corr}
 \end{figure}
 
 
@@ -3559,7 +3572,7 @@ In addition, we pooled the data from both studies at the single-subject level an
 The partial correlation based on the pooled data is \emph{r}(71) = -.18. Thus, the correlation across a combination of both samples is a lot smaller than in \textcite{London2015}, and slightly smaller still than the meta-analytic estimate that included the original correlation from \textcite{London2015} (Figure \ref{fig:fig-rep-estimate}).
 
 \begin{figure}
-\includegraphics[width=5.5in]{AB_tDCS_files/figures/figure_6_estimates} \caption{\textbf{Summary of all the replication analyses} (with exception of the replication Bayes Factor). The first two rows show the partial correlation (attempting to adjust for Session order) between the AB magnitude change scores (tDCS - baseline) in the anodal and cathodal sessions, for \textcite{London2015} and the present study. The first is significantly negative, the second is slightly positive and not significant, because its 95\% confidence interval (CI) overlaps with zero. The third row shows the 90\% CI around the correlation in the present study. Because this interval does not overlap with the ``small telescopes'' effect size, (indicated by the \texttt{x}: \(-r_{33\%}\) = -.27), this correlation is significantly smaller. The fourth row shows the 95\% prediction interval (PI) around the correlation in \textcite{London2015}. Because this interval does not overlap with the correlation in the present study, both correlations are not consistent. The final two rows show the overall effect when the two correlations are meta-analyzed, and when one correlation is computed over the pooled data from both studies. Neither are significant (95\% CI overlaps with zero). Thus, our replication analyses all suggest that we failed to replicate London \& Slagter (2015), and when the results are examined in combination, no evidence in support of a negative relationship between the AB magnitude change scores (\emph{tDCS - baseline}) in the anodal and cathodal sessions is obtained.}\label{fig:fig-rep-estimate}
+\includegraphics[width=130mm]{AB_tDCS_files/figures/figure_6_estimates} \caption{\textbf{Summary of all the replication analyses} (with exception of the replication Bayes Factor). The first two rows show the partial correlation (attempting to adjust for Session order) between the AB magnitude change scores (tDCS - baseline) in the anodal and cathodal sessions, for \textcite{London2015} and the present study. The first is significantly negative, the second is slightly positive and not significant, because its 95\% confidence interval (CI) overlaps with zero. The third row shows the 90\% CI around the correlation in the present study. Because this interval does not overlap with the ``small telescopes'' effect size, (indicated by the \texttt{x}: \(-r_{33\%}\) = -.27), this correlation is significantly smaller. The fourth row shows the 95\% prediction interval (PI) around the correlation in \textcite{London2015}. Because this interval does not overlap with the correlation in the present study, both correlations are not consistent. The final two rows show the overall effect when the two correlations are meta-analyzed, and when one correlation is computed over the pooled data from both studies. Neither are significant (95\% CI overlaps with zero). Thus, our replication analyses all suggest that we failed to replicate London \& Slagter (2015), and when the results are examined in combination, no evidence in support of a negative relationship between the AB magnitude change scores (\emph{tDCS - baseline}) in the anodal and cathodal sessions is obtained.}\label{fig:fig-rep-estimate}
 \end{figure}
 
 
@@ -4542,7 +4555,7 @@ This thesis started out with a rather grand introduction to cognitive enhancemen
 
 \caption{\label{tab:tab-sacc-tDCS-MNI}Individual MNI coordinates of the right frontal eye field.}
 \centering
-\fontsize{10}{12}\selectfont
+\fontsize{8}{10}\selectfont
 \begin{tabular}{crrr|>{}crrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrrcrrr}
 \toprule
 participant & X & Y & Z & participant & X & Y & Z\\
@@ -4853,7 +4866,10 @@ Slagter, H. A., Prinssen, S., \textbf{Reteig, L. C.}, \& Mazaheri, A. (2016). Fa
 \setlength{\parindent}{1.5em}
 
 \hypertarget{nederlandse-samenvatting-summary-in-dutch}{%
-\chapter{Nederlandse samenvatting (Summary in Dutch)}\label{nederlandse-samenvatting-summary-in-dutch}}
+\chapter*{Nederlandse samenvatting (Summary in Dutch)}\label{nederlandse-samenvatting-summary-in-dutch}}
+\addcontentsline{toc}{chapter}{Nederlandse samenvatting (Summary in Dutch)}
+
+\chaptermark{Summary in Dutch}
 
 \begin{dutch}
 
@@ -4891,8 +4907,42 @@ Duis eget tortor eget arcu egestas interdum. Donec a libero quis mi porta bibend
 
 Cras non pretium purus. Fusce convallis mattis arcu non auctor. Quisque vulputate tincidunt vulputate. Etiam commodo tortor sit amet nisl pretium, ut facilisis velit tristique. Curabitur dolor massa, pharetra pretium ex vel, tristique maximus justo. Mauris quis mauris enim. Donec sed eros risus. Etiam tellus neque, viverra sit amet mollis et, porttitor nec nunc. Aliquam eu libero tincidunt, volutpat diam a, tincidunt ex. Sed quis nibh volutpat.
 
-\hypertarget{dankwoord-acknowledgments}{%
-\chapter{Dankwoord (Acknowledgments)}\label{dankwoord-acknowledgments}}
+\hypertarget{acknowledgments}{%
+\chapter*{Acknowledgments}\label{acknowledgments}}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+
+\chaptermark{Acknowledgments}
+
+Theses don't write themselves, and also not by one person.
+
+Worked on this so long (and have grown so old) that it's become increasingly hard to come up with all the list of people I should thank. So I simply won't
+
+-Heleen
+- Vanaf de master\ldots{}
+- Richard
+- Niet intensief samengewerkt, dankzij persoonlijke tegenslagen en omdat je waarschijnlijk zag dat ik bij Heleen in goede handen was. Maar juist je rol op afstand vond ik fijn.
+
+-Commissie
+
+\begin{itemize}
+\tightlist
+\item
+  B\&C in general
+\item
+  Manon/Hubert/Jaap/Ingrid/Lilian: unsung heroes.
+\end{itemize}
+
+-Interns?
+-TOP (niet onderschatten; extra jaar PhD nodig gehad)
+-Participants
+
+-Lynn
+- Even if nothing of value came from this PhD, I'd do it all over again, because I wouldn't have met you otherwise.
+-Thomas
+
+-Gerard
+-Ineke
+- Hurts and consoles at the same time to think how proud you would have been that your son wrote a book.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus erat dolor, vulputate sed dapibus eget, facilisis vel sapien. Suspendisse sed velit bibendum, egestas elit quis, aliquet diam. Fusce eget lacus ut nunc euismod fringilla. Vivamus eget erat ac ipsum sagittis rhoncus. Sed vel est at tortor accumsan bibendum et et lacus. Mauris commodo, turpis eget consequat posuere, nulla augue ultrices risus, eu rutrum ante diam vitae diam. In laoreet sed neque eu pellentesque. Nullam id ipsum ac tortor venenatis faucibus sit amet eget eros. Praesent id enim quam. Duis eleifend nisi odio.
 
@@ -4909,6 +4959,11 @@ In bibendum gravida lacus in viverra. Nullam tincidunt nulla vel placerat tristi
 Nam non urna euismod, varius ex a, pulvinar neque. Quisque venenatis tincidunt massa, a varius magna pharetra convallis. Mauris malesuada rhoncus consequat. Maecenas lobortis ullamcorper diam, ac aliquet lectus porttitor quis. Vivamus et sagittis velit. Sed quis ipsum aliquet, ultrices nisl sit amet, rutrum nibh. Duis commodo faucibus nibh, id porttitor ex dignissim non. Vestibulum vitae tristique enim. Nullam quis nisl nec nisl mollis lobortis. Nulla tincidunt diam in erat bibendum finibus. Nunc bibendum, ex vel vulputate sodales, nulla dolor feugiat arcu, eget imperdiet magna orci et magna.
 
 Aliquam laoreet tellus ullamcorper pretium blandit. Fusce semper, nulla a sollicitudin tincidunt, arcu felis elementum ex, sed ultricies massa velit vitae ex. In finibus sollicitudin sagittis. Aenean et erat nulla. Suspendisse cursus metus at pulvinar convallis. Nulla quis dignissim leo. Morbi nisl tortor, vehicula sed scelerisque pharetra, rhoncus eu massa. Morbi aliquam lacus sit amet ligula congue, ut pharetra orci pharetra. Nullam non elementum odio. Sed in urna et urna vulputate accumsan. Nullam metus nulla, ornare ut lacus quis, pretium dictum lectus. Nullam a diam turpis. Vestibulum ipsum nunc, porta sed urna quis, pellentesque ultrices ipsum. Cras sem dui, convallis at orci elementum, venenatis efficitur leo. Pellentesque habitant morbi tristique.
+
+\cleardoublepage
+\pagestyle{empty}
+\renewcommand{\thepage}{\CoverName}
+\includepdf[pages=-]{thesis_cover_back.pdf}
 
 \printbibliography
 

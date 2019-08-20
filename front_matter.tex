@@ -1,12 +1,17 @@
+%Based on template from the "IILC Dissertation Style"
+% https://www.illc.uva.nl/PhDProgramme/current-candidates/other/illcdiss.html#latex
+
 % for some reason this cannot be in the preamble
 \setlength{\abstitleskip}{-\absparindent}
 
-%Based on template from the "IILC Dissertation Style"
-% https://www.illc.uva.nl/PhDProgramme/current-candidates/other/illcdiss.html#latex
+% Include the cover page
+\pagestyle{empty}
+\renewcommand{\thepage}{\CoverName} % make sure this page is "numbered" with a name, not as page 1 or I
+\includepdf{thesis_cover.pdf}
+
+%% Page I: the half-title / "Franse pagina"
 \frontmatter
 \pagestyle{empty} 
-
-%% Page 1: the half-title / "Franse pagina"
 \def\drop{.1\textheight}
 \newlength{\mylength}
 
@@ -18,7 +23,7 @@
 \end{center}
 \end{adjustwidth*}
 
-%% Page 2: Colophon
+%% Page II: Colophon
 \clearpage
 \vspace*{\fill}
 \begingroup % to change formatting only temporarily
@@ -31,19 +36,22 @@ from
 the Netherlands Organization for Scientific Research (NWO). % CHANGE funding body
 
 \includegraphics{_bookdown_files/FSC.pdf} \newline
-This thesis was typeset using Markdown, \LaTeX\ and the \verb+bookdown+ R-package \newline
-ISBN: xxx-xx-xxx-xxxx-x \newline % CHANGE ISBN
-Printing: Ridderprint BV \newline % CHANGE printer
-Cover art: X, \url{www.website.com} % CHANGE cover art credits
-
+This thesis was typeset using Markdown, \LaTeX\ and the \verb+bookdown+ R-package
+\begin{itemize}[label={}, itemsep=0pt, partopsep=0pt, topsep=-\parskip, parsep=0pt, leftmargin=1em]
+  \item ISBN: xxx-xx-xxx-xxxx-x  % CHANGE ISBN
+  \item Printing: Ridderprint BV % CHANGE printer
+  \item Cover art: \textit{ENTROPY VIII} (2018), Alicia Martin Lopez{\large\textsuperscript{\textcopyright}}
+  \item \url{www.aliciamartinlopez.com} % CHANGE cover art credits
+\end{itemize}
+\vspace{\parskip}
 \includegraphics{_bookdown_files/CC-BY.png} \newline
 An online version of this thesis is available at 
-\url{lcreteig.github.io/thesis},  % CHANGE thesis website
+\url{https://lcreteig.github.io/thesis}, % CHANGE thesis website
 licensed under a 
 Creative Commons Attribution 4.0 International License. % CHANGE license
 \endgroup
 
-%% Page 3: `Title page' mandated by University of Amsterdam
+%% Page III: `Title page' mandated by University of Amsterdam
 \cleardoublepage
 \vspace*{\drop}
 \begin{center}
@@ -78,7 +86,7 @@ op woensdag 20 november 2019, te 14.00 uur \\ }\par % CHANGE defense data
 % e.g.: geboren te San Francisco, Verenigde Staten van Amerika
 \end{center}
 
-%% Page 4: info on thesis committee
+%% Page IV: info on thesis committee
 \clearpage
 \def\colw{6em} % fix width of first column to align the two tables
 \begin{adjustwidth}{-1cm}{}% make the left margin a bit smaller, as the table won't fit otherwise
@@ -106,7 +114,7 @@ Faculteit:     & Faculteit der Maatschappij- en Gedragswetenschappen \\ %CHANGE
 \end{tabular}\\
 \end{adjustwidth}
 
-%% Page 5: quotes
+%% Page V: quotes
 
 % poem attribution (from memoir class manual, chapter on poetry)
 \newcommand{\attrib}[1]{%

@@ -2,6 +2,9 @@
 \usepackage[pass]{geometry} % load the package, but none of the default settings
 \usepackage{pdflscape} % landscape pages and rotation
 \usepackage{bookmark} % section links in pdf
+\usepackage{enumitem} % formatting lists
+\usepackage[dvipsnames]{xcolor} % prevent error in pdfpages
+\usepackage{pdfpages} % for adding the book cover
 
 \let\oldhref\href % save command before redefininig, so we can turn it off again
 \renewcommand{\href}[2]{#2\footnote{\url{#1}}} % same as "link-as-notes: true"
@@ -9,6 +12,8 @@
 \newcommand{\blandscape}{\begin{landscape}}
 \newcommand{\elandscape}{\end{landscape}}
 \AtBeginDocument{\let\maketitle\relax} % don't make automatic title page as first page
+
+\newcommand{\CoverName}{cover} % to set page numbers of cover pages to "cover"
 
 % From https://tex.stackexchange.com/questions/32547/how-to-measure-the-width-of-a-longtable-dynamically-and-use-this-width-in-footer
 % papaja requires the \getlongtablewidth command when using the longtable=TRUE option with apa_table

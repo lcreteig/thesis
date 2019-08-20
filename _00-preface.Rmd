@@ -1,5 +1,13 @@
 # Preface {-}
 
+```{r align='center', out.width='390px', out.height='550px', fig.cap='(ref:caption-cover)', echo=FALSE, include = knitr::is_html_output()}
+knitr::include_graphics('thesis_cover.jpg') # show thesis cover
+```
+
+(ref:caption-cover) __Cover art:__ _ENTROPY VIII_ (2018), &copy;Alicia Martin Lopez, <http://www.aliciamartinlopez.com>
+
+---
+
 This PhD project was conducted under the supervision of Prof. Dr. [Heleen A. Slagter](https://www.heleenslagter.com/) and Prof. Dr. [K. Richard Ridderinkhof](https://www.uva.nl/en/profile/r/i/k.r.ridderinkhof/k.r.ridderinkhof.html) at the [Department of Psychology](https://psyres.uva.nl/), Faculty of Behavioral and Social Sciences, University of Amsterdam.
 
 The investigations in this thesis were supported by a Research Talent Grant (452-10-018) from the Netherlands Organization for Scientific Research (NWO).

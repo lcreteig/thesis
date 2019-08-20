@@ -7,7 +7,7 @@ bibliography: [thesis.bib, r-packages.bib]
 description: This is the PhD thesis of Leon Reteig
 url: 'https\://lcreteig.github.io/thesis'
 github-repo: "lcreteig/thesis"
-cover-image:
+cover-image: "thesis_cover.jpg"
 documentclass: memoir
 lang: en
 #classoption: showtrims

@@ -16,3 +16,8 @@ In bibendum gravida lacus in viverra. Nullam tincidunt nulla vel placerat tristi
 Nam non urna euismod, varius ex a, pulvinar neque. Quisque venenatis tincidunt massa, a varius magna pharetra convallis. Mauris malesuada rhoncus consequat. Maecenas lobortis ullamcorper diam, ac aliquet lectus porttitor quis. Vivamus et sagittis velit. Sed quis ipsum aliquet, ultrices nisl sit amet, rutrum nibh. Duis commodo faucibus nibh, id porttitor ex dignissim non. Vestibulum vitae tristique enim. Nullam quis nisl nec nisl mollis lobortis. Nulla tincidunt diam in erat bibendum finibus. Nunc bibendum, ex vel vulputate sodales, nulla dolor feugiat arcu, eget imperdiet magna orci et magna.
 
 Aliquam laoreet tellus ullamcorper pretium blandit. Fusce semper, nulla a sollicitudin tincidunt, arcu felis elementum ex, sed ultricies massa velit vitae ex. In finibus sollicitudin sagittis. Aenean et erat nulla. Suspendisse cursus metus at pulvinar convallis. Nulla quis dignissim leo. Morbi nisl tortor, vehicula sed scelerisque pharetra, rhoncus eu massa. Morbi aliquam lacus sit amet ligula congue, ut pharetra orci pharetra. Nullam non elementum odio. Sed in urna et urna vulputate accumsan. Nullam metus nulla, ornare ut lacus quis, pretium dictum lectus. Nullam a diam turpis. Vestibulum ipsum nunc, porta sed urna quis, pellentesque ultrices ipsum. Cras sem dui, convallis at orci elementum, venenatis efficitur leo. Pellentesque habitant morbi tristique.
+
+\cleardoublepage
+\pagestyle{empty}
+\renewcommand{\thepage}{\CoverName}
+\includepdf[pages=-]{thesis_cover_back.pdf}
