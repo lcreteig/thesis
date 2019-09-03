@@ -1,6 +1,10 @@
 # Nederlandse samenvatting (Summary in Dutch) {-}
 \chaptermark{Summary in Dutch}
 
+```{r include=FALSE}
+#tinytex::tlmgr_install("hyphen-dutch") # To get Dutch hyphenation to work with polygglossia
+# might need to install "babel-dutch" as well
+```
 ::: {lang=nl}
 Dit is Nederlands!
 :::
