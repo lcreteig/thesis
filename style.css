@@ -1,0 +1,16 @@
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+.book .book-summary{left:-420px;width:420px;}.book .book-body .page-wrapper .page-inner{max-width:680px;}@media (min-width: 600px) {.book.with-summary .book-header.fixed {left: 420px;}.book.with-summary .book-body{left:420px}}@media (max-width: 600px) {.book.with-summary .book-header.fixed {min-width: 420px;}.book.with-summary .book-body {min-width: 420px;}} /* extend width of toc such that Part titles*/

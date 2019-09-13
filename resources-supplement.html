@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>D Data, code and materials | Neuroplasticity of Attention</title>
+  <meta name="description" content="This is the PhD thesis of Leon Reteig" />
+  <meta name="generator" content="bookdown 0.13.2 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="D Data, code and materials | Neuroplasticity of Attention" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://lcreteig.github.io/thesis" />
+  <meta property="og:image" content="https://lcreteig.github.io/thesisthesis_cover.jpg" />
+  <meta property="og:description" content="This is the PhD thesis of Leon Reteig" />
+  <meta name="github-repo" content="lcreteig/thesis" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="D Data, code and materials | Neuroplasticity of Attention" />
+  
+  <meta name="twitter:description" content="This is the PhD thesis of Leon Reteig" />
+  <meta name="twitter:image" content="https://lcreteig.github.io/thesisthesis_cover.jpg" />
+
+<meta name="author" content="Leon C. Reteig" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="MFBrain-supplement.html"/>
+<link rel="next" href="bibliography.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">PhD thesis of Leon Reteig</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="part"><span><b>I General introduction and literature review</b></span></li>
+<li class="chapter" data-level="1" data-path="intro-general.html"><a href="intro-general.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro-general.html"><a href="intro-general.html#cognitive-enhancement"><i class="fa fa-check"></i><b>1.1</b> Cognitive enhancement</a></li>
+<li class="chapter" data-level="1.2" data-path="intro-general.html"><a href="intro-general.html#attention"><i class="fa fa-check"></i><b>1.2</b> Attention</a></li>
+<li class="chapter" data-level="1.3" data-path="intro-general.html"><a href="intro-general.html#electrical-brain-stimulation"><i class="fa fa-check"></i><b>1.3</b> Electrical brain stimulation</a></li>
+<li class="chapter" data-level="1.4" data-path="intro-general.html"><a href="intro-general.html#changing-attentional-performance"><i class="fa fa-check"></i><b>1.4</b> Changing attentional performance</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="intro-general.html"><a href="intro-general.html#spatial-attention"><i class="fa fa-check"></i><b>1.4.1</b> Spatial attention</a></li>
+<li class="chapter" data-level="1.4.2" data-path="intro-general.html"><a href="intro-general.html#temporal-attention"><i class="fa fa-check"></i><b>1.4.2</b> Temporal attention</a></li>
+<li class="chapter" data-level="1.4.3" data-path="intro-general.html"><a href="intro-general.html#sustained-attention"><i class="fa fa-check"></i><b>1.4.3</b> Sustained attention</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="intro-general.html"><a href="intro-general.html#measuring-attention-with-eeg"><i class="fa fa-check"></i><b>1.5</b> Measuring attention with EEG</a></li>
+<li class="chapter" data-level="1.6" data-path="intro-general.html"><a href="intro-general.html#overview"><i class="fa fa-check"></i><b>1.6</b> Overview</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html"><i class="fa fa-check"></i><b>2</b> Transcranial electrical stimulation as a tool to enhance attention</a><ul>
+<li class="chapter" data-level="2.1" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#tDCS_att_review-introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#visual-search"><i class="fa fa-check"></i><b>2.2</b> Visual search</a></li>
+<li class="chapter" data-level="2.3" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#spatial-orienting"><i class="fa fa-check"></i><b>2.3</b> Spatial orienting</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#stimulus-driven-orienting"><i class="fa fa-check"></i><b>2.3.1</b> Stimulus-driven orienting</a></li>
+<li class="chapter" data-level="2.3.2" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#endogenous-and-exogenous-orienting"><i class="fa fa-check"></i><b>2.3.2</b> Endogenous and exogenous orienting</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#spatial-bias"><i class="fa fa-check"></i><b>2.4</b> Spatial bias</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#pseudoneglect"><i class="fa fa-check"></i><b>2.4.1</b> Pseudoneglect</a></li>
+<li class="chapter" data-level="2.4.2" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#hemispatial-neglect"><i class="fa fa-check"></i><b>2.4.2</b> Hemispatial neglect</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#sustained-attention-1"><i class="fa fa-check"></i><b>2.5</b> Sustained attention</a></li>
+<li class="chapter" data-level="2.6" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#tDCS_att_review-discussion"><i class="fa fa-check"></i><b>2.6</b> Discussion</a></li>
+</ul></li>
+<li class="part"><span><b>II Enhancing attentional performance with tDCS</b></span></li>
+<li class="chapter" data-level="3" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html"><i class="fa fa-check"></i><b>3</b> No evidence that frontal eye field tDCS affects latency or accuracy of prosaccades</a><ul>
+<li class="chapter" data-level="3.1" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#sacc_tDCS-introduction"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#sacc_tDCS-methods"><i class="fa fa-check"></i><b>3.2</b> Materials and Methods</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#participants"><i class="fa fa-check"></i><b>3.2.1</b> Participants</a></li>
+<li class="chapter" data-level="3.2.2" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#procedure"><i class="fa fa-check"></i><b>3.2.2</b> Procedure</a></li>
+<li class="chapter" data-level="3.2.3" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#sacc-task"><i class="fa fa-check"></i><b>3.2.3</b> Task</a></li>
+<li class="chapter" data-level="3.2.4" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#eye-tracking"><i class="fa fa-check"></i><b>3.2.4</b> Eye tracking</a></li>
+<li class="chapter" data-level="3.2.5" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#sacc-methods-tDCS"><i class="fa fa-check"></i><b>3.2.5</b> tDCS</a></li>
+<li class="chapter" data-level="3.2.6" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#frontal-eye-field-localization"><i class="fa fa-check"></i><b>3.2.6</b> Frontal eye field localization</a></li>
+<li class="chapter" data-level="3.2.7" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#analyses"><i class="fa fa-check"></i><b>3.2.7</b> Analyses</a></li>
+<li class="chapter" data-level="3.2.8" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#data-materials-and-code-availability"><i class="fa fa-check"></i><b>3.2.8</b> Data, materials, and code availability</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#sacc_tDCS-results"><i class="fa fa-check"></i><b>3.3</b> Results</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#participant-and-saccade-exclusion"><i class="fa fa-check"></i><b>3.3.1</b> Participant and saccade exclusion</a></li>
+<li class="chapter" data-level="3.3.2" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#neuronavigation"><i class="fa fa-check"></i><b>3.3.2</b> Neuronavigation</a></li>
+<li class="chapter" data-level="3.3.3" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#median-saccade-latency"><i class="fa fa-check"></i><b>3.3.3</b> Median saccade latency</a></li>
+<li class="chapter" data-level="3.3.4" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#saccade-latency-distribution"><i class="fa fa-check"></i><b>3.3.4</b> Saccade latency distribution</a></li>
+<li class="chapter" data-level="3.3.5" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#saccade-endpoint-deviation"><i class="fa fa-check"></i><b>3.3.5</b> Saccade endpoint deviation</a></li>
+<li class="chapter" data-level="3.3.6" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#saccade-endpoint-variability"><i class="fa fa-check"></i><b>3.3.6</b> Saccade endpoint variability</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#sacc_tDCS-discussion"><i class="fa fa-check"></i><b>3.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html"><i class="fa fa-check"></i><b>4</b> Effects of tDCS on the attentional blink revisited: A statistical evaluation of a replication attempt</a><ul>
+<li class="chapter" data-level="4.1" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-introduction"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-methods"><i class="fa fa-check"></i><b>4.2</b> Materials and Methods</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-participants"><i class="fa fa-check"></i><b>4.2.1</b> Participants</a></li>
+<li class="chapter" data-level="4.2.2" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-procedure"><i class="fa fa-check"></i><b>4.2.2</b> Procedure</a></li>
+<li class="chapter" data-level="4.2.3" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-task"><i class="fa fa-check"></i><b>4.2.3</b> Task</a></li>
+<li class="chapter" data-level="4.2.4" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-tDCS"><i class="fa fa-check"></i><b>4.2.4</b> tDCS</a></li>
+<li class="chapter" data-level="4.2.5" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-EEGdata"><i class="fa fa-check"></i><b>4.2.5</b> EEG</a></li>
+<li class="chapter" data-level="4.2.6" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#data-analysis"><i class="fa fa-check"></i><b>4.2.6</b> Data analysis</a></li>
+<li class="chapter" data-level="4.2.7" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#data-materials-and-code-availability-1"><i class="fa fa-check"></i><b>4.2.7</b> Data, materials, and code availability</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-results"><i class="fa fa-check"></i><b>4.3</b> Results</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#group-level"><i class="fa fa-check"></i><b>4.3.1</b> Group-level</a></li>
+<li class="chapter" data-level="4.3.2" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#individual-differences"><i class="fa fa-check"></i><b>4.3.2</b> Individual differences</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-discussion"><i class="fa fa-check"></i><b>4.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html"><i class="fa fa-check"></i><b>5</b> Spontaneous eye blink rate does not predict attentional blink size, nor the effects of tDCS on attentional blink size</a><ul>
+<li class="chapter" data-level="5.1" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-introduction"><i class="fa fa-check"></i><b>5.1</b> Introduction</a></li>
+<li class="chapter" data-level="5.2" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-methods"><i class="fa fa-check"></i><b>5.2</b> Materials and methods</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-participants"><i class="fa fa-check"></i><b>5.2.1</b> Participants</a></li>
+<li class="chapter" data-level="5.2.2" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-procedure"><i class="fa fa-check"></i><b>5.2.2</b> Procedure</a></li>
+<li class="chapter" data-level="5.2.3" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-task"><i class="fa fa-check"></i><b>5.2.3</b> Task</a></li>
+<li class="chapter" data-level="5.2.4" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-tDCS"><i class="fa fa-check"></i><b>5.2.4</b> tDCS</a></li>
+<li class="chapter" data-level="5.2.5" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-sEBR"><i class="fa fa-check"></i><b>5.2.5</b> sEBR</a></li>
+<li class="chapter" data-level="5.2.6" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-stats"><i class="fa fa-check"></i><b>5.2.6</b> Statistical analysis</a></li>
+<li class="chapter" data-level="5.2.7" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#data-materials-and-code-availability-2"><i class="fa fa-check"></i><b>5.2.7</b> Data, materials, and code availability</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-results"><i class="fa fa-check"></i><b>5.3</b> Results</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-results-rel"><i class="fa fa-check"></i><b>5.3.1</b> Reliability</a></li>
+<li class="chapter" data-level="5.3.2" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-ABmag"><i class="fa fa-check"></i><b>5.3.2</b> Relation between sEBR and baseline AB magnitude</a></li>
+<li class="chapter" data-level="5.3.3" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#relation-between-sebr-and-the-effect-of-tdcs-on-ab-magnitude-1"><i class="fa fa-check"></i><b>5.3.3</b> Relation between sEBR and the effect of tDCS on AB magnitude</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-discussion"><i class="fa fa-check"></i><b>5.4</b> Discussion</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#sebr-and-ab-magnitude-have-good-to-moderate-test-retest-reliability"><i class="fa fa-check"></i><b>5.4.1</b> sEBR and AB magnitude have good to moderate test-retest reliability</a></li>
+<li class="chapter" data-level="5.4.2" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#no-significant-relationships-between-sebr-and-baseline-ab-magnitude"><i class="fa fa-check"></i><b>5.4.2</b> No significant relationships between sEBR and baseline AB magnitude</a></li>
+<li class="chapter" data-level="5.4.3" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#no-significant-relationship-between-sebr-and-the-effect-of-tdcs-on-ab-magnitude"><i class="fa fa-check"></i><b>5.4.3</b> No significant relationship between sEBR and the effect of tDCS on AB magnitude</a></li>
+<li class="chapter" data-level="5.4.4" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#conclusions"><i class="fa fa-check"></i><b>5.4.4</b> Conclusions</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III Decreasing sustained attention with mental fatigue</b></span></li>
+<li class="chapter" data-level="6" data-path="MFBrain.html"><a href="MFBrain.html"><i class="fa fa-check"></i><b>6</b> Sustaining attention for a prolonged period of time increases temporal variability in cortical responses</a><ul>
+<li class="chapter" data-level="6.1" data-path="MFBrain.html"><a href="MFBrain.html#MFBrain-introduction"><i class="fa fa-check"></i><b>6.1</b> Introduction</a></li>
+<li class="chapter" data-level="6.2" data-path="MFBrain.html"><a href="MFBrain.html#MFBrain-methods"><i class="fa fa-check"></i><b>6.2</b> Materials and Methods</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="MFBrain.html"><a href="MFBrain.html#participants-1"><i class="fa fa-check"></i><b>6.2.1</b> Participants</a></li>
+<li class="chapter" data-level="6.2.2" data-path="MFBrain.html"><a href="MFBrain.html#task"><i class="fa fa-check"></i><b>6.2.2</b> Task</a></li>
+<li class="chapter" data-level="6.2.3" data-path="MFBrain.html"><a href="MFBrain.html#procedure-1"><i class="fa fa-check"></i><b>6.2.3</b> Procedure</a></li>
+<li class="chapter" data-level="6.2.4" data-path="MFBrain.html"><a href="MFBrain.html#behavioral-data-analysis"><i class="fa fa-check"></i><b>6.2.4</b> Behavioral data analysis</a></li>
+<li class="chapter" data-level="6.2.5" data-path="MFBrain.html"><a href="MFBrain.html#eeg-data-analysis"><i class="fa fa-check"></i><b>6.2.5</b> EEG data analysis</a></li>
+<li class="chapter" data-level="6.2.6" data-path="MFBrain.html"><a href="MFBrain.html#statistical-analysis"><i class="fa fa-check"></i><b>6.2.6</b> Statistical analysis</a></li>
+<li class="chapter" data-level="6.2.7" data-path="MFBrain.html"><a href="MFBrain.html#data-materials-and-code-availability-3"><i class="fa fa-check"></i><b>6.2.7</b> Data, materials, and code availability</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="MFBrain.html"><a href="MFBrain.html#MFBrain-results"><i class="fa fa-check"></i><b>6.3</b> Results</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="MFBrain.html"><a href="MFBrain.html#behavior"><i class="fa fa-check"></i><b>6.3.1</b> Behavior</a></li>
+<li class="chapter" data-level="6.3.2" data-path="MFBrain.html"><a href="MFBrain.html#attentional-stability-theta-phase"><i class="fa fa-check"></i><b>6.3.2</b> Attentional stability: theta phase</a></li>
+<li class="chapter" data-level="6.3.3" data-path="MFBrain.html"><a href="MFBrain.html#early-visual-processing-p1-and-n1-components"><i class="fa fa-check"></i><b>6.3.3</b> Early visual processing: P1 and N1 components</a></li>
+<li class="chapter" data-level="6.3.4" data-path="MFBrain.html"><a href="MFBrain.html#preparatory-attentional-orienting-alpha-power"><i class="fa fa-check"></i><b>6.3.4</b> Preparatory attentional orienting: alpha power</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="MFBrain.html"><a href="MFBrain.html#MFBrain-discussion"><i class="fa fa-check"></i><b>6.4</b> Discussion</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="MFBrain.html"><a href="MFBrain.html#motivation-partially-and-transiently-restores-vigilance"><i class="fa fa-check"></i><b>6.4.1</b> Motivation partially and transiently restores vigilance</a></li>
+<li class="chapter" data-level="6.4.2" data-path="MFBrain.html"><a href="MFBrain.html#theta-inter-trial-phase-clustering-mirrors-effects-of-time-on-task-and-motivation-on-behavioral-performance"><i class="fa fa-check"></i><b>6.4.2</b> Theta inter-trial phase clustering mirrors effects of time-on-task and motivation on behavioral performance</a></li>
+<li class="chapter" data-level="6.4.3" data-path="MFBrain.html"><a href="MFBrain.html#no-clear-changes-in-attentional-modulation-of-early-visual-p1n1-components"><i class="fa fa-check"></i><b>6.4.3</b> No clear changes in attentional modulation of early visual P1/N1 components</a></li>
+<li class="chapter" data-level="6.4.4" data-path="MFBrain.html"><a href="MFBrain.html#alpha-power-lateralization-is-reversed-and-unchanging"><i class="fa fa-check"></i><b>6.4.4</b> Alpha power lateralization is reversed and unchanging</a></li>
+<li class="chapter" data-level="6.4.5" data-path="MFBrain.html"><a href="MFBrain.html#conclusion"><i class="fa fa-check"></i><b>6.4.5</b> Conclusion</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>IV Conclusion</b></span></li>
+<li class="chapter" data-level="7" data-path="summary-and-general-discussion.html"><a href="summary-and-general-discussion.html"><i class="fa fa-check"></i><b>7</b> Summary and general discussion</a><ul>
+<li class="chapter" data-level="7.1" data-path="summary-and-general-discussion.html"><a href="summary-and-general-discussion.html#tes-and-attention"><i class="fa fa-check"></i><b>7.1</b> tES and attention</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="summary-and-general-discussion.html"><a href="summary-and-general-discussion.html#tes-to-enhance-sustained-attention"><i class="fa fa-check"></i><b>7.1.1</b> tES to enhance sustained attention?</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="summary-and-general-discussion.html"><a href="summary-and-general-discussion.html#tes-challenges"><i class="fa fa-check"></i><b>7.2</b> tES challenges</a></li>
+<li class="chapter" data-level="7.3" data-path="summary-and-general-discussion.html"><a href="summary-and-general-discussion.html#a-crisis-of-confidence"><i class="fa fa-check"></i><b>7.3</b> A “crisis of confidence”</a></li>
+<li class="chapter" data-level="7.4" data-path="summary-and-general-discussion.html"><a href="summary-and-general-discussion.html#discussion-future"><i class="fa fa-check"></i><b>7.4</b> Future directions</a></li>
+<li class="chapter" data-level="7.5" data-path="summary-and-general-discussion.html"><a href="summary-and-general-discussion.html#conclusions-1"><i class="fa fa-check"></i><b>7.5</b> Conclusions</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="sacc-tDCS-supplement.html"><a href="sacc-tDCS-supplement.html"><i class="fa fa-check"></i><b>A</b> Supplement to Chapter 3</a><ul>
+<li class="chapter" data-level="A.1" data-path="sacc-tDCS-supplement.html"><a href="sacc-tDCS-supplement.html#tdcs-adverse-effects"><i class="fa fa-check"></i><b>A.1</b> tDCS adverse effects</a></li>
+<li class="chapter" data-level="A.2" data-path="sacc-tDCS-supplement.html"><a href="sacc-tDCS-supplement.html#mni-coordinates"><i class="fa fa-check"></i><b>A.2</b> MNI coordinates</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="AB-tDCS-supplement.html"><a href="AB-tDCS-supplement.html"><i class="fa fa-check"></i><b>B</b> Supplement to Chapters 4 and 5</a><ul>
+<li class="chapter" data-level="B.1" data-path="AB-tDCS-supplement.html"><a href="AB-tDCS-supplement.html#tdcs-adverse-effects-1"><i class="fa fa-check"></i><b>B.1</b> tDCS adverse effects</a></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="MFBrain-supplement.html"><a href="MFBrain-supplement.html"><i class="fa fa-check"></i><b>C</b> Supplement to Chapter 6</a><ul>
+<li class="chapter" data-level="C.1" data-path="MFBrain-supplement.html"><a href="MFBrain-supplement.html#motivation-manipulation"><i class="fa fa-check"></i><b>C.1</b> Motivation manipulation</a></li>
+</ul></li>
+<li class="chapter" data-level="D" data-path="resources-supplement.html"><a href="resources-supplement.html"><i class="fa fa-check"></i><b>D</b> Data, code and materials</a></li>
+<li class="chapter" data-level="" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i>Bibliography</a></li>
+<li class="chapter" data-level="" data-path="contributions-to-the-chapters.html"><a href="contributions-to-the-chapters.html"><i class="fa fa-check"></i>Contributions to the chapters</a></li>
+<li class="chapter" data-level="" data-path="list-of-other-publications.html"><a href="list-of-other-publications.html"><i class="fa fa-check"></i>List of other publications</a></li>
+<li class="chapter" data-level="" data-path="nederlandse-samenvatting-summary-in-dutch.html"><a href="nederlandse-samenvatting-summary-in-dutch.html"><i class="fa fa-check"></i>Nederlandse samenvatting (Summary in Dutch)</a></li>
+<li class="chapter" data-level="" data-path="acknowledgments.html"><a href="acknowledgments.html"><i class="fa fa-check"></i>Acknowledgments</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Neuroplasticity of Attention</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="resources-supplement" class="section level1">
+<h1><span class="header-section-number">D</span> Data, code and materials</h1>
+
+
+<p>\renewcommand{}{1}
+
+
+
+</p>
+<table>
+<thead>
+<tr class="header">
+<th>Chapter</th>
+<th>Resource</th>
+<th>Platform</th>
+<th>DOI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Chapter <a href="tDCS-att-review.html#tDCS-att-review">2</a></strong><a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>overview</td>
+<td>Open Science Framework</td>
+<td>10.17605/OSF.IO/KQVAP</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td><a href="https://osf.io/kqvap/" class="uri">https://osf.io/kqvap/</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Chapter <a href="sacc-tDCS.html#sacc-tDCS">3</a></strong><a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>overview</td>
+<td>Project website</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td><a href="https://lcreteig.github.io/sacc-tDCS" class="uri">https://lcreteig.github.io/sacc-tDCS</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>data</td>
+<td>figshare</td>
+<td>10.21942/uva.6462770</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td><a href="https://doi.org/10.21942/uva.6462770.v1" class="uri">https://doi.org/10.21942/uva.6462770.v1</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>code</td>
+<td>GitHub</td>
+<td>10.5281/zenodo.1410502</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td><a href="https://github.com/lcreteig/sacc-tDCS" class="uri">https://github.com/lcreteig/sacc-tDCS</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>materials</td>
+<td>Open Science Framework</td>
+<td>10.17605/OSF.IO/8JPV9</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td><a href="https://osf.io/8jpv9/" class="uri">https://osf.io/8jpv9/</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Chapter <a href="AB-tDCS-EEG.html#AB-tDCS-EEG">4</a></strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>overview</td>
+<td>Project website</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td><a href="https://lcreteig.github.io/AB-tDCS" class="uri">https://lcreteig.github.io/AB-tDCS</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>behavioral  </td>
+<td>Open Science Framework</td>
+<td>10.17605/OSF.IO/RJU7F</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>data</td>
+<td><a href="https://osf.io/rju7f/" class="uri">https://osf.io/rju7f/</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>EEG data</td>
+<td>OpenNeuro</td>
+<td>10.18112/openneuro.ds001810.v1.1.0</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td><a href="https://openneuro.org/datasets/ds001810" class="uri">https://openneuro.org/datasets/ds001810</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>code</td>
+<td>GitHub</td>
+<td>10.5281/zenodo.3233872</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td><a href="https://github.com/lcreteig/AB-tDCS" class="uri">https://github.com/lcreteig/AB-tDCS</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>materials</td>
+<td>Open Science Framework</td>
+<td>10.17605/OSF.IO/Y6HSF</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td><a href="https://osf.io/y6hsf" class="uri">https://osf.io/y6hsf</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Chapter <a href="AB-tDCS-sEBR.html#AB-tDCS-sEBR">5</a></strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>overview</td>
+<td>Project website</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td><a href="https://lcreteig.github.io/AB_tDCS-sEBR" class="uri">https://lcreteig.github.io/AB_tDCS-sEBR</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>data</td>
+<td>Open Science Framework</td>
+<td>10.17605/OSF.IO/CW2MA</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td><a href="https://osf.io/cw2ma/" class="uri">https://osf.io/cw2ma/</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>code</td>
+<td>Open Science Framework</td>
+<td>10.17605/OSF.IO/BMP7S</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td><a href="https://osf.io/bmp7s/" class="uri">https://osf.io/bmp7s/</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>materials</td>
+<td>Open Science Framework</td>
+<td>10.17605/OSF.IO/PZBGY</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td><a href="https://osf.io/pzbgy/" class="uri">https://osf.io/pzbgy/</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Chapter <a href="MFBrain.html#MFBrain">6</a></strong><a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>overview</td>
+<td>Project website</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td><a href="https://lcreteig.github.io/MFBrain" class="uri">https://lcreteig.github.io/MFBrain</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>data</td>
+<td>Open Science Framework</td>
+<td>10.17605/OSF.IO/456HE</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td><a href="https://osf.io/456he/" class="uri">https://osf.io/456he/</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>code</td>
+<td>Open Science Framework</td>
+<td>10.17605/OSF.IO/BNWAP</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td><a href="https://osf.io/bnwap/" class="uri">https://osf.io/bnwap/</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>materials</td>
+<td>Open Science Framework</td>
+<td>10.17605/OSF.IO/RZ2JV</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td><a href="https://osf.io/rzj2v/" class="uri">https://osf.io/rzj2v/</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+</div>
+<div class="footnotes">
+<hr />
+<ol start="10">
+<li id="fn10"><p><em>Published as</em>: Reteig, L. C., Talsma, L. J., van Schouwenburg, M. R., &amp; Slagter, H. A. (2017). Transcranial Electrical Stimulation as a Tool to Enhance Attention. <em>Journal of Cognitive Enhancement, 1</em>, 10–25. <a href="https://doi.org/10.1007/s41465-017-0010-y" class="uri">https://doi.org/10.1007/s41465-017-0010-y</a><a href="resources-supplement.html#fnref10" class="footnote-back">↩</a></p></li>
+<li id="fn11"><p><em>Published as</em>: Reteig, L. C., Knapen, T., Roelofs, F. J. F. W., Ridderinkhof, K. R., &amp; Slagter, H. A. (2018). No evidence that frontal eye field tDCS affects latency or accuracy of prosaccades. <em>Frontiers in Neuroscience</em> 12:617. <a href="https://doi.org/10.3389/fnins.2018.00617" class="uri">https://doi.org/10.3389/fnins.2018.00617</a><a href="resources-supplement.html#fnref11" class="footnote-back">↩</a></p></li>
+<li id="fn12"><p><em>Published as</em>: Reteig, L. C., van den Brink, R. L., Prinssen, S., Cohen, M. X., &amp; Slagter, H. A. (2019). Sustaining attention for a prolonged period of time increases temporal variability in cortical responses. <em>Cortex, 117</em>, 16–32. <a href="https://doi.org/10.1016/j.cortex.2019.02.016" class="uri">https://doi.org/10.1016/j.cortex.2019.02.016</a><a href="resources-supplement.html#fnref12" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="MFBrain-supplement.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bibliography.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/lcreteig/thesis/blob/master/11-resources-supplement.Rmd",
+"text": "Source"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

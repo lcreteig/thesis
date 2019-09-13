@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Effects of tDCS on the attentional blink revisited: A statistical evaluation of a replication attempt | Neuroplasticity of Attention</title>
+  <meta name="description" content="This is the PhD thesis of Leon Reteig" />
+  <meta name="generator" content="bookdown 0.13.2 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Effects of tDCS on the attentional blink revisited: A statistical evaluation of a replication attempt | Neuroplasticity of Attention" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://lcreteig.github.io/thesis" />
+  <meta property="og:image" content="https://lcreteig.github.io/thesisthesis_cover.jpg" />
+  <meta property="og:description" content="This is the PhD thesis of Leon Reteig" />
+  <meta name="github-repo" content="lcreteig/thesis" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Effects of tDCS on the attentional blink revisited: A statistical evaluation of a replication attempt | Neuroplasticity of Attention" />
+  
+  <meta name="twitter:description" content="This is the PhD thesis of Leon Reteig" />
+  <meta name="twitter:image" content="https://lcreteig.github.io/thesisthesis_cover.jpg" />
+
+<meta name="author" content="Leon C. Reteig" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sacc-tDCS.html"/>
+<link rel="next" href="AB-tDCS-sEBR.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">PhD thesis of Leon Reteig</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="part"><span><b>I General introduction and literature review</b></span></li>
+<li class="chapter" data-level="1" data-path="intro-general.html"><a href="intro-general.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro-general.html"><a href="intro-general.html#cognitive-enhancement"><i class="fa fa-check"></i><b>1.1</b> Cognitive enhancement</a></li>
+<li class="chapter" data-level="1.2" data-path="intro-general.html"><a href="intro-general.html#attention"><i class="fa fa-check"></i><b>1.2</b> Attention</a></li>
+<li class="chapter" data-level="1.3" data-path="intro-general.html"><a href="intro-general.html#electrical-brain-stimulation"><i class="fa fa-check"></i><b>1.3</b> Electrical brain stimulation</a></li>
+<li class="chapter" data-level="1.4" data-path="intro-general.html"><a href="intro-general.html#changing-attentional-performance"><i class="fa fa-check"></i><b>1.4</b> Changing attentional performance</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="intro-general.html"><a href="intro-general.html#spatial-attention"><i class="fa fa-check"></i><b>1.4.1</b> Spatial attention</a></li>
+<li class="chapter" data-level="1.4.2" data-path="intro-general.html"><a href="intro-general.html#temporal-attention"><i class="fa fa-check"></i><b>1.4.2</b> Temporal attention</a></li>
+<li class="chapter" data-level="1.4.3" data-path="intro-general.html"><a href="intro-general.html#sustained-attention"><i class="fa fa-check"></i><b>1.4.3</b> Sustained attention</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="intro-general.html"><a href="intro-general.html#measuring-attention-with-eeg"><i class="fa fa-check"></i><b>1.5</b> Measuring attention with EEG</a></li>
+<li class="chapter" data-level="1.6" data-path="intro-general.html"><a href="intro-general.html#overview"><i class="fa fa-check"></i><b>1.6</b> Overview</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html"><i class="fa fa-check"></i><b>2</b> Transcranial electrical stimulation as a tool to enhance attention</a><ul>
+<li class="chapter" data-level="2.1" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#tDCS_att_review-introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#visual-search"><i class="fa fa-check"></i><b>2.2</b> Visual search</a></li>
+<li class="chapter" data-level="2.3" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#spatial-orienting"><i class="fa fa-check"></i><b>2.3</b> Spatial orienting</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#stimulus-driven-orienting"><i class="fa fa-check"></i><b>2.3.1</b> Stimulus-driven orienting</a></li>
+<li class="chapter" data-level="2.3.2" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#endogenous-and-exogenous-orienting"><i class="fa fa-check"></i><b>2.3.2</b> Endogenous and exogenous orienting</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#spatial-bias"><i class="fa fa-check"></i><b>2.4</b> Spatial bias</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#pseudoneglect"><i class="fa fa-check"></i><b>2.4.1</b> Pseudoneglect</a></li>
+<li class="chapter" data-level="2.4.2" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#hemispatial-neglect"><i class="fa fa-check"></i><b>2.4.2</b> Hemispatial neglect</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#sustained-attention-1"><i class="fa fa-check"></i><b>2.5</b> Sustained attention</a></li>
+<li class="chapter" data-level="2.6" data-path="tDCS-att-review.html"><a href="tDCS-att-review.html#tDCS_att_review-discussion"><i class="fa fa-check"></i><b>2.6</b> Discussion</a></li>
+</ul></li>
+<li class="part"><span><b>II Enhancing attentional performance with tDCS</b></span></li>
+<li class="chapter" data-level="3" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html"><i class="fa fa-check"></i><b>3</b> No evidence that frontal eye field tDCS affects latency or accuracy of prosaccades</a><ul>
+<li class="chapter" data-level="3.1" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#sacc_tDCS-introduction"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#sacc_tDCS-methods"><i class="fa fa-check"></i><b>3.2</b> Materials and Methods</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#participants"><i class="fa fa-check"></i><b>3.2.1</b> Participants</a></li>
+<li class="chapter" data-level="3.2.2" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#procedure"><i class="fa fa-check"></i><b>3.2.2</b> Procedure</a></li>
+<li class="chapter" data-level="3.2.3" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#sacc-task"><i class="fa fa-check"></i><b>3.2.3</b> Task</a></li>
+<li class="chapter" data-level="3.2.4" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#eye-tracking"><i class="fa fa-check"></i><b>3.2.4</b> Eye tracking</a></li>
+<li class="chapter" data-level="3.2.5" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#sacc-methods-tDCS"><i class="fa fa-check"></i><b>3.2.5</b> tDCS</a></li>
+<li class="chapter" data-level="3.2.6" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#frontal-eye-field-localization"><i class="fa fa-check"></i><b>3.2.6</b> Frontal eye field localization</a></li>
+<li class="chapter" data-level="3.2.7" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#analyses"><i class="fa fa-check"></i><b>3.2.7</b> Analyses</a></li>
+<li class="chapter" data-level="3.2.8" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#data-materials-and-code-availability"><i class="fa fa-check"></i><b>3.2.8</b> Data, materials, and code availability</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#sacc_tDCS-results"><i class="fa fa-check"></i><b>3.3</b> Results</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#participant-and-saccade-exclusion"><i class="fa fa-check"></i><b>3.3.1</b> Participant and saccade exclusion</a></li>
+<li class="chapter" data-level="3.3.2" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#neuronavigation"><i class="fa fa-check"></i><b>3.3.2</b> Neuronavigation</a></li>
+<li class="chapter" data-level="3.3.3" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#median-saccade-latency"><i class="fa fa-check"></i><b>3.3.3</b> Median saccade latency</a></li>
+<li class="chapter" data-level="3.3.4" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#saccade-latency-distribution"><i class="fa fa-check"></i><b>3.3.4</b> Saccade latency distribution</a></li>
+<li class="chapter" data-level="3.3.5" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#saccade-endpoint-deviation"><i class="fa fa-check"></i><b>3.3.5</b> Saccade endpoint deviation</a></li>
+<li class="chapter" data-level="3.3.6" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#saccade-endpoint-variability"><i class="fa fa-check"></i><b>3.3.6</b> Saccade endpoint variability</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="sacc-tDCS.html"><a href="sacc-tDCS.html#sacc_tDCS-discussion"><i class="fa fa-check"></i><b>3.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html"><i class="fa fa-check"></i><b>4</b> Effects of tDCS on the attentional blink revisited: A statistical evaluation of a replication attempt</a><ul>
+<li class="chapter" data-level="4.1" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-introduction"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-methods"><i class="fa fa-check"></i><b>4.2</b> Materials and Methods</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-participants"><i class="fa fa-check"></i><b>4.2.1</b> Participants</a></li>
+<li class="chapter" data-level="4.2.2" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-procedure"><i class="fa fa-check"></i><b>4.2.2</b> Procedure</a></li>
+<li class="chapter" data-level="4.2.3" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-task"><i class="fa fa-check"></i><b>4.2.3</b> Task</a></li>
+<li class="chapter" data-level="4.2.4" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-tDCS"><i class="fa fa-check"></i><b>4.2.4</b> tDCS</a></li>
+<li class="chapter" data-level="4.2.5" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-EEGdata"><i class="fa fa-check"></i><b>4.2.5</b> EEG</a></li>
+<li class="chapter" data-level="4.2.6" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#data-analysis"><i class="fa fa-check"></i><b>4.2.6</b> Data analysis</a></li>
+<li class="chapter" data-level="4.2.7" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#data-materials-and-code-availability-1"><i class="fa fa-check"></i><b>4.2.7</b> Data, materials, and code availability</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-results"><i class="fa fa-check"></i><b>4.3</b> Results</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#group-level"><i class="fa fa-check"></i><b>4.3.1</b> Group-level</a></li>
+<li class="chapter" data-level="4.3.2" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#individual-differences"><i class="fa fa-check"></i><b>4.3.2</b> Individual differences</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="AB-tDCS-EEG.html"><a href="AB-tDCS-EEG.html#AB_tDCS-discussion"><i class="fa fa-check"></i><b>4.4</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html"><i class="fa fa-check"></i><b>5</b> Spontaneous eye blink rate does not predict attentional blink size, nor the effects of tDCS on attentional blink size</a><ul>
+<li class="chapter" data-level="5.1" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-introduction"><i class="fa fa-check"></i><b>5.1</b> Introduction</a></li>
+<li class="chapter" data-level="5.2" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-methods"><i class="fa fa-check"></i><b>5.2</b> Materials and methods</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-participants"><i class="fa fa-check"></i><b>5.2.1</b> Participants</a></li>
+<li class="chapter" data-level="5.2.2" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-procedure"><i class="fa fa-check"></i><b>5.2.2</b> Procedure</a></li>
+<li class="chapter" data-level="5.2.3" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-task"><i class="fa fa-check"></i><b>5.2.3</b> Task</a></li>
+<li class="chapter" data-level="5.2.4" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-tDCS"><i class="fa fa-check"></i><b>5.2.4</b> tDCS</a></li>
+<li class="chapter" data-level="5.2.5" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-sEBR"><i class="fa fa-check"></i><b>5.2.5</b> sEBR</a></li>
+<li class="chapter" data-level="5.2.6" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-stats"><i class="fa fa-check"></i><b>5.2.6</b> Statistical analysis</a></li>
+<li class="chapter" data-level="5.2.7" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#data-materials-and-code-availability-2"><i class="fa fa-check"></i><b>5.2.7</b> Data, materials, and code availability</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-results"><i class="fa fa-check"></i><b>5.3</b> Results</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-results-rel"><i class="fa fa-check"></i><b>5.3.1</b> Reliability</a></li>
+<li class="chapter" data-level="5.3.2" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-ABmag"><i class="fa fa-check"></i><b>5.3.2</b> Relation between sEBR and baseline AB magnitude</a></li>
+<li class="chapter" data-level="5.3.3" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#relation-between-sebr-and-the-effect-of-tdcs-on-ab-magnitude-1"><i class="fa fa-check"></i><b>5.3.3</b> Relation between sEBR and the effect of tDCS on AB magnitude</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#AB_sEBR-discussion"><i class="fa fa-check"></i><b>5.4</b> Discussion</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#sebr-and-ab-magnitude-have-good-to-moderate-test-retest-reliability"><i class="fa fa-check"></i><b>5.4.1</b> sEBR and AB magnitude have good to moderate test-retest reliability</a></li>
+<li class="chapter" data-level="5.4.2" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#no-significant-relationships-between-sebr-and-baseline-ab-magnitude"><i class="fa fa-check"></i><b>5.4.2</b> No significant relationships between sEBR and baseline AB magnitude</a></li>
+<li class="chapter" data-level="5.4.3" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#no-significant-relationship-between-sebr-and-the-effect-of-tdcs-on-ab-magnitude"><i class="fa fa-check"></i><b>5.4.3</b> No significant relationship between sEBR and the effect of tDCS on AB magnitude</a></li>
+<li class="chapter" data-level="5.4.4" data-path="AB-tDCS-sEBR.html"><a href="AB-tDCS-sEBR.html#conclusions"><i class="fa fa-check"></i><b>5.4.4</b> Conclusions</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III Decreasing sustained attention with mental fatigue</b></span></li>
+<li class="chapter" data-level="6" data-path="MFBrain.html"><a href="MFBrain.html"><i class="fa fa-check"></i><b>6</b> Sustaining attention for a prolonged period of time increases temporal variability in cortical responses</a><ul>
+<li class="chapter" data-level="6.1" data-path="MFBrain.html"><a href="MFBrain.html#MFBrain-introduction"><i class="fa fa-check"></i><b>6.1</b> Introduction</a></li>
+<li class="chapter" data-level="6.2" data-path="MFBrain.html"><a href="MFBrain.html#MFBrain-methods"><i class="fa fa-check"></i><b>6.2</b> Materials and Methods</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="MFBrain.html"><a href="MFBrain.html#participants-1"><i class="fa fa-check"></i><b>6.2.1</b> Participants</a></li>
+<li class="chapter" data-level="6.2.2" data-path="MFBrain.html"><a href="MFBrain.html#task"><i class="fa fa-check"></i><b>6.2.2</b> Task</a></li>
+<li class="chapter" data-level="6.2.3" data-path="MFBrain.html"><a href="MFBrain.html#procedure-1"><i class="fa fa-check"></i><b>6.2.3</b> Procedure</a></li>
+<li class="chapter" data-level="6.2.4" data-path="MFBrain.html"><a href="MFBrain.html#behavioral-data-analysis"><i class="fa fa-check"></i><b>6.2.4</b> Behavioral data analysis</a></li>
+<li class="chapter" data-level="6.2.5" data-path="MFBrain.html"><a href="MFBrain.html#eeg-data-analysis"><i class="fa fa-check"></i><b>6.2.5</b> EEG data analysis</a></li>
+<li class="chapter" data-level="6.2.6" data-path="MFBrain.html"><a href="MFBrain.html#statistical-analysis"><i class="fa fa-check"></i><b>6.2.6</b> Statistical analysis</a></li>
+<li class="chapter" data-level="6.2.7" data-path="MFBrain.html"><a href="MFBrain.html#data-materials-and-code-availability-3"><i class="fa fa-check"></i><b>6.2.7</b> Data, materials, and code availability</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="MFBrain.html"><a href="MFBrain.html#MFBrain-results"><i class="fa fa-check"></i><b>6.3</b> Results</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="MFBrain.html"><a href="MFBrain.html#behavior"><i class="fa fa-check"></i><b>6.3.1</b> Behavior</a></li>
+<li class="chapter" data-level="6.3.2" data-path="MFBrain.html"><a href="MFBrain.html#attentional-stability-theta-phase"><i class="fa fa-check"></i><b>6.3.2</b> Attentional stability: theta phase</a></li>
+<li class="chapter" data-level="6.3.3" data-path="MFBrain.html"><a href="MFBrain.html#early-visual-processing-p1-and-n1-components"><i class="fa fa-check"></i><b>6.3.3</b> Early visual processing: P1 and N1 components</a></li>
+<li class="chapter" data-level="6.3.4" data-path="MFBrain.html"><a href="MFBrain.html#preparatory-attentional-orienting-alpha-power"><i class="fa fa-check"></i><b>6.3.4</b> Preparatory attentional orienting: alpha power</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="MFBrain.html"><a href="MFBrain.html#MFBrain-discussion"><i class="fa fa-check"></i><b>6.4</b> Discussion</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="MFBrain.html"><a href="MFBrain.html#motivation-partially-and-transiently-restores-vigilance"><i class="fa fa-check"></i><b>6.4.1</b> Motivation partially and transiently restores vigilance</a></li>
+<li class="chapter" data-level="6.4.2" data-path="MFBrain.html"><a href="MFBrain.html#theta-inter-trial-phase-clustering-mirrors-effects-of-time-on-task-and-motivation-on-behavioral-performance"><i class="fa fa-check"></i><b>6.4.2</b> Theta inter-trial phase clustering mirrors effects of time-on-task and motivation on behavioral performance</a></li>
+<li class="chapter" data-level="6.4.3" data-path="MFBrain.html"><a href="MFBrain.html#no-clear-changes-in-attentional-modulation-of-early-visual-p1n1-components"><i class="fa fa-check"></i><b>6.4.3</b> No clear changes in attentional modulation of early visual P1/N1 components</a></li>
+<li class="chapter" data-level="6.4.4" data-path="MFBrain.html"><a href="MFBrain.html#alpha-power-lateralization-is-reversed-and-unchanging"><i class="fa fa-check"></i><b>6.4.4</b> Alpha power lateralization is reversed and unchanging</a></li>
+<li class="chapter" data-level="6.4.5" data-path="MFBrain.html"><a href="MFBrain.html#conclusion"><i class="fa fa-check"></i><b>6.4.5</b> Conclusion</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>IV Conclusion</b></span></li>
+<li class="chapter" data-level="7" data-path="summary-and-general-discussion.html"><a href="summary-and-general-discussion.html"><i class="fa fa-check"></i><b>7</b> Summary and general discussion</a><ul>
+<li class="chapter" data-level="7.1" data-path="summary-and-general-discussion.html"><a href="summary-and-general-discussion.html#tes-and-attention"><i class="fa fa-check"></i><b>7.1</b> tES and attention</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="summary-and-general-discussion.html"><a href="summary-and-general-discussion.html#tes-to-enhance-sustained-attention"><i class="fa fa-check"></i><b>7.1.1</b> tES to enhance sustained attention?</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="summary-and-general-discussion.html"><a href="summary-and-general-discussion.html#tes-challenges"><i class="fa fa-check"></i><b>7.2</b> tES challenges</a></li>
+<li class="chapter" data-level="7.3" data-path="summary-and-general-discussion.html"><a href="summary-and-general-discussion.html#a-crisis-of-confidence"><i class="fa fa-check"></i><b>7.3</b> A “crisis of confidence”</a></li>
+<li class="chapter" data-level="7.4" data-path="summary-and-general-discussion.html"><a href="summary-and-general-discussion.html#discussion-future"><i class="fa fa-check"></i><b>7.4</b> Future directions</a></li>
+<li class="chapter" data-level="7.5" data-path="summary-and-general-discussion.html"><a href="summary-and-general-discussion.html#conclusions-1"><i class="fa fa-check"></i><b>7.5</b> Conclusions</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="sacc-tDCS-supplement.html"><a href="sacc-tDCS-supplement.html"><i class="fa fa-check"></i><b>A</b> Supplement to Chapter 3</a><ul>
+<li class="chapter" data-level="A.1" data-path="sacc-tDCS-supplement.html"><a href="sacc-tDCS-supplement.html#tdcs-adverse-effects"><i class="fa fa-check"></i><b>A.1</b> tDCS adverse effects</a></li>
+<li class="chapter" data-level="A.2" data-path="sacc-tDCS-supplement.html"><a href="sacc-tDCS-supplement.html#mni-coordinates"><i class="fa fa-check"></i><b>A.2</b> MNI coordinates</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="AB-tDCS-supplement.html"><a href="AB-tDCS-supplement.html"><i class="fa fa-check"></i><b>B</b> Supplement to Chapters 4 and 5</a><ul>
+<li class="chapter" data-level="B.1" data-path="AB-tDCS-supplement.html"><a href="AB-tDCS-supplement.html#tdcs-adverse-effects-1"><i class="fa fa-check"></i><b>B.1</b> tDCS adverse effects</a></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="MFBrain-supplement.html"><a href="MFBrain-supplement.html"><i class="fa fa-check"></i><b>C</b> Supplement to Chapter 6</a><ul>
+<li class="chapter" data-level="C.1" data-path="MFBrain-supplement.html"><a href="MFBrain-supplement.html#motivation-manipulation"><i class="fa fa-check"></i><b>C.1</b> Motivation manipulation</a></li>
+</ul></li>
+<li class="chapter" data-level="D" data-path="resources-supplement.html"><a href="resources-supplement.html"><i class="fa fa-check"></i><b>D</b> Data, code and materials</a></li>
+<li class="chapter" data-level="" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i>Bibliography</a></li>
+<li class="chapter" data-level="" data-path="contributions-to-the-chapters.html"><a href="contributions-to-the-chapters.html"><i class="fa fa-check"></i>Contributions to the chapters</a></li>
+<li class="chapter" data-level="" data-path="list-of-other-publications.html"><a href="list-of-other-publications.html"><i class="fa fa-check"></i>List of other publications</a></li>
+<li class="chapter" data-level="" data-path="nederlandse-samenvatting-summary-in-dutch.html"><a href="nederlandse-samenvatting-summary-in-dutch.html"><i class="fa fa-check"></i>Nederlandse samenvatting (Summary in Dutch)</a></li>
+<li class="chapter" data-level="" data-path="acknowledgments.html"><a href="acknowledgments.html"><i class="fa fa-check"></i>Acknowledgments</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Neuroplasticity of Attention</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="AB-tDCS-EEG" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Effects of tDCS on the attentional blink revisited: A statistical evaluation of a replication attempt</h1>
+
+
+<hr />
+
+<p>
+<em>This chapter is in preparation as</em>: Reteig, L. C., Newman, L. A., Ridderinkhof, K. R., &amp; Slagter, H. A. (n.d.). Effects of tDCS on the attentional blink revisited: A statistical evaluation of a replication attempt.
+
+</p>
+<p><p><strong>Abstract</strong></p>
+
+The attentional blink (AB) phenomenon reveals a bottleneck of human information processing: the second of two targets is often missed when they are presented in rapid succession among distractors. A recent study by London &amp; Slagter (<em>Journal of Cognitive Neuroscience</em>, <em>27</em>, 2382–93, 2015) showed that the size of the AB can be changed by applying transcranial direct current stimulation (tDCS) over the left dorsolateral prefrontal cortex (lDLPFC). Although AB size at the group level remained unchanged, the effects of anodal and cathodal tDCS were negatively correlated: if a given individual’s AB size decreased from baseline during anodal tDCS, their AB size would increase during cathodal tDCS, and vice versa. Here, we attempted to replicate this finding. Like London &amp; Slagter, we found no group effects of tDCS, but also no longer found a significant negative correlation. We present a series of statistical measures of replication success, all of which confirm that both studies are not in agreement. First, the correlation here is significantly smaller than a conservative estimate of the original correlation. Second, the difference between the correlations is greater than expected due to sampling error, and our data are more consistent with a zero-effect than with the original estimate. Finally, the overall effect when combining both studies is small and not significant. Our findings thus indicate that the effects of lDPLFC-tDCS on the AB are less substantial than suggested by London &amp; Slagter (2015). Although this should be quite a common scenario, negative findings can be difficult to interpret and are still under-represented in the brain stimulation and cognitive neuroscience literatures. An auxiliary goal of this chapter is therefore to provide a tutorial for other researchers, to maximize the evidential value from negative findings.
+</p>
+<div id="AB_tDCS-introduction" class="section level2">
+<h2><span class="header-section-number">4.1</span> Introduction</h2>
+<p>The <em>attentional blink</em> (AB) phenomenon clearly demonstrates that our capacity to process incoming information is easily overwhelmed. The AB occurs when two targets are embedded in a rapidly presented stream of distractors <span class="citation">(Raymond et al., <a href="bibliography.html#ref-Raymond1992">1992</a>; for reviews, see Dux &amp; Marois, <a href="bibliography.html#ref-Dux2009">2009</a>; Martens &amp; Wyble, <a href="bibliography.html#ref-Martens2010">2010</a>)</span>. The first target (T1) is usually reported with little difficulty. When there is a longer lag between the two targets <span class="citation">(&gt; 500 ms; MacLean &amp; Arnell, <a href="bibliography.html#ref-MacLean2012">2012</a>)</span>, accuracy for the second target (T2) can be on par with the first. However, for shorter lags, T2 is most often missed—as if the attentional system momentarily faltered (“blinked”).</p>
+<p>While the AB might seem to be a fundamental bottleneck, it can under some circumstances be overcome. For example, the size of the AB can be reduced by distracting activities <span class="citation">(Olivers &amp; Nieuwenhuis, <a href="bibliography.html#ref-Olivers2005">2005</a>, <a href="bibliography.html#ref-Olivers2006">2006</a>; Thomson et al., <a href="bibliography.html#ref-Thomson2015a">2015</a><a href="bibliography.html#ref-Thomson2015a">b</a>)</span>, or after following an intensive mental training program <span class="citation">(Slagter et al., <a href="bibliography.html#ref-Slagter2007">2007</a>)</span>. Others have tried to use non-invasive brain stimulation <span class="citation">(Dayan et al., <a href="bibliography.html#ref-Dayan2013">2013</a>)</span> as a means to influence the AB. Several studies have shown that repetitive transcranial magnetic stimulation (TMS) can improve target perception in AB tasks <span class="citation">(Arasanz, Staines, &amp; Schweizer, <a href="bibliography.html#ref-Arasanz2012">2012</a>; Cooper, Humphreys, Hulleman, Praamstra, &amp; Georgeson, <a href="bibliography.html#ref-Cooper2004">2004</a>; Esterman et al., <a href="bibliography.html#ref-Esterman2017">2017</a>)</span>. Yet, as TMS did not show a differential effect for targets presented at shorter or longer lags, it did not affect the AB itself.</p>
+<p>Transcranial direct current stimulation (tDCS) is another brain stimulation technique that has gained traction in the past two decades. In tDCS, an electrical current flows between an anodal and cathodal electrode, which can affect the excitability of the underlying cortex <span class="citation">(Gebodh et al., <a href="bibliography.html#ref-Gebodh2019a">2019</a>)</span>. Anodal stimulation generally enhances cortical excitability, while cathodal stimulation may have an inhibitory effect <span class="citation">(Nitsche &amp; Paulus, <a href="bibliography.html#ref-Nitsche2000">2000</a>, <a href="bibliography.html#ref-Nitsche2001">2001</a>)</span> (though note that this does not hold in all cases <span class="citation">(Parkin, Bhandari, Glen, &amp; Walsh, <a href="bibliography.html#ref-Parkin2018">2018</a>)</span>, and the underlying physiology is complex <span class="citation">(Bikson et al., <a href="bibliography.html#ref-Bikson2019">2019</a>; Liu et al., <a href="bibliography.html#ref-Liu2018">2018</a>; Stagg et al., <a href="bibliography.html#ref-Stagg2018">2018</a>)</span>).</p>
+<p><span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> were the first to examine the effects of tDCS on the AB. They applied anodal and cathodal tDCS over the left dorsolateral prefrontal cortex (lDPLFC, with the other electrode on the right forehead)—one of the core brain areas implicated in the AB <span class="citation">(Hommel et al., <a href="bibliography.html#ref-Hommel2006">2006</a>; Slagter et al., <a href="bibliography.html#ref-Slagter2010">2010</a>)</span>. At the group level, tDCS did not appear to have any effects on AB size. However, anodal and cathodal tDCS did appear to systematically affect the AB within individuals, as their effects were negatively correlated. For a given individual, this negative correlation implies that when AB size increased (compared to a baseline measurement) during anodal tDCS, AB size would decrease during cathodal tDCS (or vice versa).</p>
+<p>London and Slagter’s <span class="citation">(<a href="bibliography.html#ref-London2015">2015</a>)</span> findings mesh well with earlier literature showing large individual differences in both the AB <span class="citation">(Willems &amp; Martens, <a href="bibliography.html#ref-Willems2016">2016</a>)</span> and effects of tDCS <span class="citation">(Krause &amp; Cohen Kadosh, <a href="bibliography.html#ref-Krause2014">2014</a>)</span>. However, it remains the only tDCS study of the AB to date. Also, the negative correlation between the effects of anodal and cathodal tDCS was based on an exploratory analysis. We thus decided to conduct another study aiming to replicate this finding.</p>
+<p>To foreshadow our results, like <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, we do not find a group effect of tDCS on the AB. However, the correlation between the effects of anodal and cathodal tDCS was also not significant. Although this indicates that the two studies may differ, a failure to reject the null hypothesis by itself does not tell us much <span class="citation">(Harms &amp; Lakens, <a href="bibliography.html#ref-Harms2018">2018</a>)</span>: it is crucial to also take measures of the uncertainty and effect size in both studies into account <span class="citation">(Simonsohn, <a href="bibliography.html#ref-Simonsohn2015">2015</a>)</span>.</p>
+<p>Therefore, we employ a number of statistical methods to maximize the evidential value in these two studies. We ask three questions that all aim to evaluate to what extent the present study is a successful replication <span class="citation">(Zwaan, Etz, Lucas, &amp; Donnellan, <a href="bibliography.html#ref-Zwaan2018">2018</a>; cf. Camerer et al., <a href="bibliography.html#ref-Camerer2018">2018</a>; Open Science Collaboration, <a href="bibliography.html#ref-OSC2015">2015</a>)</span> of <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>. First, while the effect in our study was not significant, there might still be a meaningful effect that is simply smaller than anticipated. Therefore, we used equivalence testing <span class="citation">(Lakens, Scheel, &amp; Isager, <a href="bibliography.html#ref-Lakens2018">2018</a>)</span> to answer the question “<em>is the correlation in study 2 significantly small?</em>”. Second, although our result differs from <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, it could still be more consistent with their findings than with alternative explanations. So in addition, we asked “<em>are the correlations consistent across studies 1 and 2?</em>”, and aimed to answer this question using prediction intervals <span class="citation">(Patil, Peng, &amp; Leek, <a href="bibliography.html#ref-Patil2016">2016</a>; Spence &amp; Stanley, <a href="bibliography.html#ref-Spence2016">2016</a>)</span> and replication Bayes factors <span class="citation">(Verhagen &amp; Wagenmakers, <a href="bibliography.html#ref-Verhagen2014">2014</a>; Wagenmakers, Verhagen, &amp; Ly, <a href="bibliography.html#ref-Wagenmakers2016">2016</a>)</span>. Finally, it could be that the effect in our study alone is not sufficiently large, but the overall effect based on both studies is. This raises the question “<em>is the effect significant when combining study 1 and 2?</em>”, which we addressed through meta-analysis <span class="citation">(Goh, Hall, &amp; Rosenthal, <a href="bibliography.html#ref-Goh2016">2016</a>; Quintana, <a href="bibliography.html#ref-Quintana2015">2015</a>)</span> and by pooling the data.</p>
+<p>These questions address issues of reproducibility that are currently faced by many in the brain stimulation field <span class="citation">(Héroux et al., <a href="bibliography.html#ref-Heroux2017">2017</a>)</span>, and in the cognitive neuroscience community at large <span class="citation">(Huber, Potter, &amp; Huszar, <a href="bibliography.html#ref-Huber2019">2019</a>; Munafò et al., <a href="bibliography.html#ref-Munafo2017">2017</a>)</span>. Therefore, aside from our focus on tDCS and the AB, an auxiliary goal of this chapter is to provide a tutorial on the statistical evaluation of replication studies. We hope this may prove useful to other researchers who find themselves in similar situations.</p>
+</div>
+<div id="AB_tDCS-methods" class="section level2">
+<h2><span class="header-section-number">4.2</span> Materials and Methods</h2>
+<div id="AB_tDCS-participants" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> Participants</h3>
+<p>Fourty-eight participants took part in total, 8 of whom were excluded after the first session. One participant was excluded as a precaution because they developed an atypical headache after the first session, and we could not rule out this was related to the tDCS. Another stopped responding to our requests to schedule the second session. The remaining six participants were excluded because their mean T1 accuracy in the first session was too low, which would leave too few trials to analyze, because our T2 accuracy measure included only trials in which T1 was seen. We used a cut-off of 63% T1 accuracy as an exclusion criterium, which was two standard deviations below the mean of a separate pilot study (n = 10).</p>
+<p>This left a final sample of 40 participants (29 female, mean age = 20.94, <em>SD</em> = 2.45, range = 18–28). This sample size was determined a priori to slightly exceed <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> (n = 34).</p>
+<p>The experiment and recruitment took place at the University of Amsterdam. All procedures for this study were approved by the ethics review board of the Faculty for Social and Behavioral Sciences, and complied with relevant laws and institutional guidelines. All participants provided their written informed consent and were compensated with course credit or €10 per hour (typically €65 for completing two full sessions).</p>
+</div>
+<div id="AB_tDCS-procedure" class="section level3">
+<h3><span class="header-section-number">4.2.2</span> Procedure</h3>
+<p>The study procedures were identical to <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>: participants received anodal and cathodal tDCS in separate sessions (Figure <a href="AB-tDCS-EEG.html#fig:AB-tDCS-fig-procedure">4.1</a>), which typically took place exactly one week apart (cf. minimum of 48 hours in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>). The time in between served to keep the sessions as similar as possible, and to minimize the risk of tDCS carry-over effects. 18 participants received anodal tDCS in the first session and cathodal tDCS in the second, and vice versa for the remaining 22 participants.</p>
+<div class="figure"><span id="fig:AB-tDCS-fig-procedure"></span>
+<img src="AB_tDCS_files/figures/figure_1_procedure.png" alt="Experimental design. After a baseline block without stimulation, participants performed the attentional blink task during 20 minutes of anodal (red) or cathodal (blue) tDCS, followed by a post-test block (also without stimulation). The second session (typically 7 days later) was identical, except that the tDCS polarity was reversed."  />
+<p class="caption">
+Figure 4.1: <strong>Experimental design</strong>. After a baseline block without stimulation, participants performed the attentional blink task during 20 minutes of anodal (red) or cathodal (blue) tDCS, followed by a post-test block (also without stimulation). The second session (typically 7 days later) was identical, except that the tDCS polarity was reversed.
+</p>
+</div>
+<p>First, participants experienced the sensations induced by tDCS in a brief trial stimulation (see the <a href="AB-tDCS-EEG.html#AB_tDCS-tDCS">tDCS</a> section). Next, participants completed 20 practice trials of the task (see the <a href="AB-tDCS-EEG.html#AB_tDCS-task">Task</a> section). For the main portion of the experiment, participants performed three blocks of the task (Figure <a href="AB-tDCS-EEG.html#fig:AB-tDCS-fig-procedure">4.1</a>): before tDCS (<em>baseline</em>), during anodal/cathodal tDCS (<em>tDCS</em>), and after tDCS (<em>post</em>). Finally, after completing the three blocks, participants filled in a questionnaire on tDCS-related adverse effects (see Table <a href="AB-tDCS-supplement.html#tab:tab-AB-tDCS-AE">B.1</a> and Figure <a href="AB-tDCS-supplement.html#fig:fig-AB-tDCS-AE">B.1</a> in Appendix <a href="AB-tDCS-supplement.html#AB-tDCS-supplement">B</a>).</p>
+<p>Within each block of the task, participants took a self-timed break every 50 trials (~5 minutes); between the blocks, the experimenter walked in. Participants performed the task for exactly 20 minutes during the <em>baseline</em> and <em>post</em> blocks. During the <em>tDCS</em> block, the task started after the 1-minute ramp-up of the current was complete, and continued for 21 minutes (constant current, plus 1-minute of ramp-down).</p>
+
+</div>
+<div id="AB_tDCS-task" class="section level3">
+<h3><span class="header-section-number">4.2.3</span> Task</h3>
+<p>The attentional blink task (Figure <a href="AB-tDCS-EEG.html#fig:AB-tDCS-fig-task">4.2</a>) was almost identical to the one used in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> and <span class="citation">Slagter &amp; Georgopoulou (<a href="bibliography.html#ref-Slagter2013">2013</a>)</span>, which in turn was based on a task designed by <span class="citation">Dux &amp; Marois (<a href="bibliography.html#ref-Dux2008">2008</a>)</span>. A rapid serial visual presentation stream of 15 letters (cf. 17 letters in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>) was shown on each trial, using Presentation software (Neurobehavioral Systems, Inc.). Each letter was displayed for 91.7 ms (11 frames at 120 Hz) on a dark gray background. The letters were presented in font size 40 (font: Courier New) at a viewing distance of 90 cm. On each trial, the letters were randomly sampled without replacement from the alphabet, excluding the letters I, L, O, Q, U and V, as they were too similar to each other. All distractor letters were mid-gray, whereas T1 and T2 were colored. T1 was red and always appeared at position 5 in the stream. T2 was green and followed T1 after either 2 distractors (<em>lag 3</em>) or 7 distractors (<em>lag 8</em>) (cf. lags 2, 4 and 10 in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>).</p>
+<p>The letter stream was preceded by a fixation cross (same color as the letters) presented for 1750 ms (cf. 480 ms in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>) and followed by another fixation cross (cf. none in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>). Finally, the participant was prompted to type in (using a standard keyboard) the letter they thought was presented as T1 (“Which letter was red?”), followed by T2 (“Which letter was green?”).</p>
+<p>Trial duration varied slightly because both the T1 and T2 response questions were self-paced, so some participants completed more trials than others depending on their response times. On average, participants completed 130 short lag trials (<em>SD</em> = 17; range = 78–163) and 65 long lag trials (<em>SD</em> = 9; range = 39–87) per 20-minute block.</p>
+<div class="figure"><span id="fig:AB-tDCS-fig-task"></span>
+<img src="AB_tDCS_files/figures/figure_2_task.png" alt="Attentional blink task. Participants viewed rapid serial visual presentation streams of 15 letters, all of which were distractors (gray letters) except for T1 and T2. T1 was presented in red at position 5; T2 was presented in green and followed T1 after 2 distractors (lag 3, inside the AB window) or 7 distractors (lag 8, outside the AB window). At the end of the trial, participants reported the identity of T1 and then T2 (self-paced)."  />
+<p class="caption">
+Figure 4.2: <strong>Attentional blink task</strong>. Participants viewed rapid serial visual presentation streams of 15 letters, all of which were distractors (gray letters) except for T1 and T2. T1 was presented in red at position 5; T2 was presented in green and followed T1 after 2 distractors (<em>lag 3</em>, inside the AB window) or 7 distractors (<em>lag 8</em>, outside the AB window). At the end of the trial, participants reported the identity of T1 and then T2 (self-paced).
+</p>
+</div>
+
+</div>
+<div id="AB_tDCS-tDCS" class="section level3">
+<h3><span class="header-section-number">4.2.4</span> tDCS</h3>
+<p>Transcranial direct current stimulation was delivered online (i.e. during performance of the attentional blink task) using a DC-STIMULATOR PLUS (NeuroCare Group GmbH). The current was ramped up to 1 mA in 1 minute, stayed at 1 mA for 20 minutes, and was ramped down again in 1 minute.</p>
+<p>One electrode was placed at F3 (international 10-20 system) to target the lDLPFC; the other was placed over the right forehead, centered above the eye (approximately corresponding to position Fp2). Both electrodes were 5 x 7 cm in size (35 cm<sup>2</sup>), leading to a current density of 0.029 mA/cm<sup>2</sup>. The montage and tDCS parameters are identical to <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, the only exception being the conductive medium. We used Ten20 conductive paste (Weaver and Company), because it was easier to apply concurrently with the EEG equipment (see the <a href="AB-tDCS-EEG.html#AB_tDCS-EEGdata">EEG</a> section); <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> used saline solution as a conductive medium, together with rubber straps to keep the electrodes in place.</p>
+<p>Participants received either anodal tDCS (anode on F3, cathode on right forehead) or cathodal tDCS (cathode on F3, anode on right forehead) in separate sessions. The procedure was double-blinded: both the participant and the experimenters were unaware which polarity was applied in a given session. The experimenter loaded a stimulation setting on the tDCS device (programmed by someone not involved in data collection), without knowing whether it was mapped to anodal or cathodal tDCS. In the second session, the experimenter loaded a second setting mapped to the opposite polarity (half the dataset), or simply connected the terminals of the device to the electrodes in the opposite way.</p>
+<p>At the start of the experiment, participants received a brief trial stimulation, based on which they decided whether or not they wanted to continue with the rest of the session. The experimenter offered to terminate the experiment in case tDCS was experienced as too uncomfortable, but none of the participants opted to do so. For the trial stimulation, the current was ramped up to 1 mA in 45 seconds, stayed at 1 mA for 15 seconds, and was ramped down again in 45 seconds.</p>
+</div>
+<div id="AB_tDCS-EEGdata" class="section level3">
+<h3><span class="header-section-number">4.2.5</span> EEG</h3>
+<p>We also recorded EEG during all three task blocks. Originally, we aimed to analyze the EEG data to obtain a neurophysiological correlate of the individual differences in response to tDCS <span class="citation">(Harty, Sella, &amp; Cohen Kadosh, <a href="bibliography.html#ref-Harty2017">2017</a>; Krause &amp; Cohen Kadosh, <a href="bibliography.html#ref-Krause2014">2014</a>; Li et al., <a href="bibliography.html#ref-Li2015b">2015</a>)</span>. However, since we did not replicate the behavioral effect in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, we refrained from further analysis of the EEG data. Instead, we are making the EEG data publicly available <a href="https://doi.org/10.18112/openneuro.ds001810.v1.1.0">on the OpenNeuro platform</a> <span class="citation">(Reteig et al., <a href="bibliography.html#ref-Reteig2019_data">2019</a><a href="bibliography.html#ref-Reteig2019_data">b</a>)</span>. The dataset is formatted according to the new Brain Imaging Data Structure (BIDS) standard <span class="citation">(Gorgolewski et al., <a href="bibliography.html#ref-Gorgolewski2016">2016</a>)</span> for EEG <span class="citation">(Pernet et al., <a href="bibliography.html#ref-Pernet2018">2019</a>)</span>, to facilitate re-use. We include the raw data, as well as the fully preprocessed data and the MATLAB code that generated it.</p>
+</div>
+<div id="data-analysis" class="section level3">
+<h3><span class="header-section-number">4.2.6</span> Data analysis</h3>
+<p>Data were analyzed using R <span class="citation">(Version 3.5.1; R Core Team, <a href="bibliography.html#ref-R-base">2018</a>)</span><a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> from within RStudio <span class="citation">(Version 1.1.463; RStudio Team, <a href="bibliography.html#ref-RStudio2016">2016</a>)</span>.</p>
+<div id="group-level-analysis" class="section level4">
+<h4><span class="header-section-number">4.2.6.1</span> Group-level analysis</h4>
+<p>Repeated measures ANOVAs were conducted on T1 accuracy (percentage of trials where T1 was reported correctly) and T2|T1 accuracy (percentage of trials where T2 was reported correctly, out of the subset of T1-correct trials) using the <em>afex</em> package <span class="citation">(Version NA; Singmann, Bolker, Westfall, &amp; Aust, <a href="bibliography.html#ref-R-afex">2018</a>)</span>. The same factors were included for both repeated measures ANOVAs, following <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>: Lag (3, 8), Block (baseline, tDCS, post), Stimulation (anodal, cathodal), and the between-subject factor Session order (anodal tDCS in the first session vs. cathodal tDCS in the first session). Effect sizes are reported as generalized eta-squared (<span class="math inline">\(\hat{\eta}^2_G\)</span>) <span class="citation">(Bakeman, <a href="bibliography.html#ref-Bakeman2005">2005</a>)</span>. Greenhouse-Geisser-adjusted degrees of freedom (<span class="math inline">\(\mathit{df}^{GG}\)</span>) and p-values are reported as a correction for sphericity violations.</p>
+</div>
+<div id="AB_tDCS-ind-diffs" class="section level4">
+<h4><span class="header-section-number">4.2.6.2</span> Individual differences analysis</h4>
+<p>We reproduced the analysis behind Figure 4 of <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, which showed a differential effect of anodal vs. cathodal tDCS at the individual participant level. First, we calculated AB magnitude by subtracting T2|T1 accuracy at lag 3 from T2|T1 accuracy at lag 8. Next, change scores were created by subtracting AB magnitude in the <em>baseline</em> block from the <em>tDCS</em> and the <em>post</em> blocks, respectively. The change scores in the anodal and cathodal session were then correlated to each other. Again following <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, we computed a partial correlation (using the <em>ggm</em> package <span class="citation">(Version NA; Marchetti, Drton, &amp; Sadeghi, <a href="bibliography.html#ref-R-ggm">2015</a>)</span>), attempting to adjust for variance due to Session order.</p>
+</div>
+<div id="AB_tDCS-rep-analyses" class="section level4">
+<h4><span class="header-section-number">4.2.6.3</span> Replication analyses</h4>
+<p>In contrast to <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, the analysis described in the previous section did not produce a significant correlation in our dataset. Therefore, we conducted five follow-up analyses that aim to quantify to what extent our results (do not) replicate <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>. These all provide a complementary perspective on this question. First, we performed an <a href="AB-tDCS-EEG.html#eq">equivalence test</a> (1) to assess whether the effect in the present study was significantly smaller than in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>. While this procedure is more focused on hypothesis testing, we also constructed <a href="AB-tDCS-EEG.html#pi">prediction intervals</a> (2) to capture the range of effect sizes we can expect in a replication of <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>. Both of these procedures are based on frequentist statistics, which cannot directly quantify the amount of evidence for a (null) hypothesis. Therefore, we also computed a <a href="AB-tDCS-EEG.html#repBF">replication Bayes factor</a> (3) that expresses whether the data in the present study are more likely under the null hypothesis that the effect is absent, vs. the alternative hypothesis that the effect is comparable to <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>. Finally, we directly combined both studies and estimated the size of the overall effect, through <a href="AB-tDCS-EEG.html#meta">meta-analysis</a> (4) of both correlations, and by computing a new correlation on the <a href="AB-tDCS-EEG.html#pool">pooled dataset</a> (5). More details on each analysis can be found in the following sections, and the provided online resources.</p>
+<div id="eq" class="section level5">
+<h5><span class="header-section-number">4.2.6.3.1</span> Equivalence tests</h5>
+<p>Equivalence tests can be used to test for the <em>absence</em> of an effect of a specific size <span class="citation">(see Lakens et al., <a href="bibliography.html#ref-Lakens2018">2018</a> for a tutorial)</span>. Usually, the effect size used for the test is the smallest effect size of interest (the SESOI). Typically, equivalence tests are two one-sided tests: one test of the null hypothesis that the effect exceeds the upper equivalence bound (positive SESOI), and one that the effect exceeds the lower equivalence bound (negative SESOI). However, a one-sided test is more appropriate here: <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> found that the effects of anodal and cathodal tDCS were anticorrelated, so we are only interested in negative effect sizes. This is known as an inferiority test <span class="citation">(Lakens et al., <a href="bibliography.html#ref-Lakens2018">2018</a>)</span>.</p>
+<p>We follow the “small telescopes” <span class="citation">(Simonsohn, <a href="bibliography.html#ref-Simonsohn2015">2015</a>)</span> approach to set the SESOI to <span class="math inline">\(r_{33\%}\)</span>: the correlation that <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> had 33% power to detect. The reasoning behind this approach is that it is difficult to prove that an effect does not exist at all, but easier to show that it is surprisingly small. An equivalence test can suggest that the effect is unlikely to exceed <span class="math inline">\(r_{33\%}\)</span>, such that the odds to detect it were stacked at least 2:1 against <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>. That would not mean the effect does not exist at all, but it would mean the original evidence for the effect is not very convincing, as “too small a telescope” (in this case, an inadequate sample size) was used to reliably detect it.</p>
+<p>There are many possible specifications of the SESOI, none of which are necessarily wrong or right <span class="citation">(Lakens et al., <a href="bibliography.html#ref-Lakens2018">2018</a>)</span>. We favored the “small telescopes” approach because it constitutes a relatively strict test—<span class="math inline">\(r_{33\%}\)</span> is much smaller than the original correlation in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>. Because the observed correlation in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> could have overestimated the true correlation, it is prudent to set the SESOI to be smaller. Furthermore, the approach was specifically designed to evaluate replication results <span class="citation">(Simonsohn, <a href="bibliography.html#ref-Simonsohn2015">2015</a>)</span>, and has been used previously in large-scale replication studies <span class="citation">(e.g. Camerer et al., <a href="bibliography.html#ref-Camerer2018">2018</a>)</span>.</p>
+<p>We conducted an inferiority test using the <em>TOSTER</em> package <span class="citation">(Version NA; Lakens, <a href="bibliography.html#ref-R-TOSTER">2017</a>)</span> against the null hypothesis that the correlation coefficient in the present study is at least as negative as <span class="math inline">\(-r_{33\%}\)</span>. At a standard alpha level of 0.05, the test is significant if the 90% confidence interval around the observed correlation does not contain <span class="math inline">\(r_{33\%}\)</span>. This would mean that the observed correlation should be considered “statistically inferior”, as it is then significantly smaller (i.e. less negative) than <span class="math inline">\(-r_{33\%}\)</span>.</p>
+</div>
+<div id="pi" class="section level5">
+<h5><span class="header-section-number">4.2.6.3.2</span> Prediction interval</h5>
+<p>Prediction intervals contain a range of values we can expect a new observation to fall within. In our case, the observation of interest is the correlation between the effects of anodal and cathodal tDCS. This correlation is estimated based on a sample, and is thus subject to sampling error: any two estimates of the correlation will almost never be exactly the same. Prediction intervals aim to quantify how dissimilar two estimates can be before we should be surprised.</p>
+<p>Here, we construct a prediction interval around the original estimate of the correlation in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>. This prediction interval contains the range of correlation coefficients we can expect to see in the present study, given the results of <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>. The width of the interval depends on the sample sizes of both studies, as larger samples will reduce variation in the estimates, leading to smaller prediction intervals <span class="citation">(Patil et al., <a href="bibliography.html#ref-Patil2016">2016</a>)</span>.</p>
+<p>If the original study were replicated 100 times, 95 of the observed correlation coefficients would fall within the 95% prediction interval <span class="citation">(Patil et al., <a href="bibliography.html#ref-Patil2016">2016</a>)</span>. Note that this definition is related to, but different from, a <em>confidence interval</em>, which quantifies uncertainty about the (unknown) true correlation in the population (95 out of every hundred constructed 95% confidence intervals contain the true population parameter). Because prediction intervals concern the next single observation, they make a more specific claim, and will be wider than confidence intervals.</p>
+<p>We calculated a 95% prediction interval for correlations, following <span class="citation">Spence &amp; Stanley (<a href="bibliography.html#ref-Spence2016">2016</a>)</span>, using the <em>predictionInterval</em> package <span class="citation">(Version NA; Stanley, <a href="bibliography.html#ref-R-predictionInterval">2016</a>)</span>.</p>
+</div>
+<div id="repBF" class="section level5">
+<h5><span class="header-section-number">4.2.6.3.3</span> Replication Bayes factor</h5>
+<p>Bayes factors can be used to express the relative evidence for the null (<span class="math inline">\(H_0\)</span>) or alternative hypothesis (<span class="math inline">\(H_1\)</span>) <span class="citation">(Wagenmakers, Marsman, et al., <a href="bibliography.html#ref-Wagenmakers2018a">2018</a>)</span>. In a default Bayesian hypothesis test, <span class="math inline">\(H_0\)</span> states the effect size is absent (i.e. exactly zero); <span class="math inline">\(H_1\)</span> states that the effect is present (specified further by a prior distribution of effect sizes).</p>
+<p>In a replication context, we want to decide between two different scenarios <span class="citation">(Verhagen &amp; Wagenmakers, <a href="bibliography.html#ref-Verhagen2014">2014</a>)</span>. <span class="math inline">\(H_0\)</span> is the hypothesis of an idealized skeptic, who disregards the information from the original study and believes the effect is absent. The alternative hypothesis <span class="math inline">\(H_r\)</span> belongs to an idealized proponent, who believes that the effect is exactly as in the original study, i.e. their prior distribution is simply the posterior distribution of the original study.</p>
+<p>We used the replication Bayes factor test for correlations developed by <span class="citation">Wagenmakers et al. (<a href="bibliography.html#ref-Wagenmakers2016">2016</a>)</span>. The replication Bayes factor <span class="math inline">\(BF_{0r}\)</span> expresses evidence for <span class="math inline">\(H_0\)</span> : “the correlation is 0” relative to <span class="math inline">\(H_r\)</span> : “the correlation is as in the original study”. We use the interpretation scheme from <span class="citation">Wagenmakers, Love, et al. (<a href="bibliography.html#ref-Wagenmakers2018">2018</a>)</span>, where <span class="math inline">\(1 &lt; BF_{0r} &lt; 3\)</span> constitutes “anecdotal evidence” for <span class="math inline">\(H_0\)</span>, <span class="math inline">\(3 &lt; BF_{0r} &lt; 10\)</span> ~ “moderate evidence”, and <span class="math inline">\(10 &lt; BF_{0r} &lt; 30\)</span> ~ “strong evidence”.</p>
+</div>
+<div id="meta" class="section level5">
+<h5><span class="header-section-number">4.2.6.3.4</span> Meta-analysis</h5>
+<p>The outcomes from multiple studies on the same phenomenon can be combined through meta-analysis. Here we compute a meta-analytic estimate of the correlation based on the correlations observed here and as reported by <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, using the <em>metafor</em> package <span class="citation">(Version NA; Viechtbauer, <a href="bibliography.html#ref-R-metafor">2010</a>)</span>. We weighed the estimate by sample size, so the present study will have a slightly higher influence on the meta-analytic effect size (because its sample size exceeds <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>). We specified the meta-analysis as a fixed-effects model, because both studies are highly similar and from the same population (e.g., the experiments were conducted in the same location, and the sample was from the same university student population). With a fixed-effects analysis, we estimate the size of the effect <em>in the set of available studies</em>, meaning our inferences cannot generalize beyond. A random-effects meta-analysis would be appropriate in case the studies were more dissimilar, and if we sought an estimate of <em>the true effect in the population</em>, but we would need more than just two studies for this approach. Note that while meta-analyses are a powerful way to assess the overall effect in a series of studies, they are particularly vulnerable to false positives when the selection of studies (or any single study) is biased <span class="citation">(Ueno, Fastrich, &amp; Murayama, <a href="bibliography.html#ref-Ueno2016">2016</a>)</span>.</p>
+</div>
+<div id="pool" class="section level5">
+<h5><span class="header-section-number">4.2.6.3.5</span> Pooling the data with <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span></h5>
+<p>Another approach is to pool the single-subject data from both studies, and to re-calculate the partial correlation on the combined sample (n = 74). The main difference between the two studies is that <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> presented T2 at lags 2, 4 and 10; here we used lags 3 and 8. The long lags (lag 8 vs. lag 10) should be fairly comparable, as they are both well outside the attentional blink window <span class="citation">(&gt; 500 ms following T1; MacLean &amp; Arnell, <a href="bibliography.html#ref-MacLean2012">2012</a>)</span>. However, there should be a sizeable performance difference at the short lags (lag 2 vs. lag 3), as the attentional blink is larger at lag 2 than lag 3. Therefore, we opted to also create a “lag 3” condition in the data from <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, by averaging T2|T1 accuracy at lag 2 and lag 4. The difference from lag 2 to 4 (and 4 to 10) in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> looks fairly linear (see their Figure 3), so this seems a fair approximation of “true” lag 3 performance. Afterwards we recomputed the partial correlation between AB magnitude change scores as described previously (see the <a href="AB-tDCS-EEG.html#AB_tDCS-ind-diffs">Individual differences analysis</a> section).</p>
+<p>Note that this analysis is tailored to this series of studies, and not generally advisable. To get a more accurate estimate of the effect at lag 3, it is necessary to redo the analysis on the larger, combined sample. But repeating a statistical test after collecting more data (“optional stopping”) invalidates the interpretation of the p-value and can drastically increase the false positive rate <span class="citation">(Simmons, Nelson, &amp; Simonsohn, <a href="bibliography.html#ref-Simmons2011">2011</a>)</span>. This would only be acceptable when the analysis plan has been preregistered, and the false positive rate of sequential analyses is controlled <span class="citation">(for potential solutions, see Lakens, <a href="bibliography.html#ref-Lakens2014">2014</a>)</span>. We therefore do not report a p-value for this test, but only the effect size and its confidence interval.</p>
+</div>
+</div>
+</div>
+<div id="data-materials-and-code-availability-1" class="section level3">
+<h3><span class="header-section-number">4.2.7</span> Data, materials, and code availability</h3>
+<p>All of the data and materials from this study and the data from <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> are available on the <a href="https://doi.org/10.17605/OSF.IO/Y6HSF">Open Science Framework</a>. The analysis code is available on <a href="https://doi.org/10.5281/zenodo.3233872">GitHub</a> (and also from our OSF page), in the form of an R notebook detailing all the analyses that we ran for this project, along with the results. We also include an Rmarkdown <span class="citation">(Xie, Allaire, &amp; Grolemund, <a href="bibliography.html#ref-Xie2018">2018</a>)</span> source file for this chapter that can be run to reproduce the pdf version of the text, along with all the figures and statistics.</p>
+</div>
+</div>
+<div id="AB_tDCS-results" class="section level2">
+<h2><span class="header-section-number">4.3</span> Results</h2>
+<div id="group-level" class="section level3">
+<h3><span class="header-section-number">4.3.1</span> Group-level</h3>
+<div class="figure"><span id="fig:fig-group"></span>
+<img src="AB_tDCS_files/figures/figure_3_group.png" alt="No effects of tDCS on the attentional blink at the group level. There was a clear attentional blink effect: a lower % T2 accuracy (given T1 correct: T2|T1; dashed lines) for lag 3 (T2 presented inside the attentional blink window) than lag 8 (T2 presented outside the attentional blink window, on par with T1 accuracy). However, the attentional blink did not change systematically over stimulation conditions (anodal, cathodal) and blocks (pre, tDCS, post). T1 accuracy (solid lines) was also not affected by tDCS."  />
+<p class="caption">
+Figure 4.3: <strong>No effects of tDCS on the attentional blink at the group level</strong>. There was a clear attentional blink effect: a lower % T2 accuracy (given T1 correct: <em>T2|T1</em>; dashed lines) for <em>lag 3</em> (T2 presented inside the attentional blink window) than <em>lag 8</em> (T2 presented outside the attentional blink window, on par with <em>T1 accuracy</em>). However, the attentional blink did not change systematically over stimulation conditions (<em>anodal</em>, <em>cathodal</em>) and blocks (<em>pre</em>, <em>tDCS</em>, <em>post</em>). T1 accuracy (solid lines) was also not affected by tDCS.
+</p>
+</div>
+
+<p>Figure <a href="AB-tDCS-EEG.html#fig:fig-group">4.3</a> shows the attentional blink (T2|T1 accuracy per lag) for each of the three blocks (pre, tDCS, post) and stimulation conditions separately. The summary statistics and ANOVA results for T2|T1 accuracy can be found in Tables <a href="AB-tDCS-EEG.html#tab:tab-descriptives-T2">4.1</a> and <a href="AB-tDCS-EEG.html#tab:tab-anova-T2">4.2</a>. There was a clear attentional blink effect on average (main effect of Lag, <span class="math inline">\(F[1, 38] = 432.11\)</span>, <span class="math inline">\(p &lt; .001\)</span>), as T2|T1 accuracy for lag 8 was higher than lag 3.</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tab-descriptives-T2">Table 4.1: </span>Descriptive statistics for T2|T1 accuracy
+</caption>
+<thead>
+<tr>
+<th style="border-bottom:hidden" colspan="1">
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+First session: anodal (n = 18)
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+First session: cathodal (n = 22)
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+anodal
+</th>
+<th style="text-align:left;">
+cathodal
+</th>
+<th style="text-align:left;">
+anodal
+</th>
+<th style="text-align:left;">
+cathodal
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>baseline</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+lag 3
+</td>
+<td style="text-align:left;">
+0.395 (0.149)
+</td>
+<td style="text-align:left;">
+0.486 (0.167)
+</td>
+<td style="text-align:left;">
+0.469 (0.211)
+</td>
+<td style="text-align:left;">
+0.423 (0.168)
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+lag 8
+</td>
+<td style="text-align:left;">
+0.826 (0.119)
+</td>
+<td style="text-align:left;">
+0.819 (0.095)
+</td>
+<td style="text-align:left;">
+0.854 (0.125)
+</td>
+<td style="text-align:left;">
+0.855 (0.087)
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>tDCS</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+lag 3
+</td>
+<td style="text-align:left;">
+0.415 (0.168)
+</td>
+<td style="text-align:left;">
+0.450 (0.165)
+</td>
+<td style="text-align:left;">
+0.460 (0.201)
+</td>
+<td style="text-align:left;">
+0.444 (0.188)
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+lag 8
+</td>
+<td style="text-align:left;">
+0.787 (0.131)
+</td>
+<td style="text-align:left;">
+0.819 (0.098)
+</td>
+<td style="text-align:left;">
+0.830 (0.115)
+</td>
+<td style="text-align:left;">
+0.849 (0.096)
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="5" style="border-bottom: 1px solid;">
+<strong>post</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+lag 3
+</td>
+<td style="text-align:left;">
+0.437 (0.171)
+</td>
+<td style="text-align:left;">
+0.451 (0.160)
+</td>
+<td style="text-align:left;">
+0.453 (0.190)
+</td>
+<td style="text-align:left;">
+0.447 (0.164)
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+lag 8
+</td>
+<td style="text-align:left;">
+0.783 (0.118)
+</td>
+<td style="text-align:left;">
+0.825 (0.098)
+</td>
+<td style="text-align:left;">
+0.840 (0.145)
+</td>
+<td style="text-align:left;">
+0.846 (0.120)
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border: 0;" colspan="100%">
+<sup></sup> Values are “Mean (SD)”
+</td>
+</tr>
+</tfoot>
+</table>
+<p>Effects of tDCS at the group-level should manifest as a three-way interaction between Block, Stimulation, and Lag. As in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, this interaction was not significant (<span class="math inline">\(F[1.77, 67.17] = 2.77\)</span>, <span class="math inline">\(p = .076\)</span>). However, the higher-order interaction with Session order did reach significance (<span class="math inline">\(F[1.77, 67.17] = 7.25\)</span>, <span class="math inline">\(p = .002\)</span>). This interaction appears to be mostly driven by a learning effect across sessions and blocks (the Session order by Stimulation by Lag interaction). From the first to the 2nd session, lag 3 performance improved, while lag 8 performance declined somewhat (leading to a smaller attentional blink). This change was stronger in participants that received anodal tDCS in the first session, and less pronounced in the cathodal-first group. We do not consider this a genuine effect of tDCS on the attentional blink, because there is no clear reason why these randomized groups should differ, and because the largest difference between the anodal and cathodal session occurred in the baseline block already (see Table <a href="AB-tDCS-EEG.html#tab:tab-descriptives-T2">4.1</a>).</p>
+<p>We ran the same repeated measures ANOVA for T1 accuracy (Table <a href="AB-tDCS-EEG.html#tab:tab-anova-T1">4.3</a>). On average, participants correctly identified T1 in 82% of trials (Figure <a href="AB-tDCS-EEG.html#fig:fig-group">4.3</a>), which is comparable to previous studies using this task <span class="citation">(86% in London &amp; Slagter, <a href="bibliography.html#ref-London2015">2015</a>; in 82% in Slagter &amp; Georgopoulou, <a href="bibliography.html#ref-Slagter2013">2013</a>)</span>. T1 accuracy was also slightly lower for lag 3 than lag 8 (main effect of Lag, <span class="math inline">\(F[1, 38] = 29.23\)</span>, <span class="math inline">\(p &lt; .001\)</span>). There was a main effect of Block, reflecting that T1 accuracy decreased <em>within</em> a session (<span class="math inline">\(F[1.89, 71.87] = 6.64\)</span>, <span class="math inline">\(p = .003\)</span>). Finally, T1 performance also decreased <em>across</em> the sessions (interaction between Session order and Stimulation: <span class="math inline">\(F[1, 38] = 11.24\)</span>, <span class="math inline">\(p = .002\)</span>).</p>
+<p>In sum, we conclude that there is no significant effect of tDCS on the attentional blink or T1 accuracy at the group level, in agreement with <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>.</p>
+
+<caption>
+<span id="tab:tab-anova-T2">Table 4.2: </span>
+</caption>
+<caption>
+<em>Repeated measures ANOVA on T2|T1 accuracy</em>
+</caption>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Effect</th>
+<th align="left"><span class="math inline">\(F\)</span></th>
+<th align="left"><span class="math inline">\(\mathit{df}_1^{GG}\)</span></th>
+<th align="left"><span class="math inline">\(\mathit{df}_2^{GG}\)</span></th>
+<th align="left"><span class="math inline">\(p\)</span></th>
+<th align="left"><span class="math inline">\(\hat{\eta}^2_G\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Session order</td>
+<td align="left">0.33</td>
+<td align="left">1</td>
+<td align="left">38</td>
+<td align="left">.568</td>
+<td align="left">.006</td>
+</tr>
+<tr class="even">
+<td align="left">Block</td>
+<td align="left">1.13</td>
+<td align="left">1.91</td>
+<td align="left">72.71</td>
+<td align="left">.328</td>
+<td align="left">.001</td>
+</tr>
+<tr class="odd">
+<td align="left">Stimulation</td>
+<td align="left">2.47</td>
+<td align="left">1</td>
+<td align="left">38</td>
+<td align="left">.125</td>
+<td align="left">.002</td>
+</tr>
+<tr class="even">
+<td align="left">Lag</td>
+<td align="left">432.11</td>
+<td align="left">1</td>
+<td align="left">38</td>
+<td align="left">&lt; .001</td>
+<td align="left">.634</td>
+</tr>
+<tr class="odd">
+<td align="left">Session order <span class="math inline">\(\times\)</span> Block</td>
+<td align="left">0.29</td>
+<td align="left">1.91</td>
+<td align="left">72.71</td>
+<td align="left">.741</td>
+<td align="left">.000</td>
+</tr>
+<tr class="even">
+<td align="left">Session order <span class="math inline">\(\times\)</span> Stimulation</td>
+<td align="left">5.55</td>
+<td align="left">1</td>
+<td align="left">38</td>
+<td align="left">.024</td>
+<td align="left">.005</td>
+</tr>
+<tr class="odd">
+<td align="left">Session order <span class="math inline">\(\times\)</span> Lag</td>
+<td align="left">0.48</td>
+<td align="left">1</td>
+<td align="left">38</td>
+<td align="left">.494</td>
+<td align="left">.002</td>
+</tr>
+<tr class="even">
+<td align="left">Block <span class="math inline">\(\times\)</span> Stimulation</td>
+<td align="left">0.28</td>
+<td align="left">1.91</td>
+<td align="left">72.51</td>
+<td align="left">.747</td>
+<td align="left">.000</td>
+</tr>
+<tr class="odd">
+<td align="left">Block <span class="math inline">\(\times\)</span> Lag</td>
+<td align="left">1.67</td>
+<td align="left">1.7</td>
+<td align="left">64.73</td>
+<td align="left">.199</td>
+<td align="left">.001</td>
+</tr>
+<tr class="even">
+<td align="left">Stimulation <span class="math inline">\(\times\)</span> Lag</td>
+<td align="left">0.10</td>
+<td align="left">1</td>
+<td align="left">38</td>
+<td align="left">.751</td>
+<td align="left">.000</td>
+</tr>
+<tr class="odd">
+<td align="left">Session order <span class="math inline">\(\times\)</span> Block <span class="math inline">\(\times\)</span> Stimulation</td>
+<td align="left">1.93</td>
+<td align="left">1.91</td>
+<td align="left">72.51</td>
+<td align="left">.154</td>
+<td align="left">.001</td>
+</tr>
+<tr class="even">
+<td align="left">Session order <span class="math inline">\(\times\)</span> Block <span class="math inline">\(\times\)</span> Lag</td>
+<td align="left">0.24</td>
+<td align="left">1.7</td>
+<td align="left">64.73</td>
+<td align="left">.752</td>
+<td align="left">.000</td>
+</tr>
+<tr class="odd">
+<td align="left">Session order <span class="math inline">\(\times\)</span> Stimulation <span class="math inline">\(\times\)</span> Lag</td>
+<td align="left">5.84</td>
+<td align="left">1</td>
+<td align="left">38</td>
+<td align="left">.021</td>
+<td align="left">.002</td>
+</tr>
+<tr class="even">
+<td align="left">Block <span class="math inline">\(\times\)</span> Stimulation <span class="math inline">\(\times\)</span> Lag</td>
+<td align="left">2.77</td>
+<td align="left">1.77</td>
+<td align="left">67.17</td>
+<td align="left">.076</td>
+<td align="left">.001</td>
+</tr>
+<tr class="odd">
+<td align="left">Session order <span class="math inline">\(\times\)</span> Block <span class="math inline">\(\times\)</span> Stimulation <span class="math inline">\(\times\)</span> Lag</td>
+<td align="left">7.25</td>
+<td align="left">1.77</td>
+<td align="left">67.17</td>
+<td align="left">.002</td>
+<td align="left">.003</td>
+</tr>
+</tbody>
+</table>
+
+
+<caption>
+<span id="tab:tab-anova-T1">Table 4.3: </span>
+</caption>
+<caption>
+<em>Repeated measures ANOVA on T1 accuracy</em>
+</caption>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Effect</th>
+<th align="left"><span class="math inline">\(F\)</span></th>
+<th align="left"><span class="math inline">\(\mathit{df}_1^{GG}\)</span></th>
+<th align="left"><span class="math inline">\(\mathit{df}_2^{GG}\)</span></th>
+<th align="left"><span class="math inline">\(p\)</span></th>
+<th align="left"><span class="math inline">\(\hat{\eta}^2_G\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Session order</td>
+<td align="left">0.96</td>
+<td align="left">1</td>
+<td align="left">38</td>
+<td align="left">.332</td>
+<td align="left">.018</td>
+</tr>
+<tr class="even">
+<td align="left">Block</td>
+<td align="left">6.64</td>
+<td align="left">1.89</td>
+<td align="left">71.87</td>
+<td align="left">.003</td>
+<td align="left">.010</td>
+</tr>
+<tr class="odd">
+<td align="left">Stimulation</td>
+<td align="left">0.00</td>
+<td align="left">1</td>
+<td align="left">38</td>
+<td align="left">.996</td>
+<td align="left">.000</td>
+</tr>
+<tr class="even">
+<td align="left">Lag</td>
+<td align="left">29.23</td>
+<td align="left">1</td>
+<td align="left">38</td>
+<td align="left">&lt; .001</td>
+<td align="left">.013</td>
+</tr>
+<tr class="odd">
+<td align="left">Session order <span class="math inline">\(\times\)</span> Block</td>
+<td align="left">0.60</td>
+<td align="left">1.89</td>
+<td align="left">71.87</td>
+<td align="left">.540</td>
+<td align="left">.001</td>
+</tr>
+<tr class="even">
+<td align="left">Session order <span class="math inline">\(\times\)</span> Stimulation</td>
+<td align="left">11.24</td>
+<td align="left">1</td>
+<td align="left">38</td>
+<td align="left">.002</td>
+<td align="left">.030</td>
+</tr>
+<tr class="odd">
+<td align="left">Session order <span class="math inline">\(\times\)</span> Lag</td>
+<td align="left">0.04</td>
+<td align="left">1</td>
+<td align="left">38</td>
+<td align="left">.844</td>
+<td align="left">.000</td>
+</tr>
+<tr class="even">
+<td align="left">Block <span class="math inline">\(\times\)</span> Stimulation</td>
+<td align="left">0.24</td>
+<td align="left">1.92</td>
+<td align="left">73.08</td>
+<td align="left">.777</td>
+<td align="left">.000</td>
+</tr>
+<tr class="odd">
+<td align="left">Block <span class="math inline">\(\times\)</span> Lag</td>
+<td align="left">1.91</td>
+<td align="left">1.93</td>
+<td align="left">73.2</td>
+<td align="left">.158</td>
+<td align="left">.001</td>
+</tr>
+<tr class="even">
+<td align="left">Stimulation <span class="math inline">\(\times\)</span> Lag</td>
+<td align="left">0.31</td>
+<td align="left">1</td>
+<td align="left">38</td>
+<td align="left">.584</td>
+<td align="left">.000</td>
+</tr>
+<tr class="odd">
+<td align="left">Session order <span class="math inline">\(\times\)</span> Block <span class="math inline">\(\times\)</span> Stimulation</td>
+<td align="left">9.94</td>
+<td align="left">1.92</td>
+<td align="left">73.08</td>
+<td align="left">&lt; .001</td>
+<td align="left">.007</td>
+</tr>
+<tr class="even">
+<td align="left">Session order <span class="math inline">\(\times\)</span> Block <span class="math inline">\(\times\)</span> Lag</td>
+<td align="left">0.19</td>
+<td align="left">1.93</td>
+<td align="left">73.2</td>
+<td align="left">.821</td>
+<td align="left">.000</td>
+</tr>
+<tr class="odd">
+<td align="left">Session order <span class="math inline">\(\times\)</span> Stimulation <span class="math inline">\(\times\)</span> Lag</td>
+<td align="left">0.96</td>
+<td align="left">1</td>
+<td align="left">38</td>
+<td align="left">.333</td>
+<td align="left">.000</td>
+</tr>
+<tr class="even">
+<td align="left">Block <span class="math inline">\(\times\)</span> Stimulation <span class="math inline">\(\times\)</span> Lag</td>
+<td align="left">0.31</td>
+<td align="left">1.86</td>
+<td align="left">70.75</td>
+<td align="left">.718</td>
+<td align="left">.000</td>
+</tr>
+<tr class="odd">
+<td align="left">Session order <span class="math inline">\(\times\)</span> Block <span class="math inline">\(\times\)</span> Stimulation <span class="math inline">\(\times\)</span> Lag</td>
+<td align="left">0.53</td>
+<td align="left">1.86</td>
+<td align="left">70.75</td>
+<td align="left">.580</td>
+<td align="left">.000</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<div id="individual-differences" class="section level3">
+<h3><span class="header-section-number">4.3.2</span> Individual differences</h3>
+<p>Our main aim was to replicate <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, who found a negative correlation between AB magnitude change scores (comparing the <em>tDCS</em> and <em>baseline</em> blocks) in the anodal and cathodal sessions (<em>r</em>(31) = -.45, <em>p</em> = .009). Their interpretation was that the effects of anodal and cathodal tDCS were anti-correlated: those participants that improve their performance (i.e., show a smaller AB) due to anodal tDCS tend to worsen due to cathodal tDCS, and vice versa.</p>
+<p>We ran the same partial correlation (attempting to adjust for Session order) between the anodal and cathodal AB magnitude change scores (<em>tDCS</em> - <em>baseline</em>) on our data (Figure <a href="AB-tDCS-EEG.html#fig:fig-corr">4.4</a>). However, here the resulting correlation did not go in the same direction (<em>r</em>(37) = .02), and was not significant (<em>p</em> = .899). In the next sections, we present a number of follow-up analyses that further explore this difference in results between both studies (see the <a href="AB-tDCS-EEG.html#AB_tDCS-rep-analyses">Replication analyses</a> subsection in the <a href="AB-tDCS-EEG.html#AB_tDCS-methods">Methods</a> section).</p>
+<div class="figure"><span id="fig:fig-corr"></span>
+<img src="AB_tDCS_files/figures/figure_4_corr.png" alt="The effects of anodal and cathodal tDCS are not correlated in the present study. Data points show AB magnitude change scores (tDCS - baseline, post - baseline) for each participant in the study, in the anodal session (x-axis) and the cathodal session (y-axis). While London &amp; Slagter (2015) found a negative partial correlation (for tDCS - baseline), suggesting opposite effects of anodal and cathodal tDCS, this effect appears to be absent here. The partial correlation coefficients (attempting to adjust for Session order) and p-values are printed in the upper left."  />
+<p class="caption">
+Figure 4.4: <strong>The effects of anodal and cathodal tDCS are not correlated in the present study.</strong> Data points show AB magnitude change scores (<em>tDCS - baseline</em>, <em>post - baseline</em>) for each participant in the study, in the <em>anodal</em> session (x-axis) and the <em>cathodal</em> session (y-axis). While <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> found a negative partial correlation (for <em>tDCS - baseline</em>), suggesting opposite effects of anodal and cathodal tDCS, this effect appears to be absent here. The partial correlation coefficients (attempting to adjust for Session order) and p-values are printed in the upper left.
+</p>
+</div>
+
+<div id="is-the-correlation-in-study-2-significantly-small" class="section level4">
+<h4><span class="header-section-number">4.3.2.1</span> Is the correlation in study 2 significantly small?</h4>
+<p><span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> found a medium- to large correlation (<em>r</em> = -.45), but the correlation we find here is much smaller (<em>r</em> = .02). We use equivalence testing (<span class="citation">Lakens et al. (<a href="bibliography.html#ref-Lakens2018">2018</a>)</span>; see the <a href="AB-tDCS-EEG.html#eq">Equivalence tests</a> subsection in the <a href="AB-tDCS-EEG.html#AB_tDCS-methods">Methods</a> section) to assess whether this correlation is significantly smaller than a smallest effect size of interest (SESOI). Following the “small telescopes” approach <span class="citation">(Simonsohn, <a href="bibliography.html#ref-Simonsohn2015">2015</a>)</span>, we set the SESOI to <span class="math inline">\(r_{33\%}\)</span>, the correlation <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> had 33% power to detect. Given their sample size of 34 participants, <span class="math inline">\(r_{33\%}\)</span> = .27.</p>
+<p>An inferiority test shows that the correlation here is significantly less negative than <span class="math inline">\(-r_{33\%}\)</span> (<em>p</em> = .038) (Figure <a href="AB-tDCS-EEG.html#fig:fig-rep-estimate">4.6</a>), although only by a small margin. The effect is therefore “statistically inferior”: the correlation does not exceed the lower equivalence bound (<span class="math inline">\(-r_{33\%}\)</span> = -.27). By this definition, the correlation is too small (i.e. not negative enough) to be considered meaningful, indicating that we did not successfully replicate <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>.</p>
+</div>
+<div id="are-the-correlations-consistent-across-studies-1-and-2" class="section level4">
+<h4><span class="header-section-number">4.3.2.2</span> Are the correlations consistent across studies 1 and 2?</h4>
+<p>To evaluate whether the correlation in the present study was to be expected based on <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, we constructed a 95% <em>prediction interval</em> (PI) <span class="citation">(Spence &amp; Stanley, <a href="bibliography.html#ref-Spence2016">2016</a>)</span>, using the correlation in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> and the sample size of both studies (see the <a href="AB-tDCS-EEG.html#pi">Prediction interval</a> subsection of the <a href="AB-tDCS-EEG.html#AB_tDCS-methods">Methods</a> section).</p>
+<p>The 95% PI[-0.82, -0.05] around the original correlation (<em>r</em> = -.45) is very wide, so almost any negative correlation would fall within it. However, it does not include the replication result (<em>r</em> = .02) (Figure <a href="AB-tDCS-EEG.html#fig:fig-rep-estimate">4.6</a>). Assuming the results of both studies differ only due to sampling error, the correlation observed here has a 95% chance to fall within the interval. This means the correlation in our replication study is inconsistent with the correlation in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, and thus that the replication should not be considered successful.</p>
+<p>Another approach to quantify the consistency between study 1 and 2 is to construct a replication Bayes Factor <span class="citation">(Wagenmakers et al., <a href="bibliography.html#ref-Wagenmakers2016">2016</a>)</span>. We use this Bayes factor to assess evidence for <span class="math inline">\(H_0\)</span> : “the effects of anodal and cathodal tDCS are uncorrelated” relative to <span class="math inline">\(H_r\)</span> : “the effects of anodal and cathodal tDCS are anticorrelated as in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>” (see the <a href="AB-tDCS-EEG.html#repBF">Replication Bayes factor</a> subsection of the <a href="AB-tDCS-EEG.html#AB_tDCS-methods">Methods</a> section).</p>
+<p>This replication Bayes factor expresses that the data are <span class="math inline">\(BF_{0r}\)</span> = 9.66 times more likely under <span class="math inline">\(H_0\)</span> than under <span class="math inline">\(H_r\)</span>. This constitutes moderate to strong evidence that the effect is absent vs. consistent with <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, and thus that the effect did not replicate.</p>
+</div>
+<div id="is-the-effect-significant-when-combining-study-1-and-2" class="section level4">
+<h4><span class="header-section-number">4.3.2.3</span> Is the effect significant when combining study 1 and 2?</h4>
+<p>The sample size in both study 1 (n = 34) and 2 (n = 40) is on the lower end. Therefore, we might get a more accurate estimate of the size of the effect when combining both studies.</p>
+<p>The meta-analytic estimate of the correlation is <em>r</em> = -0.20, 95%CI[-0.42, 0.04], <em>p</em> = .094 (Figure <a href="AB-tDCS-EEG.html#fig:fig-rep-estimate">4.6</a>). So, when combining the correlation from <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> and the correlation observed here, the overall effect is no longer significant.</p>
+<p>In addition, we pooled the data from both studies at the single-subject level and re-calculated the partial correlation on the combined sample (n = 74). To make the datasets as comparable as possible, we first averaged over T2|T1 accuracy at lags 2 and 4 in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, to mimic a “lag 3” condition cf. the present study (Figure <a href="AB-tDCS-EEG.html#fig:fig-corr-pooled">4.5</a>).</p>
+<div class="figure"><span id="fig:fig-corr-pooled"></span>
+<img src="AB_tDCS_files/figures/figure_5_pooledcorr.png" alt="The effects of anodal and cathodal tDCS are also not correlated when pooling data from both studies. As in Figure 4.4, data points show AB magnitude change scores (tDCS - baseline) in the anodal session (x-axis) and the cathodal session (y-axis), but now for each participant in London &amp; Slagter (2015) (study 1) and the present study (study 2). While London &amp; Slagter (2015) found a negative partial correlation, suggesting opposite effects of anodal and cathodal tDCS, this effect appears to be absent when based on the combined data of both studies. The partial correlation coefficient (attempting to adjust for Session order) is printed in the upper left."  />
+<p class="caption">
+Figure 4.5: <strong>The effects of anodal and cathodal tDCS are also not correlated when pooling data from both studies.</strong> As in Figure <a href="AB-tDCS-EEG.html#fig:fig-corr">4.4</a>, data points show AB magnitude change scores (<em>tDCS</em> - <em>baseline</em>) in the <em>anodal</em> session (x-axis) and the <em>cathodal</em> session (y-axis), but now for each participant in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> (<em>study 1</em>) and the present study (<em>study 2</em>). While <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> found a negative partial correlation, suggesting opposite effects of anodal and cathodal tDCS, this effect appears to be absent when based on the combined data of both studies. The partial correlation coefficient (attempting to adjust for Session order) is printed in the upper left.
+</p>
+</div>
+
+<p>The partial correlation based on the pooled data is <em>r</em>(71) = -.18. Thus, the correlation across a combination of both samples is a lot smaller than in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, and slightly smaller still than the meta-analytic estimate that included the original correlation from <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> (Figure <a href="AB-tDCS-EEG.html#fig:fig-rep-estimate">4.6</a>).</p>
+<div class="figure"><span id="fig:fig-rep-estimate"></span>
+<img src="AB_tDCS_files/figures/figure_6_estimates.png" alt="Summary of all the replication analyses (with exception of the replication Bayes Factor). The first two rows show the partial correlation (attempting to adjust for Session order) between the AB magnitude change scores (tDCS - baseline) in the anodal and cathodal sessions, for London &amp; Slagter (2015) and the present study. The first is significantly negative, the second is slightly positive and not significant, because its 95% confidence interval (CI) overlaps with zero. The third row shows the 90% CI around the correlation in the present study. Because this interval does not overlap with the “small telescopes” effect size, (indicated by the x: \(-r_{33\%}\) = -.27), this correlation is significantly smaller. The fourth row shows the 95% prediction interval (PI) around the correlation in London &amp; Slagter (2015). Because this interval does not overlap with the correlation in the present study, both correlations are not consistent. The final two rows show the overall effect when the two correlations are meta-analyzed, and when one correlation is computed over the pooled data from both studies. Neither are significant (95% CI overlaps with zero). Thus, our replication analyses all suggest that we failed to replicate London &amp; Slagter (2015), and when the results are examined in combination, no evidence in support of a negative relationship between the AB magnitude change scores (tDCS - baseline) in the anodal and cathodal sessions is obtained."  />
+<p class="caption">
+Figure 4.6: <strong>Summary of all the replication analyses</strong> (with exception of the replication Bayes Factor). The first two rows show the partial correlation (attempting to adjust for Session order) between the AB magnitude change scores (tDCS - baseline) in the anodal and cathodal sessions, for <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> and the present study. The first is significantly negative, the second is slightly positive and not significant, because its 95% confidence interval (CI) overlaps with zero. The third row shows the 90% CI around the correlation in the present study. Because this interval does not overlap with the “small telescopes” effect size, (indicated by the <code>x</code>: <span class="math inline">\(-r_{33\%}\)</span> = -.27), this correlation is significantly smaller. The fourth row shows the 95% prediction interval (PI) around the correlation in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>. Because this interval does not overlap with the correlation in the present study, both correlations are not consistent. The final two rows show the overall effect when the two correlations are meta-analyzed, and when one correlation is computed over the pooled data from both studies. Neither are significant (95% CI overlaps with zero). Thus, our replication analyses all suggest that we failed to replicate London &amp; Slagter (2015), and when the results are examined in combination, no evidence in support of a negative relationship between the AB magnitude change scores (<em>tDCS - baseline</em>) in the anodal and cathodal sessions is obtained.
+</p>
+</div>
+
+</div>
+</div>
+</div>
+<div id="AB_tDCS-discussion" class="section level2">
+<h2><span class="header-section-number">4.4</span> Discussion</h2>
+<p><span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> were the first to uncover a potential effect of tDCS on the AB. Although there was no group-level effect of tDCS, they found a negative correlation between the effects of anodal and cathodal tDCS on T2|T1 accuracy across individuals. This analysis suggested an interesting pattern of individual differences in response to tDCS: those that tended to benefit from anodal tDCS (i.e., whose AB became smaller compared to baseline) would tend to worsen during cathodal tDCS, and vice versa. This finding seemed plausible given the substantial and well-documented individual differences in both the AB <span class="citation">(Willems &amp; Martens, <a href="bibliography.html#ref-Willems2016">2016</a>)</span> and the effects of tDCS <span class="citation">(Krause &amp; Cohen Kadosh, <a href="bibliography.html#ref-Krause2014">2014</a>)</span>.</p>
+<p>We conducted a replication study, and again found no effect of tDCS at the group level. However, in contrast to <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, the correlation between the AB magnitude change scores (tDCS - baseline) in the anodal and cathodal sessions here is not significant, and not in the same direction. We also computed several statistical measures of replication success focused on the negative correlation between anodal and cathodal tDCS. These showed that the correlation is smaller than in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>, and than the smallest correlation they could have reasonably detected (i.e., an equivalence test for the lower bound of <span class="math inline">\(r_{33\%}\)</span> <span class="citation">(Simonsohn, <a href="bibliography.html#ref-Simonsohn2015">2015</a>)</span> is significant). The difference between the two studies is greater than expected based on sampling error alone (i.e., the correlation in the present study falls outside of the 95% prediction interval). Further, the data provide moderate to strong evidence for the null hypothesis of zero correlation compared to the alternative that the correlation is as in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> (i.e. we found a replication Bayes factor in favor of the null hypothesis of ~10). Finally, combining both studies yields a smaller and non-significant correlation (both in a meta-analysis and by pooling the data).</p>
+<p>The overall picture is consistent: all measures indicate that the present study is not a successful replication of <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>. But because both studies were similar in design and sample size, it is not warranted to dismiss the findings of <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>. Our analysis revealed substantial variation between both estimates of the effect, and so the conclusion whether tDCS is effective should not be based on any single study.</p>
+<p>Still, the marked difference in results of both studies is surprising: they are similar enough that the present study could be considered a direct replication <span class="citation">(Zwaan et al., <a href="bibliography.html#ref-Zwaan2018">2018</a>)</span> of <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>. We used the exact same electrode montage and tDCS parameters, followed the same experimental design (Figure <a href="AB-tDCS-EEG.html#fig:AB-tDCS-fig-procedure">4.1</a>), ran the experiment in the same location with the same participant population, and used a virtually identical task. Nevertheless, there are some discrepancies between the studies that could have contributed to the different outcome.</p>
+<p>The most important difference is that <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> presented T2 at lags 2, 4, and 10, whereas we used lags 3 and 8. This means that AB magnitude (the difference in T2|T1 accuracy between the shortest and longest lag) was on average smaller in the present study. We introduced the change for precisely this reason: to have about as many trials for the EEG analyses in which T2 was seen vs. missed, we needed the AB to be smaller. But this increase in average T2|T1 accuracy may have also reduced the between-subject variability that is essential for analyses that capitalize on individual differences. Indeed, from Figure <a href="AB-tDCS-EEG.html#fig:fig-corr-pooled">4.5</a> it seems that the sample in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> had a larger spread, at least in the change scores for AB magnitude.</p>
+<p>Though the change in lags is probably the most important, the concurrent EEG measurement did introduce other differences as well. Each session took longer to complete, because the EEG setup required extra time, and the pace of the task was slowed down with extra inter-stimulus intervals. Finally, the current flow could have changed due to the presence of the EEG cap and electrodes, as well as the use of conductive paste instead of saline solution.</p>
+<p>At the group level, our results are in agreement with <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>: we find no differential effects of anodal and cathodal tDCS on the AB. This strongly suggests that the AB is not amenable to tDCS over the lDPLFC, at least with our fairly standard electrode montage and stimulation parameters <span class="citation">(Santarnecchi et al., <a href="bibliography.html#ref-Santarnecchi2015">2015</a>)</span>. These null results are consistent with recent reviews and meta-analyses highlighting there is little evidence that prefrontal tDCS can be used to enhance cognition <span class="citation">(Medina &amp; Cason, <a href="bibliography.html#ref-Medina2017">2017</a>)</span>; or if so, that its effects are difficult to predict <span class="citation">(Tremblay et al., <a href="bibliography.html#ref-Tremblay2014a">2014</a>)</span>, rather small <span class="citation">(Dedoncker, Brunoni, Baeken, &amp; Vanderhasselt, <a href="bibliography.html#ref-Dedoncker2016a">2016</a>)</span>, and restricted to a limited subset of outcome measures and stimulation parameters <span class="citation">(Imburgio &amp; Orr, <a href="bibliography.html#ref-Imburgio2018">2018</a>)</span>.</p>
+<p>Interpreting null results is always difficult, especially in brain stimulation studies <span class="citation">(Graaf &amp; Sack, <a href="bibliography.html#ref-DeGraaf2018">2018</a>)</span>. Ultimately, a myriad of possible underlying explanations may apply, most of which we have no direct access to. For one, we cannot be sure that the current density in the lDLPFC reached sufficient levels <span class="citation">(Kim et al., <a href="bibliography.html#ref-Kim2014">2014</a>; Opitz et al., <a href="bibliography.html#ref-Opitz2015">2015</a>)</span> based on our montage alone. More precise targeting of the stimulation towards the lDPLFC <span class="citation">(Datta et al., <a href="bibliography.html#ref-Datta2009">2009</a>)</span> and modeling of the current flow <span class="citation">(Berker et al., <a href="bibliography.html#ref-DeBerker2013">2013</a>; Karabanov, Saturnino, Thielscher, &amp; Siebner, <a href="bibliography.html#ref-Karabanov2019">2019</a>)</span> could provide some more confidence. Still, it would be difficult to verify that anodal tDCS and cathodal tDCS indeed had an opposite effect on cortical excitability <span class="citation">(Bestmann et al., <a href="bibliography.html#ref-Bestmann2014">2015</a>; Bestmann &amp; Walsh, <a href="bibliography.html#ref-Bestmann2017">2017</a>)</span>. This assumption holds in many cases, and would provide a plausible explanation <span class="citation">(Krause &amp; Cohen Kadosh, <a href="bibliography.html#ref-Krause2014">2014</a>)</span> for the negative correlation in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span>. But ideally, it should be validated with direct measures of cortical excitability. Such measures are hard to obtain, although some recent studies suggest that combining tDCS with magnetic resonance spectroscopy can be used for this purpose <span class="citation">(Antonenko et al., <a href="bibliography.html#ref-Antonenko2019">2019</a>; Filmer, Ehrhardt, Bollmann, Mattingley, &amp; Dux, <a href="bibliography.html#ref-Filmer2019">2019</a>; Talsma, Broekhuizen, Huisman, &amp; Slagter, <a href="bibliography.html#ref-Talsma2018">2018</a>)</span>.</p>
+<p>It is also possible that we do not find an effect because the studies did not have sufficient statistical power <span class="citation">(Minarik et al., <a href="bibliography.html#ref-Minarik2016">2016</a>)</span>. Especially for the individual differences analyses, the sample size in both studies is on the lower end. For example, to detect a medium-sized correlation (<em>r</em> = 0.3) with 80% power, the required sample size is n = 84. We do approach this sample size when combining both studies (n = 74). Also, the correlation in <span class="citation">London &amp; Slagter (<a href="bibliography.html#ref-London2015">2015</a>)</span> was larger (<em>r</em> = -0.45), but we cannot have much confidence in the precision of this estimate. To estimate the size of a medium correlation (<em>r</em> = 0.3) within ± 0.15 with 90% confidence, a sample size of n = 134 would be required <span class="citation">(Schönbrodt &amp; Perugini, <a href="bibliography.html#ref-Schonbrodt2013">2013</a>)</span>. Although our analyses suggest that the correlation is small if anything, this means we cannot accurately estimate how small—even with the combined sample.</p>
+<p>These are all decisions to be made at the design stage, which can increase the value of a null result <span class="citation">(Graaf &amp; Sack, <a href="bibliography.html#ref-DeGraaf2018">2018</a>)</span>. However, after the data are in, additional tools are available to increase the value of a null result <span class="citation">(Harms &amp; Lakens, <a href="bibliography.html#ref-Harms2018">2018</a>)</span>, especially in the case of a replication study <span class="citation">(Simonsohn, <a href="bibliography.html#ref-Simonsohn2015">2015</a>)</span>. Here, we used a selection of these tools to scrutinize our own two studies on tDCS effects on the attentional blink, as these are the only ones available to date.</p>
+<p>In addition, we hope this chapter provides inspiration for others in the fields of brain stimulation and cognitive neuroscience. Many speak of a crisis of confidence <span class="citation">(Héroux et al., <a href="bibliography.html#ref-Heroux2017">2017</a>)</span> and fear that the current literature is lacking in evidential value <span class="citation">(Medina &amp; Cason, <a href="bibliography.html#ref-Medina2017">2017</a>)</span>. This is certainly not a unique development, as these sentiments <span class="citation">(Baker, <a href="bibliography.html#ref-Baker2015">2015</a>)</span> and low rates of replication abound in many research areas <span class="citation">(Camerer et al., <a href="bibliography.html#ref-Camerer2018">2018</a>; Klein et al., <a href="bibliography.html#ref-Klein2018">2018</a>; Open Science Collaboration, <a href="bibliography.html#ref-OSC2015">2015</a>)</span>. But it is perhaps aggravated by the fact that the brain stimulation field has not matured yet <span class="citation">(Parkin et al., <a href="bibliography.html#ref-Parkin2015">2015</a>)</span>.</p>
+<p>To make sure the literature accurately reflects the efficacy of the technique, it is crucial to combat publication bias. Positive results are heavily over-represented in most of the scientific literature, <span class="citation">(Fanelli, <a href="bibliography.html#ref-Fanelli2012">2012</a>; Ferguson &amp; Heene, <a href="bibliography.html#ref-Ferguson2012">2012</a>; Franco, Malhotra, &amp; Simonovits, <a href="bibliography.html#ref-Franco2014">2014</a>)</span>, which has recently prompted a call to brain stimulation researchers to also publish their null results<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>. Publishing null results and replication studies—and making the most of their interpretation—is crucial to better this situation.</p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="3">
+<li id="fn3"><p>We, furthermore, used the R-packages <em>BayesFactor</em> <span class="citation">(Version 0.9.12.4.2; Morey &amp; Rouder, <a href="bibliography.html#ref-R-BayesFactor">2018</a>)</span>, <em>broom</em> <span class="citation">(Version 0.5.1; Robinson &amp; Hayes, <a href="bibliography.html#ref-R-broom">2018</a>)</span>, <em>cowplot</em> <span class="citation">(Version 0.9.99; Wilke, <a href="bibliography.html#ref-R-cowplot">2019</a>)</span>, <em>emmeans</em> <span class="citation">(Version 1.3.0; Lenth, <a href="bibliography.html#ref-R-emmeans">2018</a>)</span>, <em>here</em> <span class="citation">(Version 0.1; Müller, <a href="bibliography.html#ref-R-here">2017</a>)</span>, <em>kableExtra</em> <span class="citation">(Version 1.1.0; Zhu, <a href="bibliography.html#ref-R-kableExtra">2019</a>)</span>, <em>knitr</em> <span class="citation">(Version 1.21; Xie, <a href="bibliography.html#ref-R-knitr">2015</a>)</span>, <em>papaja</em> <span class="citation">(Version 0.1.0.9842; Aust &amp; Barth, <a href="bibliography.html#ref-R-papaja">2018</a>)</span>, <em>psychometric</em> <span class="citation">(Version 2.2; Fletcher, <a href="bibliography.html#ref-R-psychometric">2010</a>)</span>, <em>pwr</em> <span class="citation">(Version 1.2.2; Champely, <a href="bibliography.html#ref-R-pwr">2018</a>)</span>, and <em>tidyverse</em> <span class="citation">(Version 1.2.1; Wickham, <a href="bibliography.html#ref-R-tidyverse">2017</a>)</span>.<a href="AB-tDCS-EEG.html#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>Research Topic in Frontiers, “Non-Invasive Brain Stimulation Effects on Cognition and Brain Activity: Positive Lessons from Negative Findings”: <a href="https://www.frontiersin.org/research-topics/5535" class="uri">https://www.frontiersin.org/research-topics/5535</a><a href="AB-tDCS-EEG.html#fnref4" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sacc-tDCS.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="AB-tDCS-sEBR.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/lcreteig/thesis/blob/master/04-AB_tDCS.Rmd",
+"text": "Source"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
