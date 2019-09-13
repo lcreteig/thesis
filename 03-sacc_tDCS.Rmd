@@ -1,6 +1,5 @@
 ```{r setup, include=FALSE}
 library(tidyverse)
-library(knitr)
 library(pander)
 library(kableExtra)
 
@@ -215,34 +214,6 @@ knitr::include_graphics("sacc_tDCS_files/figures/figure_4_latency.png", auto_pdf
 Table: (\#tab:tab-latency) __Classical and Bayesian repeated measures ANOVA results for saccade latency__. Factors: _Stimulation_ (anodal vs. cathodal), _Time Period_ (during tDCS, post-tDCS [0-15 min], post-tDCS [0-30 min]), _Direction_ (saccade to the left vs. saccade to the right). 
 
 \endgroup
-
-```{r latency table}
-# tbl_latency <- read_csv("sacc_tDCS_files/tables/latency.csv")
-# cap_latency <- paste("__Classical and Bayesian repeated measures ANOVA results for saccade latency__",
-#                      "Factors: _Stimulation_ (anodal vs. cathodal),", 
-#                      "_Time Period_ (during tDCS, post-tDCS [0-15 min], post-tDCS [15-30 min]),",
-#                      "_Saccade Direction_ (left vs. right).")
-```
-
-```{r latency table pdf, results='show'}
-# # latex table using pander (to render markdown formatting)
-# if (knitr::is_latex_output()) {
-# panderOptions('table.alignment.default', function(df) ifelse(sapply(df, is.numeric), 'right', 'left'))
-# pander(tbl_latency, split.tables = Inf,  missing = '',
-#        split.cells = c(100,10,4,10,5,15,15),
-#        caption = paste('(\\#tab:tab-latency)', cap_latency))
-# }
-```
-
-``` {r tab-latency, results='show'}
-# # for html, kable works fine
-# options(knitr.kable.NA = '')
-# if (knitr::is_html_output()) {
-# tbl_latency %>%
-#     kable(caption = cap_latency, escape = FALSE) %>%
-#     kable_styling()
-# }
-```
 
 ### Saccade latency distribution
 

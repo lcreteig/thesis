@@ -1,7 +1,5 @@
 ```{r setup, include=FALSE}
 #Setup
-library(knitr) # rmarkdown output
-library(here) # (relative) file paths
 library(kableExtra) # complex tables
 library(tidyverse) # importing, transforming, and visualizing data frames
 

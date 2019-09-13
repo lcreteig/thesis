@@ -10,7 +10,6 @@ github-repo: "lcreteig/thesis"
 cover-image: "thesis_cover.jpg"
 documentclass: memoir
 lang: en
-#classoption: showtrims
 fontsize: 11pt
 indent: true
 site: bookdown::bookdown_site
@@ -23,7 +22,7 @@ nocite: |
 #links-as-notes: true # own implementation, so it can be turned off
 ---
 
-```{r include=FALSE}
+```{r include=FALSE, eval=FALSE}
 # automatically create a bib database for R packages
 papaja::create_bib(c('base', 'bookdown', 'knitr', 'rmarkdown', # general
                      'tidyverse', 'cowplot', 'broom', 'rogme', 'ez', 'BayesFactor', # chapter 3

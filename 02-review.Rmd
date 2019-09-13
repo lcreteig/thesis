@@ -1,6 +1,5 @@
 ```{r include = FALSE}
 library(tidyverse)
-library(knitr)
 library(pander)
 library(kableExtra)
 
@@ -71,7 +70,6 @@ Whether you are looking for a particular pair of socks or crossing a busy inters
 ```{=latex}
 \cleartoverso
 \pagestyle{empty}
-%\changepage{+30mm}{}{-25mm}{-10mm}{}{-10mm}{}{}{} % increase text height, decrease margins
 \newgeometry{left=20mm,right=0.5in,top=0.2in,bottom=0.2in} % narrow margins (0.5), bit more at top, adjust table sides
 \blandscape
 \LTcapwidth=200mm % make caption almost as wide as table
@@ -92,7 +90,6 @@ pander(tbl_other, split.tables = Inf, justify = 'left',  missing = '',
 \newpage
 \normalsize
 \elandscape
-%\changepage{-30mm}{}{+25mm}{+10mm}{}{+10mm}{}{}{} % revert
 \restoregeometry % revert to normal margins set with memoir
 \pagestyle{\defstyle}
 ```
@@ -134,7 +131,6 @@ pander(tbl_visual_search, split.tables = Inf, justify = 'left',  missing = '',
        split.cells = c(40,1,1,30,5,10,10,8,50),
        caption = paste('(\\#tab:visual-search)', cap_visual_search))
 }
-# best so far: split.cells = c(40,1,1,25,5,10,7,25,50),
 ```
 
 ```{=latex}

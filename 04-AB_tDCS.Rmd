@@ -1,8 +1,6 @@
 ```{r setup, include=FALSE}
 #Setup
-library(knitr) # rmarkdown output
 library(papaja) # APA formatted manuscripts
-library(here) # (relative) file paths
 library(kableExtra) # complex tables
 
 knitr::opts_chunk$set(results = 'hide', echo = FALSE, message = FALSE, warning = FALSE)
