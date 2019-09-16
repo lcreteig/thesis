@@ -62,10 +62,7 @@ Participants performed a modified version of the sustained attention task from @
 
 (ref:caption-MFBrain-figure-1-task) __Sustained attention task__. All stimuli were presented 3° to the left and 1.5° below the yellow fixation square. The inset (dotted square) depicts a zoomed view of the stimuli. Each trial started with the presentation of the mask stimulus for 1850 ms. Then either a non-target (long line; 80% of trials) or a target (short line; 20% of trials) was presented for 150 ms. Participants were instructed to only respond to targets.
 
-<div class="figure">
-<img src="MFBrain_files/figures/figure_1_task.png" alt="(ref:caption-MFBrain-figure-1-task)"  />
-<p class="caption">(\#fig:MFBrain-figure-1-task)(ref:caption-MFBrain-figure-1-task)</p>
-</div>
+![(\#fig:MFBrain-figure-1-task)(ref:caption-MFBrain-figure-1-task)](MFBrain_files/figures/figure_1_task.pdf) 
 
 Stimuli were presented at a viewing distance of 110 cm against a black background on a 17-inch Benq TFT monitor, running at a 60 Hz refresh rate. Participants were instructed to maintain fixation on a central yellow square (0.11° x 0.11°), which remained on screen throughout the task. All other stimuli were presented 3° to the left and 1.5° lower than fixation, so participants had to continuously and covertly direct their attention to this location. Every 2000 ms, a light gray line (width: 0.03°) was presented for 150 ms, which could be either short (a target; 20% of trials) or long (a non-target; 80% of trials). Participants were tasked to respond with their right index finger whenever they detected a target (short line). Non-targets were always 1.89° long; target length was calibrated individually (see [Procedure]) for each participant (_M_ = 1.40°, _SD_ = 0.10°, range = 1.21--1.59°). Line stimuli were preceded and followed by a mask stimulus, presented for the remaining 1850 ms. The mask was composed of many short lines (0.03° x 0.12°), subtending an area of 0.21° by 2.44°. To prevent participants from judging the length of (non-)target lines relative to the mask, the lines that comprised the mask were vertically shifted by a random small amount (within ±0.06°) on each presentation.
 
@@ -168,10 +165,9 @@ The motivation manipulation improved accuracy in the following block of task per
 
 (ref:caption-figure-2) __Declining performance with time-on-task is only partially counteracted by increases in motivation__. (__A__) Accuracy ($A'$) declined with time on task and was only partially and transiently restored by the motivation manipulation (after 60 minutes of task performance; vertical dotted line). These changes in accuracy were mirrored in the response time data (__B__) and mostly due to changes in Hit rate (__C__); there was no significant change over time in False alarm rate (__D__). The motivation manipulation successfully restored motivation ratings to their initial levels (__E__), but aversion ratings (__F__) remained elevated. The left y-axis of each plot shows the absolute value; the right y-axis shows the change compared to the first measurement (horizontal dotted line). Error bars are 95% confidence intervals of the paired difference between the first and each subsequent mean; paired differences are significant when the confidence interval does not overlap the dotted line. The x-axis depicts time-on-task in blocks of 10 minutes. The motivation and aversion ratings (horizontal dotted lines: minimum of 1, maximum of 7) were taken after each block (1 through 8), as well as before the task started (_begin_) and directly after the motivation manipulation (_post_).
 
-<div class="figure">
-<img src="MFBrain_files/figures/figure_2_behav.png" alt="(ref:caption-figure-2)"  />
-<p class="caption">(\#fig:figure-2-behav)(ref:caption-figure-2)</p>
-</div>
+\begin{figure}
+\includegraphics[width=190mm]{MFBrain_files/figures/figure_2_behav} \caption{(ref:caption-figure-2)}(\#fig:figure-2-behav)
+\end{figure}
 
 \newpage
 \elandscape
@@ -195,10 +191,9 @@ To more directly quantify the relationship between theta ITPC and $A'$ over time
 
 (ref:caption-figure-3) __Changes in behavioral performance with time-on-task and motivation are closely tracked by cross-trial consistency of post-stimulus theta phase (A--D), but not theta power (E--H)__. Theta inter-trial phase clustering (ITPC) peaked from 150--500 ms post-stimulus (vertical dotted-line) between 3 and 7 Hz (time-frequency window outlined in white) (__A__, average of electrodes of interest) on left parieto-occipital (left PO) electrodes (PO7, P5, P7), right parieto-occipital (right PO) electrodes (PO8, P6, P8), and mid-frontal (MF) electrodes (FC1, FCz, FC2) (__B__, average of time-frequency window, electrodes marked in white). The same electrode sites and time-frequency windows of interest were used for theta power (__E__, __F__), baseline corrected from -400 to -100 ms using a decibel conversion. Theta ITPC in correct rejection trials (CRs) decreased with time-on-task (8 blocks of 10 minutes each) and increased after the motivation manipulation (directly after block 6; vertical dotted line) (__C__), closely resembling changes in task performance (Figure \@ref(fig:figure-2-behav)A). Power in the theta band decreased linearly over time, but did not change after the motivation manipulation (__G__). Both theta ITPC (__D__) and power (__H__) were higher for hit than miss trials, but this difference did not change significantly over time (4 blocks of 20 minutes each). Error bars are within-subject [@Cousineau2005; @Morey2008] 95% confidence intervals.
 
-<div class="figure">
-<img src="MFBrain_files/figures/figure_3_theta.png" alt="(ref:caption-figure-3)"  />
-<p class="caption">(\#fig:figure-3-theta)(ref:caption-figure-3)</p>
-</div>
+\begin{figure}
+\includegraphics[width=190mm]{MFBrain_files/figures/figure_3_theta} \caption{(ref:caption-figure-3)}(\#fig:figure-3-theta)
+\end{figure}
 
 \newpage
 \elandscape
@@ -222,10 +217,9 @@ To investigate how time-on-task and motivation may affect early visual processin
 
 (ref:caption-figure-4) __Time-on task and motivation do not affect attentional modulation of early visual processing: P1 (A-D) and N1 (E-H) ERP components__. The P1 peaked between 110--180 ms (gray shaded rectangle) post-stimulus (vertical dotted line) on left parieto-occipital (left PO) electrodes (PO7, P5, P7) (__A__). The N1 peaked between 190--260 ms (gray shaded rectangle) on right parieto-occipital (right PO) electrodes (PO8, P6, P8) (__E__). The attentional modulation of the components, defined as the difference between hits and misses, was also lateralized to the left PO region for the P1 (__B__, average of P1 time window, left PO electrodes marked in white) and the right PO region for the N1 (__F__, average of N1 time window, right PO electrodes marked in white). P1 amplitude (__C__) did not change significantly over time in correct rejection (CR) trials, but N1 amplitude did decrease with time-on-task (__G__) (8 blocks of 10 minutes each). The time of the motivation manipulation (directly after block 6) is indicated with the vertical dotted line. There was no significant change in the attentional modulation (hits vs. misses) of the P1 (__D__) and N1 (__H__) over time (4 blocks of 20 minutes each). Error bars are within-subject [@Cousineau2005; @Morey2008] 95% confidence intervals; shaded areas in (A) and (E) represent the standard error of the mean.
 
-<div class="figure">
-<img src="MFBrain_files/figures/figure_4_ERPs.png" alt="(ref:caption-figure-4)"  />
-<p class="caption">(\#fig:figure-4-ERPs)(ref:caption-figure-4)</p>
-</div>
+\begin{figure}
+\includegraphics[width=190mm]{MFBrain_files/figures/figure_4_ERPs} \caption{(ref:caption-figure-4)}(\#fig:figure-4-ERPs)
+\end{figure}
 
 \newpage
 \elandscape
@@ -255,10 +249,9 @@ In sum, although only one hemifield (the left) was ever relevant, we observed hi
 \pagestyle{empty}
 \blandscape
 
-<div class="figure">
-<img src="MFBrain_files/figures/figure_5_latindex.png" alt="(ref:caption-figure-5)"  />
-<p class="caption">(\#fig:figure-5-latindex)(ref:caption-figure-5)</p>
-</div>
+\begin{figure}
+\includegraphics[width=190mm]{MFBrain_files/figures/figure_5_latindex} \caption{(ref:caption-figure-5)}(\#fig:figure-5-latindex)
+\end{figure}
 
 \newpage
 \elandscape
