@@ -3,11 +3,11 @@ title: "Neuroplasticity of Attention"
 subtitle: "How brain stimulation and mental fatigue affect attentional performance"
 author: "Leon C. Reteig"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
-bibliography: [thesis.bib, r-packages.bib]
+bibliography: [bib/thesis.bib, bib/r-packages.bib]
 description: This is the PhD thesis of Leon Reteig
 url: 'https\://lcreteig.github.io/thesis'
 github-repo: "lcreteig/thesis"
-cover-image: "thesis_cover.jpg"
+cover-image: "cover/thesis_cover.jpg"
 documentclass: memoir
 lang: en
 fontsize: 11pt
@@ -29,7 +29,7 @@ papaja::create_bib(c('base', 'bookdown', 'knitr', 'rmarkdown', # general
                      'emmeans', 'here', 'papaja', 'kableExtra', 'psychometric', 'pwr', #chapter 5
                      'afex', 'ggm', 'TOSTER', 'predictionInterval', 'metafor', # chapter 5
                      'lubridate', 'psych', 'cocor'), # chapter 6
-                     , file = 'r-packages.bib', append = FALSE)
+                     , file = file.path("bib","r-packages.bib"), append = FALSE)
 ```
 
 ```{r, include = FALSE, child = if (knitr::is_html_output()) '_00-preface.Rmd'}

@@ -1,7 +1,7 @@
 # Preface {-}
 
 ```{r align='center', out.width='390px', out.height='550px', fig.cap='(ref:caption-cover)', echo=FALSE, include = knitr::is_html_output()}
-knitr::include_graphics('thesis_cover.jpg') # show thesis cover
+knitr::include_graphics(file.path('cover', 'thesis_cover.jpg')) # show thesis cover
 ```
 
 (ref:caption-cover) __Cover art:__ _ENTROPY VIII_ (2018), &copy;Alicia Martin Lopez, <http://www.aliciamartinlopez.com>

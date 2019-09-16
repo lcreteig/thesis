@@ -1,6 +1,6 @@
 bookdown::gitbook:
-  css: style.css
-  pandoc_args: [ "--csl", "apa.csl"]
+  css: css/style.css
+  pandoc_args: [ "--csl", "bib/apa.csl"]
   config:
     toc:
       before: |
@@ -16,8 +16,8 @@ bookdown::gitbook:
 bookdown::pdf_book:
   toc: false
   includes:
-    in_header: preamble.tex
-    before_body: front_matter.tex
+    in_header: tex/preamble.tex
+    before_body: tex/front_matter.tex
   latex_engine: xelatex
   citation_package: biblatex
   keep_tex: yes
