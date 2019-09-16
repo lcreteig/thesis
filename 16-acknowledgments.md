@@ -20,4 +20,4 @@ Aliquam laoreet tellus ullamcorper pretium blandit. Fusce semper, nulla a sollic
 \cleardoublepage
 \pagestyle{empty}
 \renewcommand{\thepage}{\CoverName}
-\includepdf[pages=-]{thesis_cover_back.pdf}
+\includepdf[pages=-]{cover/thesis_cover_back.pdf}

@@ -43,8 +43,8 @@
 \fi
 \usepackage[style=apa]{biblatex}
 \ExecuteBibliographyOptions{useprefix=true}
-\addbibresource{thesis.bib}
-\addbibresource{r-packages.bib}
+\addbibresource{bib/thesis.bib}
+\addbibresource{bib/r-packages.bib}
 \usepackage{longtable,booktabs}
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -280,7 +280,7 @@
 % Include the cover page
 \pagestyle{empty}
 \renewcommand{\thepage}{\CoverName} % make sure this page is "numbered" with a name, not as page 1 or I
-\includepdf{thesis_cover.pdf}
+\includepdf{./cover/thesis_cover.pdf}
 
 %% Page I: the half-title / "Franse pagina"
 \frontmatter
@@ -4927,7 +4927,7 @@ Aliquam laoreet tellus ullamcorper pretium blandit. Fusce semper, nulla a sollic
 \cleardoublepage
 \pagestyle{empty}
 \renewcommand{\thepage}{\CoverName}
-\includepdf[pages=-]{thesis_cover_back.pdf}
+\includepdf[pages=-]{cover/thesis_cover_back.pdf}
 
 \printbibliography
 

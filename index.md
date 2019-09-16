@@ -3,11 +3,11 @@ title: "Neuroplasticity of Attention"
 subtitle: "How brain stimulation and mental fatigue affect attentional performance"
 author: "Leon C. Reteig"
 date: "16 September, 2019"
-bibliography: [thesis.bib, r-packages.bib]
+bibliography: [bib/thesis.bib, bib/r-packages.bib]
 description: This is the PhD thesis of Leon Reteig
 url: 'https\://lcreteig.github.io/thesis'
 github-repo: "lcreteig/thesis"
-cover-image: "thesis_cover.jpg"
+cover-image: "cover/thesis_cover.jpg"
 documentclass: memoir
 lang: en
 fontsize: 11pt
@@ -28,7 +28,7 @@ nocite: |
 # Preface {-}
 
 <div class="figure">
-<img src="thesis_cover.jpg" alt="(ref:caption-cover)" width="390px" height="550px" />
+<img src="cover/thesis_cover.jpg" alt="(ref:caption-cover)" width="390px" height="550px" />
 <p class="caption">(\#fig:unnamed-chunk-3)(ref:caption-cover)</p>
 </div>
 
