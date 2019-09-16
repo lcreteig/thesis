@@ -1,12 +1,23 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
 language: R
+latex: false # installing missing packages does not work well with default tex distribution
 sudo: false
 cache:
   packages: true
 
+# decrypt and install commercial fonts needed to build the pdf
+before_install:
+  - openssl aes-256-cbc -K $encrypted_b52386f09d9a_key -iv $encrypted_b52386f09d9a_iv -in fonts.tar.enc -out fonts.tar -d # decrypt
+  - tar xvf fonts.tar # unzip
+  - mkdir $HOME/.fonts # create directory where latex can find the fonts
+  - cp -a $TRAVIS_BUILD_DIR/fonts/. $HOME/.fonts/ # copy the font files
+  - fc-cache -f -v # build font info
+  
 script:
-  - Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::gitbook")'
+  - Rscript -e 'tinytex::install_tinytex()' # use tinytex instead of default tex distribution
+  - Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::pdf_book")'
+  - Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::gitbook")' # run html last, so it can link to the pdf file
   
 deploy:
   provider: pages
