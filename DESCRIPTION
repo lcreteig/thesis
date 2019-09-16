@@ -1,0 +1,12 @@
+Package: thesis
+Type: book
+Title: Publish my PhD thesis with Travis CI
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Leon",
+           family = "Reteig",
+           role = c("aut", "cre"),
+           email = "leonreteig@gmail.com",
+           comment = c(ORCID = "0000-0002-5814-0992"))
+Imports: bookdown, tidyverse, pander, kableExtra, papaja
+Remotes: rstudio/bookdown, crsh/papaja
