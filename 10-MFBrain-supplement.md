@@ -1,5 +1,5 @@
 
-# Supplement to Chapter \@ref(MFBrain) {#MFBrain-supplement}
+# Supplement to Chapter 6 {#MFBrain-supplement}
 
 
 ## Motivation manipulation
