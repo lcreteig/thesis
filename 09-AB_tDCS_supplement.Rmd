@@ -30,10 +30,12 @@ load("AB_tDCS_files/AB_tDCS_supplement.RData")
 
 ## tDCS adverse effects
 
+```{=latex}
 \begingroup
-\renewcommand{\arraystretch}{1.25}
+\renewcommand*{\arraystretch}{1.25}
 \setlength{\LTleft}{-20cm plus -1fill}
 \setlength{\LTright}{\LTleft}
+```
 
 ```{r tab-AB-tDCS-AE, results='asis'}
 if (knitr::is_latex_output() | knitr::is_html_output()) {
