@@ -6,10 +6,12 @@
 
 ## tDCS adverse effects
 
+```{=latex}
 \begingroup
 \renewcommand*{\arraystretch}{1.25}
 \setlength{\LTleft}{-20cm plus -1fill}
 \setlength{\LTright}{\LTleft}
+```
 
 <table class="table table-striped" style="font-size: 12px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">(\#tab:tab-AB-tDCS-AE)Number of reports of tDCS adverse effects</caption>
