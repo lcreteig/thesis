@@ -3,7 +3,7 @@
 \vspace{-12pt}
 
 \begingroup
-\renewcommand{\arraystretch}{1}
+\renewcommand*{\arraystretch}{1}
 \setlength{\tabcolsep}{0pt}
 \setlength{\LTleft}{-20cm plus -1fill}
 \setlength{\LTright}{\LTleft}

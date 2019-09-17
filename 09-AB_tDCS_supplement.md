@@ -7,7 +7,7 @@
 ## tDCS adverse effects
 
 \begingroup
-\renewcommand{\arraystretch}{1.25}
+\renewcommand*{\arraystretch}{1.25}
 \setlength{\LTleft}{-20cm plus -1fill}
 \setlength{\LTright}{\LTleft}
 
