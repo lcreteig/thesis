@@ -1,5 +1,6 @@
 # Nederlandse samenvatting (Summary in Dutch) {-}
 \chaptermark{Summary in Dutch}
+\changelocaltocdepth{0}
 
 
 

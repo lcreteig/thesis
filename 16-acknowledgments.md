@@ -48,6 +48,3 @@ In closing, back to where it all started---with my parents.
 Ineke, bij elke nieuwe mijlpaal doet het weer pijn dat je er niet meer bij kan zijn. Maar die pijn valt ongetwijfeld in het niet bij de trots die je zou voelen dat je zoon een boek heeft geschreven.]{lang=nl}
 
 \cleardoublepage
-\pagestyle{empty}
-\renewcommand{\thepage}{\CoverName}
-\includepdf[pages=-]{cover/thesis_cover_back.pdf}

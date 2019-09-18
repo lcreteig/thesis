@@ -113,6 +113,12 @@
 
 \newcommand{\CoverName}{cover} % to set page numbers of cover pages to "cover"
 
+% change toc depth (to remove subsections in Dutch Summary from toc)
+\newcommand{\changelocaltocdepth}[1]{%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{#1}}%
+  \setcounter{tocdepth}{#1}%
+}
+
 % From https://tex.stackexchange.com/questions/32547/how-to-measure-the-width-of-a-longtable-dynamically-and-use-this-width-in-footer
 % papaja requires the \getlongtablewidth command when using the longtable=TRUE option with apa_table
 \makeatletter
@@ -4863,6 +4869,7 @@ Slagter, H. A., Prinssen, S., \textbf{Reteig, L. C.}, \& Mazaheri, A. (2016). Fa
 \addcontentsline{toc}{chapter}{Nederlandse samenvatting (Summary in Dutch)}
 
 \chaptermark{Summary in Dutch}
+\changelocaltocdepth{0}
 
 \begin{dutch}
 
@@ -4990,9 +4997,6 @@ In closing, back to where it all started---with my parents.
 Ineke, bij elke nieuwe mijlpaal doet het weer pijn dat je er niet meer bij kan zijn. Maar die pijn valt ongetwijfeld in het niet bij de trots die je zou voelen dat je zoon een boek heeft geschreven.{]}\{lang=nl\}
 
 \cleardoublepage
-\pagestyle{empty}
-\renewcommand{\thepage}{\CoverName}
-\includepdf[pages=-]{cover/thesis_cover_back.pdf}
 
 \printbibliography
 
