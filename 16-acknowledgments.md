@@ -43,8 +43,6 @@ Guys, I cannot wait to celebrate twice more in the near future!
 
 In closing, back to where it all started---with my parents. 
 
-[Gerard, dit proefschrift was letterlijk niet hetzelfde geweest zonder jou; bedankt voor je hulp bij de samenvatting. Maar je immateriële bijdrage was vele malen belangrijker: ik was nooit zover gekomen zonder jouw belangstelling en rotsvaste vertrouwen in alles wat ik doe. 
+[Gerard, dit proefschrift was letterlijk niet hetzelfde geweest zonder jou; bedankt voor je hulp bij de samenvatting. Maar je immateriële bijdrage was vele malen belangrijker: ik was nooit zover gekomen zonder je belangstelling en rotsvaste vertrouwen in alles wat ik doe.]{lang=nl}
 
-Ineke, bij elke nieuwe mijlpaal doet het weer pijn dat je er niet meer bij kan zijn. Maar die pijn valt ongetwijfeld in het niet bij de trots die je zou voelen dat je zoon een boek heeft geschreven.]{lang=nl}
-
-\cleardoublepage
+[Ineke, bij elke nieuwe mijlpaal doet het weer pijn dat je er niet meer bij kan zijn. Maar die pijn valt ongetwijfeld in het niet bij de trots die je zou voelen dat je zoon een boek heeft geschreven.]{lang=nl}
