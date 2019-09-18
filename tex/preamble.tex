@@ -15,6 +15,12 @@
 
 \newcommand{\CoverName}{cover} % to set page numbers of cover pages to "cover"
 
+% change toc depth (to remove subsections in Dutch Summary from toc)
+\newcommand{\changelocaltocdepth}[1]{%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{#1}}%
+  \setcounter{tocdepth}{#1}%
+}
+
 % From https://tex.stackexchange.com/questions/32547/how-to-measure-the-width-of-a-longtable-dynamically-and-use-this-width-in-footer
 % papaja requires the \getlongtablewidth command when using the longtable=TRUE option with apa_table
 \makeatletter
