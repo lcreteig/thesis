@@ -5,7 +5,7 @@ output:
 ---
 
 <!-- README.md is generated from _README.Rmd. Please edit that file 
-Code to generate: rmarkdown::render("_README.Rmd", output_file = "README.md", output_format = "github_document")-->
+Code to generate: rmarkdown::render("_README.Rmd", output_file = "README.md", output_format = "github_document") -->
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(

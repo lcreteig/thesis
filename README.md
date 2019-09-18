@@ -1,6 +1,6 @@
 
 <!-- README.md is generated from _README.Rmd. Please edit that file 
-Code to generate: rmarkdown::render("_README.Rmd", output_file = "README.md", output_format = "github_document")-->
+Code to generate: rmarkdown::render("_README.Rmd", output_file = "README.md", output_format = "github_document") -->
 
 # Neuroplasticity of attention: How brain stimulation and mental fatigue affect attentional performance
 
@@ -91,13 +91,13 @@ Reteig, L. C., Newman, L. A., Ridderinkhof, K. R., & Slagter, H. A.
 statistical evaluation of a replication
 attempt.
 
-| <!-- -->        | <!-- -->                                                         |
-| --------------- | ---------------------------------------------------------------- |
-| Project website | <https://lcreteig.github.io/AB-tDCS>                             |
-| Behavioral data | [OSF](https://doi.org/10.17605/OSF.IO/RJU7F)                     |
-| EEG data        | [OpenNeuro](https://doi.org/110.18112/openneuro.ds001810.v1.1.0) |
-| Code            | [GitHub](https://doi.org/10.5281/zenodo.3233872)                 |
-| Materials       | [OSF](https://doi.org/10.17605/OSF.IO/Y6HS)                      |
+| <!-- -->        | <!-- -->                                                        |
+| --------------- | --------------------------------------------------------------- |
+| Project website | <https://lcreteig.github.io/AB-tDCS>                            |
+| Behavioral data | [OSF](https://doi.org/10.17605/OSF.IO/RJU7F)                    |
+| EEG data        | [OpenNeuro](https://doi.org/10.18112/openneuro.ds001810.v1.1.0) |
+| Code            | [GitHub](https://doi.org/10.5281/zenodo.3233872)                |
+| Materials       | [OSF](https://doi.org/10.17605/OSF.IO/Y6HSF)                    |
 
 ### Chapter 5
 
@@ -124,7 +124,7 @@ time increases temporal variability in cortical responses. *Cortex,
 | Project website | <https://lcreteig.github.io/MFBrain>         |
 | Data            | [OSF](https://doi.org/10.17605/OSF.IO/456HE) |
 | Code            | [OSF](https://doi.org/10.17605/OSF.IO/BNWAP) |
-| Materials       | [OSF](https://doi.org/10.17605/OSF.IO/RZ2JV) |
+| Materials       | [OSF](https://doi.org/10.17605/OSF.IO/RZJ2V) |
 
 ## Usage
 
@@ -139,8 +139,8 @@ time increases temporal variability in cortical responses. *Cortex,
 git clone https://github.com/lcreteig/thesis
 ```
 
-2.  I’d recommend to open the `thesis.Rproj` file using [R
-    Studio](https://www.rstudio.com). If you’re not using RStudio,
+2.  I’d recommend to open the `thesis.Rproj` file using
+    [RStudio](https://www.rstudio.com). If you’re not using RStudio,
     you’ll need another means to run the R code, set your working
     directory to the root of the `/thesis` folder, and you’ll also need
     an installation of [`pandoc`](https://pandoc.org/)
@@ -241,9 +241,9 @@ bookdown::render_book("index.Rmd", "bookdown::pdf_book") # PDF version
     in (R)Markdown. The chapters are rendered in order according to the
     number the file starts with (`_00-preface.Rmd` is an exception; it’s
     included only in the `html` version of the thesis, before the
-    introduction).
-  - `DESCRIPTION` lists the R packages you’ll need to build the thesis
-    (under `Imports:`)
+    introduction)
+  - `DESCRIPTION` lists the R packages that are required to build the
+    thesis (under `Imports:`)
   - `_bookdown.yml`, `index.Rmd`, and `_output.yml` contain parameters
     in the YAML header for [`bookdown`](https://bookdown.org/) to render
     the book

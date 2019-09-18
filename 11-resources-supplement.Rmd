@@ -45,14 +45,14 @@
 |                                          |              | <https://osf.io/bmp7s/>                   |                                    |
 |                                          | materials    | Open Science Framework                    | 10.17605/OSF.IO/PZBGY              |
 |                                          |              | <https://osf.io/pzbgy/>                   |                                    |
-| __Chapter \@ref(MFBrain)__ [^ch6]         |              |                                           |                                    |
+| __Chapter \@ref(MFBrain)__ [^ch6]         |              |                                           |                                   |
 |                                          | overview     | Project website                           |                                    |
 |                                          |              | <https://lcreteig.github.io/MFBrain>      |                                    |
 |                                          | data         | Open Science Framework                    | 10.17605/OSF.IO/456HE              |
 |                                          |              | <https://osf.io/456he/>                   |                                    |
 |                                          | code         | Open Science Framework                    | 10.17605/OSF.IO/BNWAP              |
 |                                          |              | <https://osf.io/bnwap/>                   |                                    |
-|                                          | materials    | Open Science Framework                    | 10.17605/OSF.IO/RZ2JV              |
+|                                          | materials    | Open Science Framework                    | 10.17605/OSF.IO/RZJ2V              |
 |                                          |              | <https://osf.io/rzj2v/>                   |                                    |
 
 \endgroup
