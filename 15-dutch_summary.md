@@ -2,8 +2,6 @@
 \chaptermark{Summary in Dutch}
 \changelocaltocdepth{0}
 
-
-
 ::: {lang=nl}
 
 _Neuroplasticiteit van aandacht: Hoe hersenstimulatie en mentale vermoeidheid het aandachtsvermogen beïnvloeden_
