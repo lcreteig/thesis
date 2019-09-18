@@ -37,16 +37,16 @@ not. While we call upon attention at every waking moment, it is not
 static: we cannot sustain attention indefinitely, and often fall prey to
 distractions. This PhD thesis is a study of the short-term
 *neuroplasticity* of attentional processes: how susceptible is attention
-to change (*plasticity*), and what processes in the brain give rise to
-changes in attention (*neuro*)? In Chapters 2–5, I examined whether
-attention can be improved with electrical stimulation of the brain, in
-the form of transcranial Direct Current Stimulation (tDCS). Previous
-studies that attempted to use tDCS to enhance attention have yielded
-promising, but inconsistent results (reviewed in Chapter 2). My attempt
-to enhance *spatial* attention with tDCS (Chapter 3) was unsuccessful,
-as stimulation of the frontal eye fields did not lead to changes in eye
-movements. Applying tDCS over the dorsolateral prefrontal cortex also
-did not enhance *temporal* attention (Chapters 4 and 5), as
+to change, and what processes in the brain (*neuro*-) give rise to
+changes in attention (-*plasticity*)? In Chapters 2–5, I examined
+whether attention can be improved with electrical stimulation of the
+brain, in the form of transcranial Direct Current Stimulation (tDCS).
+Previous studies that attempted to use tDCS to enhance attention have
+yielded promising, but inconsistent results (reviewed in Chapter 2). My
+attempt to enhance *spatial* attention with tDCS (Chapter 3) was
+unsuccessful, as stimulation of the frontal eye fields did not lead to
+changes in eye movements. Applying tDCS over the dorsolateral prefrontal
+cortex also did not enhance *temporal* attention (Chapters 4 and 5), as
 participants’ performance on an attentional blink task remained
 unchanged. In Chapter 6, I investigated the opposite effect: decreases
 in attention, when attention has to be *sustained* for a long time.
@@ -235,7 +235,9 @@ bookdown::render_book("index.Rmd", "bookdown::pdf_book") # PDF version
     ├── _bookdown.yml
     ├── _output.yml
     ├── index.Rmd
-    └── thesis.Rproj
+    ├── thesis.Rproj
+    ├── thesis.log
+    └── thesis.rds
 
   - Each `.Rmd` file contains the content of one thesis chapter, written
     in (R)Markdown. The chapters are rendered in order according to the
@@ -297,8 +299,7 @@ statistical results. The files necessary to create these live here.
     │   └── thesis.bib
     ├── cover
     │   ├── thesis_cover.jpg
-    │   ├── thesis_cover.pdf
-    │   └── thesis_cover_back.pdf
+    │   └── thesis_cover.pdf
     ├── css
     │   └── style.css
     └── tex
