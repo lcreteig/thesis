@@ -2,12 +2,6 @@
 \chaptermark{Summary in Dutch}
 \changelocaltocdepth{0}
 
-```{r include=FALSE, eval=FALSE}
-tinytex::tlmgr_install("hyphen-dutch") # To get Dutch hyphenation to work with polygglossia
-#might need to install "babel-dutch" as well
-
-```
-
 ::: {lang=nl}
 
 _Neuroplasticiteit van aandacht: Hoe hersenstimulatie en mentale vermoeidheid het aandachtsvermogen beïnvloeden_

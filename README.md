@@ -171,8 +171,8 @@ remotes::install_github("crsh/papaja")
 ``` r
 install.packages('tinytex')
 tinytex::install_tinytex()
-# after restarting RStudio, confirm that the LaTeX distribution is now available:
-tinytex:::is_tinytex()
+tinytex:::is_tinytex() # after restarting RStudio, confirm that the LaTeX distribution is now available:
+tinytex::tlmgr_install("hyphen-dutch") # install package to work with Dutch text (tinytex will not auto-detect this)
 ```
 
 The pdf is typeset with the “Helvetica” and “Minion Pro” typefaces. They

@@ -122,8 +122,8 @@ remotes::install_github("crsh/papaja")
 ```{r, eval = FALSE}
 install.packages('tinytex')
 tinytex::install_tinytex()
-# after restarting RStudio, confirm that the LaTeX distribution is now available:
-tinytex:::is_tinytex()
+tinytex:::is_tinytex() # after restarting RStudio, confirm that the LaTeX distribution is now available:
+tinytex::tlmgr_install("hyphen-dutch") # install package to work with Dutch text (tinytex will not auto-detect this)
 ```
 
 The pdf is typeset with the "Helvetica" and "Minion Pro" typefaces. They are commercial fonts, and so cannot be distributed here. If you don't have these fonts installed on your system, make sure to delete lines 27--32 in `tex/preamble.tex`:
