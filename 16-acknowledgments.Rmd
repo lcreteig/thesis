@@ -17,20 +17,22 @@ Finally, I'd also like to extend my gratitude towards the members of my defense 
 \plainbreak{1}
 <br>
 
-Besides these "officials" that are essential to any PhD thesis, many others have been essential to mine (also see the [Contributions to the Chapters] section). First of all, my co-authors. Had Rudy and Sam not paved the way, Chapter \@ref(MFBrain) would not have even existed. Chapter \@ref(sacc-tDCS) would not have been the same without Tomas, whose expertise of and enthusiasm for eye movements (or anything sciency, really) is unparalleled.
+Besides these "officials" that are essential to any PhD thesis, many others have been essential to mine (also see the [Contributions to the Chapters] section). 
+
+First of all, my co-authors. Had Rudy and Sam not paved the way, Chapter \@ref(MFBrain) would not have even existed. Chapter \@ref(sacc-tDCS) would not have been the same without Tomas, whose expertise of and enthusiasm for eye movements (or anything science-y, really) is unparalleled.
 
 Then there are all the interns who spent some time of their Bachelor's or Master's program to setup the studies, collect the data, and write reports on the results. Helen, Irene, Lionel, Floris, Floortje, Monja, Daphne and Esther: I wish your hard work could be summarized with a more exciting soundbite than: "it's complicated". But for a realistic peek at what it's like to work in science (an exciting, but bumpy road), and for the scientific literature (decidedly lacking in "bumpiness"), perhaps it wasn't so bad after all.
 
 I am indebted to all the participants in my experiments, who slaved away to provide the data on which this thesis is based, for a few research credits or euro's. The tasks that participants have to complete in a typical attention study are not exactly riveting, as we researchers like to keep them as controlled (read: boring) as possible. Adding insult to injury, in these particular experiments participants had to perform these tasks for 80 minutes without breaks (Chapter \@ref(MFBrain)), while sitting extremely still to not jeopardize the EEG recordings (Chapters \@ref(AB-tDCS-EEG), \@ref(AB-tDCS-sEBR), and \@ref(MFBrain)), and/or endure the annoying sensations that come with brain stimulation (Chapters \@ref(sacc-tDCS), \@ref(AB-tDCS-EEG), and \@ref(AB-tDCS-sEBR)). Thanks for offering your brains and minds to science.
 
-I should also briefly mention the unsung heroes of the university staff: The technical support (especially from Jasper Wijnen, Marcus Spaan and Bert Molenkamp) who shave at least a year off every PhD; the group leaders (Jeroen Raaijmakers en Jaap Murre) for allowing me to extend my contract in return for some teaching; the education coordinators (especially Manon Slockers and Ien van den Berg) who significantly reduced the stress induced by said teaching, and the secretaries (Hubert Eleonora, Ingrid van Grieken and Lilian Heijmans) that facilitated all of this.
+I should also briefly mention the unsung heroes of the university staff: The technical support (especially from Jasper Wijnen, Marcus Spaan and Bert Molenkamp) who shave at least a year off every PhD; the group leaders (Jeroen Raaijmakers and Jaap Murre) for allowing me to extend my contract in return for some teaching; the education coordinators (especially Manon Slockers and Ien van den Berg) who significantly reduced the stress induced by said teaching, and the secretaries (Hubert Eleonora, Ingrid van Grieken and Lilian Heijmans) that facilitated all of this.
 
 To my lab mates that have come and gone over the years (Martine, Fleur, Dirk, Ruben, Evert, Josipa, Valentina, Jim, and "OGs" Marlies and Lotte): thanks for all the support, feedback, and general good times in the Cognition & Plasticity lab. More generally, the Brain and Cognition group at the UvA Psychology department have been the best bunch of colleagues I could wish for. This is my first proper job, but you guys have set the bar so high that I'm afraid it's going to be all downhill from here.
 
 \plainbreak{1}
 <br>
 
-I'm very lucky to have two paranymphs that are fellow PhD students---who can personally relate to the ups and downs---but who I just as well might have asked to be paranymphs had they not been.
+I'm very lucky to have two paranymphs that are fellow PhD students---who can personally relate to the ups and downs---but who I might have asked to be paranymphs just as well otherwise.
 
 [Thomas, we bewandelen al sinds de bachelor min of meer hetzelfde pad, en hebben vooral tijdens de master en de PhD veel beleefd samen. Ik kan me eigenlijk niemand anders voorstellen om dit deel van mijn leven mee af te sluiten.]{lang=nl}
 
