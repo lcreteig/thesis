@@ -16,6 +16,8 @@ site: bookdown::bookdown_site
 biblio-style: "apa"
 biblatexoptions: "useprefix=true"
 link-citations: yes
+#linkcolor: black
+#urlcolor: gray
 citecolor: gray
 nocite: |
   @Reteig2017, @Reteig2018b, @Reteig2019a
