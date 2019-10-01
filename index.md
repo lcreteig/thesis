@@ -2,7 +2,7 @@
 title: "Neuroplasticity of Attention"
 subtitle: "How brain stimulation and mental fatigue affect attentional performance"
 author: "Leon C. Reteig"
-date: "23 September, 2019"
+date: "01 October, 2019"
 bibliography: [bib/thesis.bib, bib/r-packages.bib]
 description: This is the PhD thesis of Leon Reteig
 url: 'https\://lcreteig.github.io/thesis'
@@ -16,6 +16,8 @@ site: bookdown::bookdown_site
 biblio-style: "apa"
 biblatexoptions: "useprefix=true"
 link-citations: yes
+#linkcolor: black
+#urlcolor: gray
 citecolor: gray
 nocite: |
   @Reteig2017, @Reteig2018b, @Reteig2019a

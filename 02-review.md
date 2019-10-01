@@ -1046,7 +1046,7 @@ In conclusion, while most studies found no or restricted effects on sustained at
    <td style="text-align:left;"> 1 mA, 10 min </td>
    <td style="text-align:left;"> offline </td>
    <td style="text-align:left;"> NeuroRacer [go/no-go task only] </td>
-   <td style="text-align:left;min-width: 30em; "> no effects on accuracy (d_) for the go/no-go task only, but tDCS did reduce multitasking costs </td>
+   <td style="text-align:left;min-width: 30em; "> no effects on accuracy ($d'$) for the go/no-go task only, but tDCS did reduce multitasking costs </td>
   </tr>
   <tr>
    <td style="text-align:left;"> _Other studies_ </td>
