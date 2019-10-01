@@ -6,7 +6,7 @@ _Cited in-text_;;;;;;;;
 @Axelrod2015;45;between group;"F3 (A), right forehead (ref); Oz (A), Cz (ref)";16, 35 cm^2^;1 mA, 20 min;online;Sustained Attention to Response Task;no effects on accuracy or reaction time, but frontal tDCS did increase mind wandering
 @Nieratschker2015;41;within subject;F3 (C), right forehead (ref);35 cm^2^;1 mA, 20 min;online;"parametric go/no-go [just ""go"" responses]";cathodal tDCS decreased performance at medium task difficulty (response inhibition), only for Val/Val allele carriers of the COMT gene. No effects on reaction time
 @Plewnia2013;46;within subject;F3 (A), right forehead (ref);35 cm^2^;1 mA, 20 min;online;"parametric go/no-go [just ""go"" responses]";anodal tDCS decreased performance at highest task difficulty (set shifting), only for Met/Met allele carriers of the COMT gene. No effects on reaction time
-@Hsu2015;39;between group;F3 (A), Fp2 (ref);45 cm^2^;1 mA, 10 min;offline;NeuroRacer [go/no-go task only];no effects on accuracy (d_) for the go/no-go task only, but tDCS did reduce multitasking costs
+@Hsu2015;39;between group;F3 (A), Fp2 (ref);45 cm^2^;1 mA, 10 min;offline;NeuroRacer [go/no-go task only];no effects on accuracy ($d'$) for the go/no-go task only, but tDCS did reduce multitasking costs
 _Other studies_;; ;;;;;;
 @Miller2015;8;within subject;AFz (A), under chin (ref);35 cm^2^;1 mA, 15 min;offline;go/no-go;no effects on accuracy or reaction time
 @Mauri2015;14;within subject;FPz, Oz (100-640 Hz);23 cm^2^;2 mA, 81 bursts of 900 ms;online;Continuous Performance Test;stimulation decreased reaction time
